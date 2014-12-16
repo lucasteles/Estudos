@@ -1,0 +1,5 @@
+The cab file for your application has been built as 'F:\Meus Documentos\Emerson\Estudo\Nossa Senhora de Fátima\Projetos em vb\Projetos propriamente ditos\Meu\Em Andamento\Controle de endereços\Package\Controle de Endereços.CAB'.
+
+There is also a batch file in the support directory (F:\Meus Documentos\Emerson\Estudo\Nossa Senhora de Fátima\Projetos em vb\Projetos propriamente ditos\Meu\Em Andamento\Controle de endereços\Package\Support\Controle de Endereços.BAT) that will allow you to recreate the cab file in case you make changes to some of the files.
+
+You have included mdac_typ.exe in your installation package.  If you will be installing this package on a Windows 95/98 system, it will require DCOM98 to install properly.

@@ -1,0 +1,279 @@
+[Root]
+Most Recent Package=Calculadora do Gilberto
+
+
+[Package|Calculadora do gigi|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=Z:\Calculadora\Package
+
+[Package|Calculadora do gigi|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Calculadora do gigi|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Calculadora do gigi|Files Found]
+
+[Package|Calculadora do gigi|Files Released]
+Windows.skn=
+Bd1.mdb=
+
+[Package|Calculadora do gigi|Missing Dependency Information]
+C:\WINDOWS\system32\MSSTDFMT.DLL=
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado26.tlb=
+C:\Arquivos de programas\Microsoft Visual Studio\Common\Tools\APE\AEEXPDTR.EXE=
+C:\Arquivos de programas\Microsoft Visual Studio\Common\Tools\VCM\actskin4.ocx=
+
+[Package|Calculadora do gigi|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\Msflxgrd.ocx=
+
+[Package|Calculadora do gigi|Files Added]
+C:\Documents and Settings\infob27\Desktop\Calculadora\Bd1.mdb=
+C:\Documents and Settings\infob27\Desktop\Calculadora\Windows.skn=
+
+[Package|Calculadora do gigi|Files Removed]
+
+[Package|Calculadora do gigi|Files In Project]
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\Common\Tools\VCM\actskin4.ocx=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\Common\Tools\APE\AEEXPDTR.EXE=Yes
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado26.tlb=Yes
+C:\WINDOWS\system32\Msflxgrd.ocx=Yes
+C:\WINDOWS\system32\MSCOMCT2.OCX=Yes
+C:\WINDOWS\system32\MSMASK32.OCX=Yes
+C:\WINDOWS\system32\MSADODC.OCX=Yes
+C:\WINDOWS\system32\MSSTDFMT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Documents and Settings\infob27\Desktop\Calculadora\Project1.exe=Yes
+C:\Documents and Settings\infob27\Desktop\Calculadora\Bd1.mdb=Yes
+C:\Documents and Settings\infob27\Desktop\Calculadora\Windows.skn=Yes
+
+[Package|Calculadora do gigi|Configure Registry Files]
+Applicable=No
+
+[Package|Calculadora do gigi|Configure Remote Servers]
+Applicable=No
+
+[Package|Calculadora do gigi|Install Locations]
+Z:\Calculadora\Project1.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\Common\Tools\VCM\actskin4.ocx=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\Common\Tools\APE\AEEXPDTR.EXE=$(WinSysPath)
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado26.tlb=$(WinSysPath)
+C:\WINDOWS\system32\Msflxgrd.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSMASK32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSADODC.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+Z:\Calculadora\Bd1.mdb=$(AppPath)
+Z:\Calculadora\Windows.skn=$(AppPath)
+C:\Documents and Settings\infob27\Desktop\Calculadora\Project1.exe=$(AppPath)
+C:\Documents and Settings\infob27\Desktop\Calculadora\Bd1.mdb=$(AppPath)
+C:\Documents and Settings\infob27\Desktop\Calculadora\Windows.skn=$(AppPath)
+
+[Package|Calculadora do gigi|Configure Shared Files]
+Applicable=Yes
+Z:\Calculadora\Project1.exe=Yes
+Z:\Calculadora\Bd1.mdb=Yes
+Z:\Calculadora\Windows.skn=Yes
+C:\Documents and Settings\infob27\Desktop\Calculadora\Project1.exe=Yes
+C:\Documents and Settings\infob27\Desktop\Calculadora\Bd1.mdb=Yes
+C:\Documents and Settings\infob27\Desktop\Calculadora\Windows.skn=Yes
+
+[Package|Calculadora do gigi|Distribution]
+Type=single
+Size=
+Title=Calculadora do GIGI
+
+[Package|Calculadora do gigi|Package]
+PackageFolder=Z:\Calculadora\Package
+ProjectFolder=C:\Documents and Settings\infob27\Desktop\Calculadora
+ServerSideCab=
+File1=Z:\Calculadora\Package\setup.exe
+File2=Z:\Calculadora\Package\Setup.Lst
+File3=Z:\Calculadora\Package\Project1.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|Calculadora do gigi|IconGroups]
+Group0=Calculadora do GIGI
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Calculadora do gigi|Calculadora do GIGI]
+Icon1=Project1.EXE
+Title1=Calculadora do GIGI
+StartIn1=$(AppPath)
+Key1=Icon1
+
+
+[Package|Calculadora do Gilberto|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=Z:\Calculadora\Package
+
+[Package|Calculadora do Gilberto|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Calculadora do Gilberto|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Calculadora do Gilberto|Files Found]
+
+[Package|Calculadora do Gilberto|Files Released]
+Windows.skn=
+Bd1.mdb=
+
+[Package|Calculadora do Gilberto|Missing Dependency Information]
+C:\WINDOWS\system32\MSSTDFMT.DLL=
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado26.tlb=
+C:\Arquivos de programas\Microsoft Visual Studio\Common\Tools\APE\AEEXPDTR.EXE=
+C:\Arquivos de programas\Microsoft Visual Studio\Common\Tools\VCM\actskin4.ocx=
+D:\WINDOWS\system32\MSSTDFMT.DLL=
+D:\Arquivos de programas\Arquivos comuns\System\ado\msado26.tlb=
+D:\Arquivos de programas\Microsoft Visual Studio\Common\Tools\APE\AEEXPDTR.EXE=
+D:\Documents and Settings\Administrador\Desktop\actskin4.ocx=
+
+[Package|Calculadora do Gilberto|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\Msflxgrd.ocx=
+D:\WINDOWS\system32\Msflxgrd.ocx=
+
+[Package|Calculadora do Gilberto|Files Added]
+z:\amauri\calculadora\bd1.mdb=
+z:\amauri\calculadora\windows.skn=
+
+[Package|Calculadora do Gilberto|Files Removed]
+
+[Package|Calculadora do Gilberto|Files In Project]
+Z:\Amauri\Calculadora\Calculadora Do Gigi.exe=Yes
+D:\WINDOWS\system32\msvbvm60.dll=Yes
+D:\WINDOWS\system32\oleaut32.dll=Yes
+D:\WINDOWS\system32\olepro32.dll=Yes
+D:\WINDOWS\system32\asycfilt.dll=Yes
+D:\WINDOWS\system32\stdole2.tlb=Yes
+D:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+D:\Documents and Settings\Administrador\Desktop\actskin4.ocx=Yes
+D:\Arquivos de programas\Microsoft Visual Studio\Common\Tools\APE\AEEXPDTR.EXE=Yes
+D:\Arquivos de programas\Arquivos comuns\System\ado\msado26.tlb=Yes
+D:\WINDOWS\system32\Msflxgrd.ocx=Yes
+D:\WINDOWS\system32\MSCOMCT2.OCX=Yes
+D:\WINDOWS\system32\MSMASK32.OCX=Yes
+D:\WINDOWS\system32\MSADODC.OCX=Yes
+D:\WINDOWS\system32\MSSTDFMT.DLL=Yes
+D:\WINDOWS\system32\MSCHRT20.OCX=Yes
+D:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+D:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+D:\WINDOWS\system32\VB6STKIT.DLL=Yes
+D:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+Z:\Amauri\Calculadora\Bd1.mdb=Yes
+Z:\Amauri\Calculadora\Windows.skn=Yes
+
+[Package|Calculadora do Gilberto|Configure Registry Files]
+Applicable=No
+
+[Package|Calculadora do Gilberto|Configure Remote Servers]
+Applicable=No
+
+[Package|Calculadora do Gilberto|Install Locations]
+Z:\Calculadora\Project1.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\Common\Tools\VCM\actskin4.ocx=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\Common\Tools\APE\AEEXPDTR.EXE=$(WinSysPath)
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado26.tlb=$(WinSysPath)
+C:\WINDOWS\system32\Msflxgrd.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSMASK32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSADODC.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+Z:\Calculadora\Bd1.mdb=$(AppPath)
+Z:\Calculadora\Windows.skn=$(AppPath)
+C:\Documents and Settings\infob27\Desktop\Calculadora\Project1.exe=$(AppPath)
+C:\Documents and Settings\infob27\Desktop\Calculadora\Bd1.mdb=$(AppPath)
+C:\Documents and Settings\infob27\Desktop\Calculadora\Windows.skn=$(AppPath)
+Z:\Amauri\Calculadora\Calculadora Do Gigi.exe=$(AppPath)
+D:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+D:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+D:\Documents and Settings\Administrador\Desktop\actskin4.ocx=$(WinSysPath)
+D:\Arquivos de programas\Microsoft Visual Studio\Common\Tools\APE\AEEXPDTR.EXE=$(WinSysPath)
+D:\Arquivos de programas\Arquivos comuns\System\ado\msado26.tlb=$(WinSysPath)
+D:\WINDOWS\system32\Msflxgrd.ocx=$(WinSysPath)
+D:\WINDOWS\system32\MSCOMCT2.OCX=$(WinSysPath)
+D:\WINDOWS\system32\MSMASK32.OCX=$(WinSysPath)
+D:\WINDOWS\system32\MSADODC.OCX=$(WinSysPath)
+D:\WINDOWS\system32\MSSTDFMT.DLL=$(WinSysPath)
+D:\WINDOWS\system32\MSCHRT20.OCX=$(WinSysPath)
+D:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+D:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+D:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+D:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+Z:\Amauri\Calculadora\Bd1.mdb=$(AppPath)
+Z:\Amauri\Calculadora\Windows.skn=$(AppPath)
+
+[Package|Calculadora do Gilberto|Configure Shared Files]
+Applicable=Yes
+Z:\Calculadora\Project1.exe=Yes
+Z:\Calculadora\Bd1.mdb=Yes
+Z:\Calculadora\Windows.skn=Yes
+C:\Documents and Settings\infob27\Desktop\Calculadora\Project1.exe=Yes
+C:\Documents and Settings\infob27\Desktop\Calculadora\Bd1.mdb=Yes
+C:\Documents and Settings\infob27\Desktop\Calculadora\Windows.skn=Yes
+Z:\Amauri\Calculadora\Calculadora Do Gigi.exe=Yes
+Z:\Amauri\Calculadora\Bd1.mdb=Yes
+Z:\Amauri\Calculadora\Windows.skn=Yes
+
+[Package|Calculadora do Gilberto|Distribution]
+Type=single
+Size=
+Title=Calculadora do GIGI
+
+[Package|Calculadora do Gilberto|IconGroups]
+Group0=Calculadora do GIGI
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Calculadora do Gilberto|Calculadora do GIGI]
+Icon1=Project1.EXE
+Title1=Calculadora do GIGI
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Calculadora do Gilberto|Package]
+PackageFolder=Z:\Calculadora\Package
+ProjectFolder=Z:\Amauri\Calculadora
+ServerSideCab=
+File1=Z:\Calculadora\Package\setup.exe
+File2=Z:\Calculadora\Package\Setup.Lst
+File3=Z:\Calculadora\Package\Calculadora Do Gigi.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

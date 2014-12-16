@@ -1,0 +1,74 @@
+DO LOCFILE("System.App")
+local  loGfx1,loGfx2,loGfx3 as xfcGraphics
+
+_screen.AddProperty('xScale',0)
+_screen.AddProperty('yShear',0)
+_screen.AddProperty('obmp')
+_screen.AddProperty('obmp2')
+_screen.AddProperty('obmp3')
+_screen.AddProperty('Mainbmp')
+SET STEP ON 
+TRY
+	_SCREEN.RemoveObject('_IMG')
+CATCH
+ENDTRY
+_SCREEN.newobject('_IMG','Imgcanvas',LOCFILE('gdiplusx.vcx'))
+_SCREEN._IMG.HEIGHT=500
+_SCREEN._IMG.WIDTH =400
+_screen._IMG.Top=10
+_screen._IMG.Left=20
+_SCREEN._IMG.VISIBLE=.T.
+_SCREEN._IMG.Stretch = 2
+
+WITH _SCREEN.System.Drawing
+	_screen.mainbmp=.Bitmap.New(400,500)
+	_screen.obmp = .Bitmap.New(GETPICT())
+	_screen.obmp2 = .Bitmap.New(GETPICT())
+	_screen.obmp3 = .Bitmap.New(GETPICT())
+	
+	loGfx1 = .Graphics.FromImage(_screen.mainbmp)
+	loGfx2 = .Graphics.FromImage(_screen.mainbmp)
+	loGfx3 = .Graphics.FromImage(_screen.mainbmp)
+	
+	FOR LNxi=1 to 90
+		_screen.xScale = -.05
+		_screen.yShear = -.01
+		INKEY(.01,'h')
+		loGfx1.Clear( _SCREEN.System.Drawing.Color.FromRgb(100,100,20))
+	 	
+	 	IF LNxi <= 30
+		 	LOCAL  loMatrix AS xfcMatrix
+			loMatrix = .Drawing2D.Matrix.New()
+			loMatrix.Shear(0,_screen.yShear)
+			loMatrix.Scale(_screen.xScale + 1,1)
+			loGfx1.MultiplyTransform(loMatrix)
+		ENDIF
+		loGfx1.DrawImage(_screen.oBmp ,150,80 ,320,240)
+		
+		IF LNxi > 30 and lnxi <= 60
+		 	LOCAL  loMatrix2 AS xfcMatrix
+			loMatrix2 = .Drawing2D.Matrix.New()
+			loMatrix2.Shear(0,_screen.yShear)
+			loMatrix2.Scale(_screen.xScale + 1,1)
+			loGfx2.MultiplyTransform(loMatrix2)
+		ENDIF
+		loGfx2.DrawImage(_screen.oBmp2,200,120,320,240)
+		
+		IF LNxi > 60 and lnxi <= 90
+		 	LOCAL  loMatrix3 AS xfcMatrix
+			loMatrix3 = .Drawing2D.Matrix.New()
+			loMatrix3.Shear(0,_screen.yShear)
+			loMatrix3.Scale(_screen.xScale + 1,1)
+			loGfx3.MultiplyTransform(loMatrix3)
+		ENDIF
+		loGfx3.DrawImage(_screen.oBmp3,250,160,320,240)
+		
+		_screen._IMG.oGfx.DrawImage(_screen.mainbmp,0,0)
+		_screen._IMG.Draw()
+	
+		_screen.xScale=0
+		_screen.yShear=0
+	NEXT
+ENDWITH
+
+

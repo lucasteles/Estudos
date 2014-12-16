@@ -1,0 +1,23 @@
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\ComplexNumber\CalculadoraComplexa\bin\Debug\CalculadoraComplexa.exe
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\ComplexNumber\CalculadoraComplexa\bin\Debug\CalculadoraComplexa.pdb
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\ComplexNumber\CalculadoraComplexa\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\ComplexNumber\CalculadoraComplexa\obj\x86\Debug\CalculadoraComplexa.frmCALCCOMPLEX.resources
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\ComplexNumber\CalculadoraComplexa\obj\x86\Debug\CalculadoraComplexa.Properties.Resources.resources
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\ComplexNumber\CalculadoraComplexa\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\ComplexNumber\CalculadoraComplexa\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\ComplexNumber\CalculadoraComplexa\obj\x86\Debug\CalculadoraComplexa.exe
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\ComplexNumber\CalculadoraComplexa\obj\x86\Debug\CalculadoraComplexa.pdb
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\ComplexNumber\CalculadoraComplexa\bin\Debug\ComplexNumber.dll
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\ComplexNumber\CalculadoraComplexa\bin\Debug\ComplexNumber.pdb
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexNumber\CalculadoraComplexa\obj\x86\Debug\CalculadoraComplexa.exe
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexNumber\CalculadoraComplexa\obj\x86\Debug\CalculadoraComplexa.pdb
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexNumber\CalculadoraComplexa\bin\Debug\CalculadoraComplexa.exe
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexNumber\CalculadoraComplexa\bin\Debug\CalculadoraComplexa.pdb
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexNumber\CalculadoraComplexa\bin\Debug\ComplexNumber.dll
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexNumber\CalculadoraComplexa\bin\Debug\ComplexNumber.pdb
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexNumber\CalculadoraComplexa\obj\x86\Debug\CalculadoraComplexa.csprojResolveAssemblyReference.cache
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexNumber\CalculadoraComplexa\obj\x86\Debug\CalculadoraComplexa.frmCALCCOMPLEX.resources
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexNumber\CalculadoraComplexa\obj\x86\Debug\CalculadoraComplexa.Properties.Resources.resources
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexNumber\CalculadoraComplexa\obj\x86\Debug\CalculadoraComplexa.csproj.GenerateResource.Cache
+C:\Dropbox\TestesCS\ComplexNumber\CalculadoraComplexa\obj\x86\Debug\CalculadoraComplexa.exe
+C:\Dropbox\TestesCS\ComplexNumber\CalculadoraComplexa\obj\x86\Debug\CalculadoraComplexa.pdb

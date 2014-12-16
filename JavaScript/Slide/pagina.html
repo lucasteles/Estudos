@@ -1,0 +1,73 @@
+<html>
+	<head>
+	<style>
+		body
+		{
+			
+			padding: 0;
+			font:80%/1.2 sans-serif;
+			background:#eaeaea;
+									
+		}
+		
+		#main
+		{
+			margin:0 auto;
+			position: relative;
+			width:800px;
+			background: white;
+			height: 100%;
+			-webkit-perspective: 1000;
+		}		
+		
+		#p1
+		{
+			text-align: center;
+			position: absolute;
+			left: 500px;
+			top: 100px;
+			height: 200px;
+			width: 100px;
+			background-color: rgb(255,200,200);
+			z-index: 2;
+			border: 2px solid;
+
+			-webkit-transition: 1s;
+			/*-moz-transform: perspective(1000px);*/
+			-webkit-transform-style: preserve-3d;
+			-webkit-transform-origin:center left;
+			/*-webkit-backface-visibility: ;*/
+		}
+
+		#p2
+		{
+			text-align: center;
+			position: absolute;
+			left: 500px;
+			top: 100px;
+			height: 200px;
+			width: 100px;
+			border: 2px solid;
+			background-color: rgb(200,200,255);
+			z-index: 0;
+		}
+
+		#p1:hover
+		{
+			-webkit-transform: rotateY(-180deg)  ;
+			opacity: 0;
+			/*-border: 5px solid red;*/
+		}	
+
+	</style>
+	</head>
+	<body>
+	
+		<div id='main'>
+			<div id='p1'> teste </div>
+			<div id='p2'> teste </div>
+		</div>
+
+
+	</body>
+</html>

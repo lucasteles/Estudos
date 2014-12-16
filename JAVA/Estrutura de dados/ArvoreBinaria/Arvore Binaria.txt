@@ -1,0 +1,161 @@
+Arvores, em computação, são estrutura de dados cujo objetivo
+é estruturar e ordenas os dados de modo a facilitar a busca
+e representação do domínio
+Estruturas de árvores são largamente usadas, sendo aplicadas
+em banco de dados, algoritmos para a manipulação de imagens,
+representação de espaços bidimensionais ou tridimensionais
+ou ainda mapeamento de terrenos, por exemplo
+Uma estrutura em árvore é similar a apresentada abaixo
+
+                         10
+                       / | \
+                      /  |  \
+                     /   11  \
+                    5    |    7
+                   /\    |    /\
+                  /  \   |   /  \
+                 4    6  15 20  30--1
+                /\    |          
+               /  \   8
+              7   12
+
+Para árvores em geral, são estabelecidos alguns conceitos, 
+mostrados abaixo:
+	NÓ: cada elemento da árvore é chamado de NÓ
+	NÓ-RAIZ: o nó-raiz de uma árvore é aquele que não
+        possui nenhum nó antecessor
+	NÓ-FILHO: é o nó descendente associado a outro
+	GRAU: é o nº de filhos de cada nó
+	PROFUNDIDADE: e o quão profundo um nó se encontra
+        na árvore. O nó-raiz está na profundidade 0
+	NÓ-FOLHA: é o nó que posui grau zero. Ou seja,
+        não possui filhos
+	ALTURA DA ARVORE: é a distância entre o nó-raiz
+	e o nó-folha mais profundo
+Repare ainda que cada nó define o que chamamos de SUB-ARVORE
+ou seja, cada nó é também nó-raiz de uma sub-arvore pertencente
+a arvore como um todo
+Dessa forma, temos ainda o conceito de floresta, onde cada
+nó define uma sub-arvore
+
+Arvores binarias são estruturas onde cada nó dessa arvore
+tem seu grau definido no intervalo [0,2]
+Diversos critérios podem ser aplicados a estruturação
+de uma árvore binária, sendo o mais comum definir que
+para todo nó com valor x, o filho a esquerda terá valor
+menor e a direita terá valor maior
+
+*Busca:
+
+Já vimos que uma arvore binaria, na forma como ela foi definida, mantem 
+uma estrutura organizada de forma a facilitar a busca e manutenção de seus 
+elementos.
+
+O algoritimo  p/ busca na arvore é muito similar 
+ao algoritimo de busca binaria
+
+Algoritimo:
+
+Funcao BuscaNaArvore(V[], i, q)
+	se (V[i] != q e V[i] != -1)
+		se(q < V[i]
+			retorna BuscaArvore(V, 2*i+1, q)
+		senao
+			retorna BuscaArvore(V, 2*i-2, q)
+		fimse
+	senao
+		se (V[i] = q)
+			retorna i
+		senao
+			retorna -1
+		fimse
+	fimse
+fimfuncao
+
+		(15)
+		/  \
+	  (10) (20)
+	  / \    \
+	(3)(13)  (25)
+	 \		  /
+	 (5)    (23) 
+	 / \
+   (1) (7)
+   
+   
+  Note que a função a função de busca retorna o indice do elemento buscado
+  Repare também que esse algoritimo de busca é recursivo e tem como criterio de parada
+  p fato de encontrar o elemento procuradi ou o fato de não te-lo encontrado
+  
+  *Remoção
+  
+  A remoção de elementos da arvore binaria é mais complicada e deve ser analisada caso a caso.
+  Considere a seguinte arvore
+  
+		(50)
+		/  \
+	  (30) (70)
+	   /    / \ 	
+	 (20) (60)(80)
+	 
+	 
+Se decidirmos remover o nó 60 a arvore terá o seguinte formato após a remoção
+
+
+	(50)
+	/  \
+  (30) (70)
+   /	 \
+ (20)	 (80)
+ 
+ 
+ Se, a partir daí, removermos o nó 30, teremos:
+ 
+	(50)
+	/  \
+  (20) (70)
+		 \
+		(80)
+		
+ Por fim, se removermos o 50, ficaremos com:
+ 
+	(70)
+	/  \
+  (20) (80)
+ 
+ 
+ Repare que nesse ultimo caso, o nó q20 poderia ter ocupado o lugar ndo nó 50
+ A escolha por 70 foi simplesmente arbitraria. O mais importante em qualquer remoção, éassegurar
+ que as propriedades de nossa arvore sejam mantidas.
+ Basicamente, na remoção olhamos p/ o numero de filhos do  nó que queremos remover
+ 
+
+ Porem, a remoção pode se complicar se a arvore tiver, por exemplo, a seguinte forma:
+ 
+ 
+								 (50)
+							   _/    \_							   
+							 _/        \_
+						   _/            \_
+						  /				   \
+						(30)              (70)
+					   _/  \_            _/ \_ 
+					  /      \          /     \
+				    (8)     (30)      (60)    (75)
+				    / \      /        /       / \
+				  (7) (9)  (22)       (55)   (71)(77)
+					        / \       / \     \
+						 (21)(25)  (54)(57)  (73)
+							  / \             / \
+ 				            (24)(28)        (72)(74)
+						         /
+						       (26)
+							     \
+								(27)
+								
+	Se decidirmos por remover o 50, dois outros podem ocupar o seu lugar
+	para não quebrar a propriedade: o 33 ou o 54.
+	De forma geral, para qualquer nó a ser removido, seu substituto deverá ser:
+	
+	-A partir do filho a esquerda, o nó mais a direita possivel ou a partir do nó filho a direita
+o nó mais a esquerda possivel	

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Radar" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\TESTEGL" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="C:\Program Files\CodeBlocks\MinGW\bin" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="..\..\..\..\..\Program Files (x86)\CodeBlocks-EP\MinGW\lib\libpthread.a" />
+					<Add library="..\..\..\..\..\Program Files (x86)\CodeBlocks-EP\MinGW\lib\libwsock32.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\TESTEGL" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="C:\Program Files\CodeBlocks\MinGW\bin" />
+				<Option object_output="obj\Release\" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-g" />
+			<Add directory="C:\Program Files\CodeBlocks\MinGW\include" />
+		</Compiler>
+		<Linker>
+			<Add library="glut32" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="winmm" />
+			<Add library="gdi32" />
+			<Add library="C:\Program Files (x86)\CodeBlocks-EP\MinGW\lib\libpthread.a" />
+			<Add library="C:\Program Files (x86)\CodeBlocks-EP\MinGW\lib\libwsock32.a" />
+			<Add directory="C:\Program Files\CodeBlocks\MinGW\lib" />
+		</Linker>
+		<Unit filename="..\Classes\Calculos.cpp" />
+		<Unit filename="..\Classes\Calculos.h" />
+		<Unit filename="..\Classes\Desenho.cpp" />
+		<Unit filename="..\Classes\Desenho.h" />
+		<Unit filename="..\Classes\WinSockClass.cpp" />
+		<Unit filename="..\Classes\WinSockClass.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

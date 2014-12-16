@@ -1,0 +1,30 @@
+LPARAMETERS tcARQUIVO, tnDir
+
+IF TYPE("tnDIR") <> "N"
+	tnDIR	= 0
+ENDIF
+IF TYPE("tcARQUIVO") <> "C"
+	tcARQUIVO = ""	
+ENDIF
+IF EMPTY(tcARQUIVO)
+	RETURN
+ENDIF
+
+IF ! EMPTY(tnDIR)
+	IF NOT DIRECTORY(tcARQUIVO)
+		MESSAGEBOX("Diretorio não encontrado: "+tcARQUIVO,"Erro")
+		RETURN
+	ENDIF
+ELSE 
+	IF NOT FILE(tcARQUIVO)
+		MESSAGEBOX("Arquivo não encontrado: "+tcARQUIVO,"Erro")
+		RETURN
+	ENDIF
+ENDIF
+
+DECLARE LONG ShellExecute IN "shell32.dll" ;
+	LONG HWND, STRING lpszOp, ;
+	STRING lpszFile, STRING lpszParams, ;
+	STRING lpszDir, LONG nShowCmd
+
+SHELLEXECUTE( 0, "Open", FULLPATH(tcARQUIVO), 0, 0, 1)

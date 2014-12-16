@@ -1,0 +1,116 @@
+# depslib dependency file v1.0
+1368904625 source:d:\armazem\internet\dropbox\testesc\classes\winsockclass.cpp
+	"WinSockClass.h"
+	<winsock2.h>
+	<iostream>
+	<pthread.h>
+
+1367871762 d:\armazem\internet\dropbox\testesc\classes\winsockclass.h
+	<winsock2.h>
+	<pthread.h>
+
+1368905049 source:d:\armazem\internet\dropbox\testesc\testesock\main.cpp
+	<iostream>
+	"..\Classes\WinSockClass.h"
+
+1368911365 source:c:\users\lucas\desktop\pi\classes\winsockclass.cpp
+	"WinSockClass.h"
+	<winsock2.h>
+	<iostream>
+
+1368913220 c:\users\lucas\desktop\pi\classes\winsockclass.h
+	<winsock2.h>
+
+1370140513 source:c:\users\lucas\desktop\pi\canhao\main.cpp
+	<stdio.h>
+	<windows.h>
+	<math.h>
+	"..\Classes\WinSockClass.h"
+	"..\Classes\Calculos.h"
+
+1368911365 source:c:\users\lucas\desktop\testeopengl\classes\winsockclass.cpp
+	"WinSockClass.h"
+	<winsock2.h>
+	<iostream>
+
+1368913220 c:\users\lucas\desktop\testeopengl\classes\winsockclass.h
+	<winsock2.h>
+
+1370136517 source:c:\users\lucas\desktop\testeopengl\classes\calculos.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Calculos.h"
+
+1370132251 c:\users\lucas\desktop\testeopengl\classes\calculos.h
+	<math.h>
+	<time.h>
+
+1370140513 source:c:\users\lucas\desktop\testeopengl\canhao\main.cpp
+	<stdio.h>
+	<windows.h>
+	<math.h>
+	"..\Classes\WinSockClass.h"
+	"..\Classes\Calculos.h"
+
+1370136517 source:c:\users\lucas\desktop\pi\classes\calculos.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Calculos.h"
+
+1370145567 c:\users\lucas\desktop\pi\classes\calculos.h
+	<math.h>
+	<time.h>
+
+1368911365 source:c:\users\teles\desktop\pi\classes\winsockclass.cpp
+	"WinSockClass.h"
+	<winsock2.h>
+	<iostream>
+
+1368913220 c:\users\teles\desktop\pi\classes\winsockclass.h
+	<winsock2.h>
+
+1370379889 source:c:\users\teles\desktop\pi\classes\calculos.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Calculos.h"
+
+1370365043 c:\users\teles\desktop\pi\classes\calculos.h
+	<math.h>
+	<time.h>
+
+1370379918 source:c:\users\teles\desktop\pi\canhao\main.cpp
+	<stdio.h>
+	<windows.h>
+	<math.h>
+	"..\Classes\WinSockClass.h"
+	"..\Classes\Calculos.h"
+
+1370379889 source:c:\users\lucas\desktop\5pi\classes\calculos.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Calculos.h"
+
+1370365043 c:\users\lucas\desktop\5pi\classes\calculos.h
+	<math.h>
+	<time.h>
+
+1368911365 source:c:\users\lucas\desktop\5pi\classes\winsockclass.cpp
+	"WinSockClass.h"
+	<winsock2.h>
+	<iostream>
+
+1368913220 c:\users\lucas\desktop\5pi\classes\winsockclass.h
+	<winsock2.h>
+
+1370827731 source:c:\users\lucas\desktop\5pi\canhao\main.cpp
+	<stdio.h>
+	<windows.h>
+	<math.h>
+	<time.h>
+	"..\Classes\WinSockClass.h"
+	"..\Classes\Calculos.h"
+

@@ -1,0 +1,60 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {	border: 0;	font-family: Arial, Helvetica, sans-serif;font-size: 100%; font-style: inherit; font-weight: inherit; margin: 0;	outline: 0;	padding: 0;	vertical-align: baseline;}
+
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+body{background:#fff;}
+
+#geral{width:960px;height:auto;min-height:600px;margin:0 auto;}
+#topo{width:100%;float:left;position:relative;height:190px;background:#eee}
+
+#logo{width:250px;height:154px;position:absolute;top:18px;left:10px;}
+#glove{width:200px;height:200px;position:absolute;top:0;left:100%;margin-left:-200px}
+
+#menu{list-style:none;float:left;position:relative;width:100%;height:40px;background:#000;text-align:center;}
+#menu li{display:inline-block;}
+#menu li a{color:#eee;font-size:18px;padding:10px 40px;display:inline-block;}
+#menu li a:hover{color:#ccc;text-decoration:none;}
+
+#conteudo{width:960px;height:auto;float:left;position:relative;}
+
+#coluna-01{width:640px;height:auto;float:left;position:relative;background:#ccc;padding:5px 0;min-height:800px;}
+#coluna-02{width:300px;height:auto;float:right;position:relative;padding:5px 10px;background:#666;min-height:800px;}
+
+#busca{width:300px;float:left;position:relative;background:#000;height:70px;margin-bottom:10px;}
+#busca form{width:280px;font-size:14px;float:left;position:relative;height:auto;padding:10px;letter-spacing:1px;}
+#busca form label{display:block;width:280px;float:left;position:relative;font-size:16px;padding:5px 0;color:#fff}
+#busca form input[type=text]{width:220px;float:left;position:relative;padding:0 0 0 5px;margin:0 5px 0 0;background:#ccc;border:none;font-size:13px;height:20px;} 
+#busca form input[type=submit]{width:50px;float:left;position:relative;font-size:12px;padding:3px 0;border:none;background:#deded8;color:#333;font-weight:bold;height:20px;}
+
+#frases{width:300px;float:left;position:relative;background:#000;margin-bottom:10px;height:auto;padding:15px 0 20px;min-height:620px;}
+#frases h1{color:#eee;width:100%;padding:10px 0 0;font-size:25px;text-align:center;letter-spacing:3px;float:left;position:relative;font-family:"Times New Roman";}
+#frases h2{color:#fff;width:100%;padding:0;font-size:12px;text-align:center;letter-spacing:3px;float:left;position:relative;}
+#frases ul{width:280px;padding:15px 10px;list-style:none;color:#fff;font-size:14px;letter-spacing:1px;float:left;position:relative;}
+#frases ul li{float:left;position:relative;width:270px;padding:15px 5px 20px;border-bottom:dotted 1px #ffc;}
+#frases ul li span{display:block;font-size:11px;padding:1px 0;text-align:right;font-style:italic;}
+#frases a{text-align:center;display:block;color:#eee;font-size:16px;letter-spacing:3px;height:auto;font-family:"Times New Roman";}
+
+#rodape{width:960px;background:#333;height:300px;float:left;position:relative;}
+
+#song{width:500px;height:auto;position:absolute;top:125px;left:50%;margin-left:-250px;}
+#song h1{color:#ccc;font-size:24px;text-align:center;padding:5px 0;letter-spacing:2px;font-family:"Times New Roman";}
+#song p{font-size:15px;line-height:18px;color:#fff;font-style:italic;text-align:center;padding:10px 0;letter-spacing:1px;}
+
+#desenvolvimento{display:block;width:125px;height:100px;float:right;margin:150px 30px 0 0;color:#fff;font-size:12px;text-align:center;letter-spacing:1px;}
+#desenvolvimento img{margin:10px 0;}	
+
+
+/* ----- Home ----- */
+
+#banner-home{float:left;position:relative;width:620px;height:340px;padding:20px 10px;background:#000;}
+#banner-home img{width:620px;height:320px;position:absolute;}
+
+#filmes-home{width:640px;padding:0 0;height:auto;float:left;position:relative;margin:10px 0 0;background:#000;min-height:400px;}
+#filmes-home h1{width:600px;float:left;position:relative;letter-spacing:4px;padding:15px 20px;font-size:30px;font-family:"Times New Roman";color:#fff;}
+#filmes-home ul{width:640px;padding:0 0 5px 0;list-style:none;float:left;position:relative;margin:10px 0;}
+#filmes-home ul li{width:180px;height:240px;padding:15px 10px;float:left;position:relative;background:#ccc;margin:0 6px;}
+#filmes-home ul li h2 > a{display:block;width:auto;height:auto;}
+#filmes-home ul li img{width:130px;height:200px;margin:0 25px;}
+#filmes-home ul li h2 a{width:180px;height:auto;text-align:center;color:#333;font-size:12px;letter-spacing:1px;font-weight:bold;padding:5px 0;}
+#filmes-home a.mais{float:right;text-align:right;width:600px;padding:0 20px;display:block;color:#fff;font-size:18px;letter-spacing:3px;font-family:"Times New Roman";}

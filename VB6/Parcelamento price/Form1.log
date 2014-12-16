@@ -1,0 +1,7 @@
+Line 45: Class AniGIF.AnimatedGIF of control AnimatedGIF1 was not a loaded control class.
+Line 51: The property name _ExtentX in AnimatedGIF1 is invalid.
+Line 52: The property name _ExtentY in AnimatedGIF1 is invalid.
+Line 54: The property name AutoStart in AnimatedGIF1 is invalid.
+Line 56: The property name FileName in AnimatedGIF1 is invalid.
+Line 57: The property name OctetsFile in AnimatedGIF1 is invalid.
+Line 58: The property name Transparent in AnimatedGIF1 is invalid.

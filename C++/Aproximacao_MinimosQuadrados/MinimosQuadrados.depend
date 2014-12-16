@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1371153355 source:c:\dropbox\testesc\minimosquadrados\main.cpp
+	<iostream>
+	<math.h>
+	<stdio.h>
+

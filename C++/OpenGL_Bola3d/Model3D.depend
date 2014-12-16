@@ -1,0 +1,348 @@
+# depslib dependency file v1.0
+1386354471 source:c:\dropbox\testesc\model3d\main.cpp
+	<windows.h>
+	"Funcs.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<GL/glut.h>
+	"imageloader.h"
+
+1385829359 er.h"
+
+1301114762 c:\codeblocks\mingw\include\windows.h
+	<winresrc.h>
+	<stdarg.h>
+	<windef.h>
+	<wincon.h>
+	<winbase.h>
+	<wingdi.h>
+	<winuser.h>
+	<winnls.h>
+	<winver.h>
+	<winnetwk.h>
+	<winreg.h>
+	<winsvc.h>
+	<cderr.h>
+	<dde.h>
+	<ddeml.h>
+	<dlgs.h>
+	<imm.h>
+	<lzexpand.h>
+	<mmsystem.h>
+	<nb30.h>
+	<rpc.h>
+	<shellapi.h>
+	<winperf.h>
+	<commdlg.h>
+	<winspool.h>
+	<winsock2.h>
+	<winsock.h>
+	<ole2.h>
+
+1341013974 
+
+1301114762 c:\codeblocks\mingw\include\winresrc.h
+	<winuser.h>
+	<winnt.h>
+	<winver.h>
+	<dde.h>
+	<dlgs.h>
+	<commctrl.h>
+
+1301114756 h>
+
+1301114764 c:\codeblocks\mingw\include\winuser.h
+
+1301114762 c:\codeblocks\mingw\include\winnt.h
+	<winerror.h>
+	<string.h>
+	<basetsd.h>
+	<pshpack4.h>
+	<poppack.h>
+
+1385837981 >
+
+1301114762 c:\codeblocks\mingw\include\winerror.h
+
+1341013976 c:\codeblocks\mingw\include\string.h
+	<_mingw.h>
+	<stddef.h>
+
+1341013970 c:\codeblocks\mingw\include\_mingw.h
+
+1301114748 c:\codeblocks\mingw\include\basetsd.h
+
+1301114756 c:\codeblocks\mingw\include\pshpack4.h
+
+1301114756 c:\codeblocks\mingw\include\poppack.h
+
+1301114764 c:\codeblocks\mingw\include\winver.h
+
+1301114748 c:\codeblocks\mingw\include\dde.h
+
+1301114750 c:\codeblocks\mingw\include\dlgs.h
+
+1301114748 c:\codeblocks\mingw\include\commctrl.h
+	<prsht.h>
+
+1301114756 c:\codeblocks\mingw\include\prsht.h
+
+1301114762 c:\codeblocks\mingw\include\windef.h
+	<winnt.h>
+
+1301114762 c:\codeblocks\mingw\include\wincon.h
+
+1301114760 c:\codeblocks\mingw\include\winbase.h
+
+1301114762 c:\codeblocks\mingw\include\wingdi.h
+
+1301114762 c:\codeblocks\mingw\include\winnls.h
+
+1301114762 c:\codeblocks\mingw\include\winnetwk.h
+
+1301114762 c:\codeblocks\mingw\include\winreg.h
+
+1301114764 c:\codeblocks\mingw\include\winsvc.h
+
+1301114748 c:\codeblocks\mingw\include\cderr.h
+
+1301114748 c:\codeblocks\mingw\include\ddeml.h
+
+1301114750 c:\codeblocks\mingw\include\imm.h
+
+1301114754 c:\codeblocks\mingw\include\lzexpand.h
+
+1301114754 c:\codeblocks\mingw\include\mmsystem.h
+
+1301114754 c:\codeblocks\mingw\include\nb30.h
+
+1301114758 c:\codeblocks\mingw\include\rpc.h
+	<windows.h>
+	<rpcdce.h>
+	<rpcnsi.h>
+	<rpcnterr.h>
+	<winerror.h>
+	<excpt.h>
+
+1301114758 c:\codeblocks\mingw\include\rpcdce.h
+	<basetyps.h>
+	<rpcdcep.h>
+
+1301114748 c:\codeblocks\mingw\include\basetyps.h
+
+1301114758 c:\codeblocks\mingw\include\rpcdcep.h
+
+1301114758 c:\codeblocks\mingw\include\rpcnsi.h
+
+1301114758 c:\codeblocks\mingw\include\rpcnterr.h
+
+1341013972 c:\codeblocks\mingw\include\excpt.h
+	<_mingw.h>
+	<windef.h>
+
+1301114760 c:\codeblocks\mingw\include\shellapi.h
+	<pshpack2.h>
+	<poppack.h>
+
+1301114756 c:\codeblocks\mingw\include\pshpack2.h
+
+1301114762 c:\codeblocks\mingw\include\winperf.h
+
+1301114748 c:\codeblocks\mingw\include\commdlg.h
+	<unknwn.h>
+	<prsht.h>
+
+1301114760 c:\codeblocks\mingw\include\unknwn.h
+	<windows.h>
+	<objfwd.h>
+	<wtypes.h>
+
+1301114756 c:\codeblocks\mingw\include\objfwd.h
+	<basetyps.h>
+
+1301114764 c:\codeblocks\mingw\include\wtypes.h
+	<rpc.h>
+	<rpcndr.h>
+
+1301114758 c:\codeblocks\mingw\include\rpcndr.h
+	<rpcnsip.h>
+	<objfwd.h>
+
+1301114758 c:\codeblocks\mingw\include\rpcnsip.h
+
+1301114762 c:\codeblocks\mingw\include\winspool.h
+
+1301114762 c:\codeblocks\mingw\include\winsock2.h
+	<windows.h>
+
+1301114762 c:\codeblocks\mingw\include\winsock.h
+	<windows.h>
+	<mswsock.h>
+
+1301114754 c:\codeblocks\mingw\include\mswsock.h
+
+1301114756 c:\codeblocks\mingw\include\ole2.h
+	<winerror.h>
+	<objbase.h>
+	<olectlid.h>
+	<oleauto.h>
+	<oleidl.h>
+
+1301114754 c:\codeblocks\mingw\include\objbase.h
+	<rpc.h>
+	<rpcndr.h>
+	<stdlib.h>
+	<basetyps.h>
+	<wtypes.h>
+	<unknwn.h>
+	<objidl.h>
+	<cguid.h>
+
+1341013976 c:\codeblocks\mingw\include\stdlib.h
+	<_mingw.h>
+	<stddef.h>
+
+1301114756 c:\codeblocks\mingw\include\objidl.h
+	<objfwd.h>
+
+1301114748 c:\codeblocks\mingw\include\cguid.h
+
+1301114756 c:\codeblocks\mingw\include\olectlid.h
+
+1301114756 c:\codeblocks\mingw\include\oleauto.h
+	<oaidl.h>
+
+1301114754 c:\codeblocks\mingw\include\oaidl.h
+	<windows.h>
+	<ole2.h>
+
+1301114756 c:\codeblocks\mingw\include\oleidl.h
+	<objfwd.h>
+
+1341013976 c:\codeblocks\mingw\include\stdio.h
+	<_mingw.h>
+	<stddef.h>
+	<stdarg.h>
+	<sys/types.h>
+
+1341013976 .h>
+
+1341013980 c:\codeblocks\mingw\include\sys\types.h
+	<_mingw.h>
+	<stddef.h>
+
+976692172 c:\codeblocks\mingw\include\gl\glut.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1301114764 c:\codeblocks\mingw\include\gl\gl.h
+
+1301114764 c:\codeblocks\mingw\include\gl\glu.h
+	<stddef.h>
+	<GL/gl.h>
+
+1386133674 source:d:\armazem\internet\dropbox\testesc\model3d\main.cpp
+	<windows.h>
+	"Funcs.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<GL/glut.h>
+
+1384456871 source:c:\users\rmendonca\downloads\model3d\main.cpp
+	<windows.h>
+	<GL/glut.h>
+	<stdio.h>
+	<stdlib.h>
+
+1384474695 source:c:\users\rodrigo.mpaixao\downloads\model3d\main.cpp
+	<windows.h>
+	<GL/glut.h>
+	<stdio.h>
+	<stdlib.h>
+	"imageloader.h"
+
+1219431990 c:\users\rodrigo.mpaixao\downloads\model3d\imageloader.h
+
+1219431990 source:c:\users\rodrigo.mpaixao\downloads\model3d\imageloader.cpp
+	<assert.h>
+	<fstream>
+	"imageloader.h"
+
+1219431990 source:c:\dropbox\testesc\model3d\imageloader.cpp
+	<assert.h>
+	<fstream>
+	"imageloader.h"
+
+1341013970 c:\codeblocks\mingw\include\assert.h
+	<_mingw.h>
+
+1219431990 c:\dropbox\testesc\model3d\imageloader.h
+
+1219431990 source:d:\armazem\internet\dropbox\testesc\model3d\imageloader.cpp
+	<assert.h>
+	<fstream>
+	"imageloader.h"
+
+1219431990 d:\armazem\internet\dropbox\testesc\model3d\imageloader.h
+
+1219428390 source:/home/rodrigo/Dropbox/TestesC/Model3D/imageloader.cpp
+	<assert.h>
+	<fstream>
+	"imageloader.h"
+
+1219428390 /home/rodrigo/Dropbox/TestesC/Model3D/imageloader.h
+
+1385850223 source:/home/rodrigo/Dropbox/TestesC/Model3D/main.cpp
+	<windows.h>
+	<GL/glut.h>
+	<stdio.h>
+	<stdlib.h>
+	"imageloader.h"
+	<windows.h>
+	"Funcs.h"
+	<stdio.h>
+	<math.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1385827768 source:d:\armazem\internet\dropbox\testesc\model3d\funcs.cpp
+	"Funcs.h"
+
+1386132696 d:\armazem\internet\dropbox\testesc\model3d\funcs.h
+	<stdio.h>
+	<stdlib.h>
+
+1385837242 source:d:\armazem\internet\dropbox\testesc\model3d\glfuncs.cpp
+	"GLFuncs.h"
+
+1385837242 "
+
+1385837250 d:\armazem\internet\dropbox\testesc\model3d\glfuncs.h
+
+1385837077 source:d:\armazem\internet\dropbox\testesc\model3d\event.cpp
+
+1385836960 d:\armazem\internet\dropbox\testesc\model3d\event.h
+
+1341013974 c:\codeblocks\mingw\include\math.h
+	<_mingw.h>
+
+1385827768 source:/home/rodrigo/Dropbox/TestesC/Model3D/Funcs.cpp
+	"Funcs.h"
+
+1385838192 /home/rodrigo/Dropbox/TestesC/Model3D/Funcs.h
+	<stdio.h>
+	<stdlib.h>
+
+1386338735 source:c:\dropbox\testesc\model3d\funcs.cpp
+	"Funcs.h"
+
+1386337055 c:\dropbox\testesc\model3d\funcs.h
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+	<GL/glut.h>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1368051236 source:e:\fontes 2\newton_quotes\main.cpp
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+

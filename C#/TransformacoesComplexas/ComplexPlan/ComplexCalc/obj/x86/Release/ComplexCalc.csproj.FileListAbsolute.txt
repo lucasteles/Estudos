@@ -1,0 +1,69 @@
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexPlan\ComplexCalc\bin\Release\ComplexCalc.exe
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexPlan\ComplexCalc\bin\Release\ComplexCalc.pdb
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexPlan\ComplexCalc\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.Form1.resources
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.Properties.Resources.resources
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexPlan\ComplexCalc\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexPlan\ComplexCalc\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.exe
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.pdb
+D:\LIXO\ComplexPlan\ComplexPlan\ComplexCalc\bin\Release\ComplexCalc.exe
+D:\LIXO\ComplexPlan\ComplexPlan\ComplexCalc\bin\Release\ComplexCalc.pdb
+D:\LIXO\ComplexPlan\ComplexPlan\ComplexCalc\obj\x86\Release\ResolveAssemblyReference.cache
+D:\LIXO\ComplexPlan\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.Form1.resources
+D:\LIXO\ComplexPlan\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.Properties.Resources.resources
+D:\LIXO\ComplexPlan\ComplexPlan\ComplexCalc\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+D:\LIXO\ComplexPlan\ComplexPlan\ComplexCalc\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+D:\LIXO\ComplexPlan\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.exe
+D:\LIXO\ComplexPlan\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.pdb
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexCalc\bin\Release\ComplexCalc.exe
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexCalc\bin\Release\ComplexCalc.pdb
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexCalc\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.Form1.resources
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.OtherCalc.resources
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.Properties.Resources.resources
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexCalc\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexCalc\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.exe
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.pdb
+C:\Users\rodrigo.paixao.SENACEDU\Desktop\ComplexPlan\ComplexCalc\bin\Release\ComplexCalc.exe
+C:\Users\rodrigo.paixao.SENACEDU\Desktop\ComplexPlan\ComplexCalc\bin\Release\ComplexCalc.pdb
+C:\Users\rodrigo.paixao.SENACEDU\Desktop\ComplexPlan\ComplexCalc\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\rodrigo.paixao.SENACEDU\Desktop\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.Form1.resources
+C:\Users\rodrigo.paixao.SENACEDU\Desktop\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.OtherCalc.resources
+C:\Users\rodrigo.paixao.SENACEDU\Desktop\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.Properties.Resources.resources
+C:\Users\rodrigo.paixao.SENACEDU\Desktop\ComplexPlan\ComplexCalc\obj\x86\Release\ResGen.read.1.tlog
+C:\Users\rodrigo.paixao.SENACEDU\Desktop\ComplexPlan\ComplexCalc\obj\x86\Release\ResGen.write.1.tlog
+C:\Users\rodrigo.paixao.SENACEDU\Desktop\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.exe
+C:\Users\rodrigo.paixao.SENACEDU\Desktop\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.pdb
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexCalc\obj\x86\Release\ResGen.read.1.tlog
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexCalc\obj\x86\Release\ResGen.write.1.tlog
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\ComplexPlan\ComplexCalc\bin\Release\ComplexCalc.exe
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\ComplexPlan\ComplexCalc\bin\Release\ComplexCalc.pdb
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\ComplexPlan\ComplexCalc\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.Form1.resources
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.OtherCalc.resources
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.Properties.Resources.resources
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\ComplexPlan\ComplexCalc\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\ComplexPlan\ComplexCalc\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.exe
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.pdb
+C:\TestesCS\ComplexPlan\ComplexCalc\bin\Release\ComplexCalc.exe
+C:\TestesCS\ComplexPlan\ComplexCalc\bin\Release\ComplexCalc.pdb
+C:\TestesCS\ComplexPlan\ComplexCalc\obj\x86\Release\ResolveAssemblyReference.cache
+C:\TestesCS\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.Form1.resources
+C:\TestesCS\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.OtherCalc.resources
+C:\TestesCS\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.Properties.Resources.resources
+C:\TestesCS\ComplexPlan\ComplexCalc\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+C:\TestesCS\ComplexPlan\ComplexCalc\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+C:\TestesCS\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.exe
+C:\TestesCS\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.pdb
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexPlan\ComplexCalc\bin\Release\ComplexCalc.exe
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexPlan\ComplexCalc\bin\Release\ComplexCalc.pdb
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.csprojResolveAssemblyReference.cache
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.Form1.resources
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.OtherCalc.resources
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.Properties.Resources.resources
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.csproj.GenerateResource.Cache
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.exe
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexPlan\ComplexCalc\obj\x86\Release\ComplexCalc.pdb

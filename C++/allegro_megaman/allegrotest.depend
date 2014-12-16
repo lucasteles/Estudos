@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1383829195 source:c:\users\lagostinho\documents\c\allegrotest\main.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_native_dialog.h>
+

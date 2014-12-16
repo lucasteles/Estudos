@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1371483450 source:c:\users\lucas\desktop\pi__montecarlo\pthread\pi_pthread\main.cpp
+	<stdio.h>
+	<pthread.h>
+	<stdlib.h>
+	<math.h>
+

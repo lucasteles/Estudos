@@ -1,0 +1,54 @@
+
+ Body {
+	background: rgb(50,50,50) ;
+	color: white
+ }
+ 
+ h1 {
+	color: rgb(255,255,255);
+	background-color: rgb(200,0,0);
+	background-image: url("B2.JPG");
+	border-width: thick;
+	border-style: outset;
+	border-color: rgb(0,0,50);
+	margin-top:40px;
+	
+}
+
+
+
+a:link {
+	color: rgb(210,210,210);
+}
+a:visited {
+	color: rgb(230,230,230);
+}
+
+table {
+	background-color: rgb(50,50,50);
+	border-bottom-style:0
+}
+	
+
+
+
+/*
+url("BACK.PNG") repeat
+
+
+a:visited {
+	color: rgb(150,100,255);
+}
+
+a:active {
+	background-color: blue;
+}
+
+
+a:hover {
+	color: orange;
+	font-style: italic;
+	Letter-spacing:1px;
+	font-weight:bold;
+}
+*/

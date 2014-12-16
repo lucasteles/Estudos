@@ -1,0 +1,187 @@
+[Root]
+Most Recent Package=lucas
+
+
+[Package|lucas|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Documents and Settings\Lukas\Desktop\Software\Package
+
+[Package|lucas|Configure DAO ISAMs]
+Applicable=No
+
+[Package|lucas|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|lucas|Files Found]
+
+[Package|lucas|Files Released]
+WinMediaPlayer11.skn=
+FineVector.skn=
+43.skn=
+TCC.bas=
+
+[Package|lucas|Missing Dependency Information]
+C:\Documents and Settings\Lukas\Desktop\Skins Coleção V\Dependências Dll e Ocx\vbalIml6.ocx=
+C:\Arquivos de programas\Microsoft Office\Office\MSWORD9.OLB=
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado21.tlb=
+C:\Documents and Settings\Lukas\Desktop\Skins Coleção V\Dependências Dll e Ocx\actskin4.ocx=
+E:\Backup\Pasta do Curso (infob27)\coisas\Projeto_AP\Componentes\MSMASK32.OCX=
+E:\Backup\Pasta do Curso (infob27)\coisas\Projeto_AP\Componentes\COMDLG32.OCX=
+E:\Backup\Pasta do Curso (infob27)\TCC\Luxu's System(Instalador)\Support\vbalIml6.ocx=
+C:\Arquivos de programas\Microsoft Office\OFFICE11\MSWORD.OLB=
+E:\Backup\Pasta do Curso (infob27)\TCC\Luxu's System(Instalador)\Support\actskin4.ocx=
+
+[Package|lucas|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\RICHTX32.OCX=
+C:\WINDOWS\system32\MSCOMCTL.OCX=
+C:\WINDOWS\system32\comdlg32.ocx=
+C:\WINDOWS\system32\MSFLXGRD.OCX=
+C:\WINDOWS\system32\scrrun.dll=
+C:\WINDOWS\system32\mschrt20.ocx=
+C:\WINDOWS\system32\mscomct2.ocx=
+
+[Package|lucas|Files Added]
+tcc.bas=
+43.skn=
+finevector.skn=
+winmediaplayer11.skn=
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\1.doc=
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\2.doc=
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\3.doc=
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\43.skn=
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\logo.jpeg=
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\TCC.mdb=
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\FineVector.skn=
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\WinMediaPlayer11.skn=
+
+[Package|lucas|Files Removed]
+
+[Package|lucas|Files In Project]
+C:\WINDOWS\system32\MSVBVM60.DLL=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado21.tlb=Yes
+C:\WINDOWS\system32\scrrun.dll=Yes
+C:\WINDOWS\system32\msvcrt.dll=Yes
+C:\WINDOWS\system32\MSFLXGRD.OCX=Yes
+C:\WINDOWS\system32\MSCOMCT2.OCX=Yes
+C:\WINDOWS\system32\MSCHRT20.OCX=Yes
+C:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+C:\WINDOWS\system32\RICHTX32.OCX=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\Luxus System.exe=Yes
+E:\Backup\Pasta do Curso (infob27)\TCC\Luxu's System(Instalador)\Support\actskin4.ocx=Yes
+C:\Arquivos de programas\Microsoft Office\OFFICE11\MSWORD.OLB=Yes
+E:\Backup\Pasta do Curso (infob27)\TCC\Luxu's System(Instalador)\Support\vbalIml6.ocx=Yes
+E:\Backup\Pasta do Curso (infob27)\coisas\Projeto_AP\Componentes\COMDLG32.OCX=Yes
+E:\Backup\Pasta do Curso (infob27)\coisas\Projeto_AP\Componentes\MSMASK32.OCX=Yes
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\1.doc=Yes
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\2.doc=Yes
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\3.doc=Yes
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\43.skn=Yes
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\logo.jpeg=Yes
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\TCC.mdb=Yes
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\FineVector.skn=Yes
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\WinMediaPlayer11.skn=Yes
+
+[Package|lucas|Configure Registry Files]
+Applicable=No
+
+[Package|lucas|Configure Remote Servers]
+Applicable=No
+
+[Package|lucas|Install Locations]
+C:\Documents and Settings\Lukas\Desktop\hoje\LUxus System.exe=$(AppPath)
+C:\WINDOWS\system32\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Documents and Settings\Lukas\Desktop\Skins Coleção V\Dependências Dll e Ocx\actskin4.ocx=$(WinSysPath)
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado21.tlb=$(WinSysPath)
+C:\WINDOWS\system32\scrrun.dll=$(WinSysPath)
+C:\WINDOWS\system32\msvcrt.dll=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Office\Office\MSWORD9.OLB=$(WinSysPath)
+C:\Documents and Settings\Lukas\Desktop\Skins Coleção V\Dependências Dll e Ocx\vbalIml6.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MSFLXGRD.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSCHRT20.OCX=$(WinSysPath)
+C:\WINDOWS\system32\comdlg32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSMASK32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\RICHTX32.OCX=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Documents and Settings\Lukas\Desktop\Software\TCC.bas=$(AppPath)
+C:\Documents and Settings\Lukas\Desktop\Software\Skins\43.skn=$(AppPath)
+C:\Documents and Settings\Lukas\Desktop\Software\Skins\FineVector.skn=$(AppPath)
+C:\Documents and Settings\Lukas\Desktop\Software\Skins\WinMediaPlayer11.skn=$(AppPath)
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\Luxus System.exe=$(AppPath)
+E:\Backup\Pasta do Curso (infob27)\TCC\Luxu's System(Instalador)\Support\actskin4.ocx=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Office\OFFICE11\MSWORD.OLB=$(WinSysPath)
+E:\Backup\Pasta do Curso (infob27)\TCC\Luxu's System(Instalador)\Support\vbalIml6.ocx=$(WinSysPath)
+E:\Backup\Pasta do Curso (infob27)\coisas\Projeto_AP\Componentes\COMDLG32.OCX=$(WinSysPath)
+E:\Backup\Pasta do Curso (infob27)\coisas\Projeto_AP\Componentes\MSMASK32.OCX=$(WinSysPath)
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\1.doc=$(AppPath)
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\2.doc=$(AppPath)
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\3.doc=$(AppPath)
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\43.skn=$(AppPath)
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\logo.jpeg=$(AppPath)
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\TCC.mdb=$(AppPath)
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\FineVector.skn=$(AppPath)
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\WinMediaPlayer11.skn=$(AppPath)
+
+[Package|lucas|Configure Shared Files]
+Applicable=Yes
+C:\Documents and Settings\Lukas\Desktop\hoje\LUxus System.exe=Yes
+C:\Documents and Settings\Lukas\Desktop\Software\TCC.bas=Yes
+C:\Documents and Settings\Lukas\Desktop\Software\Skins\43.skn=Yes
+C:\Documents and Settings\Lukas\Desktop\Software\Skins\FineVector.skn=Yes
+C:\Documents and Settings\Lukas\Desktop\Software\Skins\WinMediaPlayer11.skn=Yes
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\Luxus System.exe=Yes
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\1.doc=Yes
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\2.doc=Yes
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\3.doc=Yes
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\43.skn=Yes
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\logo.jpeg=Yes
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\TCC.mdb=Yes
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\FineVector.skn=Yes
+E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado\WinMediaPlayer11.skn=Yes
+
+[Package|lucas|Distribution]
+Type=single
+Size=
+Title=Luxus Systen
+
+[Package|lucas|IconGroups]
+Group0=Luxus Systen
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|lucas|Luxus Systen]
+Icon1="LUxus System.exe"
+Title1=Luxus Systen
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|lucas|Package]
+PackageFolder=C:\Documents and Settings\Lukas\Desktop\Software\Package
+ProjectFolder=E:\Backup\Pasta do Curso (infob27)\TCC\Programação e Estatistica\Software Atualizado
+ServerSideCab=
+File1=C:\Documents and Settings\Lukas\Desktop\Software\Package\setup.exe
+File2=C:\Documents and Settings\Lukas\Desktop\Software\Package\Setup.Lst
+File3=C:\Documents and Settings\Lukas\Desktop\Software\Package\Luxus System.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

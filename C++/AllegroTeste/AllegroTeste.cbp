@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="AllegroTeste" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="Menu\;Lib\;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\AllegroTeste" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="D:\MinGW\lib\liballegro-5.0.10-monolith-mt.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\AllegroTeste" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Animacao.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Events.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="Lib\" />
+		</Unit>
+		<Unit filename="Events.h" />
+		<Unit filename="GameLib.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="Lib\" />
+		</Unit>
+		<Unit filename="GameLib.h" />
+		<Unit filename="InOut.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="InputText.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Opcoes.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="Menu\" />
+		</Unit>
+		<Unit filename="Principal.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="Menu\" />
+		</Unit>
+		<Unit filename="Principal.h" />
+		<Unit filename="Sound.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Sounds.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="Lib\" />
+		</Unit>
+		<Unit filename="Sounds.h" />
+		<Unit filename="Texture.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

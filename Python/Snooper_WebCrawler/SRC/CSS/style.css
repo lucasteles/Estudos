@@ -1,0 +1,201 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {border:0;font-family: Arial, Helvetica, sans-serif;font-size:100%;font-style:inherit;font-weight:inherit;margin:0;outline:0;	padding:0;vertical-align:baseline;}
+
+#seletor::-moz-focus-inner {
+   border: 0px;
+   padding: 0px;
+}
+
+body{
+	display: block;
+	margin: 0px;
+	overflow: scroll;
+	color: #333;
+	font-family: Courier;
+	font-size: 11px; 
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+}
+
+
+/******************************CLASS************************************/
+
+
+/******************************ID************************************/
+#meme{
+	width: 350px; 
+	height: 281px; 
+	margin-left: 200px;
+	padding: 10px;
+}
+
+/******************************FOTOS************************************/
+
+
+
+#teles{
+	-webkit-animation: flipInX 2s;
+	-moz-animation: flipInX 2s;/*animações para o firefox (new)*/
+}
+
+#jacques{
+	-webkit-animation: flipInX 2s;
+	-moz-animation: flipInX 2s;/*animações para o firefox (new)*/
+}
+
+#james{
+	-webkit-animation: flipInX 2s;
+	-moz-animation: flipInX 2s;/*animações para o firefox (new)*/
+}
+
+#leo{
+	-webkit-animation: flipInX 2s;
+	-moz-animation: flipInX 2s;/*animações para o firefox (new)*/
+}
+
+#div_About{
+	margin-top: 20px;
+	font-size: 20px;
+	-webkit-animation: fadeInUp 2s;
+	-moz-animation: fadeInUp 2s;/*animações para o firefox (new)*/
+}
+
+#subhead_about {
+	height: 40px;
+	font-family: sans-serif; 
+	padding: 40px;
+	color: #0088cc;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0), 0 0 30px rgba(0, 0, 0, .075);
+	background: #E6E6E6;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #9C9C9C;
+}
+
+#subhead_group {
+	height: 40px;
+	font-family: sans-serif; 
+	padding: 40px;
+	color: #0088cc;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0), 0 0 30px rgba(0, 0, 0, .075);
+	background: #E6E6E6;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #9C9C9C;
+}
+
+#thumbnailsGrupo{
+	margin-top: 30px;
+}
+
+#snoopLogo{ 
+	position: relative;
+	margin-left: 10%; /*novas medidas para fazer o margin(new)*/
+	margin-top: 10%; /*novas medidas para fazer o margin(new)*/
+	-webkit-animation: flipInX 2s;
+	-moz-animation: flipInX 2s;/*animações para o firefox (new)*/
+}
+
+#searchField{
+	position: relative;
+	margin-left: 15%; /*novas medidas para fazer o margin(new)*/
+	margin-top: 0%; /*novas medidas para fazer o margin(new)*/
+}
+
+label#register{
+	margin-top: 38%;
+	text-align: center;
+}
+
+label#registerModal{
+	margin-top: 10px;
+	text-align: center;
+}
+
+label#textContact{
+	padding: 20px;
+	margin-left: 20px;
+}
+
+#textAreaContact{
+	margin-left: 20px;
+	height: 200px;
+	width: 600px;
+	max-width: 500px;
+	max-height: 200px;
+}
+
+#btnSend{
+	margin-left: 180px;
+
+}
+
+#teste ul li a:active, #teste ul li a:hover, #teste ul li a:focus{
+  display:block;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #0088cc;
+}
+
+#firstPart{
+	height: 50%;
+	width: 100%;
+	border: 2px solid black;
+}
+
+.container{
+	width: 960px;
+	height: 600px;
+	
+	
+	height: auto; 
+	z-index:2;
+}
+
+label.radio{
+	margin-left: 15%;
+}
+
+.formulario{
+	margin-top: 20px;
+	margin-left: 25%;
+}
+
+#Loader{
+    display:none;
+    position: absolute;
+   
+}
+#More{
+    display:none;
+    position: absolute;
+	
+}
+	.thumbnails div a
+{
+	display: block;
+	float: left;
+	position: relative;
+	margin: 4px;
+}
+
+.thumbnails div
+{
+	float: left;
+	position: relative;
+}
+.thumbnails div a:hover img{ border: solid 1px #aaa }
+.gridimg
+{ 
+	
+	width: 200px;
+	height: auto;
+}
+
+.thumbnails table img
+{
+	border: solid 1px Black; 
+	width: 150px;
+	height: auto;
+}
+

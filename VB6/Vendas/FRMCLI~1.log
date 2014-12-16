@@ -1,0 +1,10 @@
+Line 21: Class MSDataGridLib.DataGrid of control DataGrid1 was not a loaded control class.
+Line 102: Class MSDataListLib.DataCombo of control DataCombo1 was not a loaded control class.
+Line 115: Class MSDataListLib.DataList of control DataList1 was not a loaded control class.
+Line 127: Class MSAdodcLib.Adodc of control Adodc1 was not a loaded control class.
+Line 357: Class MSMask.MaskEdBox of control mskDtnasc was not a loaded control class.
+Line 370: Class MSMask.MaskEdBox of control mskRg was not a loaded control class.
+Line 390: Class MSMask.MaskEdBox of control mskCep was not a loaded control class.
+Line 417: Class MSMask.MaskEdBox of control mskCel was not a loaded control class.
+Line 437: Class MSMask.MaskEdBox of control mskCod was not a loaded control class.
+Line 450: Class MSMask.MaskEdBox of control mskCpf was not a loaded control class.

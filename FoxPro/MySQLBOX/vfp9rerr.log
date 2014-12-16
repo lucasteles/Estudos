@@ -1,0 +1,958 @@
+
+
+Fatal error: Exception code=C0000006 @ 08/10/2007 11:32:20. Error log file: C:\Arquivos de programas\Arquivos comuns\Microsoft Shared\VFP\vfp9rerr.log
+	Called from -  menuraiz line 0  { g:\sistemas\volpe\system\volpe.exe}
+
+
+Fatal error: Exception code=C0000005 @ 14/09/2009 18:52:07. Error log file: C:\Arquivos de programas\Arquivos comuns\Microsoft Shared\VFP\vfp9rerr.log
+	Called from -  pesquisasql line 0  { c:\sistemas\waw\campeona\volpewaw.exe}
+	Called from -  scriptusuario line 27  {g:\testesvf\volpe\padrao\objetos\sys_funcoes.prg c:\docume~1\thiago~2.pas\config~1\temp\pwi\_2qw14fmcd.fxp}
+	Called from -  autoexec line 6  {g:\testesvf\volpe\padrao\objetos\sys_funcoes.prg c:\docume~1\thiago~2.pas\config~1\temp\pwi\_2qw14fmcd.fxp}
+	Called from -  menuraiz line 0  { c:\sistemas\waw\campeona\volpewaw.exe}
+
+
+Fatal error: Exception code=C0000005 @ 14/09/2009 18:54:04. Error log file: C:\Arquivos de programas\Arquivos comuns\Microsoft Shared\VFP\vfp9rerr.log
+	Called from -  pesquisasql line 0  { c:\sistemas\waw\campeona\volpewaw.exe}
+	Called from -  scriptusuario line 27  {g:\testesvf\volpe\padrao\objetos\sys_funcoes.prg c:\docume~1\thiago~2.pas\config~1\temp\pwi\_2qw14i8zh.fxp}
+	Called from -  autoexec line 6  {g:\testesvf\volpe\padrao\objetos\sys_funcoes.prg c:\docume~1\thiago~2.pas\config~1\temp\pwi\_2qw14i8zh.fxp}
+	Called from -  menuraiz line 0  { c:\sistemas\waw\campeona\volpewaw.exe}
+
+
+Fatal error: Exception code=C0000005 @ 15/09/2009 18:08:56. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 17/09/2009 09:43:34. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\TESTESVF\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 18/09/2009 09:46:56. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 18/09/2009 16:05:39. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  menuraiz line 48  {G:\TESTESVF\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 21/09/2009 15:28:25. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 21/09/2009 20:26:39. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 22/09/2009 17:45:08. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 23/09/2009 09:36:27. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 23/09/2009 09:38:38. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 24/09/2009 17:54:23. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 28/09/2009 12:06:49. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 29/09/2009 10:52:09. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 01/10/2009 14:35:20. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 01/10/2009 15:51:40. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 02/10/2009 11:47:10. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 05/10/2009 17:26:00. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 06/10/2009 11:56:54. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 06/10/2009 16:26:19. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 07/10/2009 15:49:02. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 09/10/2009 09:46:30. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 09/10/2009 18:26:28. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  menuraiz line 48  {G:\TESTESVF\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 13/10/2009 10:09:33. Error log file: G:\testesvf\sqlbox\VFP9Rerr.log
+	Called from -  menuraiz line 48  {G:\testesvf\sqlbox\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 13/10/2009 11:00:03. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 14/10/2009 12:02:04. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 16/10/2009 11:21:00. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 16/10/2009 15:16:52. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 19/10/2009 18:51:15. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 20/10/2009 09:05:29. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 20/10/2009 13:20:30. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 20/10/2009 15:02:19. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 21/10/2009 11:02:20. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 21/10/2009 11:12:57. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 22/10/2009 10:48:36. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 22/10/2009 12:38:35. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 22/10/2009 14:48:55. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  menuraiz line 48  {G:\TESTESVF\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 23/10/2009 11:26:50. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdexecscript.click line 163  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 23/10/2009 16:21:04. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdexecscript.click line 163  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 26/10/2009 11:43:18. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 26/10/2009 11:48:06. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 26/10/2009 18:52:22. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 26/10/2009 19:55:15. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 27/10/2009 11:33:39. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 27/10/2009 13:05:22. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 27/10/2009 19:35:33. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 28/10/2009 14:40:27. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 28/10/2009 18:21:21. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 29/10/2009 13:20:44. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 30/10/2009 10:35:50. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 30/10/2009 17:25:58. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 02/11/2009 09:54:56. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 02/11/2009 15:31:19. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 02/11/2009 16:39:48. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 03/11/2009 11:43:24. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 06/11/2009 09:08:39. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\TESTESVF\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 06/11/2009 11:06:40. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 07/11/2009 11:11:38. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 11/11/2009 17:36:34. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 12/11/2009 15:36:55. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 12/11/2009 15:38:05. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 12/11/2009 16:04:21. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 12/11/2009 16:06:11. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 13/11/2009 16:12:05. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 16/11/2009 18:26:15. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 17/11/2009 10:13:14. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 21/11/2009 11:43:31. Error log file: G:\testesvf\sqlbox\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\sqlbox\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 23/11/2009 14:36:52. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 23/11/2009 14:44:27. Error log file: G:\testesvf\sqlbox\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\sqlbox\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 23/11/2009 14:52:34. Error log file: G:\testesvf\sqlbox\VFP9Rerr.log
+	Called from -  menuraiz line 48  {G:\testesvf\sqlbox\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 27/11/2009 13:22:15. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 30/11/2009 12:06:31. Error log file: G:\testesvf\sqlbox\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\sqlbox\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 01/12/2009 10:23:18. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\TESTESVF\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 01/12/2009 17:20:51. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 02/12/2009 15:55:06. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 02/12/2009 16:30:20. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 03/12/2009 16:22:28. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 04/12/2009 10:29:07. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 04/12/2009 17:21:46. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 07/12/2009 15:01:12. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\TESTESVF\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 08/12/2009 14:02:53. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 131  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 08/12/2009 15:17:45. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 08/12/2009 18:17:36. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox_new.exe}
+
+
+Fatal error: Exception code=C0000005 @ 16/12/2009 18:19:11. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 28/12/2009 13:57:56. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 28/12/2009 14:36:41. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 29/12/2009 16:28:57. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 30/12/2009 10:06:57. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 30/12/2009 11:56:25. Error log file: \\server01\Files\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {\\server01\files\testesvf\sqlbox\principal.sct \\server01\files\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {\\server01\files\testesvf\sqlbox\principal.sct \\server01\files\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {\\server01\Files\testesvf\SQLBOX\menuraiz.prg \\server01\files\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 30/12/2009 13:32:26. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 35  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 30/12/2009 16:47:40. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 04/01/2010 13:48:07. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 04/01/2010 17:12:14. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 06/01/2010 14:52:15. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 08/01/2010 10:44:08. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 08/01/2010 11:09:56. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 11/01/2010 09:23:01. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 11/01/2010 10:00:43. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 11/01/2010 11:02:56. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 12/01/2010 16:18:09. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 13/01/2010 09:35:25. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 13/01/2010 12:52:07. Error log file: \\server01\Files\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {\\server01\files\testesvf\sqlbox\principal.sct \\server01\files\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {\\server01\files\testesvf\sqlbox\principal.sct \\server01\files\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {\\server01\Files\testesvf\SQLBOX\menuraiz.prg \\server01\files\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 14/01/2010 14:29:38. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 15/01/2010 15:19:32. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 15/01/2010 15:53:32. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 15/01/2010 17:44:22. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 18/01/2010 12:02:52. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 22/01/2010 14:23:19. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 25/01/2010 16:07:37. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 26/01/2010 09:42:42. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 26/01/2010 14:38:28. Error log file: \\server01\Files\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  menuraiz line 48  {\\server01\Files\testesvf\SQLBOX\menuraiz.prg \\server01\files\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 27/01/2010 09:24:26. Error log file: \\server01\Files\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {\\server01\files\testesvf\sqlbox\principal.sct \\server01\files\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {\\server01\files\testesvf\sqlbox\principal.sct \\server01\files\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {\\server01\Files\testesvf\SQLBOX\menuraiz.prg \\server01\files\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 27/01/2010 14:08:59. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 27/01/2010 15:39:19. Error log file: \\server01\Files\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {\\server01\files\testesvf\sqlbox\principal.sct \\server01\files\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {\\server01\files\testesvf\sqlbox\principal.sct \\server01\files\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {\\server01\Files\testesvf\SQLBOX\menuraiz.prg \\server01\files\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 27/01/2010 17:27:21. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\TESTESVF\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 27/01/2010 18:48:50. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 28/01/2010 10:51:18. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 29/01/2010 10:14:33. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 31/01/2010 19:40:26. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\TESTESVF\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 01/02/2010 09:13:06. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 01/02/2010 10:37:30. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 01/02/2010 15:29:35. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\TESTESVF\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 02/02/2010 11:37:31. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 02/02/2010 13:20:44. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 02/02/2010 15:25:39. Error log file: \\server01\Files\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {\\server01\files\testesvf\sqlbox\principal.sct \\server01\files\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {\\server01\files\testesvf\sqlbox\principal.sct \\server01\files\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {\\server01\Files\testesvf\SQLBOX\menuraiz.prg \\server01\files\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 02/02/2010 19:28:29. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 03/02/2010 15:25:27. Error log file: \\server01\files\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {\\server01\files\testesvf\sqlbox\principal.sct \\server01\files\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {\\server01\files\testesvf\sqlbox\principal.sct \\server01\files\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {\\server01\files\testesvf\SQLBOX\menuraiz.prg \\server01\files\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 03/02/2010 17:55:21. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 05/02/2010 13:52:20. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 08/02/2010 12:54:04. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 08/02/2010 14:49:44. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 08/02/2010 15:35:58. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 08/02/2010 16:01:21. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 08/02/2010 17:23:36. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 09/02/2010 09:32:47. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 09/02/2010 11:42:49. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 09/02/2010 16:59:03. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 10/02/2010 11:36:41. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 10/02/2010 17:42:11. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 17/02/2010 18:16:06. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 17/02/2010 18:16:59. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 19/02/2010 11:40:32. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 22/02/2010 17:17:27. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 25/02/2010 14:15:27. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 25/02/2010 16:35:51. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 02/03/2010 11:48:56. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 03/03/2010 11:47:22. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 04/03/2010 18:19:51. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\TESTESVF\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 05/03/2010 10:40:43. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 06/03/2010 15:20:56. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 08/03/2010 10:50:11. Error log file: G:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.keypress line 4  {g:\testesvf\sqlbox\principal.sct g:\testesvf\sqlbox\principal.sct}
+	Called from -  menuraiz line 48  {G:\testesvf\SQLBOX\menuraiz.prg g:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 15/04/2010 10:17:37. Error log file: C:\testesvf\SQLBOX\VFP9Rerr.log
+	Called from -  menuraiz line 48  {C:\testesvf\SQLBOX\menuraiz.prg c:\testesvf\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 09/09/2010 11:47:29. Error log file: C:\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.mykeypressf line 7  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.pageframe1.page4.editboxespecial1.keyup line 41  {c:\sqlbox\classsqledt.vct c:\sqlbox\classsqledt.vct}
+	Called from -  menuraiz line 48  {g:\testesvf\sqlbox\fontes\menuraiz.prg c:\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 04/10/2010 12:05:01. Error log file: C:\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.mykeypressf line 7  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.pageframe1.page2.editboxespecial1.keyup line 41  {c:\sqlbox\classsqledt.vct c:\sqlbox\classsqledt.vct}
+	Called from -  menuraiz line 48  {g:\testesvf\sqlbox\fontes\menuraiz.prg c:\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 05/10/2010 08:55:26. Error log file: C:\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.mykeypressf line 7  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.pageframe1.page1.editboxespecial1.keyup line 41  {c:\sqlbox\classsqledt.vct c:\sqlbox\classsqledt.vct}
+	Called from -  menuraiz line 48  {g:\testesvf\sqlbox\fontes\menuraiz.prg c:\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 25/11/2010 15:41:39. Error log file: C:\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.mykeypressf line 7  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.pageframe1.page2.editboxespecial1.keyup line 41  {c:\sqlbox\classsqledt.vct c:\sqlbox\classsqledt.vct}
+	Called from -  menuraiz line 48  {g:\testesvf\sqlbox\fontes\menuraiz.prg c:\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 26/11/2010 13:02:09. Error log file: C:\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.mykeypressf line 7  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.pageframe1.page1.editboxespecial1.keyup line 41  {c:\sqlbox\classsqledt.vct c:\sqlbox\classsqledt.vct}
+	Called from -  menuraiz line 48  {g:\testesvf\sqlbox\fontes\menuraiz.prg c:\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 14/04/2011 14:17:27. Error log file: C:\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.mykeypressf line 7  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.pageframe1.page2.editboxespecial1.keyup line 41  {c:\sqlbox\classsqledt.vct c:\sqlbox\classsqledt.vct}
+	Called from -  menuraiz line 48  {g:\testesvf\sqlbox\fontes\menuraiz.prg c:\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 15/04/2011 14:04:30. Error log file: C:\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.mykeypressf line 7  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.pageframe1.page2.editboxespecial1.keyup line 41  {c:\sqlbox\classsqledt.vct c:\sqlbox\classsqledt.vct}
+	Called from -  menuraiz line 48  {g:\testesvf\sqlbox\fontes\menuraiz.prg c:\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 02/05/2011 18:07:18. Error log file: C:\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.mykeypressf line 7  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.pageframe1.page3.editboxespecial1.keyup line 41  {c:\sqlbox\classsqledt.vct c:\sqlbox\classsqledt.vct}
+	Called from -  menuraiz line 48  {g:\testesvf\sqlbox\fontes\menuraiz.prg c:\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 14/06/2011 16:11:42. Error log file: C:\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.mykeypressf line 7  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.pageframe1.page4.editboxespecial1.keyup line 60  {c:\sqlbox\classsqledt.vct c:\sqlbox\classsqledt.vct}
+	Called from -  menuraiz line 48  {C:\SQLBOX\menuraiz.prg c:\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 28/06/2011 17:13:47. Error log file: C:\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.mykeypressf line 7  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.pageframe1.page1.editboxespecial1.keyup line 60  {c:\sqlbox\classsqledt.vct c:\sqlbox\classsqledt.vct}
+	Called from -  menuraiz line 48  {C:\SQLBOX\menuraiz.prg c:\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 05/07/2011 10:38:34. Error log file: C:\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.mykeypressf line 7  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.pageframe1.page2.editboxespecial1.keyup line 60  {c:\sqlbox\classsqledt.vct c:\sqlbox\classsqledt.vct}
+	Called from -  menuraiz line 48  {C:\SQLBOX\menuraiz.prg c:\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 18/07/2011 11:30:48. Error log file: C:\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.mykeypressf line 7  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.pageframe1.page1.editboxespecial1.keyup line 60  {c:\sqlbox\classsqledt.vct c:\sqlbox\classsqledt.vct}
+	Called from -  menuraiz line 48  {C:\SQLBOX\menuraiz.prg c:\sqlbox\sqlbox.exe}
+
+
+Fatal error: Exception code=C0000005 @ 05/06/2013 17:30:05. Error log file: C:\SQLBOX\VFP9Rerr.log
+	Called from -  frmprincipal.cmdrodar.click line 132  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.mykeypressf line 7  {c:\sqlbox\principal.sct c:\sqlbox\principal.sct}
+	Called from -  frmprincipal.edtcomando.pageframe1.page2.editboxespecial1.keyup line 60  {c:\sqlbox\classsqledt.vct c:\sqlbox\classsqledt.vct}
+	Called from -  menuraiz line 48  {C:\SQLBOX\menuraiz.prg c:\sqlbox\sqlbox.exe}

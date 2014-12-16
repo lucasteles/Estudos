@@ -1,0 +1,14 @@
+#todas as medidas feitas em metros
+
+AlcanceRadar=5000;
+velocidade=150; #km/h
+VelocidadeBala=2500; #km/h
+variacaoAcerto=5;
+posAlvoX=-1000;
+posAlvoY=-1000;
+posCanhaoX=1000;
+posCanhaoY=1000;
+AnguloEntradaAviao=180;
+AlturaAviao=1000;
+IP_Radar=127.0.0.1;
+PortaSock=90;

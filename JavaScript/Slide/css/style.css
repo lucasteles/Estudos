@@ -1,0 +1,134 @@
+* { margin: 0px; padding:0px; }
+
+body
+{
+	margin:0 auto;
+	padding: 0;
+	font:80%/1.2 sans-serif;
+	background:#eaeaea;
+	width:800px;
+}
+
+.main
+{
+	background:white;
+	padding:10px;
+	border: 1px dotted red;
+	width:800px;
+}
+		
+section#galeria {
+	background: #fff;
+	width: 700px;
+	height: 400px;
+	display: block;
+	overflow: hidden;
+	box-shadow: #999 0 0 20px;
+	margin: 25px;
+}
+
+section#galeria section#buttons {
+	display:none;
+	position:absolute;
+	margin: 5px;
+	z-index: 500;
+}
+
+section#galeria section#buttons a {
+	background:  #333;
+	width:  50px;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	font: 22pt arial, "Helvetica Neue", Helvetica,sans-serif;
+	color: #fff;
+	text-decoration:none;
+	opacity:0.7;
+	
+}
+
+section#galeria section#buttons a:hover{
+	background: #555;
+}
+
+
+section#galeria ul {
+	 list-style: none;
+	 display: table;
+	 position:relative;
+	/* width:999% */
+}
+
+
+section#galeria ul  li{
+	width: 700px;
+	height: 400px;
+	display: inline-block;
+	position:relative;
+	
+}
+
+section#galeria ul  li img{
+	width:100%;
+	height:100%;
+}
+
+section#galeria ul  li span{
+	background: #333;
+	width:660px;
+	display: table;
+	padding: 10px;
+	opacity:0.7;
+	position: absolute;
+	bottom: 0;
+	margin: 10px;
+	font: 12pt "Lucida Grande","Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+	color: #fff;
+}
+
+
+/* teste de fade */
+
+.foto{border:none;margin:10px;}
+.thumbnail{ width:100px; height:auto;cursor:pointer;}
+
+#mascara {
+	position:absolute;
+	background:#000;
+	z-index:1;
+	top:0;
+	left:0;
+	}
+.foto-ampliada {
+	width: 500px;
+	height: 375px;
+	position:absolute;
+	z-index:2;
+	cursor:pointer;
+	border:2px solid #999;
+}
+div#album
+{	
+	margin-top:0px;
+	text-align: center;
+	display: block;
+}
+
+a.botao {
+	position:absolute;
+	background:  #333;
+	width:  50px;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	font: 22pt arial, "Helvetica Neue", Helvetica,sans serif;
+	color: #fff;
+	text-decoration:none;
+	opacity:0.5;
+	z-index: 100;
+}
+
+
+

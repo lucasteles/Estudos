@@ -1,0 +1,11 @@
+ACPRibbon = -14, 69, 521, 361, , 44, 58, 458, 408, C
+FrmPrincipal = 44, 58, 285, 514, , 22, 29, 801, 485, C
+Module1 = 22, 29, 436, 379, 
+clsStoreMenu = 66, 66, 591, 506, 
+cMemDC = 88, 88, 613, 528, 
+cMenus = 110, 110, 635, 550, 
+cSuperClass = 132, 132, 657, 572, 
+ISuperClass = 154, 154, 679, 594, 
+modSubClass = 0, 0, 414, 350, 
+BulletLabel = 66, 87, 480, 437, C, 66, 87, 480, 437, C
+MdlPictureTransparente = 110, 145, 524, 495, 

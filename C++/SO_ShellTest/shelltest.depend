@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1369077282 source:c:\users\teles\documents\code\shelltest\main.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+
+1369077444 source:f:\fontes 2\shelltest\main.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+

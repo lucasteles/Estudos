@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1369532629 source:h:\fontes 2\getkey\main.cpp
+	<stdio.h>
+	<conio.h>
+
+1369532629 source:f:\fontes 2\getkey\main.cpp
+	<stdio.h>
+	<conio.h>
+

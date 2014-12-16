@@ -1,0 +1,182 @@
+<html>
+	<head>
+	<style>
+		body
+		{
+			margin:0 auto;
+			padding: 0;
+			font:80%/1.2 sans-serif;
+			background:#eaeaea;
+			width:800px;
+						
+		}
+		
+		.main
+		{
+			left:50%;
+			background:white;
+			padding:10px;
+			border: 1px dotted red;
+			height:1000px;
+			
+		}
+		
+		.filha
+		{
+			position:fixed;
+			background:yellow;
+			padding:10px;
+			border: 1px dotted blue;
+			height:200px;
+			width:100px;
+			right:2px;
+			bottom:2px;
+		}
+		
+		.ee {
+			padding:0px;
+			border: 1px solid blue;
+			position: relative;
+			
+			top: 10px;
+			left:10px;
+		}
+		
+		.ee2 {
+			padding:0px;
+			border: 1px solid blue;
+			position: absolute;
+			
+			top: 20px;
+			left:20px;	
+		}
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	.flip-container {
+			-webkit-perspective: 1000;
+			-moz-perspective: 1000;
+			-ms-perspective: 1000;
+			perspective: 1000;
+
+			-ms-transform: perspective(1000px);
+			-moz-transform: perspective(1000px);
+    		-moz-transform-style: preserve-3d; 
+    		-ms-transform-style: preserve-3d; 
+
+			border: 1px solid #ccc;
+		}
+			/* START: Accommodating for IE */
+			.flip-container:hover .back, .flip-container.hover .back {
+				-webkit-transform: rotateY(0deg);
+				-moz-transform: rotateY(0deg);
+				-o-transform: rotateY(0deg);
+				-ms-transform: rotateY(0deg);
+				transform: rotateY(0deg);
+			}
+
+			.flip-container:hover .front, .flip-container.hover .front {
+				-webkit-transform:translate3d(-300px,0,0) rotateY(180deg)  ;
+				
+				-moz-transform: rotateY(180deg);
+				-o-transform: rotateY(180deg);
+				transform: rotateY(180deg);
+			}
+		
+		/* END: Accommodating for IE */
+
+		.flip-container, .front, .back {
+			width: 320px;
+			height: 427px;
+		}
+
+		.flipper {
+			-webkit-transition: 0.6s;
+			-webkit-transform-style: preserve-3d;
+			
+			-ms-transition: 0.6s;
+			-moz-transition: 0.6s;
+			-moz-transform: perspective(1000px);
+			-moz-transform-style: preserve-3d;
+			-ms-transform-style: preserve-3d;
+
+			transition: 0.6s;
+			transform-style: preserve-3d;
+
+			position: relative;
+		}
+
+		.front, .back {
+			
+			-moz-backface-visibility: hidden;
+			-ms-backface-visibility: hidden;
+			backface-visibility: hidden;
+
+		    -webkit-transition: 0.6s;
+		    -webkit-transform-style: preserve-3d;
+
+		    -moz-transition: 0.6s;
+		    -moz-transform-style: preserve-3d;
+
+		    -o-transition: 0.6s;
+		    -o-transform-style: preserve-3d;
+
+		    -ms-transition: 0.6s;
+		    -ms-transform-style: preserve-3d;
+
+		    transition: 0.6s;
+		    transform-style: preserve-3d;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.front {
+			-webkit-transform: rotateY(0deg);
+			-ms-transform: rotateY(0deg);
+			background: lightgreen;
+			z-index: 2;
+		}
+
+		.back {
+			-webkit-transform: rotateY(-180deg);
+		    -moz-transform: rotateY(-180deg);
+		    -o-transform: rotateY(-180deg);
+		    -ms-transform: rotateY(-180deg);
+		    transform: rotateY(-180deg);
+		}
+		
+	</style>
+	</head>
+	<body>
+	
+		<div class='main'>
+		<span>Hello world 0<br /></span>	
+			<span class='ee'>Hello world 1<br /></span>	
+			<span class='ee2'>Hello world 2<br /></span>	
+		</div>
+		<div class='filha'>
+		</div>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');"> 
+	
+<div class="flipper">  	
+  <div class="flipper">  		
+    <div class="front" style="width:200px;height:300px; background-color:blue">  			
+		frente
+    </div>  		
+    <div class="back" style="width:200px;height:300px; background-color:red">  			
+      verso		
+    </div>  	
+  </div>  
+  </div>
+</div>
+	</body>
+</html>

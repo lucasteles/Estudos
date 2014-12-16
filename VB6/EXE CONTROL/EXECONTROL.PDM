@@ -1,0 +1,119 @@
+[Root]
+Most Recent Package=EXE control manegement
+
+
+[Package|EXE control manegement|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=E:\Backup\Pasta do Curso (infob27)\Linguagem de Programassao\EXE CONTROL\Package
+
+[Package|EXE control manegement|Configure DAO ISAMs]
+Applicable=No
+
+[Package|EXE control manegement|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|EXE control manegement|Files Found]
+
+[Package|EXE control manegement|Files Released]
+
+[Package|EXE control manegement|Missing Dependency Information]
+F:\Projeto_AP\Componentes\COMDLG32.OCX=
+F:\Projeto_AP\Componentes\MSMASK32.OCX=
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado27.tlb=
+E:\Backup\Pasta do Curso (infob27)\TCC\Luxu's System(Instalador)\Support\actskin4.ocx=
+
+[Package|EXE control manegement|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\msflxgrd.ocx=
+C:\WINDOWS\system32\tabctl32.ocx=
+C:\WINDOWS\system32\scrrun.dll=
+
+[Package|EXE control manegement|Files Added]
+e:\backup\pasta do curso (infob27)\linguagem de programassao\exe control\exe.mdb=
+e:\backup\pasta do curso (infob27)\linguagem de programassao\exe control\31.skn=
+
+[Package|EXE control manegement|Files Removed]
+
+[Package|EXE control manegement|Files In Project]
+E:\Backup\Pasta do Curso (infob27)\Linguagem de Programassao\EXE CONTROL\EXECONTROL.exe=Yes
+C:\WINDOWS\system32\MSVBVM60.DLL=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+E:\Backup\Pasta do Curso (infob27)\TCC\Luxu's System(Instalador)\Support\actskin4.ocx=Yes
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado27.tlb=Yes
+C:\WINDOWS\system32\tabctl32.ocx=Yes
+C:\WINDOWS\system32\msflxgrd.ocx=Yes
+F:\Projeto_AP\Componentes\MSMASK32.OCX=Yes
+F:\Projeto_AP\Componentes\COMDLG32.OCX=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+E:\Backup\Pasta do Curso (infob27)\Linguagem de Programassao\EXE CONTROL\EXE.mdb=Yes
+E:\Backup\Pasta do Curso (infob27)\Linguagem de Programassao\EXE CONTROL\31.skn=Yes
+C:\WINDOWS\system32\scrrun.dll=Yes
+C:\WINDOWS\system32\msvcrt.dll=Yes
+
+[Package|EXE control manegement|Configure Registry Files]
+Applicable=No
+
+[Package|EXE control manegement|Configure Remote Servers]
+Applicable=No
+
+[Package|EXE control manegement|Install Locations]
+E:\Backup\Pasta do Curso (infob27)\Linguagem de Programassao\EXE CONTROL\EXECONTROL.exe=$(AppPath)
+C:\WINDOWS\system32\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+E:\Backup\Pasta do Curso (infob27)\TCC\Luxu's System(Instalador)\Support\actskin4.ocx=$(WinSysPath)
+C:\Arquivos de programas\Arquivos comuns\System\ado\msado27.tlb=$(WinSysPath)
+C:\WINDOWS\system32\tabctl32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\msflxgrd.ocx=$(WinSysPath)
+F:\Projeto_AP\Componentes\MSMASK32.OCX=$(WinSysPath)
+F:\Projeto_AP\Componentes\COMDLG32.OCX=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+E:\Backup\Pasta do Curso (infob27)\Linguagem de Programassao\EXE CONTROL\EXE.mdb=$(AppPath)
+E:\Backup\Pasta do Curso (infob27)\Linguagem de Programassao\EXE CONTROL\31.skn=$(AppPath)
+C:\WINDOWS\system32\scrrun.dll=$(WinSysPath)
+C:\WINDOWS\system32\msvcrt.dll=$(WinSysPathSysFile)
+
+[Package|EXE control manegement|Configure Shared Files]
+Applicable=Yes
+E:\Backup\Pasta do Curso (infob27)\Linguagem de Programassao\EXE CONTROL\EXECONTROL.exe=Yes
+E:\Backup\Pasta do Curso (infob27)\Linguagem de Programassao\EXE CONTROL\EXE.mdb=Yes
+E:\Backup\Pasta do Curso (infob27)\Linguagem de Programassao\EXE CONTROL\31.skn=Yes
+
+[Package|EXE control manegement|Distribution]
+Type=single
+Size=
+Title=exe manegemant control
+
+[Package|EXE control manegement|Package]
+PackageFolder=E:\Backup\Pasta do Curso (infob27)\Linguagem de Programassao\EXE CONTROL\Package
+ProjectFolder=E:\Backup\Pasta do Curso (infob27)\Linguagem de Programassao\EXE CONTROL
+ServerSideCab=
+File1=E:\Backup\Pasta do Curso (infob27)\Linguagem de Programassao\EXE CONTROL\Package\setup.exe
+File2=E:\Backup\Pasta do Curso (infob27)\Linguagem de Programassao\EXE CONTROL\Package\Setup.Lst
+File3=E:\Backup\Pasta do Curso (infob27)\Linguagem de Programassao\EXE CONTROL\Package\EXECONTROL.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|EXE control manegement|IconGroups]
+Group0=exe manegemant control
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|EXE control manegement|exe manegemant control]
+Icon1=EXECONTROL.EXE
+Title1=exe manegemant control
+StartIn1=$(AppPath)
+Key1=Icon1

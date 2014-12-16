@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="Animacao.c" open="1" top="0" tabpos="2">
+		<Cursor position="1644" topLine="69" />
+	</File>
+	<File name="Events.c" open="0" top="0" tabpos="3">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="Events.h" open="0" top="0" tabpos="5">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="GameLib.c" open="1" top="0" tabpos="4">
+		<Cursor position="511" topLine="11" />
+	</File>
+	<File name="GameLib.h" open="0" top="0" tabpos="4">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="main.c" open="1" top="1" tabpos="1">
+		<Cursor position="1287" topLine="43" />
+	</File>
+</CodeBlocks_layout_file>

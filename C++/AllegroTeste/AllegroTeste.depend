@@ -1,0 +1,161 @@
+# depslib dependency file v1.0
+1376598657 source:c:\dropbox\testesc\allegroteste\main.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<stdio.h>
+	"GameLib.h"
+	"Principal.h"
+	"Sounds.h"
+
+1376489054 source:c:\dropbox\testesc\allegroteste\sock.c
+	"Sock.h"
+
+1376489245 c:\dropbox\testesc\allegroteste\sock.h
+
+1376495713 source:c:\dropbox\testesc\allegroteste\allegro.c
+	"Allegro.h"
+	<allegro5/allegro.h>
+	<stdio.h>
+
+1376494889 c:\dropbox\testesc\allegroteste\allegro.h
+
+1376502909 source:c:\dropbox\testesc\allegroteste\sound.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	<stdio.h>
+
+1376513202 source:c:\dropbox\testesc\allegroteste\animacao.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<stdio.h>
+	<stdbool.h>
+	<stdlib.h>
+
+1376513402 source:c:\dropbox\testesc\allegroteste\inputtext.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<stdio.h>
+	<string.h>
+	<stdbool.h>
+
+1376595452 source:c:\dropbox\testesc\allegroteste\gamelib.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	"GameLib.h"
+
+1376575896 source:c:\dropbox\testesc\allegroteste\inout.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<stdio.h>
+	<stdbool.h>
+
+1376595452 c:\dropbox\testesc\allegroteste\gamelib.h
+	<allegro5/allegro.h>
+
+1376577445 c:\dropbox\testesc\allegroteste\principal.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+
+1376576806 c:\dropbox\testesc\allegroteste\sounds.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+
+1376577470 source:c:\dropbox\testesc\allegroteste\opcoes.c
+
+1376576784 source:c:\dropbox\testesc\allegroteste\principal.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+
+1376576784 source:c:\dropbox\testesc\allegroteste\sounds.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+
+1376577526 source:c:\dropbox\testesc\allegroteste\texture.c
+
+1376589747 source:c:\dropbox\testesc\allegroteste\events.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	"Events.h"
+
+1376587021 c:\dropbox\testesc\allegroteste\events.h
+	<allegro5/allegro.h>
+
+1376513202 source:c:\users\rodrigo.mpaixao\downloads\allegroteste\animacao.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<stdio.h>
+	<stdbool.h>
+	<stdlib.h>
+
+1376589747 source:c:\users\rodrigo.mpaixao\downloads\allegroteste\events.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	"Events.h"
+
+1376587021 c:\users\rodrigo.mpaixao\downloads\allegroteste\events.h
+	<allegro5/allegro.h>
+
+1376700361 source:c:\users\rodrigo.mpaixao\downloads\allegroteste\gamelib.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	"GameLib.h"
+	<stdlib.h>
+
+1376595452 c:\users\rodrigo.mpaixao\downloads\allegroteste\gamelib.h
+	<allegro5/allegro.h>
+
+1376575896 source:c:\users\rodrigo.mpaixao\downloads\allegroteste\inout.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<stdio.h>
+	<stdbool.h>
+
+1376513402 source:c:\users\rodrigo.mpaixao\downloads\allegroteste\inputtext.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<stdio.h>
+	<string.h>
+	<stdbool.h>
+
+1376577470 source:c:\users\rodrigo.mpaixao\downloads\allegroteste\opcoes.c
+
+1376576784 source:c:\users\rodrigo.mpaixao\downloads\allegroteste\principal.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+
+1376502909 source:c:\users\rodrigo.mpaixao\downloads\allegroteste\sound.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	<stdio.h>
+
+1376576784 source:c:\users\rodrigo.mpaixao\downloads\allegroteste\sounds.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+
+1376577526 source:c:\users\rodrigo.mpaixao\downloads\allegroteste\texture.c
+
+1376700127 source:c:\users\rodrigo.mpaixao\downloads\allegroteste\main.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<stdio.h>
+	<stdlib.h>
+	"GameLib.h"
+	"Principal.h"
+	"Sounds.h"
+
+1376577445 c:\users\rodrigo.mpaixao\downloads\allegroteste\principal.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+
+1376576806 c:\users\rodrigo.mpaixao\downloads\allegroteste\sounds.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+

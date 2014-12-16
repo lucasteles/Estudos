@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1366234927 source:c:\dropbox\testesc\alocalibera\gemem.c
+	<stdio.h>
+	<stdlib.h>
+	"GeMem.h"
+
+1366229781 c:\dropbox\testesc\alocalibera\gemem.h
+
+1366234941 source:c:\dropbox\testesc\alocalibera\main.c
+	<stdio.h>
+	<stdlib.h>
+	"GeMem.h"
+
+1366314717 source:f:\alocalibera\main.c
+	<stdio.h>
+	<stdlib.h>
+	"GeMem.h"
+
+1366229781 f:\alocalibera\gemem.h
+
+1366235287 source:f:\alocalibera\gemem.c
+	<stdio.h>
+	<stdlib.h>
+	"GeMem.h"
+

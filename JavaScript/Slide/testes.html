@@ -1,0 +1,337 @@
+<html>
+<head>
+<style>
+		
+	body
+	{
+		margin: 20px;
+	}
+	
+	P {
+		font: arial;
+		margin: 2px;
+		
+	}
+	.box{
+	  border-style:solid;
+	  position: absolute;
+	  top:50px;
+	  left:10px;
+	  width:100px;
+	  height:100px;
+	  text-align: center;
+	  vertical-align:middle;
+	  line-height: 100px;
+
+	}
+	
+	#btn
+	{
+	position: absolute;
+	  top:10px;
+	  left:40px;
+	  width:50px;
+	  height:30px;
+	}
+	#mais{
+	  position: absolute;
+	  top:200px;
+	  left:10px;
+	  
+	}
+	
+	#itens
+	{
+		 border-collapse:collapse 
+	}
+	
+	#drop
+	{
+		position:relative; 
+		left:38px;
+	}
+	
+	#para
+	{
+		position:relative; 
+		left:300px;
+		top:280px;
+		width:300px;
+	}
+	
+	.esconde
+	{
+		border-bottom: 2px dotted red;
+	}
+	
+	#logo
+	{
+		position: absolute;
+		left:300px;
+		top:500px;
+		margin: 50px;
+		height: auto;
+		width: 100px;
+	}
+	
+	
+	.roda {
+-webkit-animation: aniRoda 1.00s 1 ease;
+-moz-animation: aniRoda 1.00s 1 ease;
+-o-animation: aniRoda 1.00s 1 ease;
+}
+@-webkit-keyframes aniRoda {
+from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(0px); }
+to { -webkit-transform: rotate(180deg) scale(1) skew(1deg) translate(0px); }
+}
+@-moz-keyframes aniRoda {
+from { -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(0px); }
+to { -moz-transform: rotate(180deg) scale(1) skew(1deg) translate(0px); }
+}
+@-o-keyframes aniRoda {
+from { -o-transform: rotate(4deg) scale(1) skew(1deg) translate(0px); }
+to { -o-transform: rotate(180deg) scale(1) skew(1deg) translate(0px); }
+}
+
+.desroda {
+	-webkit-animation: aniDesroda 1.00s 1 ease;
+	-moz-animation: aniDesroda 1.00s 1 ease;
+	-o-animation: aniDesroda 1.00s 1 ease;
+}
+	@-webkit-keyframes aniDesroda {
+	from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(0px); }
+	to { -webkit-transform: rotate(-180deg) scale(1) skew(1deg) translate(0px); }
+	}
+	@-moz-keyframes aniDesroda {
+	from { -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(0px); }
+	to { -moz-transform: rotate(-180deg) scale(1) skew(1deg) translate(0px); }
+	}
+	@-o-keyframes aniDesroda {
+	from { -o-transform: rotate(4deg) scale(1) skew(1deg) translate(0px); }
+	to { -o-transform: rotate(-180deg) scale(1) skew(1deg) translate(0px); }
+	}
+		
+	
+</style>
+<script type="text/javascript"  src="js\jquery.js"></script>
+<script type="text/javascript"  src="js\jquery.path.js"></script>
+<script>
+	window.onload=function(){
+		
+		theFade = {
+			colors: [ "00", "11", "22","33","44","55","66","77","88","99","AA","BB","CC","DD","EE","FF" ],
+			delay: 20,
+			frame: 0,
+		    fadeIt: function(id)
+					{
+						clearTimeout();
+						setTimeout(function () {theFade.changeBack(id);}, theFade.delay);
+					},
+			changeBack: function(id)
+						{
+						
+							document.getElementById(id).style.background = "#FFFF"+theFade.colors[theFade.frame];
+							 //document.getElementById(id).innerHTML+=theFade.frame.toString();
+							if (theFade.frame<theFade.colors.length)
+							{
+								theFade.frame++;
+								theFade.fadeIt(id);
+							}
+							else
+							{
+								theFade.frame=0;
+							}
+						   
+						}
+		};
+		
+		
+		
+		document.getElementById('btn').onclick = function(){
+			theFade.fadeIt('caixa');
+		}
+		
+		
+
+
+		document.getElementById('txt').onkeypress  = function(evt){
+				var keyCode = evt ? (evt.which ? evt.which : evt.keyCode) : event.keyCode;
+				if (keyCode==13)
+				{
+					document.getElementById('add').onclick();
+				}
+			  
+		}
+
+
+		document.getElementById('add').onclick = function(){
+			var txt = document.getElementById('txt');
+			var tab = document.getElementById('itens');
+			
+			if (txt.value=='')
+				return false;
+			
+			for (var i=0; i<tab.rows.length; i++)
+			{
+				if(tab.rows[i].cells[0].innerText==txt.value)
+					return false;
+				
+			}
+			
+			var newRow = tab.insertRow(tab.rows.length);
+			var cell1 = newRow.insertCell();
+			var cell2 = newRow.insertCell(1);
+			
+			if (typeof cont != 'undefined')
+				cont++;
+			else
+				cont=0;
+			
+
+			cell1.appendChild(document.createTextNode(txt.value));
+			cell1.style.width="150px";
+			var btn = document.createElement("button");
+			btn.appendChild(document.createTextNode("-"));
+			cell2.appendChild(btn);
+			
+			newRow.setAttribute('ID','r'+cont.toString());
+			btn.setAttribute('ID','btnRemove'+cont.toString());
+
+			btn.onclick = function(){
+				this.parentNode.parentNode.parentNode.deleteRow(
+					this.parentNode.parentNode.rowIndex);
+			}
+			
+			newRow.onmouseover=function(){
+			   this.style.background = "#EEEEEE";
+			}
+			newRow.onmouseout=function(){
+			   this.style.background = "#FFFFFF";
+			}
+			
+			
+			txt.value="";
+			txt.focus();
+			theFade.fadeIt('r'+cont.toString());
+		}
+		
+		
+		
+		
+	
+	};
+	
+	$(function(){
+	
+		$('#para :eq(0)').before('<a href=# class="esconde">[clique para esconder]</a>');
+		
+		$('#para p').hide();
+		$('.esconde').text('[clique para mostrar]');
+		
+		$('.esconde').click(
+			function(e){
+				e.preventDefault(); 
+				
+				if( $(this).text()=='[clique para esconder]') 
+					{ $(this).text('[clique para mostrar]');
+					$(this).parent().find('p').slideUp('slow');
+				} 
+				else { 
+					$(this).text('[clique para esconder]');
+					$(this).parent().find('p').slideDown('slow');
+				} 
+		})
+	
+	
+	
+	//mudou
+		$('img').each(function(){
+				$(this).attr(   
+						{
+							myWidth: $(this).width(),
+							myTop: $(this).position().top,
+							myLeft: $(this).position().left
+						}  
+				)}
+		)
+		.fadeTo(1000,0.3)
+		.hover(
+		function(){
+			
+			$(this).removeClass("roda").removeClass("desroda").css('height:auto;');
+			$(this).stop().animate(
+						{
+							width: parseFloat($(this).attr('myWidth'))*2,
+							left: parseFloat($(this).attr('myLeft')) - parseFloat($(this).attr('myWidth'))/2,
+							top: parseFloat($(this).attr('myTop')) - parseFloat($(this).height())/2,
+							opacity:1
+						}
+					,500					
+					).addClass('roda'); 
+					
+			
+			} 
+		,
+		function(){
+			$(this).removeClass("roda").removeClass("desroda").css('height:auto;');
+			$(this).stop().animate(
+						{
+							width: parseFloat($(this).attr('myWidth')), 
+							left: parseFloat($(this).attr('myLeft')),
+							top: parseFloat($(this).attr('myTop')),
+							opacity:0.3
+						}
+					,500 
+					).addClass('desroda');
+
+		}).click(function(){ 
+						if ($(this).offset().left<=300)
+						{	$(this).attr('myLeft', 1000 )
+							.animate({left:parseFloat($(this).attr('myLeft'))},1000)//,'easeInElastic');
+						}
+						else
+						{
+							$(this).attr('myLeft', 300)
+							.animate({left:parseFloat($(this).attr('myLeft'))},1000)//,'easeInElastic');
+						}
+					
+					})
+		
+			
+	})
+	
+	
+</script>
+
+</head>
+<body>
+<div class="box" id="caixa" >
+	teste
+</div>
+
+<div class="" id="mais" >
+	<div>
+	 <span> texto </span>
+	 <input type="text" id="txt">
+	 <button id="add">+</button>
+	 </div >
+	 <div id="drop" >
+	 <table id='itens'>
+	 </table>
+	 </div>
+	 <textarea id='rr'></textarea>	 
+</div>
+<button id="btn">fade</button>
+
+<div id='para'>
+		<p>teste 1</p>
+		<p>teste 2</p>
+		<p>teste 3</p>
+		<p>teste 4</p>
+		<p>teste 5</p>
+		<p>teste 6</p>
+		<p>teste 7</p>
+</div>
+<img id='logo' src='img\0.png' />
+</body>
+</html>
