@@ -1,0 +1,9 @@
+Z:\Testes\Teste3D\Teste3D\bin\Release\Teste3D.exe
+Z:\Testes\Teste3D\Teste3D\bin\Release\Teste3D.pdb
+Z:\Testes\Teste3D\Teste3D\obj\x86\Release\ResolveAssemblyReference.cache
+Z:\Testes\Teste3D\Teste3D\obj\x86\Release\Teste3D.Form1.resources
+Z:\Testes\Teste3D\Teste3D\obj\x86\Release\Teste3D.Properties.Resources.resources
+Z:\Testes\Teste3D\Teste3D\obj\x86\Release\GenerateResource.read.1.tlog
+Z:\Testes\Teste3D\Teste3D\obj\x86\Release\GenerateResource.write.1.tlog
+Z:\Testes\Teste3D\Teste3D\obj\x86\Release\Teste3D.exe
+Z:\Testes\Teste3D\Teste3D\obj\x86\Release\Teste3D.pdb

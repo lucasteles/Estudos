@@ -1,0 +1,141 @@
+C:\Users\rafael.matienzo\Desktop\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.exe
+C:\Users\rafael.matienzo\Desktop\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.pdb
+C:\Users\rafael.matienzo\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\rafael.matienzo\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.ComplexPlan.resources
+C:\Users\rafael.matienzo\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.Properties.Resources.resources
+C:\Users\rafael.matienzo\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ResGen.read.1.tlog
+C:\Users\rafael.matienzo\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ResGen.write.1.tlog
+C:\Users\rafael.matienzo\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.exe
+C:\Users\rafael.matienzo\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.pdb
+E:\Programação\C#\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.exe
+E:\Programação\C#\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.pdb
+E:\Programação\C#\ComplexPlan\ComplexPlan\obj\x86\Release\ResolveAssemblyReference.cache
+E:\Programação\C#\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.ComplexPlan.resources
+E:\Programação\C#\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.Properties.Resources.resources
+E:\Programação\C#\ComplexPlan\ComplexPlan\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+E:\Programação\C#\ComplexPlan\ComplexPlan\obj\x86\Release\ResGen.read.1.tlog
+E:\Programação\C#\ComplexPlan\ComplexPlan\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+E:\Programação\C#\ComplexPlan\ComplexPlan\obj\x86\Release\ResGen.write.1.tlog
+E:\Programação\C#\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.exe
+E:\Programação\C#\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.pdb
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.exe
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.pdb
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.exe
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.pdb
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexPlan\bin\Release\ComplexCalc.exe
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexPlan\bin\Release\ComplexCalc.pdb
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.ComplexPlan.resources
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.Properties.Resources.resources
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+C:\Users\LUCAS\Desktop\LIXO\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.exe
+C:\Users\LUCAS\Desktop\LIXO\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.pdb
+C:\Users\LUCAS\Desktop\LIXO\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.exe
+C:\Users\LUCAS\Desktop\LIXO\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.pdb
+C:\Users\LUCAS\Desktop\LIXO\ComplexPlan\ComplexPlan\bin\Release\ComplexCalc.exe
+C:\Users\LUCAS\Desktop\LIXO\ComplexPlan\ComplexPlan\bin\Release\ComplexCalc.pdb
+C:\Users\LUCAS\Desktop\LIXO\ComplexPlan\ComplexPlan\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\LUCAS\Desktop\LIXO\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.ComplexPlan.resources
+C:\Users\LUCAS\Desktop\LIXO\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.Properties.Resources.resources
+C:\Users\LUCAS\Desktop\LIXO\ComplexPlan\ComplexPlan\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+C:\Users\LUCAS\Desktop\LIXO\ComplexPlan\ComplexPlan\obj\x86\Release\ResGen.read.1.tlog
+C:\Users\LUCAS\Desktop\LIXO\ComplexPlan\ComplexPlan\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+C:\Users\LUCAS\Desktop\LIXO\ComplexPlan\ComplexPlan\obj\x86\Release\ResGen.write.1.tlog
+C:\Documents and Settings\rmendonca\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.exe
+C:\Documents and Settings\rmendonca\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.pdb
+C:\Documents and Settings\rmendonca\Desktop\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.exe
+C:\Documents and Settings\rmendonca\Desktop\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.pdb
+C:\Documents and Settings\rmendonca\Desktop\ComplexPlan\ComplexPlan\bin\Release\ComplexCalc.exe
+C:\Documents and Settings\rmendonca\Desktop\ComplexPlan\ComplexPlan\bin\Release\ComplexCalc.pdb
+C:\Documents and Settings\rmendonca\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\rmendonca\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.ComplexPlan.resources
+C:\Documents and Settings\rmendonca\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.Properties.Resources.resources
+C:\Documents and Settings\rmendonca\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\rmendonca\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ResGen.read.1.tlog
+C:\Documents and Settings\rmendonca\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\rmendonca\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ResGen.write.1.tlog
+E:\Programação\C#\ComplexPlan\ComplexPlan\bin\Release\ComplexCalc.exe
+E:\Programação\C#\ComplexPlan\ComplexPlan\bin\Release\ComplexCalc.pdb
+F:\Programação\C#\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.exe
+F:\Programação\C#\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.pdb
+C:\Users\rodrigo.paixao.SENACEDU\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.exe
+C:\Users\rodrigo.paixao.SENACEDU\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.pdb
+C:\Users\rodrigo.paixao.SENACEDU\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\rodrigo.paixao.SENACEDU\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.ComplexPlan.resources
+C:\Users\rodrigo.paixao.SENACEDU\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.Properties.Resources.resources
+C:\Users\rodrigo.paixao.SENACEDU\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ResGen.read.1.tlog
+C:\Users\rodrigo.paixao.SENACEDU\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ResGen.write.1.tlog
+C:\Users\rodrigo.paixao.SENACEDU\Desktop\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.exe
+C:\Users\rodrigo.paixao.SENACEDU\Desktop\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.pdb
+C:\Users\rodrigo.paixao.SENACEDU\Desktop\ComplexPlan\ComplexPlan\bin\Release\ComplexCalc.exe
+C:\Users\rodrigo.paixao.SENACEDU\Desktop\ComplexPlan\ComplexPlan\bin\Release\ComplexCalc.pdb
+G:\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.exe
+G:\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.pdb
+G:\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.exe
+G:\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.pdb
+G:\ComplexPlan\ComplexPlan\bin\Release\ComplexCalc.exe
+G:\ComplexPlan\ComplexPlan\bin\Release\ComplexCalc.pdb
+G:\ComplexPlan\ComplexPlan\obj\x86\Release\ResolveAssemblyReference.cache
+G:\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.ComplexPlan.resources
+G:\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.Properties.Resources.resources
+G:\ComplexPlan\ComplexPlan\obj\x86\Release\ResGen.read.1.tlog
+G:\ComplexPlan\ComplexPlan\obj\x86\Release\ResGen.write.1.tlog
+E:\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.exe
+E:\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.pdb
+E:\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.exe
+E:\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.pdb
+E:\ComplexPlan\ComplexPlan\bin\Release\ComplexCalc.exe
+E:\ComplexPlan\ComplexPlan\bin\Release\ComplexCalc.pdb
+E:\ComplexPlan\ComplexPlan\obj\x86\Release\ResolveAssemblyReference.cache
+E:\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.ComplexPlan.resources
+E:\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.Properties.Resources.resources
+E:\ComplexPlan\ComplexPlan\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+E:\ComplexPlan\ComplexPlan\obj\x86\Release\ResGen.read.1.tlog
+E:\ComplexPlan\ComplexPlan\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+E:\ComplexPlan\ComplexPlan\obj\x86\Release\ResGen.write.1.tlog
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.exe
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.pdb
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\ComplexPlan\ComplexPlan\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.ComplexPlan.resources
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.Properties.Resources.resources
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\ComplexPlan\ComplexPlan\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\ComplexPlan\ComplexPlan\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.exe
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.pdb
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\ComplexPlan\ComplexPlan\bin\Release\ComplexCalc.exe
+C:\Documents and Settings\rmendonca\Meus documentos\Arquivos\Downloads\ComplexPlan\ComplexPlan\bin\Release\ComplexCalc.pdb
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ResGen.read.1.tlog
+C:\Users\LUCAS\Desktop\ComplexPlan\ComplexPlan\obj\x86\Release\ResGen.write.1.tlog
+C:\TestesCS\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.exe
+C:\TestesCS\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.pdb
+C:\TestesCS\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.exe
+C:\TestesCS\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.pdb
+C:\TestesCS\ComplexPlan\ComplexPlan\bin\Release\ComplexCalc.exe
+C:\TestesCS\ComplexPlan\ComplexPlan\bin\Release\ComplexCalc.pdb
+C:\TestesCS\ComplexPlan\ComplexPlan\obj\x86\Release\ResolveAssemblyReference.cache
+C:\TestesCS\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.ComplexPlan.resources
+C:\TestesCS\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.Properties.Resources.resources
+C:\TestesCS\ComplexPlan\ComplexPlan\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+C:\TestesCS\ComplexPlan\ComplexPlan\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+C:\Dropbox\TestesCS\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.exe
+C:\Dropbox\TestesCS\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.pdb
+C:\Dropbox\TestesCS\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.exe
+C:\Dropbox\TestesCS\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.pdb
+C:\Dropbox\TestesCS\ComplexPlan\ComplexPlan\bin\Release\ComplexCalc.exe
+C:\Dropbox\TestesCS\ComplexPlan\ComplexPlan\bin\Release\ComplexCalc.pdb
+C:\Dropbox\TestesCS\ComplexPlan\ComplexPlan\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Dropbox\TestesCS\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.ComplexPlan.resources
+C:\Dropbox\TestesCS\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.Properties.Resources.resources
+C:\Dropbox\TestesCS\ComplexPlan\ComplexPlan\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+C:\Dropbox\TestesCS\ComplexPlan\ComplexPlan\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.exe
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.pdb
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.exe
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexPlan\ComplexPlan\bin\Release\ComplexPlan.pdb
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexPlan\ComplexPlan\bin\Release\ComplexCalc.exe
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexPlan\ComplexPlan\bin\Release\ComplexCalc.pdb
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.csprojResolveAssemblyReference.cache
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.ComplexPlan.resources
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.Properties.Resources.resources
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexPlan\ComplexPlan\obj\x86\Release\ComplexPlan.csproj.GenerateResource.Cache

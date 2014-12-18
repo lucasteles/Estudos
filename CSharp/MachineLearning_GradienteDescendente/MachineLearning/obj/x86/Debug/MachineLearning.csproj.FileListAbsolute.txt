@@ -1,0 +1,4 @@
+c:\users\telesl\documents\visual studio 2010\Projects\MachineLearning\MachineLearning\bin\Debug\MachineLearning.exe
+c:\users\telesl\documents\visual studio 2010\Projects\MachineLearning\MachineLearning\bin\Debug\MachineLearning.pdb
+c:\users\telesl\documents\visual studio 2010\Projects\MachineLearning\MachineLearning\obj\x86\Debug\MachineLearning.exe
+c:\users\telesl\documents\visual studio 2010\Projects\MachineLearning\MachineLearning\obj\x86\Debug\MachineLearning.pdb

@@ -1,0 +1,11 @@
+D:\Media\Games\FlappyBird\Temp\bin\Debug\Assembly-CSharp.dll
+D:\Media\Games\FlappyBird\Temp\bin\Debug\Assembly-CSharp.pdb
+D:\Media\Games\FlappyBird\Temp\bin\Debug\UnityEditor.dll
+D:\Media\Games\FlappyBird\Temp\bin\Debug\UnityEngine.dll
+D:\Media\Games\FlappyBird\Temp\bin\Debug\Mono.Cecil.dll
+D:\Media\Games\FlappyBird\Temp\bin\Debug\nunit.framework.dll
+D:\Media\Games\FlappyBird\Temp\bin\Debug\Unity.DataContract.dll
+D:\Media\Games\FlappyBird\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+D:\Media\Games\FlappyBird\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+D:\Media\Games\FlappyBird\obj\Debug\Assembly-CSharp.dll
+D:\Media\Games\FlappyBird\obj\Debug\Assembly-CSharp.pdb

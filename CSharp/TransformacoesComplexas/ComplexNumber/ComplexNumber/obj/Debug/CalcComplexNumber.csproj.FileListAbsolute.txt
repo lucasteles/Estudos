@@ -1,0 +1,9 @@
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\ComplexNumber\ComplexNumber\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\ComplexNumber\ComplexNumber\obj\Debug\ComplexNumber.dll
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\ComplexNumber\ComplexNumber\obj\Debug\ComplexNumber.pdb
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\ComplexNumber\ComplexNumber\bin\Debug\ComplexNumber.dll
+c:\documents and settings\rmendonca\meus documentos\visual studio 2010\Projects\ComplexNumber\ComplexNumber\bin\Debug\ComplexNumber.pdb
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexNumber\ComplexNumber\bin\Debug\ComplexNumber.dll
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexNumber\ComplexNumber\bin\Debug\ComplexNumber.pdb
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexNumber\ComplexNumber\obj\Debug\ComplexNumber.dll
+D:\Armazem\Internet\Dropbox\TestesCS\ComplexNumber\ComplexNumber\obj\Debug\ComplexNumber.pdb
