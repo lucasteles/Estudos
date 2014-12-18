@@ -1,5 +1,0 @@
-nome=Lucas Teles;
-profissao=programador;
-idade=22;
-altura=1.80 #metros
-filho=pfilho.txt;
