@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPA_Coffee", "SPA_Coffee\SPA_Coffee.csproj", "{A29C9AAB-ECE9-4F9C-A389-7649827569B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A29C9AAB-ECE9-4F9C-A389-7649827569B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A29C9AAB-ECE9-4F9C-A389-7649827569B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A29C9AAB-ECE9-4F9C-A389-7649827569B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A29C9AAB-ECE9-4F9C-A389-7649827569B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

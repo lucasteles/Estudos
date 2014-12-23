@@ -1,0 +1,33 @@
+﻿
+a{text-decoration: none;}
+a:hover{text-decoration: underline;}
+
+body
+{
+	background-color: #dedede;
+	font-family: verdana,arial,sans-serif;
+}
+
+#main-content {
+	padding:10px;
+	width:800px;
+	min-height: 750px;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1px solid #dcdcdc;
+	
+}
+
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 85px;
+    text-align: left;
+}
+input {
+  display: inline-block;
+  float: left;
+}
+
