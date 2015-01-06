@@ -99,9 +99,8 @@ require(
 				'.edit'
 				'click'
 				(e) ->
-					operation = 'update'
 					clear()
-					
+					operation = 'update'
 					ele = $(@).parents('tr')
 
 					id = ele.find('.id').text()

@@ -122,10 +122,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\BooksController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SnapshotController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AjaxCrawlableAttribute.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -146,6 +149,8 @@
     <Content Include="Assets\Scripts\lib\bootstrap.min.js" />
     <Content Include="Assets\Scripts\lib\jquery-1.9.0.min.js" />
     <Content Include="Assets\Scripts\lib\require.js" />
+    <Content Include="snapshot\phantomjs.exe" />
+    <Content Include="snapshot\seo\createSnapshot.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -190,6 +195,7 @@
       <Bare>True</Bare>
       <Iced>False</Iced>
     </None>
+    <Content Include="Views\Snapshot\returnHTML.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

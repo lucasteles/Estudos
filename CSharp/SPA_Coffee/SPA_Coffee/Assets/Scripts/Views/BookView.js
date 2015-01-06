@@ -69,8 +69,8 @@ require(["lib/jquery-1.9.0.min", "Controllers/BookController", "Models/Book"], f
     });
     $('#main_data').delegate('.edit', 'click', function(e) {
       var author, ele, id, name, pages;
-      operation = 'update';
       clear();
+      operation = 'update';
       ele = $(this).parents('tr');
       id = ele.find('.id').text();
       name = ele.find('.name').text();
