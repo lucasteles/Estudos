@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations;
 namespace EntityTeste.Models
 {
     [Table("TB_PEDIDO")]
-    public class Pedido
+    public class Pedido : IModel
     {
         [Key]
         public int IdPedido { get; set; }
@@ -20,5 +20,10 @@ namespace EntityTeste.Models
         public virtual Cliente cliente { get; set; }
 
 
+
+        public void OnCreating(System.Data.Entity.DbModelBuilder modelBuilder)
+        {
+            
+        }
     }
 }
