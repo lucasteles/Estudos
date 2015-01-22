@@ -80,11 +80,11 @@ namespace EntityTeste
 
 
 
-         //   var ee = new teste();
-      //      ee.ShowDialog();
+            var ee = new teste();
+            ee.ShowDialog();
             
 
-            Console.ReadKey();
+           // Console.ReadKey();
 
         }
     }
