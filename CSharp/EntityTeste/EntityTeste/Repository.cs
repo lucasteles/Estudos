@@ -32,8 +32,12 @@ namespace EntityTeste
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-                       
-            base.OnModelCreating(modelBuilder);
+            T model = new T();
+            if (model is IModel)
+            {
+                ((IModel)model).OnCreating(modelBuilder);
+                base.OnModelCreating(modelBuilder);
+            }
             
         }
 

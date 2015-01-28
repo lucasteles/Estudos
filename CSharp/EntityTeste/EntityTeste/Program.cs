@@ -17,7 +17,7 @@ namespace EntityTeste
     class Program
     {
 
-        private static Container container;
+        public static Container container;
 
         static void Main(string[] args)
         {
@@ -98,7 +98,8 @@ namespace EntityTeste
             Application.EnableVisualStyles();
             
             // abre of form passando as dependencias
-            Application.Run(container.GetInstance<teste2>());
+            //Application.Run(container.GetInstance<teste2>());
+            Application.Run(container.GetInstance<Digitar1>());
 
             Console.ReadKey();
 
@@ -112,11 +113,9 @@ namespace EntityTeste
 
             // registra os tipos genericos
             container.RegisterOpenGeneric(typeof(IBaseDAO<>), typeof(Repository<>), Lifestyle.Singleton);
-            
-
-            // registra a classe base do form
-            //container.Register<teste<IModel>>();
-            
+            container.RegisterOpenGeneric(typeof(IBaseDigitarController<>), typeof(BaseDigitarController<>), Lifestyle.Singleton);
+           
+                
 
             //reigtra todos os forms
             Type formType = typeof(Form);

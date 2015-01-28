@@ -18,14 +18,14 @@ namespace EntityTeste.Models
         public string Name { get; set; }
 
          [Header(desc = "Criado")]
-        public DateTime Created { get; set; }
+        public DateTime? Created { get; set; }
 
          [Header(desc = "Atualizado")]
         public DateTime? Updated { get; set; }
 
 
           [Header(desc = "Ativo")]
-        public bool Activated { get; set; }
+          public bool Activated { get; set; }
 
 
         public virtual ICollection<Pedido> pedidos { get; set; }
@@ -33,13 +33,17 @@ namespace EntityTeste.Models
          public void OnCreating(System.Data.Entity.DbModelBuilder modelBuilder)
          {
 
-             modelBuilder.Entity<Cliente>()
+            /* modelBuilder.Entity<Cliente>()
                     .HasMany(e => e.pedidos)
                     .WithRequired(e => e.cliente)
                     .HasForeignKey(e => e.IdPedido);
-             
+             */
                         
          }
 
+
+
+       
+       
     }
 }

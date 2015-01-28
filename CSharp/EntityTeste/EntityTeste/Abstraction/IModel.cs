@@ -10,5 +10,6 @@ namespace EntityTeste
     {
         void OnCreating(DbModelBuilder modelBuilder);
 
+        DateTime? Created { get; set; }
     }
 }

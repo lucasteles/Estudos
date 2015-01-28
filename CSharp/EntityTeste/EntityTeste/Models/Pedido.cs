@@ -15,15 +15,22 @@ namespace EntityTeste.Models
         public DateTime Data { get; set; }
         public int IdCliente { get; set; }
         public int NumPedido { get; set; }
+        public DateTime? Created { get; set; }
 
         [ForeignKey("IdCliente")]
         public virtual Cliente cliente { get; set; }
 
 
+        
+        
 
         public void OnCreating(System.Data.Entity.DbModelBuilder modelBuilder)
         {
             
         }
+
+
+        
+     
     }
 }

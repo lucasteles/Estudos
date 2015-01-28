@@ -77,14 +77,28 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>baseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="BaseDigitarController.cs" />
     <Compile Include="baseForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="baseForm.Designer.cs">
       <DependentUpon>baseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Digitar1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Digitar1.Designer.cs">
+      <DependentUpon>Digitar1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDigitar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDigitar.Designer.cs">
+      <DependentUpon>formDigitar.cs</DependentUpon>
+    </Compile>
     <Compile Include="HeaderAttribute.cs" />
     <Compile Include="Abstraction\IBaseDAO.cs" />
+    <Compile Include="Abstraction\IBaseDigitarController.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Pedido.cs" />
     <Compile Include="Program.cs" />
