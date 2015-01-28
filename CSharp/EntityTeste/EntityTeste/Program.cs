@@ -10,6 +10,7 @@ using SimpleInjector;
 using SimpleInjector.Extensions;
 
 using System.Windows.Forms;
+using System.Reflection;
 
 namespace EntityTeste
 {
@@ -69,12 +70,8 @@ namespace EntityTeste
             
             //pedido
 
-            Type tipo = Type.GetType(typeof(Pedido).FullName);
-            Type tipoContexto = typeof(Repository<>).MakeGenericType(tipo);
 
-            Activator.CreateInstance(tipoContexto);
-
-
+           
             using (var contexto = new Repository<Pedido>())
             {
                 
@@ -90,7 +87,10 @@ namespace EntityTeste
 
 
             }
-            
+
+
+           
+
 
             // configura injeção de dependecia utilizando simple injector
             Bootstrap();
@@ -98,7 +98,7 @@ namespace EntityTeste
             Application.EnableVisualStyles();
             
             // abre of form passando as dependencias
-            Application.Run(container.GetInstance<teste>());
+            Application.Run(container.GetInstance<teste2>());
 
             Console.ReadKey();
 
@@ -115,7 +115,17 @@ namespace EntityTeste
             
 
             // registra a classe base do form
-            container.Register<teste>();
+            //container.Register<teste<IModel>>();
+            
+
+            //reigtra todos os forms
+            Type formType = typeof(Form);
+            foreach (Type type in Assembly.GetExecutingAssembly().GetTypes())
+            if (formType.IsAssignableFrom(type))
+            {
+                if (!type.IsGenericType)
+                    container.Register(type);
+            }
 
             //verifica o container (??verificar)
             container.Verify();

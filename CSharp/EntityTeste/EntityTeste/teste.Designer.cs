@@ -1,11 +1,14 @@
-﻿namespace EntityTeste
+﻿using System.Windows.Forms;
+namespace EntityTeste
 {
-    partial class teste
+    partial class teste<T> 
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+
+     
 
         /// <summary>
         /// Clean up any resources being used.
@@ -28,6 +31,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            
+            
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -56,8 +61,11 @@
 
         }
 
+
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
     }
+
 }
+

@@ -11,22 +11,26 @@ using System.Collections;
 
 namespace EntityTeste
 {
-    public partial class teste : Form
-    {
-        private readonly IBaseDAO<Cliente> _repository;
+    
 
-        public teste(IBaseDAO<Cliente> repository)
+    public partial class teste<T> : baseForm 
+    {
+        private readonly IBaseDAO<T> _repository;
+
+        public teste(IBaseDAO<T> repository)
         {
 
             _repository = repository;
 
             InitializeComponent();
         }
+
+     
         
         private void teste_Load(object sender, EventArgs e)
         {
-            IList ee;
-
+            IList ee;         
+         
 
             ee = _repository.dbQuery.AsParallel().ToList();
             
@@ -59,6 +63,8 @@ namespace EntityTeste
 
      
     }
+
+  
 }
 
 

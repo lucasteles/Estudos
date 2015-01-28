@@ -5,7 +5,6 @@ C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\bin\Debug\EntityFramework.dll
 C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\bin\Debug\EntityFramework.SqlServer.dll
 C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\bin\Debug\EntityFramework.xml
 C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\bin\Debug\EntityFramework.SqlServer.xml
-C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\obj\x86\Debug\EntityTeste.csprojResolveAssemblyReference.cache
 C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\obj\x86\Debug\EntityTeste.exe
 C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\obj\x86\Debug\EntityTeste.pdb
 C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\obj\x86\Debug\EntityTeste.teste.resources

@@ -77,6 +77,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>baseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="baseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="baseForm.Designer.cs">
+      <DependentUpon>baseForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="HeaderAttribute.cs" />
     <Compile Include="Abstraction\IBaseDAO.cs" />
     <Compile Include="Models\Cliente.cs" />
@@ -94,6 +100,12 @@
     </Compile>
     <Compile Include="teste.Designer.cs">
       <DependentUpon>teste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teste2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teste2.Designer.cs">
+      <DependentUpon>teste2.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -120,6 +132,7 @@
   <ItemGroup>
     <EmbeddedResource Include="teste.resx">
       <DependentUpon>teste.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
