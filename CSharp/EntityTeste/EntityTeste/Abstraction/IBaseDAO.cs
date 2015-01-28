@@ -7,5 +7,6 @@ namespace EntityTeste
 {
    public interface IBaseDAO<T>
     {
+       IQueryable<T> dbQuery { get; set; }
     }
 }

@@ -13,8 +13,13 @@ namespace EntityTeste
 {
     public partial class teste : Form
     {
-        public teste()
+        private readonly IBaseDAO<Cliente> _repository;
+
+        public teste(IBaseDAO<Cliente> repository)
         {
+
+            _repository = repository;
+
             InitializeComponent();
         }
         
@@ -22,11 +27,10 @@ namespace EntityTeste
         {
             IList ee;
 
-            using(var context = new Repository<Cliente>())
-            {
-                ee = context.dbQuery.AsParallel().ToList();
+
+            ee = _repository.dbQuery.AsParallel().ToList();
             
-            }
+          
             dataGridView1.DataSource = new SortableList<Cliente>((IEnumerable<Cliente>) ee);
            
 

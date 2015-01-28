@@ -14,7 +14,7 @@ namespace EntityTeste
         public DbSet<T> DbObject { get; set; }
         
 
-        public IQueryable<T> dbQuery;
+        public IQueryable<T> dbQuery {get;set;}
 
        
         public Repository()

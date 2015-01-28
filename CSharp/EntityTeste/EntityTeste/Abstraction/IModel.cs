@@ -9,5 +9,6 @@ namespace EntityTeste
     public interface IModel
     {
         void OnCreating(DbModelBuilder modelBuilder);
+
     }
 }

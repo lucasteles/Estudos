@@ -12,3 +12,5 @@ C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\obj\x86\Debug\EntityTeste.teste
 C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\obj\x86\Debug\EntityTeste.csproj.GenerateResource.Cache
 C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\bin\Debug\base.mdf
 C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\bin\Debug\base_log.ldf
+C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\bin\Debug\SimpleInjector.dll
+C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\bin\Debug\SimpleInjector.xml

@@ -32,6 +32,7 @@ namespace EntityTeste.Models
         
          public void OnCreating(System.Data.Entity.DbModelBuilder modelBuilder)
          {
+
              modelBuilder.Entity<Cliente>()
                     .HasMany(e => e.pedidos)
                     .WithRequired(e => e.cliente)

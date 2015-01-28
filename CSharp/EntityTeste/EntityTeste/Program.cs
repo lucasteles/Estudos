@@ -6,10 +6,18 @@ using EntityTeste.Models;
 using System.Data.Entity;
 using System.Linq.Expressions;
 
+using SimpleInjector;
+using SimpleInjector.Extensions;
+
+using System.Windows.Forms;
+
 namespace EntityTeste
 {
     class Program
     {
+
+        private static Container container;
+
         static void Main(string[] args)
         {
          //cliente  
@@ -17,8 +25,8 @@ namespace EntityTeste
             using (var repo = new Repository<Cliente>())
             {
 
-            
-            repo.Database.Log = Console.Write; 
+            //escreve queries no console
+            // repo.Database.Log = Console.Write; 
             
                 /* insert
             var novo = new Cliente()
@@ -58,8 +66,15 @@ namespace EntityTeste
         }
         
 
-            /*
+            
             //pedido
+
+            Type tipo = Type.GetType(typeof(Pedido).FullName);
+            Type tipoContexto = typeof(Repository<>).MakeGenericType(tipo);
+
+            Activator.CreateInstance(tipoContexto);
+
+
             using (var contexto = new Repository<Pedido>())
             {
                 
@@ -75,17 +90,44 @@ namespace EntityTeste
 
 
             }
-            */
-
-
-
-
-            var ee = new teste();
-            ee.ShowDialog();
             
 
-           // Console.ReadKey();
+            // configura injeção de dependecia utilizando simple injector
+            Bootstrap();
+
+            Application.EnableVisualStyles();
+            
+            // abre of form passando as dependencias
+            Application.Run(container.GetInstance<teste>());
+
+            Console.ReadKey();
 
         }
+
+
+        private static void Bootstrap()
+        {
+            // cria continer
+            container = new Container();
+
+            // registra os tipos genericos
+            container.RegisterOpenGeneric(typeof(IBaseDAO<>), typeof(Repository<>), Lifestyle.Singleton);
+            
+
+            // registra a classe base do form
+            container.Register<teste>();
+
+            //verifica o container (??verificar)
+            container.Verify();
+
+            // Registra a classe de container
+            Program.container = container;
+
+            
+        }
     }
+
+
+
+
 }
