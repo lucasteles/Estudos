@@ -43,6 +43,19 @@ namespace EntityTeste
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Cliente novo = new Cliente()
+            {
+                Name = "Julios",
+                Telefone = "1111-2222"
+            };
+
+
+            setModelEE(novo);
+
+        }
+
        
 
          

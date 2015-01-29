@@ -33,6 +33,13 @@ namespace EntityTeste
             return fieldRegister.getModel();
         }
 
+        public IFieldRegister<T> setEE(T model) 
+        {
+            fieldRegister.setModel(model);
+
+            return fieldRegister;
+        }
+
         public int getID()
         {
           

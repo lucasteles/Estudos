@@ -30,6 +30,16 @@ namespace EntityTeste
             return controller.getEE();
         }
 
+        public IBaseDigitarController<T> setModelEE<T>(T model) where T : IModel
+        {
+            var controller = (IBaseDigitarController<T>)Controller;
+
+            controller.setEE(model);
+            
+
+            return controller;
+        }
+
         public formDigitar()
         {
             

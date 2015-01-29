@@ -21,6 +21,8 @@ namespace EntityTeste
     public interface IBaseDigitarController<T> : IBaseDigitarController where T : IModel
     {
         IFieldRegister<T> Register(Expression<Func<T, object>> expression, Control control);
+        IFieldRegister<T> setEE(T model);
         T getEE();
+
     }
 }

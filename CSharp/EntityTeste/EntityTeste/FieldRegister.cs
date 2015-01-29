@@ -57,6 +57,28 @@ namespace EntityTeste
             
         }
 
+        private void fillControls()
+        {
+            foreach (var item in controls)
+            {
+                var info = getInfo(item.Item1);
+                
+                object value = 
+                    Model.GetType().GetProperty(info.Name).GetValue(Model, new object[] { });
+
+                var control = item.Item2;
+
+                if (control is TextBoxBase)
+                   ((TextBoxBase)item.Item2).Text = value.ToString();
+                else if (control is ComboBox)
+                   ((ComboBox)item.Item2).SelectedValue = value;
+                else if (control is CheckBox)
+                    ((CheckBox)item.Item2).Checked  =  (int)value==1;
+
+
+                
+            }
+        }
 
         private PropertyInfo getInfo(Expression<Func<T, object>> fieldModel)
         {
@@ -97,7 +119,14 @@ namespace EntityTeste
             return Model;
         }
 
-       
+        public IFieldRegister<T> setModel(T model) 
+        {
+            Model = model;
+
+            fillControls();
+
+            return this;
+        }
 
     }
 }

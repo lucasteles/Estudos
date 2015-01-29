@@ -12,5 +12,8 @@ namespace EntityTeste
     {
         IFieldRegister<T> Register(Expression<Func<T, object>> expression, Control control);
         T getModel();
+        IFieldRegister<T> setModel(T model); 
+
+        
     }
 }
