@@ -17,14 +17,34 @@ namespace EntityTeste
 
         public Digitar1(IBaseDAO<Pedido> pedido)
         {
-            // aqui define que model utilizar no digitar
-            setModel<Cliente>();
+            InitializeComponent();
 
+
+            // aqui define que model utilizar no digitar
+            // o register fala que campo pertence a que propriedade
+            setModel<Cliente>()
+                .Register(e=>e.Name, txtNome)
+                .Register(e=>e.Telefone, txtFone);
+                                   
 
             //injeta pedido para usar em qualquer coisa
             _pedido = pedido;
 
-            InitializeComponent();
+           
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var ee = getModelEE<Cliente>();
+
+
+            // poe um brakpoint aqui e ve os dados do model!
+            MessageBox.Show(String.Format("Nome:{0} Telefone:{1}", ee.Name, ee.Telefone));
+
+        }
+
+       
+
+         
     }
 }

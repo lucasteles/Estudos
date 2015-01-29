@@ -17,6 +17,10 @@ namespace EntityTeste.Models
         [Header(desc="Nome")]
         public string Name { get; set; }
 
+
+        [Header(desc = "Fone")]
+        public string Telefone { get; set; }
+
          [Header(desc = "Criado")]
         public DateTime? Created { get; set; }
 

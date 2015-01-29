@@ -71,6 +71,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstraction\IFieldRegister.cs" />
     <Compile Include="Abstraction\IModel.cs" />
     <Compile Include="baseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -90,6 +91,7 @@
     <Compile Include="Digitar1.Designer.cs">
       <DependentUpon>Digitar1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FieldRegister.cs" />
     <Compile Include="formDigitar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +146,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Digitar1.resx">
+      <DependentUpon>Digitar1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="teste.resx">
       <DependentUpon>teste.cs</DependentUpon>
       <SubType>Designer</SubType>

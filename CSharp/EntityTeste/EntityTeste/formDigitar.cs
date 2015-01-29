@@ -15,9 +15,19 @@ namespace EntityTeste
         protected IBaseDigitarController Controller;
 
 
-        protected void setModel<T>() // busca imlentação da controleer com tipo passado
+        protected IBaseDigitarController<T> setModel<T>() where T : IModel // busca imlentação da controleer com tipo passado
         {
             Controller = Program.container.GetInstance<IBaseDigitarController<T>>();
+
+            return (IBaseDigitarController<T>)Controller;
+            
+        }
+
+        public T getModelEE<T>() where T : IModel
+        {
+            var controller = (IBaseDigitarController<T>)Controller;
+
+            return controller.getEE();
         }
 
         public formDigitar()
@@ -27,9 +37,9 @@ namespace EntityTeste
         }
 
 
-        public void salvar() // criar m,etodos que irao fazer as coisas do digitar usando a controller
+        public void salvar() // criar m,todos que irao fazer as coisas do digitar usando a controller
         {
-            int id = Controller.getID();
+            int id = Controller.getID(); 
 
             // alterando a model de forma generica
             IModel model = Controller.get();

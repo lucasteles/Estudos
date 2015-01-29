@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Linq.Expressions;
+using System.Windows.Forms;
 
 namespace EntityTeste
 {
@@ -12,11 +14,13 @@ namespace EntityTeste
         void Update();
         void Etc();
         IModel get();
+
     }
 
 
-    public interface IBaseDigitarController<T> : IBaseDigitarController
+    public interface IBaseDigitarController<T> : IBaseDigitarController where T : IModel
     {
-      
+        IFieldRegister<T> Register(Expression<Func<T, object>> expression, Control control);
+        T getEE();
     }
 }

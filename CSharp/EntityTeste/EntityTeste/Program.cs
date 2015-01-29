@@ -99,7 +99,10 @@ namespace EntityTeste
             
             // abre of form passando as dependencias
             //Application.Run(container.GetInstance<teste2>());
-            Application.Run(container.GetInstance<Digitar1>());
+           // Application.Run(container.GetInstance<Digitar1>());
+
+           Application.Run( (baseForm) Program.container.GetInstance(Type.GetType("EntityTeste.Digitar1")) );
+
 
             Console.ReadKey();
 
@@ -114,8 +117,7 @@ namespace EntityTeste
             // registra os tipos genericos
             container.RegisterOpenGeneric(typeof(IBaseDAO<>), typeof(Repository<>), Lifestyle.Singleton);
             container.RegisterOpenGeneric(typeof(IBaseDigitarController<>), typeof(BaseDigitarController<>), Lifestyle.Singleton);
-           
-                
+            container.RegisterOpenGeneric(typeof(IFieldRegister<>), typeof(FieldRegister<>), Lifestyle.Singleton);
 
             //reigtra todos os forms
             Type formType = typeof(Form);
