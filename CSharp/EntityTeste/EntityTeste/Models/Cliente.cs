@@ -21,7 +21,10 @@ namespace EntityTeste.Models
         [Header(desc = "Fone")]
         public string Telefone { get; set; }
 
-         [Header(desc = "Criado")]
+        [Header(desc = "peso")]
+        public decimal? peso { get; set; }
+
+        [Header(desc = "Criado")]
         public DateTime? Created { get; set; }
 
          [Header(desc = "Atualizado")]

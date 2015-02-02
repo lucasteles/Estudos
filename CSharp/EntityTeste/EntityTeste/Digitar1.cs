@@ -23,10 +23,11 @@ namespace EntityTeste
             // aqui define que model utilizar no digitar
             // o register fala que campo pertence a que propriedade
             setModel<Cliente>()
-                .Register(e=>e.Name, txtNome)
-                .Register(e=>e.Telefone, txtFone);
-                                   
+             .Register(e => e.Name, txtNome)
+             .Register(e => e.Telefone, txtFone)
+                .Register(e => e.peso, txtPeso);
 
+             
             //injeta pedido para usar em qualquer coisa
             _pedido = pedido;
 
@@ -39,7 +40,7 @@ namespace EntityTeste
 
 
             // poe um brakpoint aqui e ve os dados do model!
-            MessageBox.Show(String.Format("Nome:{0} Telefone:{1}", ee.Name, ee.Telefone));
+            MessageBox.Show(String.Format("Nome:{0} Telefone:{1}, Peso:{2}", ee.Name, ee.Telefone,ee.peso));
 
         }
 
@@ -48,7 +49,8 @@ namespace EntityTeste
             Cliente novo = new Cliente()
             {
                 Name = "Julios",
-                Telefone = "1111-2222"
+                Telefone = "1111-2222",
+                peso = (decimal)25.9
             };
 
 

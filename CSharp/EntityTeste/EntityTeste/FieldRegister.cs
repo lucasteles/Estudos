@@ -5,6 +5,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Linq.Expressions;
 using System.Reflection;
+using System.ComponentModel;
 
 
 namespace EntityTeste
@@ -49,13 +50,29 @@ namespace EntityTeste
                      value = ((ComboBox)item.Item2).SelectedValue;
                 else if (control is CheckBox)
                     value = ((CheckBox)item.Item2).Checked ? 1 : 0;
+
+                Type convType = Model.GetType().GetProperty(info.Name).PropertyType;
+
+                if (Nullable.GetUnderlyingType(convType) != null)
+                    convType = Nullable.GetUnderlyingType(convType);
                 
 
-                Model.GetType().GetProperty(info.Name).SetValue(Model, value, new object[]{ });
+                if ( (new List<Type>(){typeof(decimal), typeof(double), typeof(float)}).Contains(convType) )
+                    value = Convert.ToDecimal(value);
+
+                if ( convType == typeof(DateTime) )
+                    value = Convert.ToDateTime(value);
+
+                if ( convType == typeof(int) )
+                    value = Convert.ToInt32(value);
+
+                Model.GetType().GetProperty(info.Name).SetValue(Model, value , new object[]{ });
             }
                                      
             
         }
+
+
 
         private void fillControls()
         {
@@ -85,9 +102,15 @@ namespace EntityTeste
 
               Type type = typeof(T);
 
-              
+              MemberExpression member;
 
-             MemberExpression member = fieldModel.Body as MemberExpression;
+
+              if (fieldModel.Body is UnaryExpression)
+                  member = (fieldModel.Body as UnaryExpression).Operand as MemberExpression;
+              else
+                  member = fieldModel.Body as MemberExpression;
+            
+            
             if (member == null)
                 throw new ArgumentException(string.Format(
                     "Expression '{0}' refers to a method, not a property.",

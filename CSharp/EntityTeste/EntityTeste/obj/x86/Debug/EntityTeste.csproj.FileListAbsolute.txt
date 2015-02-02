@@ -14,3 +14,4 @@ C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\bin\Debug\base_log.ldf
 C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\bin\Debug\SimpleInjector.dll
 C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\bin\Debug\SimpleInjector.xml
 C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\obj\x86\Debug\EntityTeste.Digitar1.resources
+C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\obj\x86\Debug\EntityTeste.csprojResolveAssemblyReference.cache
