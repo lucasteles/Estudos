@@ -4,12 +4,26 @@ using System.Linq;
 using System.Text;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using EntityTeste.Validations;
 
 namespace EntityTeste.Models
 {
     [Table("TB_CLIENTE")]
     public class Cliente : IModel
     {
+        ClienteValidator _validator;
+        public Cliente()
+        {
+            _validator = new ClienteValidator();
+        }
+
+        public FluentValidation.Results.ValidationResult validate()
+        {
+            _validator = new ClienteValidator();
+            return _validator.Validate(this);
+        }
+
+
         //[DatabaseGenerated(DatabaseGeneratedOption.None)]
         [Key]
         public int IdCliente { get; set; }
@@ -35,7 +49,7 @@ namespace EntityTeste.Models
           public bool Activated { get; set; }
 
 
-        public virtual ICollection<Pedido> pedidos { get; set; }
+         public virtual ICollection<Pedido> pedidos { get; set; }
         
          public void OnCreating(System.Data.Entity.DbModelBuilder modelBuilder)
          {
@@ -48,8 +62,8 @@ namespace EntityTeste.Models
                         
          }
 
-
-
+         
+        
        
        
     }

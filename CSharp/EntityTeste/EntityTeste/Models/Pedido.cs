@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using FluentValidation;
 
 namespace EntityTeste.Models
 {
@@ -20,7 +21,7 @@ namespace EntityTeste.Models
         [ForeignKey("IdCliente")]
         public virtual Cliente cliente { get; set; }
 
-
+     
         
         
 

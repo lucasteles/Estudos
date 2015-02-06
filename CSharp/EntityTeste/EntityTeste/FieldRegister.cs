@@ -55,18 +55,31 @@ namespace EntityTeste
 
                 if (Nullable.GetUnderlyingType(convType) != null)
                     convType = Nullable.GetUnderlyingType(convType);
+
+
+                if (!value.ToString().Equals(""))
+                {
+                    if ((new List<Type>() { typeof(decimal), typeof(double), typeof(float) }).Contains(convType))
+                    {
+                        value = Convert.ToDecimal(value);
+                    }
+
+
+                    if (convType == typeof(DateTime))
+                        value = Convert.ToDateTime(value);
+
+                    if (convType == typeof(int))
+                        value = Convert.ToInt32(value);
+
+                    Model.GetType().GetProperty(info.Name).SetValue(Model, value, new object[] { });
+                }
+                else
+                {
+                     if (convType == typeof(String))
+                         Model.GetType().GetProperty(info.Name).SetValue(Model, value, new object[] { });
+                }
+
                 
-
-                if ( (new List<Type>(){typeof(decimal), typeof(double), typeof(float)}).Contains(convType) )
-                    value = Convert.ToDecimal(value);
-
-                if ( convType == typeof(DateTime) )
-                    value = Convert.ToDateTime(value);
-
-                if ( convType == typeof(int) )
-                    value = Convert.ToInt32(value);
-
-                Model.GetType().GetProperty(info.Name).SetValue(Model, value , new object[]{ });
             }
                                      
             

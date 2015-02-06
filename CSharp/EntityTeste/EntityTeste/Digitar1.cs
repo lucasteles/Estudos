@@ -15,6 +15,7 @@ namespace EntityTeste
         // apenas para demsntrar como é carregado automaticamente a dao do pedido pelo inbjector
         private IBaseDAO<Pedido> _pedido;
 
+        
         public Digitar1(IBaseDAO<Pedido> pedido)
         {
             InitializeComponent();
@@ -55,6 +56,18 @@ namespace EntityTeste
 
 
             setModelEE(novo);
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var ee = getModelEE<Cliente>();
+
+            var result = ee.validate();
+
+            if (!result.IsValid)
+                MessageBox.Show(result.getErrorString());
+
 
         }
 
