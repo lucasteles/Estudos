@@ -17,6 +17,7 @@ namespace SPA_Coffee.Models
 
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
+            
             var request = filterContext.RequestContext.HttpContext.Request;
 
             if (request.QueryString[Fragment] != null)

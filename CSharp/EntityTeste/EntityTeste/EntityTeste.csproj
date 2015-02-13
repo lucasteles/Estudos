@@ -58,6 +58,9 @@
     <Reference Include="FluentValidation">
       <HintPath>..\packages\FluentValidation.5.5.0.0\lib\Net40\FluentValidation.dll</HintPath>
     </Reference>
+    <Reference Include="Gnu.MP">
+      <HintPath>..\Gnu.MP.dll</HintPath>
+    </Reference>
     <Reference Include="SimpleInjector">
       <HintPath>..\SimpleInjector\NET40\SimpleInjector.dll</HintPath>
     </Reference>

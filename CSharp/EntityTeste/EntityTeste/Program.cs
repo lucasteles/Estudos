@@ -12,6 +12,8 @@ using SimpleInjector.Extensions;
 using System.Windows.Forms;
 using System.Reflection;
 
+
+
 namespace EntityTeste
 {
     class Program
@@ -19,8 +21,14 @@ namespace EntityTeste
 
         public static Container container;
 
+        
+        
+
         static void Main(string[] args)
         {
+
+
+         
          //cliente  
             
             using (var repo = new Repository<Cliente>())
