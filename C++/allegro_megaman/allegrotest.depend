@@ -3,3 +3,10 @@
 	<allegro5/allegro.h>
 	<allegro5/allegro_native_dialog.h>
 
+1420553793 source:c:\git\fundations\c++\allegro_megaman\main.c
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_primitives.h>
+

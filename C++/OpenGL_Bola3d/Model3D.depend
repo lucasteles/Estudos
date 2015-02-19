@@ -346,3 +346,28 @@
 	<stdlib.h>
 	<GL/glut.h>
 
+1420553793 source:c:\git\fundations\c++\opengl_bola3d\funcs.cpp
+	"Funcs.h"
+
+1420553793 c:\git\fundations\c++\opengl_bola3d\funcs.h
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+	<GL/glut.h>
+
+1420553793 source:c:\git\fundations\c++\opengl_bola3d\imageloader.cpp
+	<assert.h>
+	<fstream>
+	"imageloader.h"
+
+1420553793 c:\git\fundations\c++\opengl_bola3d\imageloader.h
+
+1424351170 source:c:\git\fundations\c++\opengl_bola3d\main.cpp
+	<windows.h>
+	"Funcs.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<GL/glut.h>
+	"imageloader.h"
+

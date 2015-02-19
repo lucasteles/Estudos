@@ -10,14 +10,26 @@ namespace ExpressionTeste
     {
         static void Main(string[] args)
         {
+            
+            
+                       
+            
             string[] companies = { "Consolidated Messenger", "Alpine Ski House", "Southridge Video", "City Power & Light",
                                "Coho Winery", "Wide World Importers", "Graphic Design Institute", "Adventure Works",
                                "Humongous Insurance", "Woodgrove Bank", "Margie's Travel", "Northwind Traders",
                                "Blue Yonder Airlines", "Trey Research", "The Phone Company",
                                "Wingtip Toys", "Lucerne Publishing", "Fourth Coffee" };
 
-            // The IQueryable data to query.
             IQueryable<String> queryableData = companies.AsQueryable<string>();
+
+                        
+            Expression<Func<string, bool>> x1 = (e => e.ToLower() == "coho winery");
+            Expression<Func<string, bool>> x2 = (e => e == "Lucerne Publishing");
+
+            var invocation = Expression.Invoke(x2, x1.Parameters.Cast<Expression>());
+            var expression = Expression.Lambda<Func<string, bool>>(Expression.OrElse(x1.Body, invocation), x1.Parameters);
+            var result = queryableData.Where(expression);
+
 
             // Compose the expression tree that represents the parameter to the predicate.
             ParameterExpression pe = Expression.Parameter(typeof(string), "company");
@@ -69,4 +81,6 @@ namespace ExpressionTeste
             Console.ReadKey();
         }
     }
+
+   
 }
