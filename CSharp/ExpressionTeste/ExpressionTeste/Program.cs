@@ -12,7 +12,6 @@ namespace ExpressionTeste
         {
             
             
-                       
             
             string[] companies = { "Consolidated Messenger", "Alpine Ski House", "Southridge Video", "City Power & Light",
                                "Coho Winery", "Wide World Importers", "Graphic Design Institute", "Adventure Works",
@@ -22,14 +21,28 @@ namespace ExpressionTeste
 
             IQueryable<String> queryableData = companies.AsQueryable<string>();
 
-                        
-            Expression<Func<string, bool>> x1 = (e => e.ToLower() == "coho winery");
-            Expression<Func<string, bool>> x2 = (e => e == "Lucerne Publishing");
-
-            var invocation = Expression.Invoke(x2, x1.Parameters.Cast<Expression>());
-            var expression = Expression.Lambda<Func<string, bool>>(Expression.OrElse(x1.Body, invocation), x1.Parameters);
+            Expression<Func<string, bool>> exp = (e => e.Contains("c") );
+            var expression = exp.AndNot(e => e.Contains("&")).Or(e => e.Length <= 11).Not();
+              
             var result = queryableData.Where(expression);
 
+            Console.ReadKey();
+
+            /*
+           var expression = new FluentLambda<string>()
+                               .Set(e => e.Contains("c"))
+                               .AndNot()
+                               .Or(e => e.Length <= 11)
+                               .Exp();
+
+             */      
+
+
+            //var invocation = Expression.Invoke(x2, x1.Parameters.Cast<Expression>());
+            //var expression = Expression.Lambda<Func<string, bool>>(Expression.OrElse(x1.Body, invocation), x1.Parameters);
+
+
+            /*
 
             // Compose the expression tree that represents the parameter to the predicate.
             ParameterExpression pe = Expression.Parameter(typeof(string), "company");
@@ -77,10 +90,12 @@ namespace ExpressionTeste
             foreach (string company in results)
                 Console.WriteLine(company);
 
-
-            Console.ReadKey();
+            */
+           
         }
     }
 
+
+  
    
 }

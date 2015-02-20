@@ -16,6 +16,9 @@ namespace EntityTeste
 
         private IList<Tuple<Expression<Func<T, object>>, Control>> controls;
 
+        /// <summary>
+        /// registra campos
+        /// </summary>
         public FieldRegister()
         {
             Model = new T();
@@ -109,7 +112,7 @@ namespace EntityTeste
                 
             }
         }
-
+       
         private PropertyInfo getInfo(Expression<Func<T, object>> fieldModel)
         {
 

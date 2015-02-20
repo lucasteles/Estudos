@@ -21,6 +21,12 @@ namespace EntityTeste
             InitializeComponent();
 
 
+
+            Color c = ColorTranslator.FromWin32((255) | ((0) << 8) | ((0) << 16));
+
+            this.BackColor = c;
+
+
             // aqui define que model utilizar no digitar
             // o register fala que campo pertence a que propriedade
             setModel<Cliente>()

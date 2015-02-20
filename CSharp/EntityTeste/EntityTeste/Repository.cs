@@ -16,7 +16,9 @@ namespace EntityTeste
 
         public IQueryable<T> dbQuery {get;set;}
 
-       
+        /// <summary>
+        /// Cria reposititorio
+        /// </summary>
         public Repository()
             : base( ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString )
         {

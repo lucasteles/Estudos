@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EntityTeste</name>
+    </assembly>
+    <members>
+        <member name="F:EntityTeste.baseForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EntityTeste.baseForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EntityTeste.baseForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:EntityTeste.teste`1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EntityTeste.teste`1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EntityTeste.teste`1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:EntityTeste.teste2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EntityTeste.teste2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EntityTeste.teste2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:EntityTeste.formDigitar.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EntityTeste.formDigitar.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EntityTeste.formDigitar.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:EntityTeste.Digitar1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EntityTeste.Digitar1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EntityTeste.Digitar1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:EntityTeste.Repository`1.#ctor">
+            <summary>
+            Cria reposititorio
+            </summary>
+        </member>
+        <member name="M:EntityTeste.FieldRegister`1.#ctor">
+            <summary>
+            registra campos
+            </summary>
+        </member>
+        <member name="T:EntityTeste.baseDataSet">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+    </members>
+</doc>

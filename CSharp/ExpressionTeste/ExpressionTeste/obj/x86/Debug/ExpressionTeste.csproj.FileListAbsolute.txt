@@ -2,4 +2,3 @@ C:\Git\Fundations\CSharp\ExpressionTeste\ExpressionTeste\bin\Debug\ExpressionTes
 C:\Git\Fundations\CSharp\ExpressionTeste\ExpressionTeste\bin\Debug\ExpressionTeste.pdb
 C:\Git\Fundations\CSharp\ExpressionTeste\ExpressionTeste\obj\x86\Debug\ExpressionTeste.exe
 C:\Git\Fundations\CSharp\ExpressionTeste\ExpressionTeste\obj\x86\Debug\ExpressionTeste.pdb
-C:\Git\Fundations\CSharp\ExpressionTeste\ExpressionTeste\obj\x86\Debug\ExpressionTeste.csprojResolveAssemblyReference.cache
