@@ -1,0 +1,7 @@
+C:\Git\Fundations\CSharp\testeWebRequest\testeWebRequest\bin\Debug\testeWebRequest.exe
+C:\Git\Fundations\CSharp\testeWebRequest\testeWebRequest\bin\Debug\testeWebRequest.pdb
+C:\Git\Fundations\CSharp\testeWebRequest\testeWebRequest\obj\x86\Debug\testeWebRequest.exe
+C:\Git\Fundations\CSharp\testeWebRequest\testeWebRequest\obj\x86\Debug\testeWebRequest.pdb
+C:\Git\Fundations\CSharp\testeWebRequest\testeWebRequest\obj\x86\Debug\testeWebRequest.csprojResolveAssemblyReference.cache
+C:\Git\Fundations\CSharp\testeWebRequest\testeWebRequest\bin\Debug\Ionic.Zip.dll
+C:\Git\Fundations\CSharp\testeWebRequest\testeWebRequest\bin\Debug\Ionic.Zip.xml
