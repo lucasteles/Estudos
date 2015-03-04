@@ -23,13 +23,20 @@ namespace PGM_EDITOR
     /// </summary>
     public partial class main : Window
     {
-        private Bitmap bitmap;
-        private Stack<Bitmap> history = new Stack<Bitmap>();
-        
+        private PgmImg bitmap;
+        private Stack<PgmImg> Undo = new Stack<PgmImg>();
+        private Stack<PgmImg> Redo = new Stack<PgmImg>();
         
         public main()
         {
             InitializeComponent();
+        }
+           
+        
+        private void addHistory()
+        {
+            Redo = new Stack<PgmImg>();
+            Undo.Push(bitmap.Clone());
         }
 
         private void btnLoad_Click(object sender, RoutedEventArgs e)
@@ -38,13 +45,13 @@ namespace PGM_EDITOR
             op.Title = "Selecione uma foto";
             op.Filter = "All supported graphics|*.pgm";
 
-            
-            
+            Redo = new Stack<PgmImg>();
+            Undo = new Stack<PgmImg>();
 
             if (op.ShowDialog() == true)
             {
  
-                bitmap = PGMUtil.ToBitmap(op.FileName);
+                bitmap = PGMUtil.ReadPgmImg(op.FileName);
                 show();
             }
         }
@@ -52,10 +59,12 @@ namespace PGM_EDITOR
 
         private void show()
         {
+            var trueBitmap = bitmap.Bitmap;
+
             BitmapImage bitmapImage = new BitmapImage();
              using (MemoryStream memory = new MemoryStream())
                 {
-                    bitmap.Save(memory, ImageFormat.Png);
+                    trueBitmap.Save(memory, ImageFormat.Png);
                     memory.Position = 0;
                     bitmapImage.BeginInit();
                     bitmapImage.StreamSource = memory;
@@ -68,25 +77,52 @@ namespace PGM_EDITOR
 
         private void btnRotateR_Click(object sender, RoutedEventArgs e)
         {
-            history.Push(bitmap.Clone() as Bitmap);
+            addHistory();
             bitmap = tools.RotateR(bitmap);
             show();
         }
         private void btnRotateL_Click(object sender, RoutedEventArgs e)
         {
-            history.Push(bitmap.Clone() as Bitmap);
+            addHistory();
             bitmap = tools.RotateL(bitmap);
             show();
         }
 
         private void btnUndo_Click(object sender, RoutedEventArgs e)
         {
-            if (history.Count == 0)
+            if (Undo.Count == 0)
                 return;
 
-            bitmap = history.Pop();
+            Redo.Push(bitmap.Clone());
+            bitmap = Undo.Pop();
             show();
         }
+
+        private void btnRedo_Click(object sender, RoutedEventArgs e)
+        {
+            if (Redo.Count == 0)
+                return;
+
+            Undo.Push(bitmap.Clone());
+            bitmap = Redo.Pop();
+            show();
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog op = new SaveFileDialog();
+            op.Title = "Salvar";
+            op.Filter = "All supported graphics|*.pgm";
+            
+            if (op.ShowDialog() == true)
+            {
+                PGMUtil.Save(bitmap, op.FileName);
+            }
+        }
+
+       
+
+       
 
     }
 }
