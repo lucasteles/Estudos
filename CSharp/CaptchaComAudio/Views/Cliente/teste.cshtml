@@ -1,0 +1,70 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <script>
+        window.onload = function () {
+            var img = document.getElementById('ReloadCaptcha');
+            img.onclick = function () {
+
+                var xmlhttp;
+
+                if (window.XMLHttpRequest) {
+                    // code for IE7+, Firefox, Chrome, Opera, Safari
+                    xmlhttp = new XMLHttpRequest();
+                } else {
+                    // code for IE6, IE5
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.open("GET", "/Cliente/getcaptcha", true);
+                xmlhttp.send();
+
+                document.getElementById('captcha').setAttribute('src', '/Cliente/getcaptcha');
+
+                var player = document.getElementById('player');
+                var content = player.innerHTML;
+                player.innerHTML = content;
+
+            };
+        }
+
+    </script>
+</head>
+<body>
+	<form action="http://www3.hmlwunderman.com.br/bradesco/cartao/service/Cliente/Post" method="POST">
+		<div>Nome:<input type="text" name="usrname" /></div>
+		<div>ddd:<input type="text" name="usrddd" /></div>
+		<div>fone:<input type="text" name="usrfone" /></div>
+		<div>aceito email:<input type="checkbox" name="aceitoEmail" /></div>
+		<div>aceito sms:<input type="checkbox" name="aceitoSMS" /></div>
+
+        <p>
+        <div><img id="captcha" src="/Cliente/getcaptcha" />
+        <img id="ReloadCaptcha" src="/Content/RefreshCaptcha.png" />
+        
+        <object id="player" alt="Iniciar audio captcha" 
+            classid="" 
+            codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0"
+            width="16" height="16" id="CaptchaAudio" 
+            align="middle">
+            <param name="allowScriptAccess" value="sameDomain">
+            <param name="allowFullScreen" value="false">
+            <param name="movie" value="Content/CaptchaAudio.swf?link=/Cliente/GetAudioCaptcha">
+            <param name="quality" value="high"><param name="bgcolor" value="#ffffff">
+            <embed src="Content/CaptchaAudio.swf?link=/Cliente/GetAudioCaptcha" 
+            quality="high" bgcolor="#ffffff" width="16" height="16" name="CaptchaAudio" align="middle" allowscriptaccess="sameDomain"
+             allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="https://www.macromedia.com/go/getflashplayer">
+        </object>
+        
+        </div>
+      <div>informe o número da figura acima:</div>
+      <div><input type="text" name="captcha" /></div>
+       </p>
+
+        <br />
+		<div><input type="submit" value="send" /></div>
+	</form>
+</body>
+</html>

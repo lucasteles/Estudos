@@ -11,3 +11,10 @@ C:\Users\telesl\Downloads\UsandoCaptcha\UsandoCaptcha\UsandoCaptcha\bin\EntityFr
 C:\Users\telesl\Downloads\UsandoCaptcha\UsandoCaptcha\UsandoCaptcha\bin\EntityFramework.xml
 C:\Users\telesl\Downloads\UsandoCaptcha\UsandoCaptcha\UsandoCaptcha\obj\Debug\UsandoCaptcha.dll
 C:\Users\telesl\Downloads\UsandoCaptcha\UsandoCaptcha\UsandoCaptcha\obj\Debug\UsandoCaptcha.pdb
+C:\Git\Fundations\CSharp\UsandoCaptcha\UsandoCaptcha\bin\UsandoCaptcha.dll
+C:\Git\Fundations\CSharp\UsandoCaptcha\UsandoCaptcha\bin\UsandoCaptcha.pdb
+C:\Git\Fundations\CSharp\UsandoCaptcha\UsandoCaptcha\bin\EntityFramework.dll
+C:\Git\Fundations\CSharp\UsandoCaptcha\UsandoCaptcha\bin\EntityFramework.xml
+C:\Git\Fundations\CSharp\UsandoCaptcha\UsandoCaptcha\obj\Debug\UsandoCaptcha.csprojResolveAssemblyReference.cache
+C:\Git\Fundations\CSharp\UsandoCaptcha\UsandoCaptcha\obj\Debug\UsandoCaptcha.dll
+C:\Git\Fundations\CSharp\UsandoCaptcha\UsandoCaptcha\obj\Debug\UsandoCaptcha.pdb

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2015-02-10T12:51:14.4930512-02:00</TimeStampOfAssociatedLegacyPublishXmlFile>
+    <_PublishTargetUrl>C:\DESENVOLVIMENTO\IIS\bradescoservico</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/10/2015 12:51:44</publishTime>
+    </File>
+    <File Include="bin/BradescoCadastro.dll">
+      <publishTime>02/11/2015 10:30:05</publishTime>
+    </File>
+    <File Include="bin/BradescoCadastro.pdb">
+      <publishTime>02/11/2015 10:30:05</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>02/10/2015 12:51:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>02/10/2015 12:51:35</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/11/2015 09:55:32</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>02/11/2015 09:55:32</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>02/11/2015 09:55:32</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.WebRequest.dll">
+      <publishTime>02/11/2015 09:55:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>02/10/2015 12:51:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>02/11/2015 09:55:33</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>02/11/2015 09:43:33</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>02/10/2015 12:51:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/10/2015 12:51:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.Providers.dll">
+      <publishTime>02/10/2015 12:51:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>02/10/2015 12:51:39</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>02/10/2015 12:51:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>02/10/2015 12:51:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>02/10/2015 12:51:41</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>02/10/2015 12:51:44</publishTime>
+    </File>
+    <File Include="DDL/BR_CLIENTES.txt">
+      <publishTime>02/10/2015 12:51:09</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/10/2015 12:51:08</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>02/11/2015 09:55:37</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/11/2015 09:58:06</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
