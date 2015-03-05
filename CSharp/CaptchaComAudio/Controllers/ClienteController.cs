@@ -21,10 +21,17 @@ namespace BradescoCadastro.Controllers
 
         public ActionResult teste()
         {
-
+            ViewBag.Message = "";
 
 
             return View();
+        }
+
+        public ActionResult teste2()
+        {
+            ViewBag.Message = "<P>Preencha corretamente!</P>";
+
+            return View("Teste");
         }
 
 
@@ -52,10 +59,15 @@ namespace BradescoCadastro.Controllers
             string usrddd,
             string usrfone,
             string aceitoEmail,
-            string aceitoSMS
+            string aceitoSMS,
+            string captcha
         )
         {
-
+            
+            if ( HttpContext.Session["captcha"].ToString() != captcha )
+            {
+                 return Redirect("/CLiente/Teste2");
+            }
             var urlRefer = Request.UrlReferrer.AbsoluteUri;
 
             if (!isValidPost(Request.UrlReferrer))

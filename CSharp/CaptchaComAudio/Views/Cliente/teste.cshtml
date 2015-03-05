@@ -18,10 +18,9 @@
                     // code for IE6, IE5
                     xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
                 }
-                xmlhttp.open("GET", "/Cliente/getcaptcha", true);
+                xmlhttp.open("GET", "Cliente/getcaptcha", true);
                 xmlhttp.send();
-
-                document.getElementById('captcha').setAttribute('src', '/Cliente/getcaptcha');
+                document.getElementById('captcha').setAttribute('src', 'Cliente/getcaptcha?' + new Date().getTime());
 
                 var player = document.getElementById('player');
                 var content = player.innerHTML;
@@ -33,7 +32,10 @@
     </script>
 </head>
 <body>
-	<form action="http://www3.hmlwunderman.com.br/bradesco/cartao/service/Cliente/Post" method="POST">
+
+<div><string>@ViewBag.Message</string></div>
+
+	<form action="/Cliente/Post" method="POST">
 		<div>Nome:<input type="text" name="usrname" /></div>
 		<div>ddd:<input type="text" name="usrddd" /></div>
 		<div>fone:<input type="text" name="usrfone" /></div>
@@ -41,8 +43,8 @@
 		<div>aceito sms:<input type="checkbox" name="aceitoSMS" /></div>
 
         <p>
-        <div><img id="captcha" src="/Cliente/getcaptcha" />
-        <img id="ReloadCaptcha" src="/Content/RefreshCaptcha.png" />
+        <div><img id="captcha" src="Cliente/getcaptcha" />
+        <img id="ReloadCaptcha" src="Content/RefreshCaptcha.png" />
         
         <object id="player" alt="Iniciar audio captcha" 
             classid="" 
@@ -51,14 +53,16 @@
             align="middle">
             <param name="allowScriptAccess" value="sameDomain">
             <param name="allowFullScreen" value="false">
-            <param name="movie" value="Content/CaptchaAudio.swf?link=/Cliente/GetAudioCaptcha">
+            <param name="movie" value="Content/CaptchaAudio.swf?link=Cliente/GetAudioCaptcha">
             <param name="quality" value="high"><param name="bgcolor" value="#ffffff">
-            <embed src="Content/CaptchaAudio.swf?link=/Cliente/GetAudioCaptcha" 
+            <embed src="Content/CaptchaAudio.swf?link=Cliente/GetAudioCaptcha" 
             quality="high" bgcolor="#ffffff" width="16" height="16" name="CaptchaAudio" align="middle" allowscriptaccess="sameDomain"
              allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="https://www.macromedia.com/go/getflashplayer">
         </object>
         
         </div>
+        
+
       <div>informe o número da figura acima:</div>
       <div><input type="text" name="captcha" /></div>
        </p>
