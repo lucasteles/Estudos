@@ -6,7 +6,7 @@ quicksort([X|Xs],Ys) :-
 quicksort([],[]).
 
 partition([X|Xs],Y,[X|Ls],Rs) :-
-  X <= Y, partition(Xs,Y,Ls,Rs).
+  X =< Y, partition(Xs,Y,Ls,Rs).
 partition([X|Xs],Y,Ls,[X|Rs]) :-
   X > Y, partition(Xs,Y,Ls,Rs).
 partition([],Y,[],[]).
