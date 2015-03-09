@@ -1,0 +1,27 @@
+Valendo 1.5 pontos EXTRAS na primeira Prova.
+
+Projetem os seguintes Autômatos:
+
+AFD:
+
+Escreva um AFD que reconheça a seguinte linguagem, considerando o alfabeto {0,1}:
+
+{w | w contém no mínimo dois 0s e no máximo um 1}
+
+AFN:
+
+Escreva um AFN que reconheça a seguinte linguagem, considerando o alfabeto {0,1}
+
+{w | w contém um número par de 0s ou contém exatamente dois 1s}
+
+Vocês devem entregar:
+
+1 - Projeto do autômato; 
+
+2 - Código fonte que implementa o Autômato;
+
+3 - Manual de Utilização;
+
+4 - No caso do AFN, o AFD correspondente utilizando o procedimento visto em sala;
+
+5 - ERs equivalente a ambos.
