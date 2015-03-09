@@ -8,7 +8,7 @@ namespace PGM_EDITOR
 {
     public class PgmImg
     {
-        private Byte[,] _matrix;
+        private Byte[,] _matrix = null;
         public Bitmap Bitmap;
 
         public int Width;
@@ -40,5 +40,10 @@ namespace PGM_EDITOR
         {
             this.Matrix = matrix;
         }   
+
+        public bool IsEmpty()
+        {
+            return Matrix == null;
+        }
     }
 }

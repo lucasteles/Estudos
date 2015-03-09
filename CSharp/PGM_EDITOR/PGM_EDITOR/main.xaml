@@ -10,6 +10,6 @@
         <Button x:Name="btnRotateL" Content="RotateLeft" HorizontalAlignment="Left" Margin="133,-45,0,0" VerticalAlignment="Top" Width="67" Click="btnRotateL_Click"/>
         <Button x:Name="btnUndo" Content="Undo" HorizontalAlignment="Left" Margin="349,-45,0,0" VerticalAlignment="Top" Width="43" Click="btnUndo_Click"/>
         <Button Content="Save" HorizontalAlignment="Left" Margin="47,-45,0,0" Name="btnSave" VerticalAlignment="Top" Width="49" Click="btnSave_Click" />
-        <Button Content="Redo" HorizontalAlignment="Left" Margin="390,-45,0,0" Name="btnRedo" VerticalAlignment="Top" Width="43" Click="btnRedo_Click" />
+        <Button Content="Redo" HorizontalAlignment="Left" Margin="392,-45,0,0" Name="btnRedo" VerticalAlignment="Top" Width="43" Click="btnRedo_Click" Height="20" />
     </Grid>
 </Window>

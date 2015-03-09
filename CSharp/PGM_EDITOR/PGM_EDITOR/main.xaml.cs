@@ -30,6 +30,7 @@ namespace PGM_EDITOR
         public main()
         {
             InitializeComponent();
+            CheckUI();
         }
            
         
@@ -73,6 +74,7 @@ namespace PGM_EDITOR
                 }
                 
                 imgPhoto.Source = bitmapImage;
+                CheckUI();
         }
 
         private void btnRotateR_Click(object sender, RoutedEventArgs e)
@@ -121,7 +123,18 @@ namespace PGM_EDITOR
         }
 
        
-
+        private void CheckUI()
+        {
+            this.btnRedo.IsEnabled = Redo.Count > 0;
+            this.btnUndo.IsEnabled = Undo.Count > 0;
+            
+            
+            this.btnSave.IsEnabled = 
+                this.btnRotateL.IsEnabled =
+                    this.btnRotateR.IsEnabled = 
+                        bitmap==null ? false :!bitmap.IsEmpty();
+             
+        }
        
 
     }

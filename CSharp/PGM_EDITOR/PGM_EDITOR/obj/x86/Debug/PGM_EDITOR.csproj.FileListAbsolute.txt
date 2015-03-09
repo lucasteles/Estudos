@@ -20,3 +20,15 @@ C:\Testes\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR2010_MarkupCompile.cache
 C:\Testes\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR2010.g.resources
 C:\Testes\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR2010.Properties.Resources.resources
 C:\Testes\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR.csproj.GenerateResource.Cache
+C:\Users\Lucas\Downloads\PGM_EDITOR\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR2010.exe
+C:\Users\Lucas\Downloads\PGM_EDITOR\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR2010.pdb
+C:\Users\Lucas\Downloads\PGM_EDITOR\PGM_EDITOR\PGM_EDITOR\bin\Debug\PGM_EDITOR2010.exe
+C:\Users\Lucas\Downloads\PGM_EDITOR\PGM_EDITOR\PGM_EDITOR\bin\Debug\PGM_EDITOR2010.pdb
+C:\Users\Lucas\Downloads\PGM_EDITOR\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR.csprojResolveAssemblyReference.cache
+C:\Users\Lucas\Downloads\PGM_EDITOR\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\main.baml
+C:\Users\Lucas\Downloads\PGM_EDITOR\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\main.g.cs
+C:\Users\Lucas\Downloads\PGM_EDITOR\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\App.g.cs
+C:\Users\Lucas\Downloads\PGM_EDITOR\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR2010_MarkupCompile.cache
+C:\Users\Lucas\Downloads\PGM_EDITOR\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR2010.g.resources
+C:\Users\Lucas\Downloads\PGM_EDITOR\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR2010.Properties.Resources.resources
+C:\Users\Lucas\Downloads\PGM_EDITOR\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR.csproj.GenerateResource.Cache
