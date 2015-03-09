@@ -1,0 +1,146 @@
+2015-02-26T15:25:37.448-0300 [DataFileSync] flushing diag log
+2015-02-26T15:25:37.452-0300 [initandlisten] MongoDB starting : pid=7020 port=27017 dbpath=C:\git\Fundations\Node.js\TesteMongo\data 64-bit host=SAO14171-W66206
+2015-02-26T15:25:37.452-0300 [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2015-02-26T15:25:37.452-0300 [initandlisten] db version v2.6.6
+2015-02-26T15:25:37.453-0300 [initandlisten] git version: 608e8bc319627693b04cc7da29ecc300a5f45a1f
+2015-02-26T15:25:37.453-0300 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2015-02-26T15:25:37.453-0300 [initandlisten] allocator: system
+2015-02-26T15:25:37.453-0300 [initandlisten] options: { config: "mongo.config", diaglog: 3, storage: { dbPath: "C:\git\Fundations\Node.js\TesteMongo\data" }, systemLog: { destination: "file", path: "C:\git\Fundations\Node.js\TesteMongo\data\mongo.log" } }
+2015-02-26T15:25:37.485-0300 [initandlisten] journal dir=C:\git\Fundations\Node.js\TesteMongo\data\journal
+2015-02-26T15:25:37.486-0300 [initandlisten] recover : no journal files present, no recovery needed
+2015-02-26T15:25:37.655-0300 [initandlisten] allocating new ns file C:\git\Fundations\Node.js\TesteMongo\data\local.ns, filling with zeroes...
+2015-02-26T15:25:38.270-0300 [FileAllocator] allocating new datafile C:\git\Fundations\Node.js\TesteMongo\data\local.0, filling with zeroes...
+2015-02-26T15:25:38.271-0300 [FileAllocator] creating directory C:\git\Fundations\Node.js\TesteMongo\data\_tmp
+2015-02-26T15:25:38.450-0300 [FileAllocator] done allocating datafile C:\git\Fundations\Node.js\TesteMongo\data\local.0, size: 64MB,  took 0.178 secs
+2015-02-26T15:25:38.451-0300 [initandlisten] build index on: local.startup_log properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "local.startup_log" }
+2015-02-26T15:25:38.452-0300 [initandlisten] 	 added index to empty collection
+2015-02-26T15:25:38.453-0300 [initandlisten] command local.$cmd command: create { create: "startup_log", size: 10485760, capped: true } ntoreturn:1 keyUpdates:0 numYields:0  reslen:37 804ms
+2015-02-26T15:25:38.454-0300 [initandlisten] waiting for connections on port 27017
+2015-02-26T15:25:52.371-0300 [initandlisten] connection accepted from 127.0.0.1:50847 #1 (1 connection now open)
+2015-02-26T15:26:37.544-0300 [DataFileSync] flushing diag log
+2015-02-26T15:26:37.638-0300 [clientcursormon] mem (MB) res:41 virt:309
+2015-02-26T15:26:37.638-0300 [clientcursormon]  mapped (incl journal view):160
+2015-02-26T15:26:37.638-0300 [clientcursormon]  connections:1
+2015-02-26T15:27:37.445-0300 [DataFileSync] flushing diag log
+2015-02-26T15:28:37.442-0300 [DataFileSync] flushing diag log
+2015-02-26T15:29:37.444-0300 [DataFileSync] flushing diag log
+2015-02-26T15:30:37.436-0300 [DataFileSync] flushing diag log
+2015-02-26T15:31:26.761-0300 [initandlisten] connection accepted from 127.0.0.1:51053 #2 (2 connections now open)
+2015-02-26T15:31:26.762-0300 [initandlisten] connection accepted from 127.0.0.1:51054 #3 (3 connections now open)
+2015-02-26T15:31:26.762-0300 [initandlisten] connection accepted from 127.0.0.1:51055 #4 (4 connections now open)
+2015-02-26T15:31:26.762-0300 [initandlisten] connection accepted from 127.0.0.1:51056 #5 (5 connections now open)
+2015-02-26T15:31:26.762-0300 [initandlisten] connection accepted from 127.0.0.1:51057 #6 (6 connections now open)
+2015-02-26T15:31:31.987-0300 [conn3] end connection 127.0.0.1:51054 (5 connections now open)
+2015-02-26T15:31:31.987-0300 [conn4] end connection 127.0.0.1:51055 (5 connections now open)
+2015-02-26T15:31:31.987-0300 [conn2] end connection 127.0.0.1:51053 (5 connections now open)
+2015-02-26T15:31:31.987-0300 [conn6] end connection 127.0.0.1:51057 (5 connections now open)
+2015-02-26T15:31:31.987-0300 [conn5] end connection 127.0.0.1:51056 (5 connections now open)
+2015-02-26T15:31:37.433-0300 [DataFileSync] flushing diag log
+2015-02-26T15:31:37.655-0300 [clientcursormon] mem (MB) res:41 virt:306
+2015-02-26T15:31:37.655-0300 [clientcursormon]  mapped (incl journal view):160
+2015-02-26T15:31:37.655-0300 [clientcursormon]  connections:1
+2015-02-26T15:32:37.430-0300 [DataFileSync] flushing diag log
+2015-02-26T15:33:37.442-0300 [DataFileSync] flushing diag log
+2015-02-26T15:34:37.430-0300 [DataFileSync] flushing diag log
+2015-02-26T15:35:37.432-0300 [DataFileSync] flushing diag log
+2015-02-26T15:36:37.418-0300 [DataFileSync] flushing diag log
+2015-02-26T15:36:37.655-0300 [clientcursormon] mem (MB) res:41 virt:306
+2015-02-26T15:36:37.655-0300 [clientcursormon]  mapped (incl journal view):160
+2015-02-26T15:36:37.655-0300 [clientcursormon]  connections:1
+2015-02-26T15:37:37.415-0300 [DataFileSync] flushing diag log
+2015-02-26T15:37:59.176-0300 [initandlisten] connection accepted from 127.0.0.1:51156 #7 (2 connections now open)
+2015-02-26T15:37:59.177-0300 [initandlisten] connection accepted from 127.0.0.1:51157 #8 (3 connections now open)
+2015-02-26T15:37:59.177-0300 [initandlisten] connection accepted from 127.0.0.1:51158 #9 (4 connections now open)
+2015-02-26T15:37:59.177-0300 [initandlisten] connection accepted from 127.0.0.1:51159 #10 (5 connections now open)
+2015-02-26T15:37:59.178-0300 [initandlisten] connection accepted from 127.0.0.1:51160 #11 (6 connections now open)
+2015-02-26T15:37:59.223-0300 [conn9] allocating new ns file C:\git\Fundations\Node.js\TesteMongo\data\test.ns, filling with zeroes...
+2015-02-26T15:37:59.628-0300 [FileAllocator] allocating new datafile C:\git\Fundations\Node.js\TesteMongo\data\test.0, filling with zeroes...
+2015-02-26T15:37:59.823-0300 [FileAllocator] done allocating datafile C:\git\Fundations\Node.js\TesteMongo\data\test.0, size: 64MB,  took 0.194 secs
+2015-02-26T15:37:59.824-0300 [conn9] build index on: test.movies properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "test.movies" }
+2015-02-26T15:37:59.824-0300 [conn9] 	 added index to empty collection
+2015-02-26T15:37:59.824-0300 [conn9] insert test.movies query: { title: "Thor 1", rating: "PG-13", releaseYear: 2011, hasCreditCookie: true, _id: ObjectId('54ef6807cddd28c42f07420d'), __v: 0 } ninserted:1 keyUpdates:0 numYields:0 locks(micros) w:601900 601ms
+2015-02-26T15:37:59.825-0300 [conn9] command test.$cmd command: insert { insert: "movies", writeConcern: { w: 1 }, ordered: true, documents: [ { title: "Thor 1", rating: "PG-13", releaseYear: 2011, hasCreditCookie: true, _id: ObjectId('54ef6807cddd28c42f07420d'), __v: 0 } ] } keyUpdates:0 numYields:0 locks(micros) w:54 reslen:40 631ms
+2015-02-26T15:37:59.825-0300 [conn11] insert test.movies query: { title: "Thor 2", rating: "PG-13", releaseYear: 2011, hasCreditCookie: true, _id: ObjectId('54ef6807cddd28c42f07420e'), __v: 0 } ninserted:1 keyUpdates:0 numYields:0 locks(micros) w:34 602ms
+2015-02-26T15:37:59.825-0300 [conn11] command test.$cmd command: insert { insert: "movies", writeConcern: { w: 1 }, ordered: true, documents: [ { title: "Thor 2", rating: "PG-13", releaseYear: 2011, hasCreditCookie: true, _id: ObjectId('54ef6807cddd28c42f07420e'), __v: 0 } ] } keyUpdates:0 numYields:0 locks(micros) w:77 reslen:40 630ms
+2015-02-26T15:37:59.828-0300 [conn8] insert test.movies query: { title: "Thor 3", rating: "PG-13", releaseYear: 2011, hasCreditCookie: true, _id: ObjectId('54ef6807cddd28c42f07420f'), __v: 0 } ninserted:1 keyUpdates:0 numYields:0 locks(micros) w:2793 604ms
+2015-02-26T15:37:59.828-0300 [conn8] command test.$cmd command: insert { insert: "movies", writeConcern: { w: 1 }, ordered: true, documents: [ { title: "Thor 3", rating: "PG-13", releaseYear: 2011, hasCreditCookie: true, _id: ObjectId('54ef6807cddd28c42f07420f'), __v: 0 } ] } keyUpdates:0 numYields:0 locks(micros) w:99 reslen:40 632ms
+2015-02-26T15:38:37.588-0300 [DataFileSync] flushing diag log
+2015-02-26T15:38:37.655-0300 [clientcursormon] mem (MB) res:42 virt:471
+2015-02-26T15:38:37.655-0300 [clientcursormon]  mapped (incl journal view):320
+2015-02-26T15:38:37.655-0300 [clientcursormon]  connections:6
+2015-02-26T15:38:54.674-0300 [conn8] end connection 127.0.0.1:51157 (5 connections now open)
+2015-02-26T15:38:54.674-0300 [conn9] end connection 127.0.0.1:51158 (5 connections now open)
+2015-02-26T15:38:54.674-0300 [conn11] end connection 127.0.0.1:51160 (5 connections now open)
+2015-02-26T15:38:54.674-0300 [conn7] end connection 127.0.0.1:51156 (3 connections now open)
+2015-02-26T15:38:54.674-0300 [conn10] end connection 127.0.0.1:51159 (1 connection now open)
+2015-02-26T15:39:37.411-0300 [DataFileSync] flushing diag log
+2015-02-26T15:40:37.408-0300 [DataFileSync] flushing diag log
+2015-02-26T15:41:20.950-0300 [initandlisten] connection accepted from 127.0.0.1:51187 #12 (2 connections now open)
+2015-02-26T15:41:20.950-0300 [initandlisten] connection accepted from 127.0.0.1:51188 #13 (3 connections now open)
+2015-02-26T15:41:20.951-0300 [initandlisten] connection accepted from 127.0.0.1:51189 #14 (4 connections now open)
+2015-02-26T15:41:20.951-0300 [initandlisten] connection accepted from 127.0.0.1:51190 #15 (5 connections now open)
+2015-02-26T15:41:20.951-0300 [initandlisten] connection accepted from 127.0.0.1:51191 #16 (6 connections now open)
+2015-02-26T15:41:32.703-0300 [conn12] end connection 127.0.0.1:51187 (5 connections now open)
+2015-02-26T15:41:32.703-0300 [conn13] end connection 127.0.0.1:51188 (5 connections now open)
+2015-02-26T15:41:32.703-0300 [conn14] end connection 127.0.0.1:51189 (5 connections now open)
+2015-02-26T15:41:32.703-0300 [conn16] end connection 127.0.0.1:51191 (5 connections now open)
+2015-02-26T15:41:32.703-0300 [conn15] end connection 127.0.0.1:51190 (5 connections now open)
+2015-02-26T15:41:37.464-0300 [DataFileSync] flushing diag log
+2015-02-26T15:42:37.424-0300 [DataFileSync] flushing diag log
+2015-02-26T15:43:37.400-0300 [DataFileSync] flushing diag log
+2015-02-26T15:43:37.655-0300 [clientcursormon] mem (MB) res:44 virt:466
+2015-02-26T15:43:37.655-0300 [clientcursormon]  mapped (incl journal view):320
+2015-02-26T15:43:37.655-0300 [clientcursormon]  connections:1
+2015-02-26T15:44:37.397-0300 [DataFileSync] flushing diag log
+2015-02-26T15:45:37.396-0300 [DataFileSync] flushing diag log
+2015-02-26T15:46:37.392-0300 [DataFileSync] flushing diag log
+2015-02-26T15:47:37.389-0300 [DataFileSync] flushing diag log
+2015-02-26T15:48:37.404-0300 [DataFileSync] flushing diag log
+2015-02-26T15:48:37.655-0300 [clientcursormon] mem (MB) res:44 virt:466
+2015-02-26T15:48:37.655-0300 [clientcursormon]  mapped (incl journal view):320
+2015-02-26T15:48:37.655-0300 [clientcursormon]  connections:1
+2015-02-26T15:49:26.851-0300 [conn1] end connection 127.0.0.1:50847 (0 connections now open)
+2015-02-26T15:49:37.390-0300 [DataFileSync] flushing diag log
+2015-02-26T15:50:37.380-0300 [DataFileSync] flushing diag log
+2015-02-26T15:51:37.377-0300 [DataFileSync] flushing diag log
+2015-02-26T15:52:37.374-0300 [DataFileSync] flushing diag log
+2015-02-26T15:53:37.371-0300 [DataFileSync] flushing diag log
+2015-02-26T15:53:37.655-0300 [clientcursormon] mem (MB) res:44 virt:465
+2015-02-26T15:53:37.655-0300 [clientcursormon]  mapped (incl journal view):320
+2015-02-26T15:53:37.655-0300 [clientcursormon]  connections:0
+2015-02-26T15:54:37.376-0300 [DataFileSync] flushing diag log
+2015-02-26T15:55:37.365-0300 [DataFileSync] flushing diag log
+2015-02-26T15:56:37.373-0300 [DataFileSync] flushing diag log
+2015-02-26T15:57:37.366-0300 [DataFileSync] flushing diag log
+2015-02-26T15:58:37.368-0300 [DataFileSync] flushing diag log
+2015-02-26T15:58:37.655-0300 [clientcursormon] mem (MB) res:44 virt:465
+2015-02-26T15:58:37.655-0300 [clientcursormon]  mapped (incl journal view):320
+2015-02-26T15:58:37.655-0300 [clientcursormon]  connections:0
+2015-02-26T15:59:37.362-0300 [DataFileSync] flushing diag log
+2015-02-26T16:00:37.350-0300 [DataFileSync] flushing diag log
+2015-02-26T16:01:37.358-0300 [DataFileSync] flushing diag log
+2015-02-26T16:02:37.344-0300 [DataFileSync] flushing diag log
+2015-02-26T16:03:37.464-0300 [DataFileSync] flushing diag log
+2015-02-26T16:03:37.655-0300 [clientcursormon] mem (MB) res:44 virt:465
+2015-02-26T16:03:37.655-0300 [clientcursormon]  mapped (incl journal view):320
+2015-02-26T16:03:37.655-0300 [clientcursormon]  connections:0
+2015-02-26T16:04:37.348-0300 [DataFileSync] flushing diag log
+2015-02-26T16:05:37.530-0300 [DataFileSync] flushing diag log
+2015-02-26T16:06:26.960-0300 CTRL_CLOSE_EVENT signal
+2015-02-26T16:06:26.960-0300 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2015-02-26T16:06:26.960-0300 [consoleTerminate] now exiting
+2015-02-26T16:06:26.960-0300 [consoleTerminate] dbexit: 
+2015-02-26T16:06:26.960-0300 [consoleTerminate] shutdown: going to close listening sockets...
+2015-02-26T16:06:26.960-0300 [consoleTerminate] closing listening socket: 508
+2015-02-26T16:06:26.960-0300 [consoleTerminate] shutdown: going to flush diaglog...
+2015-02-26T16:06:26.960-0300 [consoleTerminate] flushing diag log
+2015-02-26T16:06:26.960-0300 [consoleTerminate] shutdown: going to close sockets...
+2015-02-26T16:06:26.960-0300 [consoleTerminate] shutdown: waiting for fs preallocator...
+2015-02-26T16:06:26.960-0300 [consoleTerminate] shutdown: lock for final commit...
+2015-02-26T16:06:26.960-0300 [consoleTerminate] shutdown: final commit...
+2015-02-26T16:06:26.985-0300 [consoleTerminate] shutdown: closing all files...
+2015-02-26T16:06:26.985-0300 [consoleTerminate] closeAllFiles() finished
+2015-02-26T16:06:26.985-0300 [consoleTerminate] journalCleanup...
+2015-02-26T16:06:27.007-0300 [consoleTerminate] removeJournalFiles
+2015-02-26T16:06:27.007-0300 [consoleTerminate] shutdown: removing fs lock...
+2015-02-26T16:06:27.008-0300 [consoleTerminate] dbexit: really exiting now
