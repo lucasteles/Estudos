@@ -1,0 +1,29 @@
+2015-03-09T17:14:28.249-0300 [DataFileSync] flushing diag log
+2015-03-09T17:14:28.253-0300 [initandlisten] MongoDB starting : pid=13068 port=27017 dbpath=C:\git\Fundations\Node.js\TesteMongo\data 64-bit host=SAO14171-W66206
+2015-03-09T17:14:28.253-0300 [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2015-03-09T17:14:28.254-0300 [initandlisten] db version v2.6.6
+2015-03-09T17:14:28.254-0300 [initandlisten] git version: 608e8bc319627693b04cc7da29ecc300a5f45a1f
+2015-03-09T17:14:28.254-0300 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2015-03-09T17:14:28.254-0300 [initandlisten] allocator: system
+2015-03-09T17:14:28.254-0300 [initandlisten] options: { config: "mongo.config", diaglog: 3, storage: { dbPath: "C:\git\Fundations\Node.js\TesteMongo\data" }, systemLog: { destination: "file", path: "C:\git\Fundations\Node.js\TesteMongo\data\mongo.log" } }
+2015-03-09T17:14:28.282-0300 [initandlisten] journal dir=C:\git\Fundations\Node.js\TesteMongo\data\journal
+2015-03-09T17:14:28.282-0300 [initandlisten] recover : no journal files present, no recovery needed
+2015-03-09T17:14:28.391-0300 [initandlisten] waiting for connections on port 27017
+2015-03-09T17:14:43.484-0300 CTRL_CLOSE_EVENT signal
+2015-03-09T17:14:43.484-0300 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2015-03-09T17:14:43.484-0300 [consoleTerminate] now exiting
+2015-03-09T17:14:43.484-0300 [consoleTerminate] dbexit: 
+2015-03-09T17:14:43.484-0300 [consoleTerminate] shutdown: going to close listening sockets...
+2015-03-09T17:14:43.484-0300 [consoleTerminate] closing listening socket: 548
+2015-03-09T17:14:43.484-0300 [consoleTerminate] shutdown: going to flush diaglog...
+2015-03-09T17:14:43.484-0300 [consoleTerminate] flushing diag log
+2015-03-09T17:14:43.484-0300 [consoleTerminate] shutdown: going to close sockets...
+2015-03-09T17:14:43.484-0300 [consoleTerminate] shutdown: waiting for fs preallocator...
+2015-03-09T17:14:43.485-0300 [consoleTerminate] shutdown: lock for final commit...
+2015-03-09T17:14:43.485-0300 [consoleTerminate] shutdown: final commit...
+2015-03-09T17:14:43.559-0300 [consoleTerminate] shutdown: closing all files...
+2015-03-09T17:14:43.560-0300 [consoleTerminate] closeAllFiles() finished
+2015-03-09T17:14:43.560-0300 [consoleTerminate] journalCleanup...
+2015-03-09T17:14:43.581-0300 [consoleTerminate] removeJournalFiles
+2015-03-09T17:14:43.581-0300 [consoleTerminate] shutdown: removing fs lock...
+2015-03-09T17:14:43.581-0300 [consoleTerminate] dbexit: really exiting now

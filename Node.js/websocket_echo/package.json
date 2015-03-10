@@ -1,0 +1,15 @@
+{
+  "name": "websocket_echo",
+  "version": "1.0.0",
+  "description": "Teste de websocket",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Lucas Teles",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^0.7.1"
+  }
+}

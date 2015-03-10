@@ -1,34 +1,64 @@
-2015-03-09T17:11:18.340-0300 [DataFileSync] flushing diag log
-2015-03-09T17:11:18.354-0300 [initandlisten] MongoDB starting : pid=15376 port=27017 dbpath=C:\git\Fundations\Node.js\TesteMongo\data 64-bit host=SAO14171-W66206
-2015-03-09T17:11:18.354-0300 [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
-2015-03-09T17:11:18.354-0300 [initandlisten] db version v2.6.6
-2015-03-09T17:11:18.354-0300 [initandlisten] git version: 608e8bc319627693b04cc7da29ecc300a5f45a1f
-2015-03-09T17:11:18.354-0300 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
-2015-03-09T17:11:18.354-0300 [initandlisten] allocator: system
-2015-03-09T17:11:18.354-0300 [initandlisten] options: { config: "mongo.config", diaglog: 3, storage: { dbPath: "C:\git\Fundations\Node.js\TesteMongo\data" }, systemLog: { destination: "file", path: "C:\git\Fundations\Node.js\TesteMongo\data\mongo.log" } }
-2015-03-09T17:11:18.373-0300 [initandlisten] journal dir=C:\git\Fundations\Node.js\TesteMongo\data\journal
-2015-03-09T17:11:18.374-0300 [initandlisten] recover : no journal files present, no recovery needed
-2015-03-09T17:11:19.438-0300 [initandlisten] waiting for connections on port 27017
-2015-03-09T17:12:18.429-0300 [DataFileSync] flushing diag log
-2015-03-09T17:12:18.949-0300 [clientcursormon] mem (MB) res:57 virt:468
-2015-03-09T17:12:18.949-0300 [clientcursormon]  mapped (incl journal view):320
-2015-03-09T17:12:18.949-0300 [clientcursormon]  connections:0
-2015-03-09T17:13:18.358-0300 [DataFileSync] flushing diag log
-2015-03-09T17:13:52.335-0300 CTRL_CLOSE_EVENT signal
-2015-03-09T17:13:52.336-0300 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
-2015-03-09T17:13:52.336-0300 [consoleTerminate] now exiting
-2015-03-09T17:13:52.336-0300 [consoleTerminate] dbexit: 
-2015-03-09T17:13:52.336-0300 [consoleTerminate] shutdown: going to close listening sockets...
-2015-03-09T17:13:52.336-0300 [consoleTerminate] closing listening socket: 556
-2015-03-09T17:13:52.336-0300 [consoleTerminate] shutdown: going to flush diaglog...
-2015-03-09T17:13:52.336-0300 [consoleTerminate] flushing diag log
-2015-03-09T17:13:52.336-0300 [consoleTerminate] shutdown: going to close sockets...
-2015-03-09T17:13:52.336-0300 [consoleTerminate] shutdown: waiting for fs preallocator...
-2015-03-09T17:13:52.336-0300 [consoleTerminate] shutdown: lock for final commit...
-2015-03-09T17:13:52.336-0300 [consoleTerminate] shutdown: final commit...
-2015-03-09T17:13:52.337-0300 [consoleTerminate] shutdown: closing all files...
-2015-03-09T17:13:52.338-0300 [consoleTerminate] closeAllFiles() finished
-2015-03-09T17:13:52.338-0300 [consoleTerminate] journalCleanup...
-2015-03-09T17:13:52.348-0300 [consoleTerminate] removeJournalFiles
-2015-03-09T17:13:52.348-0300 [consoleTerminate] shutdown: removing fs lock...
-2015-03-09T17:13:52.348-0300 [consoleTerminate] dbexit: really exiting now
+2015-03-09T17:21:10.837-0300 [DataFileSync] flushing diag log
+2015-03-09T17:21:10.842-0300 [initandlisten] MongoDB starting : pid=15680 port=27017 dbpath=C:\git\Fundations\Node.js\TesteMongo\data 64-bit host=SAO14171-W66206
+2015-03-09T17:21:10.842-0300 [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2015-03-09T17:21:10.842-0300 [initandlisten] db version v2.6.6
+2015-03-09T17:21:10.842-0300 [initandlisten] git version: 608e8bc319627693b04cc7da29ecc300a5f45a1f
+2015-03-09T17:21:10.842-0300 [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2015-03-09T17:21:10.842-0300 [initandlisten] allocator: system
+2015-03-09T17:21:10.842-0300 [initandlisten] options: { config: "mongo.config", diaglog: 3, storage: { dbPath: "C:\git\Fundations\Node.js\TesteMongo\data" }, systemLog: { destination: "file", path: "C:\git\Fundations\Node.js\TesteMongo\data\mongo.log" } }
+2015-03-09T17:21:10.870-0300 [initandlisten] journal dir=C:\git\Fundations\Node.js\TesteMongo\data\journal
+2015-03-09T17:21:10.870-0300 [initandlisten] recover : no journal files present, no recovery needed
+2015-03-09T17:21:11.021-0300 [initandlisten] waiting for connections on port 27017
+2015-03-09T17:21:18.258-0300 [initandlisten] connection accepted from 127.0.0.1:49739 #1 (1 connection now open)
+2015-03-09T17:21:18.258-0300 [initandlisten] connection accepted from 127.0.0.1:49740 #2 (2 connections now open)
+2015-03-09T17:21:18.259-0300 [initandlisten] connection accepted from 127.0.0.1:49741 #3 (3 connections now open)
+2015-03-09T17:21:18.259-0300 [initandlisten] connection accepted from 127.0.0.1:49742 #4 (4 connections now open)
+2015-03-09T17:21:18.259-0300 [initandlisten] connection accepted from 127.0.0.1:49743 #5 (5 connections now open)
+2015-03-09T17:22:10.936-0300 [DataFileSync] flushing diag log
+2015-03-09T17:22:11.021-0300 [clientcursormon] mem (MB) res:57 virt:473
+2015-03-09T17:22:11.021-0300 [clientcursormon]  mapped (incl journal view):320
+2015-03-09T17:22:11.021-0300 [clientcursormon]  connections:5
+2015-03-09T17:22:26.545-0300 [initandlisten] connection accepted from 127.0.0.1:49748 #6 (6 connections now open)
+2015-03-09T17:23:10.865-0300 [DataFileSync] flushing diag log
+2015-03-09T17:24:10.850-0300 [DataFileSync] flushing diag log
+2015-03-09T17:25:10.853-0300 [DataFileSync] flushing diag log
+2015-03-09T17:25:34.192-0300 [conn6] end connection 127.0.0.1:49748 (5 connections now open)
+2015-03-09T17:26:10.856-0300 [DataFileSync] flushing diag log
+2015-03-09T17:27:10.877-0300 [DataFileSync] flushing diag log
+2015-03-09T17:27:11.051-0300 [clientcursormon] mem (MB) res:57 virt:470
+2015-03-09T17:27:11.051-0300 [clientcursormon]  mapped (incl journal view):320
+2015-03-09T17:27:11.051-0300 [clientcursormon]  connections:5
+2015-03-09T17:28:10.893-0300 [DataFileSync] flushing diag log
+2015-03-09T17:29:10.865-0300 [DataFileSync] flushing diag log
+2015-03-09T17:30:10.868-0300 [DataFileSync] flushing diag log
+2015-03-09T17:31:10.871-0300 [DataFileSync] flushing diag log
+2015-03-09T17:32:10.874-0300 [DataFileSync] flushing diag log
+2015-03-09T17:32:11.081-0300 [clientcursormon] mem (MB) res:57 virt:470
+2015-03-09T17:32:11.081-0300 [clientcursormon]  mapped (incl journal view):320
+2015-03-09T17:32:11.081-0300 [clientcursormon]  connections:5
+2015-03-09T17:33:10.877-0300 [DataFileSync] flushing diag log
+2015-03-09T17:34:10.893-0300 [DataFileSync] flushing diag log
+2015-03-09T17:35:10.901-0300 [DataFileSync] flushing diag log
+2015-03-09T17:36:02.554-0300 [conn2] end connection 127.0.0.1:49740 (4 connections now open)
+2015-03-09T17:36:02.554-0300 [conn1] end connection 127.0.0.1:49739 (4 connections now open)
+2015-03-09T17:36:02.554-0300 [conn3] end connection 127.0.0.1:49741 (4 connections now open)
+2015-03-09T17:36:02.554-0300 [conn4] end connection 127.0.0.1:49742 (4 connections now open)
+2015-03-09T17:36:02.554-0300 [conn5] end connection 127.0.0.1:49743 (4 connections now open)
+2015-03-09T17:36:04.648-0300 CTRL_CLOSE_EVENT signal
+2015-03-09T17:36:04.648-0300 [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2015-03-09T17:36:04.648-0300 [consoleTerminate] now exiting
+2015-03-09T17:36:04.648-0300 [consoleTerminate] dbexit: 
+2015-03-09T17:36:04.648-0300 [consoleTerminate] shutdown: going to close listening sockets...
+2015-03-09T17:36:04.648-0300 [consoleTerminate] closing listening socket: 560
+2015-03-09T17:36:04.648-0300 [consoleTerminate] shutdown: going to flush diaglog...
+2015-03-09T17:36:04.648-0300 [consoleTerminate] flushing diag log
+2015-03-09T17:36:04.648-0300 [consoleTerminate] shutdown: going to close sockets...
+2015-03-09T17:36:04.649-0300 [consoleTerminate] shutdown: waiting for fs preallocator...
+2015-03-09T17:36:04.649-0300 [consoleTerminate] shutdown: lock for final commit...
+2015-03-09T17:36:04.649-0300 [consoleTerminate] shutdown: final commit...
+2015-03-09T17:36:04.668-0300 [consoleTerminate] shutdown: closing all files...
+2015-03-09T17:36:04.669-0300 [consoleTerminate] closeAllFiles() finished
+2015-03-09T17:36:04.669-0300 [consoleTerminate] journalCleanup...
+2015-03-09T17:36:04.691-0300 [consoleTerminate] removeJournalFiles
+2015-03-09T17:36:04.691-0300 [consoleTerminate] shutdown: removing fs lock...
+2015-03-09T17:36:04.692-0300 [consoleTerminate] dbexit: really exiting now

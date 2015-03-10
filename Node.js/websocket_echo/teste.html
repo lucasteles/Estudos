@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste WebSocket</title>
+	<script type="text/javascript">
+ 	window.onload=function(){
+ 		 connection = new WebSocket('ws://localhost:9000'); 
+		 connection.onopen = function () {
+		 	connection.send('Ping'); 
+		 };		
+		
+		connection.onmessage = function (e) {
+		     var div = document.getElementById("retorno");
+		     div.innerHTML += e.data+"<br />";
+		};
+
+
+		connection.onerror = function (error) {
+			 var div = document.getElementById("retorno");
+			div.innerHTML = 'WebSocket Error ';
+			ee =error;
+		};
+
+		 document.getElementById("vai").onclick=function (e) {
+		 		connection.send( document.getElementById("txtEcho").value ); 
+		 };
+
+
+ 	};
+ 
+	</script>
+</head>
+<body>
+
+<label>Input</label>
+<input type="text" id="txtEcho" />
+<button id="vai">Enviar</button>
+
+<div id="retorno" style="margin:20px; border:1px solid"></div>
+
+</body>
+</html>
