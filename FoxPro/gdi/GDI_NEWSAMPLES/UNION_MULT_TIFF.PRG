@@ -1,0 +1,50 @@
+DO (LOCFILE("System.prg")) 
+
+WITH _SCREEN.System.Drawing 
+
+   LOCAL multif AS xfcBitmap 
+   LOCAL page2 AS xfcBitmap 
+   LOCAL page3 AS xfcBitmap 
+   LOCAL myEncoder AS xfcEncoder 
+   LOCAL myEncoderParameter AS xfcEncoderParameter 
+   LOCAL myEncoderParameters AS xfcEncoderParameters 
+
+   && Create three Bitmap objects. 
+   multif = .Bitmap.New(GETPICT()) 
+   page2  = .Bitmap.New(GETPICT()) 
+   page3  = .Bitmap.New(GETPICT()) 
+
+   && Create an Encoder object based on the GUID 
+   && for the SaveFlag parameter category. 
+
+   myEncoder = .Imaging.Encoder.SaveFlag 
+
+   && Create an EncoderParameters object. 
+   && An EncoderParameters object has an array of EncoderParameter 
+   && objects. In this case, there is only one 
+   && EncoderParameter object in the array. 
+   myEncoderParameters = .Imaging.EncoderParameters.New(1); 
+
+   *!* Save the first page (frame). 
+   myEncoderParameter = .Imaging.EncoderParameter.New(myEncoder, .Imaging.EncoderValue.MultiFrame) 
+
+   myEncoderParameters.Param.Add(myEncoderParameter) 
+   multif.Save("c:\Multiframe.tif", .Imaging.ImageFormat.Tiff, myEncoderParameters) 
+
+   *!* Save the second page (frame). 
+   myEncoderParameter = .Imaging.EncoderParameter.New(myEncoder, .Imaging.EncoderValue.FrameDimensionPage) 
+   myEncoderParameters.Param.Add(myEncoderParameter) 
+   multif.SaveAdd(page2, myEncoderParameters) 
+
+   *!* Save the third page (frame). 
+   myEncoderParameter = .Imaging.EncoderParameter.New(myEncoder, .Imaging.EncoderValue.FrameDimensionPage) 
+   myEncoderParameters.Param.Add(myEncoderParameter) 
+   multif.SaveAdd(page3, myEncoderParameters) 
+
+   *!* Close the multiple-frame file. 
+   myEncoderParameter = .Imaging.EncoderParameter.New(myEncoder, .Imaging.EncoderValue.Flush) 
+   myEncoderParameters.Param.Add(myEncoderParameter) 
+   multif.SaveAdd(myEncoderParameters) 
+
+ENDWITH 
+RETURN

@@ -1,0 +1,37 @@
+Lets get started:
+First download WinBGIm from http://winbgim.codecutter.org/
+Extract it.
+Copy graphics.h and winbgim.h files in include folder of your compiler directory
+Copy libbgi.a to lib folder of your compiler directory
+In code::blocks open Settings >> Compiler and debugger >>linker settings
+click Add button  in link libraries part and browse and select libbgi.a file
+In right part (ie. other linker options) paste commands
+-lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32
+click Ok
+
+
+
+
+
+WinBGIm error: redefinition of 'int right'
+
+
+//The original declaration. Note that there are two "right" variables
+void printimage(
+    const char* title=NULL,	
+    double width_inches=7, double border_left_inches=0.75, double border_top_inches=0.75,
+    int left=0, int right=0, int right=INT_MAX, int bottom=INT_MAX,
+    bool active=true, HWND hwnd=NULL
+    );
+
+
+So what I did is that, I simply changed one of the "right" (the later former one) variable to "top". That's it.
+
+
+//The corrected code
+void printimage(
+    const char* title=NULL,	
+    double width_inches=7, double border_left_inches=0.75, double border_top_inches=0.75,
+    int left=0, int top=0, int right=INT_MAX, int bottom=INT_MAX,
+    bool active=true, HWND hwnd=NULL
+    );

@@ -1,0 +1,12 @@
+#include<stdio.h>
+main(){
+float val,porc;
+printf("valor: ");
+scanf("%f",&val);
+printf("porcentagem: ");
+scanf("%f",&porc);
+printf("resultado: %f", val*porc/100);
+}
+
+
+

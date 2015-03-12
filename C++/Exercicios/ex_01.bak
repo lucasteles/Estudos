@@ -1,0 +1,8 @@
+#include<stdio.h>
+main(){
+int n_1, n_2, total;
+n_1=7;
+n_2=20;
+total=n_1+n_2;
+printf("%i",total);
+}

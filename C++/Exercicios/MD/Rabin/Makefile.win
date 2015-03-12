@@ -1,0 +1,40 @@
+# Project: Rabin
+# Compiler: Default GCC compiler
+# Compiler Type: MingW 3
+# Makefile created by wxDev-C++ IDE 7.4.2.558 on 04/12/12 19:31
+
+WXLIBNAME = wxmsw29u
+CPP       = g++.exe
+CC        = gcc.exe
+WINDRES   = "windres.exe"
+OBJ       = Objects/MingW/main.o
+LINKOBJ   = "Objects/MingW/main.o"
+LIBS      = -L"D:/Instal/devcpp/wxDev-CppPortable/App/Dev-Cpp/lib/wx/gcc_lib" -L"D:/Instal/devcpp/wxDev-CppPortable/App/Dev-Cpp/lib"  
+INCS      = -I"D:/Instal/devcpp/wxDev-CppPortable/App/Dev-Cpp/include"
+CXXINCS   = -I"D:/Instal/devcpp/wxDev-CppPortable/App/Dev-Cpp/" -I"D:/Instal/devcpp/wxDev-CppPortable/App/Dev-Cpp/" -I"D:/Instal/devcpp/wxDev-CppPortable/App/Dev-Cpp/include/common"
+RCINCS    = --include-dir "D:/Instal/devcpp/WXDEV-~1/App/Dev-Cpp/include/common"
+BIN       = Output/MingW/Rabin.exe
+DEFINES   = 
+CXXFLAGS  = $(CXXINCS) $(DEFINES)  
+CFLAGS    = $(INCS) $(DEFINES)  
+GPROF     = gprof.exe
+ifeq ($(OS),Windows_NT)
+   RM = del /Q
+   FixPath = $(subst /,\,$1)
+else
+   RM = rm -f
+   FixPath = $1
+endif
+LINK      = gcc.exe
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	$(RM) $(call FixPath,$(LINKOBJ)) "$(call FixPath,$(BIN))"
+
+$(BIN): $(OBJ)
+	$(LINK) $(LINKOBJ) -o "$(BIN)" $(LIBS) 
+
+Objects/MingW/main.o: $(GLOBALDEPS) main.c
+	$(CC) -c main.c -o Objects/MingW/main.o $(CFLAGS)

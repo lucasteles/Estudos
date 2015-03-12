@@ -1,0 +1,1 @@
+DO \\mqthiago\d$\mat\principal.prgMODIFY FORM \\mqthiago\d$\mat\matar.scxDO \\mqthiago\d$\mat\principal.prgMODIFY FORM c:\exemplos\take\mat\matar.scxDO c:\exemplos\take\mat\principal.prg

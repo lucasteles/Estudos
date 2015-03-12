@@ -1,0 +1,105 @@
+<html xmlns:o>
+	<head>
+		<style type="text/css"> BODY { FONT-FAMILY: Arial }
+	DIV PRE {background-color:eeeeff;border-bottom:solid 1px #bbbbbb;padding:10px;}
+	</style>
+	</head>
+	<body>
+		<H2>VFPX - GDIPlusX v1.10</H2>
+		<H3>Library and Source Code release</H3>
+		<P>This ZIP file contains the GDIPlusX library (as an APP) and the full source 
+			code.</P>
+		<P>For the associated samples and documentation, as well as a list of issues 
+			addressed in this build, please visit the <a href="http://www.codeplex.com/VFPX/Release/ProjectReleases.aspx?ReleaseId=8606">
+				official release page</a> in the VFPX section&nbsp;of CodePlex.</P>
+		<H3>About the library</H3>
+		<P>This library was intended to provide Visual FoxPro 9.0&nbsp;developers with an 
+			object based library to wrap the 600+ functions included with the GDI+ API. The 
+			intent is to mimic the <A href="http://msdn2.microsoft.com/en-us/library/system.drawing.aspx">
+				System.Drawing namespace</A> in the .NET Framework. All classes in the 
+			library are based on the classes included in the System.Drawing namespace and 
+			other classes that&nbsp;are&nbsp;dependencies for classes in the System.Drawing 
+			namespace. Some additional&nbsp;additional functionality has&nbsp;been added to 
+			take advantage of features built in to VFP 9.0</P>
+		<P>For more information about the goals and additional references to the library, 
+			please visit the <a href="http://www.codeplex.com/VFPX/Wiki/View.aspx?title=GDIPlusX">
+				GDIPlusX home page</a>.</P>
+		<H3>Distribution files</H3>
+		<P>
+			<table border="1" width="80%">
+				<colgroup>
+					<col vAlign="top">
+						<col>
+				</colgroup>
+				<tr>
+					<td>System.APP</td>
+					<td>This is a standalone APP which contains all the source files for the GDIPlusX 
+						library. This compiled version includes debug info and some _Membderdata 
+						attributes to assist with intellisense. If you distribute this file with your 
+						application, you only need to compile the GDIPlusX.vcx library into your 
+						application</td>
+				</tr>
+				<tr>
+					<td>System_Lean.APP</td>
+					<td>This is the same as above, but the debug info and intellisense functionality 
+						have been turned off. If you are concerned about your distribution size, this 
+						APP is for you. It is about 250KB smaller than the standard System.app and 
+						usually ZIPs up to about 140KB. Make sure you rename it to "System.APP" if you 
+						distribute this file instead of the standard System.app.</td>
+				</tr>
+				<tr>
+					<td>GDIPlusX.vcx</td>
+					<td>This visal class library contains the imgCanvas class and will need to be 
+						compiled into your application for distribution, if you utilize this class.</td>
+				</tr>
+			</table>
+		</P>
+		<H3>How to use the library</H3>
+		<P>To initialize the library execute the following command:</P>
+		<P>
+			<div><pre>DO system.app</pre>
+			</div>
+		<P></P>
+		<P>This will add a property to the&nbsp;_SCREEN system variable&nbsp;called SYSTEM. 
+			This SYSTEM object contains a property called DRAWING. This DRAWING object 
+			(referenced as _SCREEN.System.Drawing) can be thought of as an object factory 
+			and is designed to mimic the <a href="http://msdn2.microsoft.com/en-us/library/system.drawing.aspx">
+				System.Drawing namespace</a> in the .NET Framework.</P>
+		<P>The following sample fills a&nbsp;circle using a Blue brush and draws a 
+			rectangle using a Red pen,&nbsp;on the VFP desktop:</P>
+		<P>
+			<div><pre>DO system.app
+WITH _SCREEN.System.Drawing<BR>   * Create a Graphics object<BR>   gfx = .Graphics.FromHWnd(_SCREEN.HWnd)<BR><BR>   * Fill an ellipse using a Blue brush<BR>   gfx.FillEllipse(.Brushes.Blue,30,30,400,200)
+   * Create a Red pen<BR>   myPen = .Pen.New(.Color.Red,2)<BR>   * Draw a rectangle using the pen<BR>   gfx.DrawRectangle(myPen,20,20,400,200)
+ENDWITH</pre>
+			</div>
+		<P>If you will be doing any drawing to a VFP Form, we reccommend that you use the 
+			imgCanvas class. The class is based on the VFP Image class and allows your to 
+			draw directly to an Image object. There are several benefits to this, one of 
+			the most important is that by utilizing this class you do not have to write any 
+			code to handle Paint events to the VFP Form. You just draw to this Image object 
+			and VFP will handle this tedious task for you.</P>
+		<P>This class is located in the "source" folder and is part of the GDIPlusX.vcx 
+			class library. Just add this class to your Form and use the BeforeDraw method 
+			to call&nbsp;your drawing commands.</P>
+		<P>Here is the same sample above, but utilizing the imgCanvas class's BeforeDraw 
+			method. Note that the oGfx property represents the Graphics object for the 
+			imgCanvas class:</P>
+		<div><PRE>FUNCTION BeforeDraw
+WITH _SCREEN.System.Drawing<BR><BR>   * Fill an ellipse using a Blue brush<BR>   This.oGfx.FillEllipse(.Brushes.Blue,30,30,400,200)
+   * Create a Red pen<BR>   myPen = .Pen.New(.Color.Red,2)<BR>   * Draw a rectangle using the pen<BR>   This.oGfx.DrawRectangle(myPen,20,20,400,200)
+ENDWITH</PRE>
+		</div>
+		<P>For more information, please download the samples and documentation 
+			from&nbsp;the <A href="http://www.codeplex.com/VFPX/Release/ProjectReleases.aspx?ReleaseId=8606">
+				official release page</A>.
+		</P>
+		<P><STRONG>Support</STRONG></P>
+		<P>If you have any questions of comments about the library or you would like to 
+			report an issue, please use the <a href="http://www.codeplex.com/VFPX/Thread/List.aspx">
+				discussion forums</a> at the VFPX site. The GDIPlusX team members as well 
+			as other GDIPlusX library users frequent the forums and should be able to 
+			assist you. If you would like to contact the project manager privately, send an 
+			email to <A href="mailto:gdiplusx@moxiedata.com">gdiplusx@moxiedata.com</A>.</P>
+	</body>
+</html>

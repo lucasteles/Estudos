@@ -1,0 +1,1 @@
+This folder will receive some output files created by some of the samples from the GdiPlusX library.

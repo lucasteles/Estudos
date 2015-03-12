@@ -1,0 +1,33 @@
+# Project: linhas
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = AnotherBGIM_private.res
+OBJ  = linhas.o $(RES)
+LINKOBJ  = linhas.o $(RES)
+LIBS =  -L"C:/Users/Lucas/Downloads/dev/Dev-CppPortable/App/devcpp/lib" -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32  
+INCS =  -I"C:/Users/Lucas/Downloads/dev/Dev-CppPortable/App/devcpp/include" 
+CXXINCS =  -I"C:/Users/Lucas/Downloads/dev/Dev-CppPortable/App/devcpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Users/Lucas/Downloads/dev/Dev-CppPortable/App/devcpp/include/c++/3.4.2/backward"  -I"C:/Users/Lucas/Downloads/dev/Dev-CppPortable/App/devcpp/include/c++/3.4.2/mingw32"  -I"C:/Users/Lucas/Downloads/dev/Dev-CppPortable/App/devcpp/include/c++/3.4.2"  -I"C:/Users/Lucas/Downloads/dev/Dev-CppPortable/App/devcpp/include" 
+BIN  = linhas.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before linhas.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "linhas.exe" $(LIBS)
+
+linhas.o: linhas.c
+	$(CPP) -c linhas.c -o linhas.o $(CXXFLAGS)
+
+AnotherBGIM_private.res: AnotherBGIM_private.rc 
+	$(WINDRES) -i AnotherBGIM_private.rc --input-format=rc -o AnotherBGIM_private.res -O coff 

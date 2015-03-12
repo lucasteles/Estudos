@@ -1,0 +1,1 @@
+DO FORM \\server01\files\usuarios\teles\exercicios\fone\exerc7.scx
