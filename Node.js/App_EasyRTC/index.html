@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Teste RTC</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<link rel="stylesheet" type="text/css" href="/easyrtc/easyrtc.js" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/easyrtc/easyrtc.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+    <style type="text/css">
+    	body
+    	{
+    		width: 600px;
+    	}
+    	#conversa
+    	{
+    		position: relative;
+    		border: 1px dotted; 
+    		min-height: 100px;
+    		width: 300px;
+    	}
+    	#peaple
+    	{
+    		position: relative;
+    		min-height: 10px;    
+    		min-width: 250px;	
+    		
+    	}
+    </style>
+</head>
+
+<body>
+
+	<h2>RTC Teste</h2>
+	
+	<p id="meuId">carregando id</p>
+	
+	<hr />
+	<p>
+		Historico:
+		<div id="conversa"></div>
+	</p>
+	<p>
+		Pessoas:<br />
+		<select id="peaple" multiple>
+			<option value="xxx">teste</option>
+		</select>
+	</p>
+
+	Message: <input type="text" id="message" /><button id="send">Send</button>
+
+
+</body>
+</html>
