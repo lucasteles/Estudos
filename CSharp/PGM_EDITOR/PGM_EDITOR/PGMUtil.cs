@@ -8,8 +8,7 @@ namespace PGM_EDITOR
 {
     public static class PGMUtil
     {
-        private static ColorPalette grayScale;
-
+        
         public static PgmImg ReadPgmImg(string filePath)
         {
             PgmImg ret = new PgmImg();
@@ -33,7 +32,7 @@ namespace PGM_EDITOR
                         two = (level > 255);
 
                         var mat = new Byte[width, height];
-
+                                                
                         for (int i = 0; i < height; i++)
                         {
                             for (int j = 0; j < width; j++)
@@ -48,10 +47,15 @@ namespace PGM_EDITOR
                                     v = reader.ReadByte();
                                 }
 
+
                                 mat[j, i] = v;
+
+                                ret.Pallete[v] = true;
+
 
                             }
                         }
+                        
                         ret.Matrix = mat;
                         return ret;                            
                     }
@@ -72,17 +76,16 @@ namespace PGM_EDITOR
 
                 var width = pgmImage.Matrix.GetLength(0);
                 var height = pgmImage.Matrix.GetLength(1);
-
+                ColorPalette grayScale;
 
                 Bitmap bmp = new Bitmap(width, height, PixelFormat.Format8bppIndexed);
-                if (grayScale == null)
-                {
+                
                     grayScale = bmp.Palette;
                     for (int i = 0; i < 256; i++)
                     {
                         grayScale.Entries[i] = Color.FromArgb(i, i, i);
                     }
-                }
+                
                 bmp.Palette = grayScale;
                 BitmapData dt = bmp.LockBits(new Rectangle(0, 0, width, height), ImageLockMode.WriteOnly, PixelFormat.Format8bppIndexed);
                 int offset = dt.Stride - dt.Width;

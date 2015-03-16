@@ -32,3 +32,16 @@ C:\Users\Lucas\Downloads\PGM_EDITOR\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDIT
 C:\Users\Lucas\Downloads\PGM_EDITOR\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR2010.g.resources
 C:\Users\Lucas\Downloads\PGM_EDITOR\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR2010.Properties.Resources.resources
 C:\Users\Lucas\Downloads\PGM_EDITOR\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR.csproj.GenerateResource.Cache
+C:\desenvolvimento\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\main.baml
+C:\desenvolvimento\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\main.g.cs
+C:\desenvolvimento\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\App.g.cs
+C:\desenvolvimento\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR.csproj.GenerateResource.Cache
+C:\desenvolvimento\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\InputDialog.baml
+C:\desenvolvimento\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\InputDialog.g.cs
+C:\desenvolvimento\PGM_EDITOR\PGM_EDITOR\bin\Debug\PGM_EDITOR.exe
+C:\desenvolvimento\PGM_EDITOR\PGM_EDITOR\bin\Debug\PGM_EDITOR.pdb
+C:\desenvolvimento\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR_MarkupCompile.cache
+C:\desenvolvimento\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR.g.resources
+C:\desenvolvimento\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR.Properties.Resources.resources
+C:\desenvolvimento\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR.exe
+C:\desenvolvimento\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR.pdb

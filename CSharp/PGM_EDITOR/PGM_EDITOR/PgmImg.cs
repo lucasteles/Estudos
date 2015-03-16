@@ -13,7 +13,8 @@ namespace PGM_EDITOR
 
         public int Width;
         public int Height;
-
+        public bool[] Pallete;
+        public int ReduceTo;
         public Byte[,] Matrix
         {
             get {
@@ -30,16 +31,23 @@ namespace PGM_EDITOR
 
         public PgmImg Clone()
         {
-            return new PgmImg(Matrix);
+            return new PgmImg(Matrix) { Pallete = Pallete};
         }
 
         public PgmImg()
         {
+            startPallete();
         }
         public PgmImg(byte[,] matrix)
         {
             this.Matrix = matrix;
+            startPallete();
         }   
+
+        private void startPallete()
+        {
+            Pallete = Enumerable.Repeat(false, 256).ToArray();
+        }
 
         public bool IsEmpty()
         {

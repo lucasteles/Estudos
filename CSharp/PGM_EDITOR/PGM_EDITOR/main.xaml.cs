@@ -79,14 +79,17 @@ namespace PGM_EDITOR
 
         private void btnRotateR_Click(object sender, RoutedEventArgs e)
         {
-            addHistory();
-            bitmap = tools.RotateR(bitmap);
-            show();
+            apply(tools.RotateR);
         }
         private void btnRotateL_Click(object sender, RoutedEventArgs e)
         {
+            apply(tools.RotateL);
+        }
+
+        private void apply(Func<PgmImg, PgmImg> transform)
+        {
             addHistory();
-            bitmap = tools.RotateL(bitmap);
+            bitmap = transform(bitmap);
             show();
         }
 
@@ -127,13 +130,41 @@ namespace PGM_EDITOR
         {
             this.btnRedo.IsEnabled = Redo.Count > 0;
             this.btnUndo.IsEnabled = Undo.Count > 0;
-            
-            
-            this.btnSave.IsEnabled = 
+
+
+            this.btnSave.IsEnabled =
                 this.btnRotateL.IsEnabled =
-                    this.btnRotateR.IsEnabled = 
-                        bitmap==null ? false :!bitmap.IsEmpty();
+                    this.btnRotateR.IsEnabled =
+                        this.btnReduzir.IsEnabled =
+                            bitmap==null ? false :!bitmap.IsEmpty();
              
+        }
+
+        private void btnReduzir_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new InputDialog();
+
+            if ((bool)dialog.ShowDialog())
+            {
+                int outV;
+                if (Int32.TryParse(dialog.Answer, out outV) && outV > 1 && outV < 256)
+                {
+                    bitmap.ReduceTo = outV;
+                    apply(tools.ReduceColors);
+                }
+                else
+                    MessageBox.Show("valor invalido!");
+            }
+
+        }
+
+        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            imgPhoto.Width = e.NewSize.Width - 50;
+            imgPhoto.Height = e.NewSize.Height - 100;
+
+            rectangle1.Width = imgPhoto.Width;
+            rectangle1.Height = imgPhoto.Height;
         }
        
 
