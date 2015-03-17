@@ -19,49 +19,28 @@ namespace PGM_EDITOR
             var matrix = pgm.Matrix;
             var temp = new Byte[matrix.GetLength(0), matrix.GetLength(1)];
             var ret = new PgmImg();
-            
-            var ColorArray = pgm.Pallete
-                                .Select((v, i) => new { v, i })
-                                .Where(e => e.v)
-                                .Select(e => e.i)
-                                .ToArray();
 
-            var newColorArray = new int[pgm.ReduceTo];
-            for (int i = 0; i < pgm.ReduceTo ; i++)
-                newColorArray[i] = i * (255 / (pgm.ReduceTo-1));
-
-            newColorArray.OrderBy(e => e);
+       
 
             for (int i = 0; i < matrix.GetLength(0); i++)
-            {
-                for (int j = 0; j < matrix.GetLength(1); j++)
-                {
-                    temp[i, j] = (byte)Closest((int)matrix[i, j], newColorArray);
-                    
-                    ret.Pallete[temp[i, j]] = true;
+                for (int j = 0; j < matrix.GetLength(1); j++){
+                    temp[i, j] = (byte)Math.Round(((pgm.ReduceTo - 1) * (double)matrix[i, j] / 255));
+                    temp[i, j] = (byte)Math.Round(255 * (double)temp[i, j] / (pgm.ReduceTo - 1));                   
                 }
-
-            }
 
 
             /*
-            var maxColor = (int)ColorArray.Max();
+            // outra forma - mais lenta
+           var newColorArray = new int[pgm.ReduceTo];
+           for (int i = 0; i < pgm.ReduceTo ; i++)
+               newColorArray[i] = i * (255 / (pgm.ReduceTo-1));
             
-            for (int i = 0; i < matrix.GetLength(0); i++)
-            {
-                for (int j = 0; j < matrix.GetLength(1); j++)
-                {
-                    temp[i, j] = (byte)Math.Round((double)(pgm.ReduceTo * matrix[i, j] / 255));
-                    temp[i, j] = (byte)Math.Round((double)(temp[i, j] * 255 / pgm.ReduceTo));
-                    
-                    ret.Pallete[temp[i, j]] = true;
-                }
-
-            }
-            */
-            ret.Matrix = temp;
-
+           for (int i = 0; i < matrix.GetLength(0); i++)
+               for (int j = 0; j < matrix.GetLength(1); j++)
+                   temp[i, j] = (byte)Closest((int)matrix[i, j], newColorArray);  
+           */
             
+            ret.Matrix = temp;            
             return ret;
         }
 
