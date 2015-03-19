@@ -64,6 +64,7 @@
     <Compile Include="InputDialog.xaml.cs">
       <DependentUpon>InputDialog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MagicNumbers.cs" />
     <Compile Include="PgmImg.cs" />
     <Compile Include="tools.cs" />
   </ItemGroup>

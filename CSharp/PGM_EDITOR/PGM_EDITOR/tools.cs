@@ -20,13 +20,11 @@ namespace PGM_EDITOR
             var temp = new Byte[matrix.GetLength(0), matrix.GetLength(1)];
             var ret = new PgmImg();
 
-       
+
 
             for (int i = 0; i < matrix.GetLength(0); i++)
-                for (int j = 0; j < matrix.GetLength(1); j++){
-                    temp[i, j] = (byte)Math.Round(((pgm.ReduceTo - 1) * (double)matrix[i, j] / 255));
-                    temp[i, j] = (byte)Math.Round(255 * (double)temp[i, j] / (pgm.ReduceTo - 1));                   
-                }
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                    temp[i, j] = Reduce(matrix[i,j], pgm.ReduceTo);
 
 
             /*
@@ -42,6 +40,49 @@ namespace PGM_EDITOR
             
             ret.Matrix = temp;            
             return ret;
+        }
+
+        public static PgmImg FloydSteinberg(PgmImg pgm)
+        {
+
+            var ret = pgm.Clone();
+            var temp = ret.Matrix;
+            
+            for (int i = 0; i < temp.GetLength(0) - 1; i++)
+                for (int j = 0; j < temp.GetLength(1) - 1; j++)
+                {
+                    var original = temp[i, j];
+                    temp[i, j] = Reduce(temp[i, j], pgm.ReduceTo);
+                    var error = (double)original - (double)temp[i, j];
+
+                    temp[i + 0, j + 1] = Normalize(temp[i + 0, j + 1] + error * MagicNumbers.Right);
+                    temp[i + 1, j + 0] = Normalize(temp[i + 1, j + 0] + error * MagicNumbers.Down);
+                    temp[i + 1, j + 1] = Normalize(temp[i + 1, j + 1] + error * MagicNumbers.DownRight);
+
+                    if (j > 0)
+                        temp[i + 1, j - 1] = Normalize(temp[i + 1, j - 1] + error * MagicNumbers.DownLeft);
+
+                }
+
+
+
+            ret.Matrix = temp;
+            return ret;
+        }
+
+
+        private static byte Reduce(byte value, int colors)
+        {
+            byte ret;
+            ret = (byte)Math.Round((colors - 1) * (double)value / 255);
+            ret = (byte)Math.Round(255 * (double)ret / (colors - 1));
+
+            return ret;
+        }
+
+        private static byte Normalize(double color)
+        {
+            return (byte)(color > 255 ? 255 : (color < 0 ? 0 : color));
         }
 
         private static int Closest(int closest, int[] values)

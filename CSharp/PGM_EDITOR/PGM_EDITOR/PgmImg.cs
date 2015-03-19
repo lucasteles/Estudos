@@ -31,7 +31,7 @@ namespace PGM_EDITOR
 
         public PgmImg Clone()
         {
-            return new PgmImg(Matrix) { Pallete = Pallete};
+            return new PgmImg((byte[,])Matrix.Clone()) { Pallete = Pallete};
         }
 
         public PgmImg()

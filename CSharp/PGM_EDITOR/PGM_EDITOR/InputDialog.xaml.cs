@@ -32,5 +32,19 @@ namespace PGM_EDITOR
         {
             get { return txtAnswer.Text; }
         }
+
+        public Options Option
+        {
+            get
+            { return (Options)cmbOption.SelectedIndex; }
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            cmbOption.Items.Add("Color Reduce");
+            cmbOption.Items.Add("Floyd Steinberg");
+            cmbOption.SelectedIndex = 0;
+
+        }
     }
 }

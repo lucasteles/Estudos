@@ -150,7 +150,20 @@ namespace PGM_EDITOR
                 if (Int32.TryParse(dialog.Answer, out outV) && outV > 1 && outV < 256)
                 {
                     bitmap.ReduceTo = outV;
-                    apply(tools.ReduceColors);
+
+                    switch (dialog.Option)
+                    {
+                        case Options.ReduceColors:
+                            apply(tools.ReduceColors);
+                            break;
+                          case Options.FloydSteinberg:
+                            apply(tools.FloydSteinberg);
+                            break;
+                        default:
+                            break;
+                    }
+
+                    
                 }
                 else
                     MessageBox.Show("valor invalido!");
