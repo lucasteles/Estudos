@@ -48,18 +48,26 @@ namespace PGM_EDITOR
             var ret = pgm.Clone();
             var temp = ret.Matrix;
             
-            for (int i = 0; i < temp.GetLength(0) - 1; i++)
-                for (int j = 0; j < temp.GetLength(1) - 1; j++)
+            var width = temp.GetLength(0)-1;
+            var height = temp.GetLength(1)-1;
+
+            for (int i = 0; i < temp.GetLength(0); i++)
+                for (int j = 0; j < temp.GetLength(1); j++)
                 {
                     var original = temp[i, j];
                     temp[i, j] = Reduce(temp[i, j], pgm.ReduceTo);
                     var error = (double)original - (double)temp[i, j];
 
-                    temp[i + 0, j + 1] = Normalize(temp[i + 0, j + 1] + error * MagicNumbers.Right);
-                    temp[i + 1, j + 0] = Normalize(temp[i + 1, j + 0] + error * MagicNumbers.Down);
-                    temp[i + 1, j + 1] = Normalize(temp[i + 1, j + 1] + error * MagicNumbers.DownRight);
+                    if (j < height)
+                        temp[i, j + 1] = Normalize(temp[i + 0, j + 1] + error * MagicNumbers.Right);
 
-                    if (j > 0)
+                    if (i < width)
+                        temp[i + 1, j ] = Normalize(temp[i + 1, j + 0] + error * MagicNumbers.Down);
+
+                    if (j < height && i < width)
+                        temp[i + 1, j + 1] = Normalize(temp[i + 1, j + 1] + error * MagicNumbers.DownRight);
+
+                    if (j > 0 && i < width)
                         temp[i + 1, j - 1] = Normalize(temp[i + 1, j - 1] + error * MagicNumbers.DownLeft);
 
                 }
