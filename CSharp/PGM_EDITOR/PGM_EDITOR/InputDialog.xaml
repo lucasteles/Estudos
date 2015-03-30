@@ -19,7 +19,7 @@
 
         <!-- <Image Source="/WpfTutorialSamples;component/Images/question32.png" Width="32" Height="32" Grid.RowSpan="2" Margin="20,0" /> -->
         <Label Name="lblOption" Grid.Column="1" Grid.Row="1">Opção:</Label>
-        <ComboBox Name="cmbOption" Grid.Column="1" Grid.Row="2" MinWidth="100" Margin="0,0,12,0" Height="26"></ComboBox>
+        <ComboBox Name="cmbOption" Grid.Column="1" Grid.Row="2" MinWidth="100" Margin="0,0,12,0" Height="26" DropDownClosed="cmbOption_DropDownClosed"/>
 
         <Label Name="lblQuestion" Grid.Column="1" Grid.Row="3">Valor aplicado (2 - 255):</Label>
         <TextBox Name="txtAnswer" Grid.Column="1" Grid.Row="4" MinWidth="100" Margin="0,0,12,0" Height="26"></TextBox>

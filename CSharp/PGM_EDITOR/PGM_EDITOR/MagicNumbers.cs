@@ -16,7 +16,8 @@ namespace PGM_EDITOR
     public enum Options
     {
         ReduceColors,
-        FloydSteinberg
+        FloydSteinberg,
+        HistogramEqualization,
     }
 
 }

@@ -14,17 +14,47 @@ namespace PGM_EDITOR
     public static class tools
     {
 
+        public static PgmImg Equalize(PgmImg pgm)
+        {
+
+            var min = pgm.Pallete.Min();
+            var max = SomaAte(255, pgm);
+            var ret = pgm.Clone();
+
+
+            for (int i = 0; i < pgm.Width; i++)
+                for (int j = 0; j < pgm.Height; j++)
+                    ret[i, j] = (byte) (
+                                            (
+                                                (double) 
+                                                (SomaAte(pgm[i, j],pgm) - min) /
+                                                (max - min) 
+                                            )
+                                        *255);   
+
+            return ret;
+
+        }
+
+        private static int SomaAte(byte value, PgmImg img)
+        {
+            var ret = 0;
+
+            for (int i = 0; i < value; i++)
+                ret += img.Pallete[i];
+
+
+            return ret;
+        }
+
         public static PgmImg ReduceColors(PgmImg pgm)
         {
-            var matrix = pgm.Matrix;
-            var temp = new Byte[matrix.GetLength(0), matrix.GetLength(1)];
-            var ret = new PgmImg();
+            var temp = pgm.Clone();
+            
 
-
-
-            for (int i = 0; i < matrix.GetLength(0); i++)
-                for (int j = 0; j < matrix.GetLength(1); j++)
-                    temp[i, j] = Reduce(matrix[i,j], pgm.ReduceTo);
+            for (int i = 0; i < pgm.Width; i++)
+                for (int j = 0; j < pgm.Height; j++)
+                    temp[i, j] = Reduce(pgm[i,j], pgm.ReduceTo);
 
 
             /*
@@ -38,21 +68,21 @@ namespace PGM_EDITOR
                    temp[i, j] = (byte)Closest((int)matrix[i, j], newColorArray);  
            */
             
-            ret.Matrix = temp;            
-            return ret;
+                    
+            return temp;
         }
 
         public static PgmImg FloydSteinberg(PgmImg pgm)
         {
 
-            var ret = pgm.Clone();
-            var temp = ret.Matrix;
-            
-            var width = temp.GetLength(0)-1;
-            var height = temp.GetLength(1)-1;
 
-            for (int i = 0; i < temp.GetLength(0); i++)
-                for (int j = 0; j < temp.GetLength(1); j++)
+            var temp = pgm.Clone();
+            
+            var width = temp.Width-1;
+            var height = temp.Height-1;
+
+            for (int i = 0; i < temp.Width; i++)
+                for (int j = 0; j < temp.Height; j++)
                 {
                     var original = temp[i, j];
                     temp[i, j] = Reduce(temp[i, j], pgm.ReduceTo);
@@ -72,10 +102,7 @@ namespace PGM_EDITOR
 
                 }
 
-
-
-            ret.Matrix = temp;
-            return ret;
+            return temp;
         }
 
 
@@ -116,56 +143,41 @@ namespace PGM_EDITOR
 
         public static PgmImg Transpose(PgmImg pgm)
         {
-            var matrix = pgm.Matrix;
-            var temp =new Byte[matrix.GetLength(1),matrix.GetLength(0) ];
+         
+            var temp = new PgmImg(pgm.Height, pgm.Width);
 
-            for (int i = 0; i < matrix.GetLength(0); i++)
-            {
-                for (int j = 0; j < matrix.GetLength(1); j++)
-                {
-                    temp[j, i] = matrix[i, j];
-                }
-            }
+            for (int i = 0; i < pgm.Width; i++)
+                for (int j = 0; j < pgm.Height; j++)
+                    temp[j, i] = pgm[i, j];
 
-            return new PgmImg(temp);
+
+            return temp;
         }
 
         public static PgmImg MirrorX(PgmImg pgm)
         {
-            var matrix = pgm.Matrix;
+            var temp = pgm.Clone();
 
-            var temp = new Byte[matrix.GetLength(0), matrix.GetLength(1)];
+            for (int i = 0; i < pgm.Width; i++)
+                for (int j = 0; j < pgm.Height; j++)
+                    temp[i, j] = pgm[pgm.Width-1-i, j];
 
-            for (int i = 0; i < matrix.GetLength(0); i++)
-            {
-                for (int j = 0; j < matrix.GetLength(1); j++)
-                {
-                    temp[i, j] = matrix[matrix.GetLength(0)-1-i, j];
-                }
-            }
-
-            return new PgmImg(temp);
+            return temp;
 
         }
 
         public static PgmImg MirrorY(PgmImg pgm)
         {
-            var matrix = pgm.Matrix;
 
-            var temp = new Byte[matrix.GetLength(0), matrix.GetLength(1)];
+            var temp = pgm.Clone();
 
-            for (int i = 0; i < matrix.GetLength(0); i++)
-            {
-                for (int j = 0; j < matrix.GetLength(1); j++)
-                {
-                    temp[i, j] = matrix[i, matrix.GetLength(1) - 1 - j];
-                }
-            }
+            for (int i = 0; i < pgm.Width; i++)
+                for (int j = 0; j < pgm.Height; j++)
+                    temp[i, j] = pgm[i, pgm.Height - 1 - j];
 
-            return new PgmImg(temp);
+            return temp;
 
         }
-
 
         public static PgmImg RotateR(PgmImg bitmap)
         {

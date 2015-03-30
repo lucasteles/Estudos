@@ -136,6 +136,7 @@ namespace PGM_EDITOR
                 this.btnRotateL.IsEnabled =
                     this.btnRotateR.IsEnabled =
                         this.btnReduzir.IsEnabled =
+                            this.btnHisto.IsEnabled = 
                             bitmap==null ? false :!bitmap.IsEmpty();
              
         }
@@ -147,7 +148,7 @@ namespace PGM_EDITOR
             if ((bool)dialog.ShowDialog())
             {
                 int outV;
-                if (Int32.TryParse(dialog.Answer, out outV) && outV > 1 && outV < 256)
+                if ((Int32.TryParse(dialog.Answer, out outV) && outV > 1 && outV < 256) || !dialog.txtAnswer.IsEnabled)
                 {
                     bitmap.ReduceTo = outV;
 
@@ -156,8 +157,11 @@ namespace PGM_EDITOR
                         case Options.ReduceColors:
                             apply(tools.ReduceColors);
                             break;
-                          case Options.FloydSteinberg:
+                        case Options.FloydSteinberg:
                             apply(tools.FloydSteinberg);
+                            break;
+                        case Options.HistogramEqualization:
+                            apply(tools.Equalize);
                             break;
                         default:
                             break;
@@ -179,7 +183,15 @@ namespace PGM_EDITOR
             rectangle1.Width = imgPhoto.Width;
             rectangle1.Height = imgPhoto.Height;
         }
-       
+
+        private void btnHisto_Click(object sender, RoutedEventArgs e)
+        {
+            var hist = new Histograma(bitmap);
+
+            hist.ShowDialog();
+        }
+
+               
 
     }
 }

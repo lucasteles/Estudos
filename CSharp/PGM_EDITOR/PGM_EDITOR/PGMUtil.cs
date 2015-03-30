@@ -11,7 +11,7 @@ namespace PGM_EDITOR
         
         public static PgmImg ReadPgmImg(string filePath)
         {
-            PgmImg ret = new PgmImg();
+
 
             using (FileStream fs = new FileStream(filePath, FileMode.Open))
             {
@@ -31,7 +31,8 @@ namespace PGM_EDITOR
                         level = ReadNumber(reader);
                         two = (level > 255);
 
-                        var mat = new Byte[width, height];
+                        var mat = new PgmImg(width, height);
+                        
                                                 
                         for (int i = 0; i < height; i++)
                         {
@@ -50,14 +51,12 @@ namespace PGM_EDITOR
 
                                 mat[j, i] = v;
 
-                                ret.Pallete[v] = true;
 
 
                             }
                         }
                         
-                        ret.Matrix = mat;
-                        return ret;                            
+                        return mat;                            
                     }
                     else
                     {
@@ -74,17 +73,16 @@ namespace PGM_EDITOR
         public static Bitmap ToBitmap( PgmImg pgmImage)
         {
 
-                var width = pgmImage.Matrix.GetLength(0);
-                var height = pgmImage.Matrix.GetLength(1);
+                var width = pgmImage.Width;
+                var height = pgmImage.Height;
                 ColorPalette grayScale;
 
                 Bitmap bmp = new Bitmap(width, height, PixelFormat.Format8bppIndexed);
                 
-                    grayScale = bmp.Palette;
-                    for (int i = 0; i < 256; i++)
-                    {
-                        grayScale.Entries[i] = Color.FromArgb(i, i, i);
-                    }
+               grayScale = bmp.Palette;
+               for (int i = 0; i < 256; i++)     
+                   grayScale.Entries[i] = Color.FromArgb(i, i, i);
+                    
                 
                 bmp.Palette = grayScale;
                 BitmapData dt = bmp.LockBits(new Rectangle(0, 0, width, height), ImageLockMode.WriteOnly, PixelFormat.Format8bppIndexed);
@@ -98,7 +96,7 @@ namespace PGM_EDITOR
                     {
                         for (int j = 0; j < width; j++)
                         {
-                            *ptr = pgmImage.Matrix[j, i];
+                            *ptr = pgmImage[j, i];
                             ptr++;
                         }
                         ptr += offset;
@@ -114,11 +112,22 @@ namespace PGM_EDITOR
         private static int ReadNumber(BinaryReader reader)
         {
             StringBuilder sb = new StringBuilder();
-            char c = '\0';
             sb.Length = 0;
-            while (Char.IsDigit(c = reader.ReadChar()))
+
+            char c = reader.ReadChar();
+
+            if (c == '#')
+                while(c != '\n')
+                    c = reader.ReadChar();
+
+            while (c == '\n')
+                c = reader.ReadChar();
+
+
+            while (Char.IsDigit(c))
             {
                 sb.Append(c);
+                c = reader.ReadChar();
             }
             return int.Parse(sb.ToString());
         }

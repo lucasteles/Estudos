@@ -43,8 +43,21 @@ namespace PGM_EDITOR
         {
             cmbOption.Items.Add("Color Reduce");
             cmbOption.Items.Add("Floyd Steinberg");
+            cmbOption.Items.Add("Histogram equalization ");
             cmbOption.SelectedIndex = 0;
 
         }
+
+        private void cmbOption_DropDownClosed(object sender, EventArgs e)
+        {
+            if (cmbOption.SelectedIndex == 2)
+            {
+                txtAnswer.IsEnabled = false;
+                txtAnswer.Text = "";
+            }
+            else
+                txtAnswer.IsEnabled = true;
+        }
+
     }
 }

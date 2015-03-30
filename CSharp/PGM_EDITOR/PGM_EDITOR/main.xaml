@@ -11,7 +11,8 @@
         <Button x:Name="btnUndo" Content="Undo" HorizontalAlignment="Left" Margin="253,-45,0,0" VerticalAlignment="Top" Width="43" Click="btnUndo_Click" Height="20" Grid.Column="1" />
         <Button Content="Save" HorizontalAlignment="Left" Margin="47,-45,0,0" Name="btnSave" VerticalAlignment="Top" Width="49" Click="btnSave_Click" />
         <Button Content="Redo" HorizontalAlignment="Left" Margin="294,-45,0,0" Name="btnRedo" VerticalAlignment="Top" Width="43" Click="btnRedo_Click" Height="20" Grid.Column="1" />
-        <Button Content="Aplicar Efeito" Height="20" HorizontalAlignment="Left" Margin="354,-45,0,0" Name="btnReduzir" VerticalAlignment="Top" Width="87" Click="btnReduzir_Click" Grid.Column="1" />
-       
+        <Button Content="Efeito" Height="20" HorizontalAlignment="Left" Margin="349,-45,0,0" Name="btnReduzir" VerticalAlignment="Top" Width="54" Click="btnReduzir_Click" />
+        <Button Content="Histograma" Height="20" HorizontalAlignment="Left" Margin="408,-45,0,0" x:Name="btnHisto" VerticalAlignment="Top" Width="76" Click="btnHisto_Click" />
+
     </Grid>
 </Window>
