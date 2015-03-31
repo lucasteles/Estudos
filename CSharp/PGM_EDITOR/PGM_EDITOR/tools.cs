@@ -18,16 +18,19 @@ namespace PGM_EDITOR
         {
 
             var min = pgm.Pallete.Min();
-            var max = SomaAte(255, pgm);
+            var Acumulativo = pgm.CumulativePallete();
+            var max = Acumulativo[255];
             var ret = pgm.Clone();
 
+            var sum = 0;
+           
 
             for (int i = 0; i < pgm.Width; i++)
                 for (int j = 0; j < pgm.Height; j++)
                     ret[i, j] = (byte) (
                                             (
-                                                (double) 
-                                                (SomaAte(pgm[i, j],pgm) - min) /
+                                                (double)
+                                                (Acumulativo[pgm[i, j]] - min) /
                                                 (max - min) 
                                             )
                                         *255);   
@@ -36,16 +39,7 @@ namespace PGM_EDITOR
 
         }
 
-        private static int SomaAte(byte value, PgmImg img)
-        {
-            var ret = 0;
-
-            for (int i = 0; i < value; i++)
-                ret += img.Pallete[i];
-
-
-            return ret;
-        }
+ 
 
         public static PgmImg ReduceColors(PgmImg pgm)
         {

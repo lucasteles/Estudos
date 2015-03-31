@@ -1,7 +1,7 @@
 ﻿<Window x:Class="PGM_EDITOR.main"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="PGM Editor" Height="427" Width="500" SizeChanged="Window_SizeChanged">
+        Title="PGM Editor" Height="427" Width="510" SizeChanged="Window_SizeChanged" WindowState="Maximized">
     <Grid Margin="0,56,3.333,3.333">
         <Image x:Name="imgPhoto" HorizontalAlignment="Stretch" Height="319" VerticalAlignment="Stretch" Width="454" Stretch="Uniform" />
         <Rectangle Height="321" HorizontalAlignment="Stretch" Name="rectangle1" Stroke="Black" VerticalAlignment="Stretch" Width="478"  Margin="0,0,0,0"/>

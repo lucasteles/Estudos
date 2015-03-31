@@ -71,8 +71,19 @@ namespace PGM_EDITOR
             this.Matrix = matrix;
        
 
-        }   
+        }
 
+        public int[] CumulativePallete()
+        {
+            var ret = new int[Pallete.Length];
+
+            
+            for (int i = 0; i < ret.Length; i++)
+                for (int j = 0; j < i; j++)
+                    ret[i] += Pallete[j]; ;
+
+            return ret;
+        }
 
         public bool IsEmpty()
         {
