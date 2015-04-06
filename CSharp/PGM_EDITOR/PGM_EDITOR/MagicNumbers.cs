@@ -18,6 +18,7 @@ namespace PGM_EDITOR
         ReduceColors,
         FloydSteinberg,
         HistogramEqualization,
+        AverageFilter
     }
 
 }

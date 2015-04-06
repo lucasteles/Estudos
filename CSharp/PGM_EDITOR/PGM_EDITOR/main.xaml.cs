@@ -163,6 +163,12 @@ namespace PGM_EDITOR
                         case Options.HistogramEqualization:
                             apply(tools.Equalize);
                             break;
+                        case Options.AverageFilter:
+                            if (outV % 2 != 0 && outV >=3)
+                                apply(tools.Average);
+                            else
+                                MessageBox.Show("deve ser impar e maior/igual que tres!");
+                            break;
                         default:
                             break;
                     }
