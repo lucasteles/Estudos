@@ -18,9 +18,22 @@ namespace PGM_EDITOR
         {
             var ret = pgm.Clone();
 
+
+
+            Parallel.For(0, pgm.Width, i =>
+            {
+                Parallel.For(0, pgm.Height, j =>
+                {
+                    ret[i, j] = LocalAverage(pgm, i, j);
+                });
+            });
+
+            /*
             for (int i = 0; i < pgm.Width; i++)
                 for (int j = 0; j < pgm.Height; j++)
                     ret[i, j] = LocalAverage(pgm, i, j);
+            */
+
 
             return ret;
         }
@@ -29,21 +42,26 @@ namespace PGM_EDITOR
         private static byte LocalAverage(PgmImg img,int x,int y)
         {
             double media = 0;
-            var aux = (int)img.ReduceTo / 2;
+            int aux = img.ReduceTo / 2;
+            int divisor=0;
+
 
             for (int i = x - aux; i <= x + aux; i++)
                 for (int j = y - aux; j <= y + aux; j++)
                     if (j < img.Height && j >= 0 && i >= 0 && i < img.Width)
-                        media += (double)img[i, j];
-   
-            return (byte)Math.Round((double)media/Math.Pow(img.ReduceTo,2));
+                    {
+                        media += img[i, j];
+                        divisor++;
+                    }
+
+            return (byte)Math.Round(media / divisor); //Math.Pow(img.ReduceTo, 2));
         }
 
         public static PgmImg Equalize(PgmImg pgm)
         {
 
-            var min = pgm.Pallete.Min();
             var Acumulativo = pgm.CumulativePallete();
+            var min = Acumulativo.Min();
             var max = Acumulativo[255];
             var ret = pgm.Clone();
 
