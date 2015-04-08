@@ -43,7 +43,8 @@ namespace PGM_EDITOR
         {
             cmbOption.Items.Add("Color Reduce");
             cmbOption.Items.Add("Floyd Steinberg");
-            cmbOption.Items.Add("Histogram equalization ");
+            cmbOption.Items.Add("Histogram equalization");
+            cmbOption.Items.Add("Average filter");
             cmbOption.SelectedIndex = 0;
 
         }
@@ -57,7 +58,12 @@ namespace PGM_EDITOR
             }
             else
                 txtAnswer.IsEnabled = true;
-        }
 
+            if (cmbOption.SelectedIndex == 3)
+                lblQuestion.Content = ("Valor impar maior que tres");
+            else
+                lblQuestion.Content = ("Valor aplicado (2 - 255):");
+
+        }
     }
 }
