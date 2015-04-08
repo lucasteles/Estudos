@@ -26,7 +26,8 @@ namespace PGM_EDITOR
         private PgmImg bitmap;
         private Stack<PgmImg> Undo = new Stack<PgmImg>();
         private Stack<PgmImg> Redo = new Stack<PgmImg>();
-        
+        private Tools tools = new Tools();
+
         public main()
         {
             InitializeComponent();
@@ -54,6 +55,9 @@ namespace PGM_EDITOR
  
                 bitmap = PGMUtil.ReadPgmImg(op.FileName);
                 show();
+
+                this.Title = "PGM Editor - " + op.FileName.Split('\\').Last() + " (" + bitmap.Width+"x"+bitmap.Height+")";
+
             }
         }
 
@@ -188,7 +192,11 @@ namespace PGM_EDITOR
 
             rectangle1.Width = imgPhoto.Width;
             rectangle1.Height = imgPhoto.Height;
+
+            
+
         }
+
 
         private void btnHisto_Click(object sender, RoutedEventArgs e)
         {

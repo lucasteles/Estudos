@@ -14,8 +14,8 @@ namespace PGM_EDITOR
             get { return PGMUtil.ToBitmap(this); }
         }
 
-        public int Width { get { return Matrix.GetLength(0); } }
-        public int Height { get { return Matrix.GetLength(1); } }
+        public int Width;
+        public int Height;
         public int[] Pallete;
         public int ReduceTo;
         
@@ -52,35 +52,36 @@ namespace PGM_EDITOR
             }
             set{
                 _matrix = value;
-                
+                Width = _matrix.GetLength(0);
+                Height = _matrix.GetLength(1);
             }
         }
 
         public PgmImg Clone()
         {
-            return new PgmImg((byte[,])Matrix.Clone()) { Pallete = (int[])this.Pallete.Clone()};
+            return new PgmImg((byte[,])Matrix.Clone())
+                            { 
+                                Pallete = (int[])this.Pallete.Clone(), 
+                                Width = this.Width, 
+                                Height = this.Height
+                            };
         }
 
         public PgmImg(int width, int height)
         {
             this.Matrix = new byte[width, height];
-       
         }
         public PgmImg(byte[,] matrix)
         {
             this.Matrix = matrix;
-       
-
         }
 
         public int[] CumulativePallete()
         {
-            var ret = new int[Pallete.Length];
-
-            
-            for (int i = 0; i < ret.Length; i++)
-                for (int j = 0; j < i; j++)
-                    ret[i] += Pallete[j]; ;
+            var ret = Pallete.Clone() as int[];
+                    
+            for (int i = 1; i < ret.Length; i++)
+                ret[i] += ret[i] + ret[i - 1];
 
             return ret;
         }

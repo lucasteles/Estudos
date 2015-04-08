@@ -7,19 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using draw = System.Drawing;
+using System.Windows;
 
 
 namespace PGM_EDITOR
 {
-    public static class tools
+    public class Tools
     {
 
-        public static PgmImg Average(PgmImg pgm)
+        public  PgmImg Average(PgmImg pgm)
         {
-            var ret = pgm.Clone();
+            var ret = new PgmImg(pgm.Width, pgm.Height);
 
-
-
+            
             Parallel.For(0, pgm.Width, i =>
             {
                 Parallel.For(0, pgm.Height, j =>
@@ -28,36 +28,35 @@ namespace PGM_EDITOR
                 });
             });
 
-            /*
-            for (int i = 0; i < pgm.Width; i++)
-                for (int j = 0; j < pgm.Height; j++)
-                    ret[i, j] = LocalAverage(pgm, i, j);
-            */
-
-
+         
             return ret;
         }
 
-
-        private static byte LocalAverage(PgmImg img,int x,int y)
+        private byte LocalAverage(PgmImg img,int x,int y)
         {
             double media = 0;
-            int aux = img.ReduceTo / 2;
-            int divisor=0;
+            
+            int size = img.ReduceTo,
+                x_aux = x - size / 2,
+                y_aux = y - size / 2,
+                divisor = 0;
 
 
-            for (int i = x - aux; i <= x + aux; i++)
-                for (int j = y - aux; j <= y + aux; j++)
+            var mat = img.Matrix;
+            for (int i = x_aux; i < x_aux + size; i++)
+                for (int j = y_aux; j < y_aux + size; j++)
                     if (j < img.Height && j >= 0 && i >= 0 && i < img.Width)
                     {
-                        media += img[i, j];
+                        media += mat[i, j];
                         divisor++;
                     }
-
+            
             return (byte)Math.Round(media / divisor); //Math.Pow(img.ReduceTo, 2));
         }
 
-        public static PgmImg Equalize(PgmImg pgm)
+
+
+        public  PgmImg Equalize(PgmImg pgm)
         {
 
             var Acumulativo = pgm.CumulativePallete();
@@ -84,7 +83,7 @@ namespace PGM_EDITOR
 
  
 
-        public static PgmImg ReduceColors(PgmImg pgm)
+        public  PgmImg ReduceColors(PgmImg pgm)
         {
             var temp = pgm.Clone();
             
@@ -109,7 +108,7 @@ namespace PGM_EDITOR
             return temp;
         }
 
-        public static PgmImg FloydSteinberg(PgmImg pgm)
+        public  PgmImg FloydSteinberg(PgmImg pgm)
         {
 
 
@@ -143,7 +142,7 @@ namespace PGM_EDITOR
         }
 
 
-        private static byte Reduce(byte value, int colors)
+        private  byte Reduce(byte value, int colors)
         {
             byte ret;
             ret = (byte)Math.Round((colors - 1) * (double)value / 255);
@@ -152,12 +151,12 @@ namespace PGM_EDITOR
             return ret;
         }
 
-        private static byte Normalize(double color)
+        private  byte Normalize(double color)
         {
             return (byte)(color > 255 ? 255 : (color < 0 ? 0 : color));
         }
 
-        private static int Closest(int closest, int[] values)
+        private  int Closest(int closest, int[] values)
         {
             int indice = values.Count()-1;
             int minDiff = values[indice];
@@ -178,7 +177,7 @@ namespace PGM_EDITOR
             
         }
 
-        public static PgmImg Transpose(PgmImg pgm)
+        public  PgmImg Transpose(PgmImg pgm)
         {
          
             var temp = new PgmImg(pgm.Height, pgm.Width);
@@ -191,7 +190,7 @@ namespace PGM_EDITOR
             return temp;
         }
 
-        public static PgmImg MirrorX(PgmImg pgm)
+        public  PgmImg MirrorX(PgmImg pgm)
         {
             var temp = pgm.Clone();
 
@@ -203,7 +202,7 @@ namespace PGM_EDITOR
 
         }
 
-        public static PgmImg MirrorY(PgmImg pgm)
+        public  PgmImg MirrorY(PgmImg pgm)
         {
 
             var temp = pgm.Clone();
@@ -216,13 +215,13 @@ namespace PGM_EDITOR
 
         }
 
-        public static PgmImg RotateR(PgmImg bitmap)
+        public  PgmImg RotateR(PgmImg bitmap)
         {
             var ret = MirrorX(Transpose(bitmap));            
             return ret;
         }
 
-        public static PgmImg RotateL(PgmImg bitmap)
+        public  PgmImg RotateL(PgmImg bitmap)
         {
             var ret = MirrorY(Transpose(bitmap));
             return ret;

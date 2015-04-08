@@ -74,7 +74,7 @@
     </Compile>
     <Compile Include="MagicNumbers.cs" />
     <Compile Include="PgmImg.cs" />
-    <Compile Include="tools.cs" />
+    <Compile Include="Tools.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="main.xaml.cs" />

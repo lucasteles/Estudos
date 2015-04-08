@@ -69,7 +69,6 @@ namespace PGM_EDITOR
             }
         }
 
-
         public static Bitmap ToBitmap( PgmImg pgmImage)
         {
 
@@ -107,7 +106,6 @@ namespace PGM_EDITOR
                 return bmp;
            
         }
-
       
         private static int ReadNumber(BinaryReader reader)
         {
