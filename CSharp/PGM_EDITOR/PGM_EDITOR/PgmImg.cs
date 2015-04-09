@@ -63,7 +63,8 @@ namespace PGM_EDITOR
                             { 
                                 Pallete = (int[])this.Pallete.Clone(), 
                                 Width = this.Width, 
-                                Height = this.Height
+                                Height = this.Height,
+                                ReduceTo = this.ReduceTo
                             };
         }
 

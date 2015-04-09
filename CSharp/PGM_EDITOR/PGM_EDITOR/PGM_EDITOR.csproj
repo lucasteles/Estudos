@@ -115,6 +115,33 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\folder265.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\redo8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\redo11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\save29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\undo12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\undo13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ascendant6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\looping3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\magic7.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

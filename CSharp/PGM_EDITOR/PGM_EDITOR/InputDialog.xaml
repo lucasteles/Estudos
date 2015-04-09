@@ -1,7 +1,7 @@
 ﻿<Window x:Class="PGM_EDITOR.InputDialog"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Input" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignHeight="221" d:DesignWidth="308" Loaded="Window_Loaded">
+        Title="Input" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignHeight="221" d:DesignWidth="308" Loaded="Window_Loaded" Background="#97262C2A">
     <Grid Margin="15" Height="173" Width="226">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
@@ -18,10 +18,10 @@
         </Grid.RowDefinitions>
 
         <!-- <Image Source="/WpfTutorialSamples;component/Images/question32.png" Width="32" Height="32" Grid.RowSpan="2" Margin="20,0" /> -->
-        <Label Name="lblOption" Grid.Column="1" Grid.Row="1">Opção:</Label>
+        <Label Name="lblOption" Grid.Column="1" Grid.Row="1" Foreground="White">Opção:</Label>
         <ComboBox Name="cmbOption" Grid.Column="1" Grid.Row="2" MinWidth="100" Margin="0,0,12,0" Height="26" DropDownClosed="cmbOption_DropDownClosed"/>
 
-        <Label Name="lblQuestion" Grid.Column="1" Grid.Row="3">Valor aplicado (2 - 255):</Label>
+        <Label Name="lblQuestion" Grid.Column="1" Grid.Row="3" Foreground="White">Valor aplicado (2 - 255):</Label>
         <TextBox Name="txtAnswer" Grid.Column="1" Grid.Row="4" MinWidth="100" Margin="0,0,12,0" Height="26"></TextBox>
 
         <WrapPanel Grid.Row="5" Grid.ColumnSpan="2" HorizontalAlignment="Right" Margin="0,15,0,0">

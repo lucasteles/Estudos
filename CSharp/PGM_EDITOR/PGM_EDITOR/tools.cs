@@ -17,14 +17,25 @@ namespace PGM_EDITOR
 
         public  PgmImg Average(PgmImg pgm)
         {
-            var ret = new PgmImg(pgm.Width, pgm.Height);
+            return SiblingScan(AverageOptions.Normal, pgm);
+        }
 
-            
+        public  PgmImg Median(PgmImg pgm)
+        {
+            return SiblingScan(AverageOptions.Median, pgm);
+        }
+
+
+        private PgmImg SiblingScan(AverageOptions opt, PgmImg pgm)
+        {
+            var ret = new PgmImg(pgm.Width, pgm.Height);
+            ret.ReduceTo = pgm.ReduceTo;
+ 
             Parallel.For(0, pgm.Width, i =>
             {
                 Parallel.For(0, pgm.Height, j =>
                 {
-                    ret[i, j] = LocalAverage(pgm, i, j);
+                    ret[i, j] = LocalAverage(pgm, i, j, opt);
                 });
             });
 
@@ -32,15 +43,19 @@ namespace PGM_EDITOR
             return ret;
         }
 
-        private byte LocalAverage(PgmImg img,int x,int y)
+        private byte LocalAverage(PgmImg img, int x, int y, AverageOptions Opt)
         {
-            double media = 0;
+
             
             int size = img.ReduceTo,
                 x_aux = x - size / 2,
                 y_aux = y - size / 2,
+                media = 0,
+                size2 = (int)Math.Pow(size, 2),
                 divisor = 0;
+                
 
+            var siblings = new int[size2];
 
             var mat = img.Matrix;
             for (int i = x_aux; i < x_aux + size; i++)
@@ -48,13 +63,42 @@ namespace PGM_EDITOR
                     if (j < img.Height && j >= 0 && i >= 0 && i < img.Width)
                     {
                         media += mat[i, j];
+                        siblings[divisor] = mat[i, j];
                         divisor++;
                     }
-            
-            return (byte)Math.Round(media / divisor); //Math.Pow(img.ReduceTo, 2));
+
+            //decisoes de saida
+            byte ret = 0;
+            if (Opt == AverageOptions.Normal)
+                ret = (byte)Math.Round((double)media / divisor);
+            else if (Opt == AverageOptions.Median)
+            {
+                siblings  = counting_sort(siblings );
+                ret = (byte)siblings[size2 / 2];
+            }
+
+
+            return ret;
         }
 
+        public int[] counting_sort(int[] arr)
+        {
+            var k = 255;
+            var count = new int[k + 1];
+            for (int i = 0; i < arr.Length; i++)
+                count[arr[i]]++;
 
+            for (int i = 1; i <= k; i++)
+                count[i] = count[i] + count[i - 1];
+
+            var b = new int[arr.Length];
+            for (int i = arr.Length - 1; i >= 0; i--)
+            {
+                count[arr[i]]--;
+                b[count[arr[i]]] = arr[i];
+            }
+            return b;
+        }
 
         public  PgmImg Equalize(PgmImg pgm)
         {

@@ -18,7 +18,13 @@ namespace PGM_EDITOR
         ReduceColors,
         FloydSteinberg,
         HistogramEqualization,
-        AverageFilter
+        AverageFilter,
+        MedianFilter
     }
 
+    public enum AverageOptions
+    {
+        Normal,
+        Median
+    }
 }

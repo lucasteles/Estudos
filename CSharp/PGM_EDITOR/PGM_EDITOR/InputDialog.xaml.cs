@@ -45,6 +45,7 @@ namespace PGM_EDITOR
             cmbOption.Items.Add("Floyd Steinberg");
             cmbOption.Items.Add("Histogram equalization");
             cmbOption.Items.Add("Average filter");
+            cmbOption.Items.Add("Median filter");
             cmbOption.SelectedIndex = 0;
 
         }

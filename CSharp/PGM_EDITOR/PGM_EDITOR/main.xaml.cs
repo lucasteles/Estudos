@@ -27,6 +27,7 @@ namespace PGM_EDITOR
         private Stack<PgmImg> Undo = new Stack<PgmImg>();
         private Stack<PgmImg> Redo = new Stack<PgmImg>();
         private Tools tools = new Tools();
+        private Options? lastEffect = null;
 
         public main()
         {
@@ -49,6 +50,7 @@ namespace PGM_EDITOR
 
             Redo = new Stack<PgmImg>();
             Undo = new Stack<PgmImg>();
+            lastEffect = null;
 
             if (op.ShowDialog() == true)
             {
@@ -134,14 +136,14 @@ namespace PGM_EDITOR
         {
             this.btnRedo.IsEnabled = Redo.Count > 0;
             this.btnUndo.IsEnabled = Undo.Count > 0;
-
+            this.btnAgain.IsEnabled = lastEffect.HasValue;
 
             this.btnSave.IsEnabled =
                 this.btnRotateL.IsEnabled =
                     this.btnRotateR.IsEnabled =
                         this.btnReduzir.IsEnabled =
                             this.btnHisto.IsEnabled = 
-                            bitmap==null ? false :!bitmap.IsEmpty();
+                                bitmap==null ? false :!bitmap.IsEmpty();
              
         }
 
@@ -156,27 +158,14 @@ namespace PGM_EDITOR
                 {
                     bitmap.ReduceTo = outV;
 
-                    switch (dialog.Option)
-                    {
-                        case Options.ReduceColors:
-                            apply(tools.ReduceColors);
-                            break;
-                        case Options.FloydSteinberg:
-                            apply(tools.FloydSteinberg);
-                            break;
-                        case Options.HistogramEqualization:
-                            apply(tools.Equalize);
-                            break;
-                        case Options.AverageFilter:
-                            if (outV % 2 != 0 && outV >=3)
-                                apply(tools.Average);
-                            else
-                                MessageBox.Show("deve ser impar e maior/igual que tres!");
-                            break;
-                        default:
-                            break;
-                    }
 
+                     if ((dialog.Option == Options.AverageFilter || dialog.Option == Options.MedianFilter)
+                         && !(outV % 2 != 0 && outV >= 3))
+                            MessageBox.Show("deve ser impar e maior/igual que tres!");
+
+                     lastEffect = dialog.Option;
+                     SelectFilter(dialog.Option);
+                     
                     
                 }
                 else
@@ -185,13 +174,38 @@ namespace PGM_EDITOR
 
         }
 
+        private void SelectFilter(Options opt)
+        {
+            
+            switch (opt)
+            {
+                case Options.ReduceColors:
+                    apply(tools.ReduceColors);
+                    break;
+                case Options.FloydSteinberg:
+                    apply(tools.FloydSteinberg);
+                    break;
+                case Options.HistogramEqualization:
+                    apply(tools.Equalize);
+                    break;
+                case Options.AverageFilter:
+                    apply(tools.Average);   
+                    break;
+                case Options.MedianFilter:
+                    apply(tools.Median);
+                    break;
+                default:
+                    break;
+            }
+        }
+
         private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
         {
             imgPhoto.Width = e.NewSize.Width - 50;
-            imgPhoto.Height = e.NewSize.Height - 100;
+            imgPhoto.Height = e.NewSize.Height - 90;
 
             rectangle1.Width = imgPhoto.Width;
-            rectangle1.Height = imgPhoto.Height;
+            rectangle1.Height = imgPhoto.Height-35;
 
             
 
@@ -203,6 +217,17 @@ namespace PGM_EDITOR
             var hist = new Histograma(bitmap);
 
             hist.ShowDialog();
+        }
+
+        private void btnAgain_Click(object sender, RoutedEventArgs e)
+        {
+            if (lastEffect.HasValue)
+                SelectFilter((Options)lastEffect);
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
 
                
