@@ -1,0 +1,4 @@
+C:\desenvolvimento\BogoSort\BogoSort\bin\Debug\BogoSort.exe
+C:\desenvolvimento\BogoSort\BogoSort\bin\Debug\BogoSort.pdb
+C:\desenvolvimento\BogoSort\BogoSort\obj\x86\Debug\BogoSort.exe
+C:\desenvolvimento\BogoSort\BogoSort\obj\x86\Debug\BogoSort.pdb
