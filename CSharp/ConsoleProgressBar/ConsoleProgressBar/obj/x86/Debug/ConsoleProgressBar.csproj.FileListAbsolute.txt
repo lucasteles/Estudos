@@ -1,0 +1,5 @@
+C:\Git\Fundations\CSharp\ConsoleProgressBar\ConsoleProgressBar\bin\Debug\ConsoleProgressBar.exe
+C:\Git\Fundations\CSharp\ConsoleProgressBar\ConsoleProgressBar\bin\Debug\ConsoleProgressBar.pdb
+C:\Git\Fundations\CSharp\ConsoleProgressBar\ConsoleProgressBar\obj\x86\Debug\ConsoleProgressBar.exe
+C:\Git\Fundations\CSharp\ConsoleProgressBar\ConsoleProgressBar\obj\x86\Debug\ConsoleProgressBar.pdb
+C:\Git\Fundations\CSharp\ConsoleProgressBar\ConsoleProgressBar\obj\x86\Debug\ConsoleProgressBar.csprojResolveAssemblyReference.cache
