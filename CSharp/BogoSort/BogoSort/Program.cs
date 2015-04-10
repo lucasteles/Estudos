@@ -14,7 +14,7 @@ namespace BogoSort
         static void Main(string[] args)
         {
          
-            var array = randomIntArray(8, 100);
+            var array = randomIntArray(50, 100);
 
             Console.WriteLine("Array original:  ");
             for (int i = 0; i < array.Length; i++)
