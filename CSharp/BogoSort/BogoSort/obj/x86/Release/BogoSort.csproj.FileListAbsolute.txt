@@ -1,0 +1,4 @@
+C:\Git\Fundations\CSharp\BogoSort\BogoSort\bin\Release\BogoSort.exe
+C:\Git\Fundations\CSharp\BogoSort\BogoSort\bin\Release\BogoSort.pdb
+C:\Git\Fundations\CSharp\BogoSort\BogoSort\obj\x86\Release\BogoSort.exe
+C:\Git\Fundations\CSharp\BogoSort\BogoSort\obj\x86\Release\BogoSort.pdb
