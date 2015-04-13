@@ -9,7 +9,7 @@ namespace BogoSort
 {
     class Program
     {
-
+        static int maxOrdered = 0;
         // este é com certeza o algotimo de ordenação mais INUTIL da historia
         static void Main(string[] args)
         {
@@ -37,7 +37,7 @@ namespace BogoSort
 
         public static void bogoSort(int[] array) {
 
-            var count = 0;
+            long count = 0;
 
             var loading = new char[] { '|', '/', '-', '\\', '|', '/', '-', '\\' };
             var loadIndex = 0;
@@ -48,7 +48,7 @@ namespace BogoSort
                 count++;
 
                 Console.CursorLeft=0;
-                Console.Write(loading[loadIndex] + " " + count);
+                Console.Write(loading[loadIndex] + " " + count + " max: " + maxOrdered);                
                 if (count % 1000 == 0)
                     loadIndex++;
                 if (loadIndex > loading.Length-1)
@@ -66,10 +66,18 @@ namespace BogoSort
 
         private static bool isSorted(int[] array)
         {
+            
             for (int i = 0; i < (array.Length - 1); ++i)
+            {
+                if (i > maxOrdered)
+                {
+                    maxOrdered = i;
+                }
                 if (array[i] > array[i + 1])
+                {
                     return false;
-
+                }
+            }
             return true;
         }
 
