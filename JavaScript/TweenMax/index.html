@@ -1,0 +1,58 @@
+
+<html>
+<head>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<style>
+	  body {
+      background-color: #aaa;
+  }
+#logo {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    background: red;
+    color: #000;   
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: solid #000 10px;
+    text-align:center;
+    padding-top:10px;
+	margin:10px;
+	border-radius:10px;
+}
+
+
+	</style>
+	
+	<script>
+	$(function(){
+		$('#btn').on('click', function () {
+			
+			var logo = document.getElementById("logo");
+			TweenMax.to(
+					logo, 2, 
+					{
+						left:"350px", 
+						backgroundColor:"blue", 
+						borderBottomColor:"red", 
+						color:"white",
+						width:"300px",
+						opacity:0.5,
+						rotation:180,
+						ease:Power3.easeOut
+					}
+			).yoyo(true).repeat(3).timeScale(2).play(0);
+		});
+	})
+</script>
+</head>
+<body>
+
+<div style="left: 0px;" id="logo" class="logo">
+    <p>Hello World!</p>
+</div>
+
+	
+<button  id="btn"><span>tween</span></button>
+</body>
+</html>
