@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.ViewName = "Cadastro";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Raxator.Entidade.Cadastro.Customer
+
+
+
+@using (Html.BeginForm("Create", "Account", FormMethod.Post))
+{
+    <div data-role="fieldcontain">
+        <label for="Name">Nome:</label>
+        @*<input type="text" name="email" id="email-c" value="" />*@
+
+        @Html.TextBoxFor(u => u.Name, new { @class="" })
+    </div>
+
+    <div data-role="fieldcontain">
+        <label for="Email">Email:</label>
+        @*<input type="password" name="password" id="password-c" value="" />*@
+        @Html.TextBoxFor(u => u.Email)
+    </div>
+
+    <div data-role="fieldcontain">
+        <label for="Senha">Senha:</label>
+        @*<input type="password" name="password" id="password-c" value="" />*@
+        @Html.TextBoxFor(u => u.Password)
+    </div>
+
+    <button type="submit" data-theme="a" name="submit" class="ui-btn-hidden" aria-disabled="false">OK</button>
+}

@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.ViewName = "Raxator - Menu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section styles{
+    @Styles.Render("~/Assets/css/lista.css")
+}
+
+@if (TempData["PagamentoRealizado"] != null)
+{
+
+    if ((bool)TempData["PagamentoRealizado"])
+    {
+        <div style="color:green">
+            <h2>Pagamento Realizado</h2>
+            </div>
+    }
+    else
+   {
+        <div style="color:red">
+            <h2>Ocorreu um erro no pagamento</h2>
+          </div>  
+    }
+
+}
+
+<ul data-role="listview" data-inset="true" style="margin: 0 !important;">
+    <li><a href="@Url.Action("Synchronize", "Payment")" data-transition="slide">Contas</a></li>
+    <li><a href="#">Historico</a></li>
+</ul>
+
+

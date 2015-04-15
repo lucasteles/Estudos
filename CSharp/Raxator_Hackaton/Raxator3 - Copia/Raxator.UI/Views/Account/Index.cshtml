@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.ViewName =  "Raxator - Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<img style=" margin: 0 auto; display: block;"  src="~/Assets/images/money201.png">
+
+
+
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
+    <div data-role="fieldcontain">
+        <label for="email-c">Email:</label>
+        <input style="  margin: 0;
+  min-height: 2.2em;
+  text-align: left;
+  border: 0;
+  background: transparent none;
+  -webkit-appearance: none;
+  -webkit-border-radius: inherit;
+  border-radius: inherit;
+" type="text" name="email" id="email-c" value="" />
+    </div>
+    <div data-role="fieldcontain">
+        <label for="password-c">Senha:</label>
+        <input style=" margin: 0; min-height: 2.2em; text-align: left; border: 0; background: transparent none; -webkit-appearance: none; -webkit-border-radius: inherit; border-radius: inherit; " type="password" name="password" id="password-c" value="" />
+    </div>
+    <button type="submit" data-theme="a" name="submit" class="ui-btn-hidden" aria-disabled="false">OK</button>
+
+    <a href="@Url.Action("Create", "Account")" data-transition="slide" class="loginForm-link ui-link">Ainda não tenho cadastro...</a><br />
+    <a  href="@Url.Action("ForgetPassword", "Account")" data-transition="slide" class="loginForm-link ui-link">Esqueci minha senha</a>
+}

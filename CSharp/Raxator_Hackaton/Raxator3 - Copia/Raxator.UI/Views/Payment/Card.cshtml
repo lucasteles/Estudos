@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.ViewName = "Raxator - Cartão";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Raxator.Entidade.Cadastro.Customer
+
+
+@using (Html.BeginForm("Create", "Account", FormMethod.Post))
+{
+    <div data-role="fieldcontain">
+        <label for="nrCartao">Número do Cartão:</label>
+        @*<input type="text" name="email" id="email-c" value="" />*@
+
+        @Html.TextBoxFor(u => u.Name, new { @class = "" })
+    </div>
+
+    <div data-role="fieldcontain">
+        <label for="NrBandeiraCartao">Bandeira do cartão:</label>
+        @*<input type="password" name="password" id="password-c" value="" />*@
+       
+        <select>
+            <option value="0" selected="selected" >(selecione)</option>
+            <option value="MasterCard" >MasterCard</option>
+            <option value="Visa">Visa</option>
+            <option value="American Express" >American Express</option>
+            <option value="Diners" >Diners</option>
+        </select>
+
+    </div>
+
+    <div data-role="fieldcontain">
+        <label for="NomeUsuario">Nome do cartão:</label>
+        @*<input type="password" name="password" id="password-c" value="" />*@
+        @Html.TextBoxFor(u => u.Password)
+    </div>
+
+    <div data-role="fieldcontain">
+        <fieldset class="ui-grid-a">
+            <div class="ui-block-a" style="padding-right:15px;">
+                <label for="AnoCartao-c">Ano:</label>
+                <input type="number" name="AnoCartao" id="AnoCartao-c" value="" />
+            </div>
+            <div class="ui-block-b">
+                <label for="Codigo-c">Código de Segurança:</label>
+                <input type="number" name="Codigo" id="Codigo-c" value="" />
+            </div>
+        </fieldset>
+    </div>
+
+
+    <div data-role="fieldcontain">
+        <fieldset >
+                <button type="submit" data-theme="a" name="submit" class="ui-btn-hidden" aria-disabled="false">Salvar</button>
+            
+        </fieldset>
+    </div>
+   
+}

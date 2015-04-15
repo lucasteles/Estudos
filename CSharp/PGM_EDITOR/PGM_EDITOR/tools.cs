@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using draw = System.Drawing;
 using System.Windows;
+using System.Diagnostics;
 
 
 namespace PGM_EDITOR
@@ -22,23 +23,22 @@ namespace PGM_EDITOR
 
         public  PgmImg Median(PgmImg pgm)
         {
+            
             return SiblingScan(AverageOptions.Median, pgm);
+         
         }
 
 
         private PgmImg SiblingScan(AverageOptions opt, PgmImg pgm)
         {
+
             var ret = new PgmImg(pgm.Width, pgm.Height);
             ret.ReduceTo = pgm.ReduceTo;
  
-            Parallel.For(0, pgm.Width, i =>
-            {
-                Parallel.For(0, pgm.Height, j =>
-                {
+           for (int i = 0; i < pgm.Width; i++)
+                for (int j=0; j <pgm.Height; j++)
                     ret[i, j] = LocalAverage(pgm, i, j, opt);
-                });
-            });
-
+         
          
             return ret;
         }
@@ -73,8 +73,13 @@ namespace PGM_EDITOR
                 ret = (byte)Math.Round((double)media / divisor);
             else if (Opt == AverageOptions.Median)
             {
-                siblings  = counting_sort(siblings );
-                ret = (byte)siblings[size2 / 2];
+                int meio = (int)(((double)divisor / 2));
+                siblings = counting_sort(siblings);
+
+                if (divisor%2 == 0)
+                    ret = (byte)((siblings[meio]+siblings[meio-1])/2);
+                else
+                    ret = (byte)siblings[meio];
             }
 
 

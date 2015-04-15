@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.ViewName = "Raxator - Pagamento";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<Raxator.Entidade.Cadastro.Customer>
+
+@section scripts {
+    <script type="text/javascript" src="https://www.simplify.com/commerce/v1/simplify.js"></script> 
+    <script>
+        $(document).ready(function () {
+            $("#simplify-payment-form").on("submit", function () {
+                
+                $("#process-payment-btn").attr("disabled", "disabled");
+                
+                SimplifyCommerce.generateToken({
+                    key: "sbpb_MmFiMWM2ZWYtZjgwNC00M2JkLWFjYzQtMzdlNGViMjQxOTkx",
+                    card: {
+                        number: '5105105105105100',
+                        cvc: '123',
+                        expMonth: '11',
+                        expYear: '19'
+                    }
+                }, function (data) {
+                    var $paymentForm = $("#simplify-payment-form");
+                    if (!data.error) {
+                        var token = data["id"];
+                        $paymentForm.append("<input type='hidden' name='simplifyToken' value='" + token + "' />");
+                        $paymentForm.get(0).submit();
+                    }
+                });
+
+
+                return false;
+            });
+        });
+    </script>
+}
+
+
+<ul data-role="listview" data-split-theme="d">
+
+     @{
+         var values = (ViewBag.values as decimal[]);
+         var loggedUser = (Session["loggedUser"] as Raxator.Entidade.Cadastro.Customer);
+         int index = 0;
+         if (loggedUser != null)
+        
+         
+         {
+            <li data-icon="false">
+                <a href="@Url.Action("", "")" data-rel="dialog">
+                    <img src="http://walyou.com/wp-content/uploads//2010/12/facebook-profile-picture-no-pic-avatar.jpg" />
+                    <h3>@loggedUser.Name</h3>
+                    <p>@values[index++].ToString("#,##0.00")</p>
+                </a>
+            </li>
+         }
+    } 
+
+    @if (this.Model != null && this.Model.Count > 0)
+    {
+        foreach (var friend in this.Model)
+        {
+            <li data-icon="false">
+                <a href="#" data-rel="dialog">
+                    <img src="http://walyou.com/wp-content/uploads//2010/12/facebook-profile-picture-no-pic-avatar.jpg" />
+                    <h3>@friend.Name</h3>
+                    <p>R$ @values[index++].ToString("#,##0.00")</p>
+                </a>
+            </li>
+        }
+    }
+    <li data-icon="false">
+        <a href="@Url.Action("Pay", "Payment")">
+            <h3 style="display:inline-block">Total:</h3>
+            <h3 style="float:right;display:inline-block;margin-right:20px">R$ @ViewBag.total</h3>
+        </a>
+    </li>
+</ul>
+<br />
+<div>
+    @using (Html.BeginForm("PayAccount", "Payment", FormMethod.Post, new { id = "simplify-payment-form" }))
+    { 
+        <button id="process-payment-btn" type="submit" data-theme="a" name="btnPay" class="ui-btn-hidden" aria-disabled="true">Pagar</button>
+    }
+</div>

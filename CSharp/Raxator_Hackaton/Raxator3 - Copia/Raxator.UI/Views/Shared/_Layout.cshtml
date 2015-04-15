@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewBag.ViewName</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    @Styles.Render("~/Assets/css/jquery.mobile-1.3.1.css")
+    <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="//code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+    <link href="~/Assets/css/LayoutApp.css" rel="stylesheet" />
+    @RenderSection("styles", required: false)
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header" data-position="fixed">
+
+            @{
+                var topButtons = (ViewBag.TopButtons as List<Raxator.UI.Models.TopButton>);
+
+                Raxator.UI.Models.TopButton Left = null;
+                Raxator.UI.Models.TopButton Right = null;
+
+                if (topButtons != null && topButtons.Count > 0)
+                {
+                    Left = topButtons.FirstOrDefault(p =>
+                        p.Direction == Raxator.Entidade.Enumerators.ButtonDirection.Left
+                    );
+
+                    Right = topButtons.FirstOrDefault(p =>
+                        p.Direction == Raxator.Entidade.Enumerators.ButtonDirection.Right
+                    );
+                }
+            }
+
+            @if (Left != null)
+            {
+                <a href="@Left.Link" data-role="button" data-transition="slide" data-direction="reverse">@Left.Text</a>
+            }
+            else
+            {
+                <a href="#" data-role="button" style="visibility:hidden"></a>
+            }
+
+            <h1>@ViewBag.ViewName</h1>
+
+            @if (Right != null)
+            {
+
+                <a href="@Right.Link" data-role="button" data-transition="slide">@Right.Text</a>
+            }
+            else
+            {
+                <a href="#" data-role="button" style="visibility:hidden"></a>
+            }
+
+        </div><!-- /header -->
+        <div data-role="content">
+            @RenderBody()
+        </div><!-- /content -->
+        @if (ViewBag.NeedFooter != null && ViewBag.NeedFooter)
+        {
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" data-icon="gear" class="ui-btn-active ui-state-persist"></a></li>
+                        <li><a href="#" data-icon="check"></a></li>
+                    </ul>
+                </div>
+            </div>
+        }
+    </div><!-- /page -->
+
+
+    <div class="ui-navbar ui-footer ui-footer-fixed rodape ui-bar-a" data-theme="a">
+        <span style=" margin: 0 auto; display: block; text-align: center;">Raxator By Ninja Dev</span>
+    </div>
+
+
+  
+    @RenderSection("scripts", required: false)
+</body>
+</html>

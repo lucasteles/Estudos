@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.ViewName = "Raxator - Pagantes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model IList<Raxator.Entidade.Cadastro.Customer>
+@using (Html.BeginForm("Costumers", "Payment", FormMethod.Post))
+{
+
+    <ul data-role="listview" data-filter="true" data-filter-placeholder="Amigos" data-inset="true" style="margin-top:15px;">
+        @if (this.Model != null)
+        {
+            int index = 1;
+            foreach (var item in this.Model)
+            {
+                <li data-rel="dialog" data-icon="false">
+                    <a href="#">
+                        <img src="http://walyou.com/wp-content/uploads//2010/12/facebook-profile-picture-no-pic-avatar.jpg" />
+                        <h3>@item.Name</h3>
+                    </a>
+                    <input type="checkbox" name="people" id="checkbox-@index" class="custom" value="@item.IdUser">
+                    <label for="checkbox-@index">Convidar</label>
+
+                </li>
+                index++;
+            }
+        }
+    </ul>
+
+    <br />
+    <div>
+        <button type="submit" data-theme="a" name="submit" class="ui-btn-hidden" aria-disabled="true">Adicionar</button>
+    </div>
+
+}

@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.ViewName = "Raxator - Contas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section styles{
+    @Styles.Render("~/Assets/css/lista.css")
+}
+
+<ul data-role="listview" data-inset="true" style="margin: 0 !important;">
+    <li><a href="@Url.Action("Synchronize", "Payment")" data-transition="slide">Sincronizar</a></li>
+    @*<li><a href="@Url.Action("AddPayment", "Payment")" data-transition="slide">Adicionar Conta</a></li>*@
+</ul>
