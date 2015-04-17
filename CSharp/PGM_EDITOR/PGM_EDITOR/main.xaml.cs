@@ -166,13 +166,10 @@ namespace PGM_EDITOR
                         return;
                     }
 
-                    double outD;
-                    if (!(double.TryParse(dialog.Extra, out outD)) || outD < 0)
-                     {
-                         MessageBox.Show("Sigma dever ser um numero maior que zero!");
-                         bitmap.Sigma = outD;
-                         return;
-                     }
+                    double outD = 0;
+                    double.TryParse(dialog.Extra, out outD);
+                    bitmap.Sigma = outD;
+                   
 
                      lastEffect = dialog.Option;
                      SelectFilter(dialog.Option);
