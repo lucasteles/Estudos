@@ -159,9 +159,20 @@ namespace PGM_EDITOR
                     bitmap.ReduceTo = outV;
 
 
-                     if ((dialog.Option == Options.AverageFilter || dialog.Option == Options.MedianFilter)
-                         && !(outV % 2 != 0 && outV >= 3))
-                            MessageBox.Show("deve ser impar e maior/igual que tres!");
+                    if ((dialog.Option == Options.AverageFilter || dialog.Option == Options.MedianFilter)
+                        && !(outV % 2 != 0 && outV >= 3))
+                    {
+                        MessageBox.Show("deve ser impar e maior/igual que tres!");
+                        return;
+                    }
+
+                    double outD;
+                    if (!(double.TryParse(dialog.Extra, out outD)) || outD < 0)
+                     {
+                         MessageBox.Show("Sigma dever ser um numero maior que zero!");
+                         bitmap.Sigma = outD;
+                         return;
+                     }
 
                      lastEffect = dialog.Option;
                      SelectFilter(dialog.Option);
@@ -193,6 +204,9 @@ namespace PGM_EDITOR
                     break;
                 case Options.MedianFilter:
                     apply(tools.Median);
+                    break;
+                case Options.Gaussian:
+                    apply(tools.Gaussian);
                     break;
                 default:
                     break;

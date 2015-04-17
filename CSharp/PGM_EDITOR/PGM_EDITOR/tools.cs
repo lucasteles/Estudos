@@ -16,6 +16,47 @@ namespace PGM_EDITOR
     public class Tools
     {
 
+        public PgmImg Gaussian(PgmImg pgm)
+        {
+            var ret = new PgmImg(pgm.Width, pgm.Height);
+
+            Func<double, double, double, double, double> 
+                g = (a, b, r, t) => (1 / 2 * Math.PI * 
+                                     Math.Pow(t, 2)) *
+                                     Math.Pow( Math.E, -(a * a + b * b) / 2 * 
+                                     Math.Pow(t, 2) );
+
+
+            for (int i = 0; i < pgm.Width; i++)
+                for (int j = 0; j < pgm.Height; j++)
+                    ret[i, j] = windowProcess(pgm, i, j, g);
+
+
+
+            return ret;
+        }
+
+        private byte windowProcess(PgmImg img, int x, int y, Func<double, double, double, double, double> F)
+        {
+            int size = img.ReduceTo,
+               x_aux = x - size / 2,
+               y_aux = y - size / 2,
+               ret = 0;
+                          
+
+            var mat = img.Matrix;
+            for (int i = x_aux; i < x_aux + size; i++)
+                for (int j = y_aux; j < y_aux + size; j++)
+                    if (j < img.Height && j >= 0 && i >= 0 && i < img.Width)
+                        ret += (byte)
+                                    ((img[i,j])*
+                                    F(i, j, img.ReduceTo, img.ReduceTo/6));
+
+
+            return (byte)ret;
+        }
+
+
         public  PgmImg Average(PgmImg pgm)
         {
             return SiblingScan(AverageOptions.Normal, pgm);
@@ -23,7 +64,7 @@ namespace PGM_EDITOR
 
         public  PgmImg Median(PgmImg pgm)
         {
-            
+
             return SiblingScan(AverageOptions.Median, pgm);
          
         }

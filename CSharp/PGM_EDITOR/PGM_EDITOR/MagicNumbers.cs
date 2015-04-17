@@ -19,7 +19,8 @@ namespace PGM_EDITOR
         FloydSteinberg,
         HistogramEqualization,
         AverageFilter,
-        MedianFilter
+        MedianFilter,
+        Gaussian
     }
 
     public enum AverageOptions

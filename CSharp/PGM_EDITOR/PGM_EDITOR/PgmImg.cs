@@ -18,6 +18,7 @@ namespace PGM_EDITOR
         public int Height;
         public int[] Pallete;
         public int ReduceTo;
+        public double Sigma;
         
         
         public byte this[int x, int y]

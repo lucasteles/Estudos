@@ -33,6 +33,11 @@ namespace PGM_EDITOR
             get { return txtAnswer.Text; }
         }
 
+        public string Extra
+        {
+            get { return txtExtra.Text; }
+        }
+
         public Options Option
         {
             get
@@ -46,6 +51,7 @@ namespace PGM_EDITOR
             cmbOption.Items.Add("Histogram equalization");
             cmbOption.Items.Add("Average filter");
             cmbOption.Items.Add("Median filter");
+            cmbOption.Items.Add("Gaussian operator");
             cmbOption.SelectedIndex = 0;
 
         }
@@ -65,6 +71,10 @@ namespace PGM_EDITOR
             else
                 lblQuestion.Content = ("Valor aplicado (2 - 255):");
 
+            if (cmbOption.SelectedIndex == 5)
+                txtExtra.Visibility = lblExtra.Visibility = System.Windows.Visibility.Visible;
+            else
+                txtExtra.Visibility = lblExtra.Visibility = System.Windows.Visibility.Hidden;
         }
     }
 }
