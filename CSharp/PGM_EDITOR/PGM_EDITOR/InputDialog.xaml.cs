@@ -66,7 +66,7 @@ namespace PGM_EDITOR
             else
                 txtAnswer.IsEnabled = true;
 
-            if (cmbOption.SelectedIndex == 3)
+            if (cmbOption.SelectedIndex == 3 || cmbOption.SelectedIndex ==5)
                 lblQuestion.Content = ("Valor impar maior que tres");
             else
                 lblQuestion.Content = ("Valor aplicado (2 - 255):");
