@@ -2,3 +2,4 @@ C:\Git\Fundations\CSharp\UnsafeArray\UnsafeArray\bin\Debug\UnsafeArray.exe
 C:\Git\Fundations\CSharp\UnsafeArray\UnsafeArray\bin\Debug\UnsafeArray.pdb
 C:\Git\Fundations\CSharp\UnsafeArray\UnsafeArray\obj\x86\Debug\UnsafeArray.exe
 C:\Git\Fundations\CSharp\UnsafeArray\UnsafeArray\obj\x86\Debug\UnsafeArray.pdb
+C:\Git\Fundations\CSharp\UnsafeArray\UnsafeArray\obj\x86\Debug\UnsafeArray.csprojResolveAssemblyReference.cache

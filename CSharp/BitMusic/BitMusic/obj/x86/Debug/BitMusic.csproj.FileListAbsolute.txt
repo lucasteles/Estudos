@@ -1,0 +1,4 @@
+C:\Git\Fundations\CSharp\BitMusic\BitMusic\bin\Debug\BitMusic.exe
+C:\Git\Fundations\CSharp\BitMusic\BitMusic\bin\Debug\BitMusic.pdb
+C:\Git\Fundations\CSharp\BitMusic\BitMusic\obj\x86\Debug\BitMusic.exe
+C:\Git\Fundations\CSharp\BitMusic\BitMusic\obj\x86\Debug\BitMusic.pdb
