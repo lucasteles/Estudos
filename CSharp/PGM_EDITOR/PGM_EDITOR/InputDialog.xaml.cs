@@ -52,6 +52,8 @@ namespace PGM_EDITOR
             cmbOption.Items.Add("Average filter");
             cmbOption.Items.Add("Median filter");
             cmbOption.Items.Add("Gaussian operator");
+            cmbOption.Items.Add("Laplace operator");
+            cmbOption.Items.Add("Edges Highlight");
             cmbOption.SelectedIndex = 0;
 
         }
@@ -66,12 +68,12 @@ namespace PGM_EDITOR
             else
                 txtAnswer.IsEnabled = true;
 
-            if (cmbOption.SelectedIndex == 3 || cmbOption.SelectedIndex ==5)
+            if (  (new List<int>{3,5,6,7}).Contains(cmbOption.SelectedIndex))
                 lblQuestion.Content = ("Valor impar maior que tres");
             else
                 lblQuestion.Content = ("Valor aplicado (2 - 255):");
 
-            if (cmbOption.SelectedIndex == 5)
+            if ((new List<int>{5,6,7}).Contains(cmbOption.SelectedIndex))
                 txtExtra.Visibility = lblExtra.Visibility = System.Windows.Visibility.Visible;
             else
                 txtExtra.Visibility = lblExtra.Visibility = System.Windows.Visibility.Hidden;

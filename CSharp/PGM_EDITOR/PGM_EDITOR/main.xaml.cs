@@ -205,6 +205,12 @@ namespace PGM_EDITOR
                 case Options.Gaussian:
                     apply(tools.Gaussian);
                     break;
+                case Options.Laplace:
+                    apply(tools.Laplaciana);
+                    break;
+                case Options.Highlight:
+                    apply(tools.Highlight);
+                    break;
                 default:
                     break;
             }
