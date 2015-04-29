@@ -1,111 +1,113 @@
 package main
 
 import (
-	"fmt"
-    "os"
-    "bufio"
-    "strings"
-    "strconv"
+	"bufio"
 	"encoding/json"
+	"fmt"
+	"os"
+	"strconv"
+	"strings"
 )
 
 const WORLD = 1022
 
-func main(){
+func main() {
 
 	file, err := os.Open("quake.txt")
 	check(err)
 	defer file.Close()
-
-	players := make(map[int]*Player)
+	var world_kills int
+	var players map[int]*Player
+	games := make(map[string]*Game)
 	scanner := bufio.NewScanner(file)
-	
-
+	//contagem de mortes pelo mundo
 	for scanner.Scan() {
-		info := strings.Split(strings.TrimLeft(scanner.Text(), " ")," ")
-		
+		info := strings.Split(strings.TrimLeft(scanner.Text(), " "), " ")
 		switch strings.TrimSpace(info[1]) {
-			case "ClientConnect:":
-				_id:=getId(info)
-				
-				players[_id]=&Player{ id: _id, kills: 0  }
+		case "InitGame:":
+			world_kills = 0
+			players = make(map[int]*Player)
 
-			case "ClientUserinfoChanged:":
-				_id:=getId(info)
-				_name := info[3]
+		case "ClientConnect:":
+			_id := getId(info)
+			players[_id] = &Player{id: _id, kills: 0}
 
-				i:=0						
-				for strings.Index(_name,"\\t") == -1 {
-					i++
-					_name += " "+info[3+i]
+		case "ClientUserinfoChanged:":
+			_id := getId(info)
+			_name := info[3]
+
+			i := 0
+			for strings.Index(_name, "\\t") == -1 {
+				i++
+				_name += " " + info[3+i]
+			}
+			_name = _name[2:strings.Index(_name, "\\t")]
+			players[_id].name = _name
+
+		case "Kill:":
+			_id := getId(info)
+
+			if _id != WORLD {
+				players[_id].kills++
+			} else {
+				_id_cadaver, err := strconv.Atoi(info[3])
+				check(err)
+				players[_id_cadaver].kills--
+				world_kills++
+			}
+
+		case "ShutdownGame:":
+			game := new(Game)
+			game.Kills = make(map[string]int)
+
+			for _, v := range players {
+				//fmt.Println(*v)
+				game.Players = append(game.Players, v.name)
+
+				if v.kills > 0 {
+					game.Total_kills += v.kills
 				}
 
-				_name = _name[2:strings.Index(_name,"\\t")]
-    			players[_id].name = _name 
+				game.Kills[v.name] = v.kills
+			}
+			game.Total_kills += world_kills
+			key := "game" + strconv.Itoa(len(games))
+			games[key] = game
+		}
 
-    		case "Kill:":
-    			_id:=getId(info)
-
-    			if (_id != WORLD) {
-					players[_id].kills++
-				} else {
-					_id_cadaver, err := strconv.Atoi(info[3])
-					check(err)
-					players[_id_cadaver].kills--
-				}
-
-    	}
-
-		 
 	}
-	
-	game := new(Game)
-	//game.kills = make(map[string]int)
 
-	for _,v := range players {
-		//fmt.Println(*v)
-		game.Players = append(game.Players, v.name)
-		game.Total_kills += v.kills
-		//game.kills[v.name] = v.kills
-	}
-	
+	json, _ := json.Marshal(games)
 
-	//fmt.Println(game)
-	
-    //json, _ := json.Marshal(&Game{total_kills: 10, players: []string{"apple", "peach", "pear"}})
-    //fmt.Println(string(json))
+	fmt.Println(string(json))
 
-    res1D := &Game{
-        Total_kills: 1,
-        Players: []string{"apple", "peach", "pear"}}
-
-    res1B, _ := json.Marshal(res1D)
-    fmt.Println(string(res1B))
-
+	// escreve saida
+	f, err := os.Create("log.json")
+	defer f.Close()
+	w := bufio.NewWriter(f)
+	n, err := w.WriteString(string(json))
+	check(err)
+	fmt.Printf("wrote %d bytes\n", n)
+	w.Flush()
 
 }
 
-
-type Response1 struct {
-    Page   int
-    Fruits []string
-}
 type Player struct {
-	id int
-	name string
+	id    int
+	name  string
 	kills int
 }
 
 type Game struct {
-    Total_kills int
-    Players []string
-   // kills map[string]int
+	Total_kills int
+	Players     []string
+	Kills       map[string]int
 }
 
 func check(e error) {
-    if e != nil {
-        panic(e)
-    }
+	if e != nil {
+		panic(e)
+	}
 }
 
 func getId(info []string) int {

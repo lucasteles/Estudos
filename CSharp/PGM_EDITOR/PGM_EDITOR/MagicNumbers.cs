@@ -20,7 +20,9 @@ namespace PGM_EDITOR
         HistogramEqualization,
         AverageFilter,
         MedianFilter,
-        Gaussian
+        Gaussian,
+        Laplace,
+        Highlight
     }
 
     public enum AverageOptions
