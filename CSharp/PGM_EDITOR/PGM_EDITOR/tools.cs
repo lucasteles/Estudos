@@ -36,18 +36,19 @@ namespace PGM_EDITOR
             // Laplaciana
             Func<double, double, double, double, double>
                 g = (x, y, r, t) => (
-                                                (
-                                                    -1F * (1F / (Math.PI * Math.Pow(t, 4F) ) )   
-                                                )  *   ( 
-                                                    1F-( 
-                                                            ( x*x+ y*y) / 
-                                                            (2F*t*t) 
-                                                       ) 
-                                                 )
-                                                * Math.Pow(Math.E,  ((-1F * (x * x + y * y)) / (2F * t * t)) )
-                                             );
+                                        (
+                                            -1F * (1F / (Math.PI * Math.Pow(t, 4F) ) )   
+                                        )  
+                                        *
+                                        ( 
+                                        1F-( 
+                                                ( x * x + y * y) / ( 2F * t * t ) 
+                                            ) 
+                                        )
+                                    * Math.Exp(  ((-1F * (x * x + y * y)) / (2F * t * t)) )
+                                    );
 
-            return windowFor(pgm, g);
+            return windowFor(pgm, g, 255F);
         }
 
 
@@ -60,22 +61,28 @@ namespace PGM_EDITOR
             return windowFor(pgm, g);
         }
 
-        private PgmImg windowFor(PgmImg pgm, Func<double, double, double, double, double> F)
+        private PgmImg windowFor(PgmImg pgm, Func<double, double, double, double, double> F, double adjust = 0)
         {
             var ret = pgm.Clone();
-
+            var cc = 0;
+            double soma = 0F;
             Parallel.For(0, pgm.Width, i =>
             {
                 Parallel.For(0, pgm.Height, j =>
                 {
-                    ret[i, j] = windowProcess(pgm, i, j, F);
+                    var newValue =Math.Round(windowProcess(pgm, i, j, F));
+                    soma += newValue;
+                    cc++;
+                    ret[i, j] = Normalize( newValue + adjust );
                 });
             });
+
+         
 
             return ret;
         }
 
-        private byte windowProcess(PgmImg img, int x, int y, Func<double, double, double, double, double> F)
+        private double windowProcess(PgmImg img, int x, int y, Func<double, double, double, double, double> F)
         {
             int size = img.ReduceTo,
                x_aux = x - size / 2,
@@ -91,8 +98,9 @@ namespace PGM_EDITOR
                         ret += ((double)img[i, j]) *
                             F(Math.Abs(x - i), Math.Abs(y - j), size, img.Sigma == 0 ? (size / 6F) : img.Sigma);
 
-           
-            return Normalize(Math.Round(ret));
+            
+            return ret;
+            
         }
 
 

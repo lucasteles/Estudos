@@ -74,3 +74,4 @@ C:\Git\Fundations\CSharp\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR.g.resour
 C:\Git\Fundations\CSharp\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR.Histograma.resources
 C:\Git\Fundations\CSharp\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR.Properties.Resources.resources
 C:\Git\Fundations\CSharp\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR.csproj.GenerateResource.Cache
+C:\Git\Fundations\CSharp\PGM_EDITOR\PGM_EDITOR\obj\x86\Debug\PGM_EDITOR.csprojResolveAssemblyReference.cache
