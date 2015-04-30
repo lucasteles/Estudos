@@ -92,9 +92,9 @@ type Player struct {
 }
 
 type Game struct {
-	Total_kills int
-	Players     []string
-	Kills       map[string]int
+	Total_kills int `json:"total_kills"`
+	Players     []string `json:"players"`
+	Kills       map[string]int `json:"kills"`
 }
 
 func check(e error) {
