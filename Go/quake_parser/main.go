@@ -20,17 +20,25 @@ func main() {
 	var players map[int]*Player
 	games := make(map[string]*Game)
 	scanner := bufio.NewScanner(file)
+	inGame := false
+
 	//contagem de mortes pelo mundo
 	for scanner.Scan() {
 		info := strings.Split(strings.TrimLeft(scanner.Text(), " "), " ")
 		switch strings.TrimSpace(info[1]) {
 		case "InitGame:":
+			if (inGame)	{
+				games = makeGame(players, games, world_kills)
+			}
 			world_kills = 0
 			players = make(map[int]*Player)
-
+			inGame = true
 		case "ClientConnect:":
 			_id := getId(info)
-			players[_id] = &Player{id: _id, kills: 0}
+
+			if _, ok := players[_id]; !ok {
+				players[_id] = &Player{id: _id, kills: 0}
+			}
 
 		case "ClientUserinfoChanged:":
 			_id := getId(info)
@@ -57,24 +65,9 @@ func main() {
 			}
 
 		case "ShutdownGame:":
-			game := new(Game)
-			game.Kills = make(map[string]int)
-
-			for _, v := range players {
-				//fmt.Println(*v)
-				game.Players = append(game.Players, v.name)
-
-				if v.kills > 0 {
-					game.Total_kills += v.kills
-				}
-
-				game.Kills[v.name] = v.kills
-			}
-			game.Total_kills += world_kills
-			key := "game" + strconv.Itoa(len(games))
-			games[key] = game
+			inGame = false
+			games = makeGame(players, games, world_kills)
 		}
-
 	}
 
 	json, _ := json.Marshal(games)
@@ -114,4 +107,33 @@ func getId(info []string) int {
 	_id, err := strconv.Atoi(info[2])
 	check(err)
 	return _id
+}
+
+func stringInSlice(a string, list []string) bool {
+    for _, b := range list {
+        if b == a {
+            return true
+        }
+    }
+    return false
+}
+
+func makeGame(players map[int]*Player, games map[string]*Game, world_kills int) map[string]*Game {
+	game := new(Game)
+	game.Kills = make(map[string]int)
+
+	for _, v := range players {
+
+		if !stringInSlice(v.name, game.Players) {
+		 	game.Players = append(game.Players, v.name)
+		}				
+
+		game.Total_kills += v.kills
+		game.Kills[v.name] += v.kills
+	}
+	game.Total_kills += world_kills*2
+	key := "game_" + strconv.Itoa(len(games)+1)
+	games[key] = game
+
+	return games
 }
