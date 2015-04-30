@@ -16,41 +16,60 @@ namespace PGM_EDITOR
     public class Tools
     {
 
-        public PgmImg Highlight(PgmImg pgm)
+        private void Export(double[,] matrix)
         {
-            var ret = pgm.Clone();
-            var edge = Laplaciana(ret);
-
-            Parallel.For(0, pgm.Width, i =>  {
-                Parallel.For(0, pgm.Height, j =>  {
-                    ret[i, j]  = Normalize(  ret[i, j]  - edge[i, j] );
-                });
-            });
-
-            return ret;
-
+            var width = matrix.GetLength(0);
+            var height = matrix.GetLength(1);
+            using (TextWriter tw = new StreamWriter("out.txt"))
+            {
+                for (int j = 0; j < width; j++)
+                {
+                    for (int i = 0; i < height; i++)
+                    {
+                        if (i != 0)
+                        {
+                            tw.Write(" ");
+                        }
+                        tw.Write(matrix[i, j]);
+                    }
+                    tw.WriteLine();
+                }
+            }
         }
 
-        public PgmImg Laplaciana(PgmImg pgm)
+        public PgmImg Highlight(PgmImg pgm)
+        {
+            var lapla = LaplacianaMatrix(pgm, e => e+(255f / 2));
+
+            var matCalc = new double[pgm.Width, pgm.Height];
+
+              Parallel.For(0, pgm.Width, i => {
+                  Parallel.For(0, pgm.Height, j => {
+                      matCalc[i, j] =  ((double)pgm[i, j]) - lapla[i, j]; 
+                  });
+              });
+
+
+            return Map(matCalc);
+        }
+
+       public PgmImg Laplaciana(PgmImg pgm)
+       {
+           var lapla = LaplacianaMatrix(pgm, e => e/8 + (255f/2) );
+           //Export(lapla);
+           return Map(lapla);
+       }
+
+
+       private double[,] LaplacianaMatrix(PgmImg pgm, Func<double, double> Map = null)
         {
             // Laplaciana
             Func<double, double, double, double, double>
-                g = (x, y, r, t) => (
-                                        (
-                                            -1F * (1F / (Math.PI * Math.Pow(t, 4F) ) )   
-                                        )  
-                                        *
-                                        ( 
-                                        1F-( 
-                                                ( x * x + y * y) / ( 2F * t * t ) 
-                                            ) 
-                                        )
-                                    * Math.Exp(  ((-1F * (x * x + y * y)) / (2F * t * t)) )
-                                    );
-
-            return windowFor(pgm, g, 255F);
+                g = (x, y, r, t) => (-1 / (Math.PI * Math.Pow(t,4))) * (1 - ((x * x + y * y) / (2 * t * t))) * Math.Exp( -((x * x + y * y ) / (2 * t * t)) );
+            return windowFor(pgm, g, Map); 
         }
 
+       
 
         public PgmImg Gaussian(PgmImg pgm)
         {
@@ -58,25 +77,41 @@ namespace PGM_EDITOR
             Func<double, double, double, double, double>
                 g = (x, y, r, t) => (1F / (2F * Math.PI * t * t)) * Math.Pow(Math.E,  ((-1F * (x * x + y * y)) / (2F * t * t)) );
 
-            return windowFor(pgm, g);
+            var betaMatrix = windowFor(pgm, g);
+            return Map(betaMatrix);
         }
 
-        private PgmImg windowFor(PgmImg pgm, Func<double, double, double, double, double> F, double adjust = 0)
+        private double[,] windowFor(PgmImg pgm, Func<double, double, double, double, double> F, Func<double, double> MapF = null)
         {
-            var ret = pgm.Clone();
-         
+            var ret = new double[pgm.Width,pgm.Height];
+            
+            /*
             Parallel.For(0, pgm.Width, i =>
             {
                 Parallel.For(0, pgm.Height, j =>
                 {
-                    var newValue =Math.Round(windowProcess(pgm, i, j, F));
-  
-                    ret[i, j] = Normalize( newValue + adjust );
+                    var newValue = windowProcess(pgm, i, j, F);
+
+                    if (MapF != null)
+                        newValue = MapF(newValue);
+
+                    ret[i, j] = newValue;
                 }); 
             });
+            */
 
-         
+            for (int i = 0; i < pgm.Width; i++)
+            {
+                for (int j = 0; j < pgm.Height; j++)
+                {
+                    var newValue = windowProcess(pgm, i, j, F);
 
+                    if (MapF != null)
+                        newValue = MapF(newValue);
+
+                    ret[i, j] = newValue;
+                }
+            }
             return ret;
         }
 
@@ -89,18 +124,30 @@ namespace PGM_EDITOR
             double ret = 0;
                           
 
-            var mat = img.Matrix;
             for (int i = x_aux; i < x_aux + size; i++)
                 for (int j = y_aux; j < y_aux + size; j++)
                     if (j < img.Height && j >= 0 && i >= 0 && i < img.Width)
-                        ret += ((double)img[i, j]) *
-                            F(Math.Abs(x - i), Math.Abs(y - j), size, img.Sigma == 0 ? (size / 6F) : img.Sigma);
+                        ret += ((double)img[i, j]) * F(Math.Abs(x - i), Math.Abs(y - j), size, img.Sigma == 0 ? (size / 6F) : img.Sigma);
 
             
             return ret;
             
         }
 
+        private PgmImg Map(double[,] mat)
+        {
+            var pgm = new PgmImg((int)mat.GetLongLength(0), (int)mat.GetLongLength(1));
+
+            Parallel.For(0, pgm.Width, i =>
+            {
+                Parallel.For(0, pgm.Height, j =>
+                {
+                    pgm[i, j] = Normalize(Math.Round(mat[i, j]));
+                });
+            });
+
+            return pgm;
+        }
 
         public  PgmImg Average(PgmImg pgm)
         {

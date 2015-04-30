@@ -1,0 +1,62 @@
+<!--<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script data-main="js/main.js" src="js/vendor/require.js"></script>
+</head>
+<body>
+	<div class="main">
+		<video width="640" height="360" controls preload="auto" src="assets/video/exagerado_p1.mp4"></video>
+	</div>	
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Preload video via AJAX</title>
+</head>
+<body>
+<script>
+	console.log("Downloading video...hellip;Please wait...");
+
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', 'assets/video/exagerado_p1.mp4', true);
+	xhr.responseType = 'blob';
+	
+	xhr.onload = function(e) {
+		if (this.status == 200) {
+			console.log("got it");
+			var myBlob = this.response;
+			var vid = (window.webkitURL ? webkitURL : URL).createObjectURL(myBlob);
+
+			var video = document.getElementById("video");
+			console.log("Loading video into element");
+			video.src = vid;
+			// not needed if autoplay is set for the video element
+			// video.play()
+		}
+	}
+	
+	xhr.addEventListener("progress", function (oEvent){
+		if (oEvent.lengthComputable) {
+			var percentComplete = oEvent.loaded / oEvent.total;
+			console.log(percentComplete);
+			// ...
+		} else {
+		// Não é possível calcular informações de progresso uma vez que a dimensão total é dimensãoesconhecida
+		}
+	}, false);
+
+	xhr.addEventListener("load", function (evt) {
+		console.log(evt);
+	}, false);
+
+	xhr.send();
+</script>
+
+<video id="video" controls autoplay></video>
+
+</body>
+</html>
