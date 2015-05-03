@@ -22,7 +22,8 @@ namespace PGM_EDITOR
         MedianFilter,
         Gaussian,
         Laplace,
-        Highlight
+        Highlight,
+        Erosion
     }
 
     public enum AverageOptions

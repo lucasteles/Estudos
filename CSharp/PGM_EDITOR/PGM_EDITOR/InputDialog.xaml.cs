@@ -54,6 +54,7 @@ namespace PGM_EDITOR
             cmbOption.Items.Add("Gaussian operator");
             cmbOption.Items.Add("Laplace operator");
             cmbOption.Items.Add("Edges Highlight");
+            cmbOption.Items.Add("Erosion");
             cmbOption.SelectedIndex = 0;
 
         }
@@ -68,7 +69,7 @@ namespace PGM_EDITOR
             else
                 txtAnswer.IsEnabled = true;
 
-            if (  (new List<int>{3,5,6,7}).Contains(cmbOption.SelectedIndex))
+            if (  (new List<int>{3,5,6,7,8}).Contains(cmbOption.SelectedIndex))
                 lblQuestion.Content = ("Valor impar maior que tres");
             else
                 lblQuestion.Content = ("Valor aplicado (2 - 255):");

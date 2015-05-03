@@ -159,7 +159,7 @@ namespace PGM_EDITOR
                     bitmap.ReduceTo = outV;
 
 
-                    if ((dialog.Option == Options.AverageFilter || dialog.Option == Options.MedianFilter)
+                    if ((dialog.Option == Options.AverageFilter || dialog.Option == Options.MedianFilter || dialog.Option == Options.Erosion)
                         && !(outV % 2 != 0 && outV >= 3))
                     {
                         MessageBox.Show("deve ser impar e maior/igual que tres!");
@@ -210,6 +210,9 @@ namespace PGM_EDITOR
                     break;
                 case Options.Highlight:
                     apply(tools.Highlight);
+                    break;
+                case  Options.Erosion:
+                    apply(tools.Erosion);
                     break;
                 default:
                     break;

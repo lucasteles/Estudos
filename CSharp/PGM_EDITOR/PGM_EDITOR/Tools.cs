@@ -16,6 +16,7 @@ namespace PGM_EDITOR
     public class Tools
     {
 
+
         private void Export(double[,] matrix)
         {
             var width = matrix.GetLength(0);
@@ -36,6 +37,115 @@ namespace PGM_EDITOR
                 }
             }
         }
+
+        #region "Modulo 11"
+   
+        public PgmImg Erosion(PgmImg img)
+        {
+            var ret = img.Clone();
+            var Estruturante = CriaMatrizEstruturante(img);
+
+            /*
+            Parallel.For(0, img.Width,i =>
+            {
+                Parallel.For(0, img.Height, j =>
+                {
+                    windowErosion(img, ret, Estruturante, i, j);
+                });
+            });
+            
+            */
+            for (int i = 0; i < img.Width; i++) {
+                for (int j = 0; j < img.Height; j++)   {
+                    windowErosion(img, ret, Estruturante, i, j);
+                }
+            }
+
+            return ret;
+        }
+
+
+
+        private void windowErosion(PgmImg img,  PgmImg ret, double[,] estruturante, int x, int y)
+        {
+            int size = img.ReduceTo,
+               x_aux = x - size / 2,
+               y_aux = y - size / 2,
+               E = 255;
+            /*
+            var doing = true;
+            while (doing) {
+                E++;
+                for (int i = x_aux; i < x_aux + size; i++) {
+                    for (int j = y_aux; j < y_aux + size; j++)
+                        if (j < img.Height && j >= 0 && i >= 0 && i < img.Width)
+                            if (estruturante[i + (size / 2) -x, j + (size / 2)-y] + E >= img[i, j])
+                                doing = false;
+                }
+            }
+            */
+
+
+            for (int i = x_aux; i < x_aux + size; i++) 
+                for (int j = y_aux; j < y_aux + size; j++)
+                    if (j < img.Height && j >= 0 && i >= 0 && i < img.Width)
+                        if (!Double.IsNegativeInfinity(estruturante[i + (size / 2) -x, j + (size / 2)-y]))
+                        {
+                            if (E > img[i, j])
+                                E = img[i, j];
+                        }
+            
+
+            for (int i = x_aux; i < x_aux + size; i++)
+                for (int j = y_aux; j < y_aux + size; j++)
+                    if (j < img.Height && j >= 0 && i >= 0 && i < img.Width)
+                    {
+                       var val  = (estruturante[i + (size / 2) - x, j + (size / 2) - y] + E);
+                       if (!double.IsNegativeInfinity(val))
+                           ret[i, j] = (byte)val;                        
+                    }
+        }
+
+        private double[,] CriaMatrizEstruturante(PgmImg img)
+        {
+            var dim = img.ReduceTo;
+            var ret = new Double[dim, dim];
+
+
+            using (FileStream fs = new FileStream("elements\\" + dim.ToString() + ".txt", FileMode.Open))
+            {
+                using (BinaryReader reader = new BinaryReader(fs, Encoding.ASCII))
+                {
+                    for (int i = 0; i < dim; i++)
+                        for (int j = 0; j < dim; j++)
+                        {
+                            var c = reader.ReadChar();
+                            if (c == '\n' || c == '\r')
+                            {
+                                j--;
+                                continue;
+                            }
+
+                            double val = 0;
+
+                            if (c == 'X' || c == 'x')
+                                val = Double.NegativeInfinity;
+                            else
+                                val = Double.Parse(c.ToString());
+
+                            ret[i, j] = val;
+                        }
+
+                }
+            }
+
+
+            return ret;
+        }
+
+        #endregion
+
+        #region "Modulo 9, 10"
 
         public PgmImg Highlight(PgmImg pgm)
         {
@@ -68,8 +178,6 @@ namespace PGM_EDITOR
                 g = (x, y, r, t) => (-1 / (Math.PI * Math.Pow(t,4))) * (1 - ((x * x + y * y) / (2 * t * t))) * Math.Exp( -((x * x + y * y ) / (2 * t * t)) );
             return windowFor(pgm, g, Map); 
         }
-
-       
 
         public PgmImg Gaussian(PgmImg pgm)
         {
@@ -104,7 +212,7 @@ namespace PGM_EDITOR
             {
                 for (int j = 0; j < pgm.Height; j++)
                 {
-                    var newValue = windowProcess(pgm, i, j, F);
+                    var newValue = windowConvolution(pgm, i, j, F);
 
                     if (MapF != null)
                         newValue = MapF(newValue);
@@ -115,7 +223,7 @@ namespace PGM_EDITOR
             return ret;
         }
 
-        private double windowProcess(PgmImg img, int x, int y, Func<double, double, double, double, double> F)
+        private double windowConvolution(PgmImg img, int x, int y, Func<double, double, double, double, double> F)
         {
             int size = img.ReduceTo,
                x_aux = x - size / 2,
@@ -148,7 +256,9 @@ namespace PGM_EDITOR
 
             return pgm;
         }
+        #endregion
 
+        #region "Modulo 7,  8"
         public  PgmImg Average(PgmImg pgm)
         {
             return SiblingScan(AverageOptions.Normal, pgm);
@@ -239,6 +349,10 @@ namespace PGM_EDITOR
             return b;
         }
 
+        #endregion
+
+        #region "Modulo 6"
+
         public  PgmImg Equalize(PgmImg pgm)
         {
 
@@ -264,33 +378,9 @@ namespace PGM_EDITOR
 
         }
 
- 
+        #endregion
 
-        public  PgmImg ReduceColors(PgmImg pgm)
-        {
-            var temp = pgm.Clone();
-            
-
-            for (int i = 0; i < pgm.Width; i++)
-                for (int j = 0; j < pgm.Height; j++)
-                    temp[i, j] = Reduce(pgm[i,j], pgm.ReduceTo);
-
-
-            /*
-            // outra forma - mais lenta
-           var newColorArray = new int[pgm.ReduceTo];
-           for (int i = 0; i < pgm.ReduceTo ; i++)
-               newColorArray[i] = i * (255 / (pgm.ReduceTo-1));
-            
-           for (int i = 0; i < matrix.GetLength(0); i++)
-               for (int j = 0; j < matrix.GetLength(1); j++)
-                   temp[i, j] = (byte)Closest((int)matrix[i, j], newColorArray);  
-           */
-            
-                    
-            return temp;
-        }
-
+        #region "Modulo 5"
         public  PgmImg FloydSteinberg(PgmImg pgm)
         {
 
@@ -323,7 +413,34 @@ namespace PGM_EDITOR
 
             return temp;
         }
+        #endregion
 
+        #region "Modulo 4"
+
+        public PgmImg ReduceColors(PgmImg pgm)
+        {
+            var temp = pgm.Clone();
+
+
+            for (int i = 0; i < pgm.Width; i++)
+                for (int j = 0; j < pgm.Height; j++)
+                    temp[i, j] = Reduce(pgm[i, j], pgm.ReduceTo);
+
+
+            /*
+            // outra forma - mais lenta
+           var newColorArray = new int[pgm.ReduceTo];
+           for (int i = 0; i < pgm.ReduceTo ; i++)
+               newColorArray[i] = i * (255 / (pgm.ReduceTo-1));
+            
+           for (int i = 0; i < matrix.GetLength(0); i++)
+               for (int j = 0; j < matrix.GetLength(1); j++)
+                   temp[i, j] = (byte)Closest((int)matrix[i, j], newColorArray);  
+           */
+
+
+            return temp;
+        }
 
         private  byte Reduce(byte value, int colors)
         {
@@ -359,7 +476,9 @@ namespace PGM_EDITOR
 
             
         }
+        #endregion
 
+        #region "Modulo 2"
         public  PgmImg Transpose(PgmImg pgm)
         {
          
@@ -409,6 +528,7 @@ namespace PGM_EDITOR
             var ret = MirrorY(Transpose(bitmap));
             return ret;
         }
+        #endregion
 
     }
 }
