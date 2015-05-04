@@ -149,7 +149,7 @@ namespace PGM_EDITOR
 
         public PgmImg Highlight(PgmImg pgm)
         {
-            var lapla = LaplacianaMatrix(pgm, e => e+(255f / 2));
+            var lapla = LaplacianaMatrix(pgm);
 
             var matCalc = new double[pgm.Width, pgm.Height];
 
@@ -165,7 +165,7 @@ namespace PGM_EDITOR
 
        public PgmImg Laplaciana(PgmImg pgm)
        {
-           var lapla = LaplacianaMatrix(pgm, e => e/8 + (255f/2) );
+           var lapla = LaplacianaMatrix(pgm, e => e / 8 + (255f/2) );
            //Export(lapla);
            return Map(lapla);
        }
@@ -175,7 +175,28 @@ namespace PGM_EDITOR
         {
             // Laplaciana
             Func<double, double, double, double, double>
-                g = (x, y, r, t) => (-1 / (Math.PI * Math.Pow(t,4))) * (1 - ((x * x + y * y) / (2 * t * t))) * Math.Exp( -((x * x + y * y ) / (2 * t * t)) );
+               g = (x, y, r, t) => (-1 / (Math.PI * Math.Pow(t,4))) * (1 - ((x * x + y * y) / (2 * t * t))) * Math.Exp( -((x * x + y * y ) / (2 * t * t)) );
+
+            /* Func<double, double, double, double, double>
+                g = (x, y, r, t) =>
+                {
+                    var ret = 0.00;
+
+                    if (x == 0 && y == 0)
+                        ret = 4;
+
+                    if (x == 1 && y == 0)
+                        ret = -1;
+
+                    if (x == 0 && y == 1)
+                        ret = -1;
+
+                    if (x == 1 && y == 1)
+                        ret = 0;
+
+                    return ret;
+                };*/
+
             return windowFor(pgm, g, Map); 
         }
 
@@ -451,7 +472,7 @@ namespace PGM_EDITOR
             return ret;
         }
 
-        private  byte Normalize(double color)
+        private byte Normalize(double color)
         {
             return (byte)(color > 255 ? 255 : (color < 0 ? 0 : color));
         }
