@@ -45,56 +45,58 @@ namespace PGM_EDITOR
             var ret = img.Clone();
             var Estruturante = CriaMatrizEstruturante(img);
 
-            /*
-            Parallel.For(0, img.Width,i =>
-            {
-                Parallel.For(0, img.Height, j =>
-                {
-                    windowErosion(img, ret, Estruturante, i, j);
-                });
-            });
+            for (int i = 0; i < img.Width; i++) 
+                for (int j = 0; j < img.Height; j++)
+                    windowMorpho(0, img, ret, Estruturante, i, j);
+                
             
-            */
-            for (int i = 0; i < img.Width; i++) {
-                for (int j = 0; j < img.Height; j++)   {
-                    windowErosion(img, ret, Estruturante, i, j);
-                }
-            }
 
             return ret;
         }
 
+        public PgmImg Expansion(PgmImg img)
+        {
+            var ret = img.Clone();
+            var EstruturanteNormal = CriaMatrizEstruturante(img);
 
+            // espelha estrutura
+            var Estruturante = (double[,])EstruturanteNormal.Clone();
+            var n = img.ReduceTo;
+            for (int i = 0; i < n; i++)
+                for (int j = 0; j < n; j++)
+                    Estruturante[i, j] = EstruturanteNormal[n-i-1,n-j-1];
 
-        private void windowErosion(PgmImg img,  PgmImg ret, double[,] estruturante, int x, int y)
+            for (int i = 0; i < img.Width; i++)
+                for (int j = 0; j < img.Height; j++)
+                    windowMorpho(1, img, ret, Estruturante, i, j);
+     
+            return ret;
+        }
+
+        private void windowMorpho(int type, PgmImg img,  PgmImg ret, double[,] estruturante, int x, int y)
         {
             int size = img.ReduceTo,
                x_aux = x - size / 2,
                y_aux = y - size / 2,
-               E = 255;
-            /*
-            var doing = true;
-            while (doing) {
-                E++;
-                for (int i = x_aux; i < x_aux + size; i++) {
-                    for (int j = y_aux; j < y_aux + size; j++)
-                        if (j < img.Height && j >= 0 && i >= 0 && i < img.Width)
-                            if (estruturante[i + (size / 2) -x, j + (size / 2)-y] + E >= img[i, j])
-                                doing = false;
-                }
-            }
-            */
-
+               E = type == 0 ? 255 : 0;
+         
 
             for (int i = x_aux; i < x_aux + size; i++) 
                 for (int j = y_aux; j < y_aux + size; j++)
                     if (j < img.Height && j >= 0 && i >= 0 && i < img.Width)
-                        if (!Double.IsNegativeInfinity(estruturante[i + (size / 2) -x, j + (size / 2)-y]))
+                    {
+                        var val = estruturante[i + (size / 2) - x, j + (size / 2) - y];
+                        if (!Double.IsNegativeInfinity(val))
                         {
-                            if (E > img[i, j])
-                                E = img[i, j];
+                            if (type==0) // erosion
+                                if (E > img[i, j] - val)
+                                    E = (int)(img[i, j] - val);
+                            
+                            if (type == 1) // dilatação
+                                if (E < img[i, j] + val)
+                                    E = (int)(img[i, j] + val);
                         }
-            
+                    }
 
             for (int i = x_aux; i < x_aux + size; i++)
                 for (int j = y_aux; j < y_aux + size; j++)
@@ -102,7 +104,7 @@ namespace PGM_EDITOR
                     {
                        var val  = (estruturante[i + (size / 2) - x, j + (size / 2) - y] + E);
                        if (!double.IsNegativeInfinity(val))
-                           ret[i, j] = (byte)val;                        
+                           ret[i, j] = (byte)Normalize(val);                        
                     }
         }
 

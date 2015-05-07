@@ -214,6 +214,9 @@ namespace PGM_EDITOR
                 case  Options.Erosion:
                     apply(tools.Erosion);
                     break;
+                case Options.Expansion:
+                    apply(tools.Expansion);
+                    break;
                 default:
                     break;
             }

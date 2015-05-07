@@ -23,7 +23,8 @@ namespace PGM_EDITOR
         Gaussian,
         Laplace,
         Highlight,
-        Erosion
+        Erosion,
+        Expansion
     }
 
     public enum AverageOptions

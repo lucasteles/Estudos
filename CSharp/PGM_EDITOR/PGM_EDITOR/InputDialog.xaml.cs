@@ -55,6 +55,7 @@ namespace PGM_EDITOR
             cmbOption.Items.Add("Laplace operator");
             cmbOption.Items.Add("Edges Highlight");
             cmbOption.Items.Add("Erosion");
+            cmbOption.Items.Add("Expansion");
             cmbOption.SelectedIndex = 0;
 
         }
@@ -69,7 +70,7 @@ namespace PGM_EDITOR
             else
                 txtAnswer.IsEnabled = true;
 
-            if (  (new List<int>{3,5,6,7,8}).Contains(cmbOption.SelectedIndex))
+            if (  (new List<int>{3,5,6,7,8,9}).Contains(cmbOption.SelectedIndex))
                 lblQuestion.Content = ("Valor impar maior que tres");
             else
                 lblQuestion.Content = ("Valor aplicado (2 - 255):");
