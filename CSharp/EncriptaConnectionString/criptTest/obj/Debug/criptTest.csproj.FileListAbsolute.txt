@@ -1,0 +1,5 @@
+c:\users\telesl\documents\visual studio 2013\Projects\criptTest\criptTest\bin\Debug\criptTest.exe.config
+c:\users\telesl\documents\visual studio 2013\Projects\criptTest\criptTest\bin\Debug\criptTest.exe
+c:\users\telesl\documents\visual studio 2013\Projects\criptTest\criptTest\bin\Debug\criptTest.pdb
+c:\users\telesl\documents\visual studio 2013\Projects\criptTest\criptTest\obj\Debug\criptTest.exe
+c:\users\telesl\documents\visual studio 2013\Projects\criptTest\criptTest\obj\Debug\criptTest.pdb
