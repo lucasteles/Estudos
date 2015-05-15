@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1431721253 source:c:\desenvolvimento\pgmfourier\main.c
+	<stdio.h>
+	<stdlib.h>
+	"tools.c"
+	"fourier.c"
+
+1431702435 c:\desenvolvimento\pgmfourier\tools.c
+	<string.h>
+	<ctype.h>
+
+1431721061 c:\desenvolvimento\pgmfourier\fourier.c
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
+
