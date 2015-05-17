@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
 typedef struct _PGMFile {
@@ -8,13 +10,24 @@ typedef struct _PGMFile {
 } PGMFile;
 
 
-int **alloc_matrix(int height, int width)
+int **alloc_matrix(int row, int col)
 {
-    int **ret, i;
+  int **ret;
+  int i;
 
-    ret = (int **)malloc(sizeof(int) * height);
-    for (i = 0; i < height; ++i)
-        ret[i] = (int *)malloc(sizeof(int) * width);
+    ret = (int **)malloc(sizeof(int *) * row);
+    if (ret == NULL) {
+        perror("memory allocation failure");
+        exit(EXIT_FAILURE);
+    }
+
+    for (i = 0; i < row; ++i) {
+        ret[i] = (int *)malloc(sizeof(int) * col);
+        if (ret[i] == NULL) {
+            perror("memory allocation failure");
+            exit(EXIT_FAILURE);
+        }
+    }
 
     return ret;
 }
@@ -45,6 +58,7 @@ PGMFile* ReadPGM(const char *fileName, PGMFile *data)
 {
     FILE *pgmImg;
     char type[3];
+
     int i, j;
     int lo, hi;
 
@@ -80,12 +94,12 @@ PGMFile* ReadPGM(const char *fileName, PGMFile *data)
                 data->matrix[i][j] = (hi << 8) + lo;
             }
     else
-        for (i = 0; i < data->height; ++i)
-            for (j = 0; j < data->width; ++j) {
+        for (i = 0; i < data->height; ++i){
+            for (j = 0; j < data->width; ++j){
                 lo = fgetc(pgmImg);
                 data->matrix[i][j] = lo;
             }
-
+        }
     fclose(pgmImg);
     return data;
 

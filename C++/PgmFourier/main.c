@@ -10,15 +10,14 @@ int main(int argc, char *argv[])
     //teste!
     // ira receber como parametro na executavel
     argv[1] = "baboon.pgm";
-    argv[2] = "baboon.pgm";
+    argv[2] = "baboon2.pgm";
 
     printf("reading file...\n");
     ReadPGM(argv[1], file);
 
     printf("calculating...\n");
 
-
-
+    /*
     INumber n1;
     n1.R=10;
     n1.I=5;
@@ -31,10 +30,12 @@ int main(int argc, char *argv[])
     INumber n3 = Multipl(n1,n2);
     //teste calculo
     printf("n3=%f+%fi \n",n3.R,n3.I);
+    */
+
 
 
     printf("saving file...\n");
-    //SavePGM(argv[2], file);
+    SavePGM(argv[2], file);
 
     free(file);
     return 0;
