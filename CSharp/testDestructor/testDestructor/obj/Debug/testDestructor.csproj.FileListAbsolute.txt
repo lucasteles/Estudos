@@ -1,0 +1,6 @@
+c:\users\telesl\documents\visual studio 2013\Projects\testDestructor\testDestructor\bin\Debug\testDestructor.exe.config
+c:\users\telesl\documents\visual studio 2013\Projects\testDestructor\testDestructor\bin\Debug\testDestructor.exe
+c:\users\telesl\documents\visual studio 2013\Projects\testDestructor\testDestructor\bin\Debug\testDestructor.pdb
+c:\users\telesl\documents\visual studio 2013\Projects\testDestructor\testDestructor\obj\Debug\testDestructor.csprojResolveAssemblyReference.cache
+c:\users\telesl\documents\visual studio 2013\Projects\testDestructor\testDestructor\obj\Debug\testDestructor.exe
+c:\users\telesl\documents\visual studio 2013\Projects\testDestructor\testDestructor\obj\Debug\testDestructor.pdb
