@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdbool.h>
 #include <windows.h>
 
@@ -19,14 +20,14 @@ void mostra(int* vetor, int n, int posCColor, int posSwap ){
     for (; i<n; i++)
     {
 
-        if (i==posCColor || i == posCColor+1 && posCColor >= 0)
+        if ( (i==posCColor) || (i == posCColor+1 && posCColor >= 0))
         {
             SetConsoleTextAttribute(hConsole, 47);
             printf("%i" ,vetor[i]);
             SetConsoleTextAttribute(hConsole, 15);
             printf(" ");
         }
-        else if (i==posSwap || i == posSwap+1 && posSwap >= 0)
+        else if ( (i==posSwap) || (i == posSwap+1 && posSwap >= 0) )
         {
             SetConsoleTextAttribute(hConsole, 79);
             printf("%i" ,vetor[i]);
@@ -52,15 +53,35 @@ bool swap(int* vetor, int i){
     return false;
 }
 
-int main()
+int* leParametros(int* size, int* vetor, int argc, char* argv[])
 {
-    int vetor[] = {19,5,9,3,2,1,50,-1};
-    int size = sizeof(vetor)/sizeof(int);
+    int i=1;
+    *size = argc-1;
+    vetor = (int*)malloc(sizeof(int)*(argc-1));
+    for (;i<argc;i++)
+        vetor[i-1] = atoi (argv[i]);
+
+    return vetor;
+}
+
+int main(int argc, char* argv[])
+{
+    int *vetor = NULL;
+    int size=0;
+    if (argc <= 1)
+    {
+        int aux[] = {19,5,9,3,2,1,50,-1};
+        vetor = aux;
+        size = sizeof(aux)/sizeof(int);
+    } else {
+       vetor = leParametros(&size,vetor, argc, argv );
+    }
 
     if (size <= 1){
         mostra(vetor,size, -1, -1);
         return 0;
     }
+
     int i=1;
     while(i<size){
         if (i > 0)
