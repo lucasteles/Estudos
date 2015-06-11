@@ -1,0 +1,56 @@
+# depslib dependency file v1.0
+1432565401 source:c:\users\rmendonca\documents\github\desenvolvimento\c\mochilabinariaopenmp\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1112648331 source:c:\users\rmendonca\documents\github\desenvolvimento\c\mochilabinariaopenmp\timer.c
+	<stddef.h>
+	<stdio.h>
+	"timer.h"
+
+1112648331 c:\users\rmendonca\documents\github\desenvolvimento\c\mochilabinariaopenmp\timer.h
+	<sys/time.h>
+	<time.h>
+
+1432567166 source:c:\users\rmendonca\documents\github\desenvolvimento\c\mochilabinariaopenmp\knap.c
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+	<string.h>
+	<time.h>
+	<errno.h>
+	<unistd.h>
+	"timer.h"
+	"knap_defaults.h"
+
+1112648331 c:\users\rmendonca\documents\github\desenvolvimento\c\mochilabinariaopenmp\knap_defaults.h
+
+1432565845 c:\users\rmendonca\documents\github\desenvolvimento\c\mochilabinariaopenmp\rand48.h
+	<stdlib.h>
+
+1434057055 source:c:\users\telesl\desktop\mochilabinariaopenmp\knap.c
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+	<string.h>
+	<time.h>
+	<errno.h>
+	<unistd.h>
+	"timer.h"
+	"knap_defaults.h"
+
+1112648331 c:\users\telesl\desktop\mochilabinariaopenmp\timer.h
+	<sys/time.h>
+	<time.h>
+
+1112648331 c:\users\telesl\desktop\mochilabinariaopenmp\knap_defaults.h
+
+1432565401 source:c:\users\telesl\desktop\mochilabinariaopenmp\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1112648331 source:c:\users\telesl\desktop\mochilabinariaopenmp\timer.c
+	<stddef.h>
+	<stdio.h>
+	"timer.h"
+
