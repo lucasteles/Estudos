@@ -1,5 +1,8 @@
 CC=gcc
-LDFLAGS=
-
-all: main.c
-	$(CC) -c main.c -o fourier -lm 
+LDFLAGS=-fopenmp -lm 
+ 
+all: lib 
+	
+lib:  INumber.o PGM.o main.c
+	$(CC) -o fourier main.c INumber.o PGM.o $(LDFLAGS) 
+                                                 
