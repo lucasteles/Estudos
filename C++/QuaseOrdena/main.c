@@ -3,7 +3,7 @@
 #include <stdbool.h>
 #include <windows.h>
 
-void mostra(int* vetor, int n, int posCColor, int posSwap ){
+void mostra(int* vetor, int n, int posCColor, int posCColor2, int posSwap, int posSwap2 ){
 
     HANDLE hConsole;
     hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -20,14 +20,14 @@ void mostra(int* vetor, int n, int posCColor, int posSwap ){
     for (; i<n; i++)
     {
 
-        if ( (i==posCColor) || (i == posCColor+1 && posCColor >= 0))
+        if ( (i==posCColor || i == posCColor2) && posCColor >= 0)
         {
             SetConsoleTextAttribute(hConsole, 47);
             printf("%i" ,vetor[i]);
             SetConsoleTextAttribute(hConsole, 15);
             printf(" ");
         }
-        else if ( (i==posSwap) || (i == posSwap+1 && posSwap >= 0) )
+        else if ( (i==posSwap || i == posSwap2) && posSwap >= 0 )
         {
             SetConsoleTextAttribute(hConsole, 79);
             printf("%i" ,vetor[i]);
@@ -38,16 +38,16 @@ void mostra(int* vetor, int n, int posCColor, int posSwap ){
             printf("%i ", vetor[i]);
     }
 
-
     printf("\n");
+    fflush(stdout);
 }
 
-bool swap(int* vetor, int i){
+bool swap(int* vetor, int i, int j){
     int mem = 0;
-    if (vetor[i-1] > vetor[i])    {
-        mem = vetor[i];
-        vetor[i] = vetor[i-1];
-        vetor[i-1] = mem;
+    if (vetor[i] > vetor[j])    {
+        mem = vetor[j];
+        vetor[j] = vetor[i];
+        vetor[i] = mem;
         return true;
     }
     return false;
@@ -64,6 +64,82 @@ int* leParametros(int* size, int* vetor, int argc, char* argv[])
     return vetor;
 }
 
+bool VerifOrdenado(int* vetor, int n)
+{
+    int i = 0;
+    for (; i < n-1; i++)
+        if (vetor[i] > vetor[i+1])
+            return 0;
+
+    return 1;
+}
+
+bool verificaUmaTroca(int* vetorEntrada, int n)
+{
+    int i = 0, j =0;
+    int *vetor = (int*)malloc(sizeof(int)*n);
+    memcpy (vetor, vetorEntrada, n * sizeof(int));
+
+
+    for (; i < n; i++)
+        for (j=i+1; j < n; j++)
+        {
+            mostra(vetor,n, i, j, -1, -1);
+            if (swap(vetor, i, j))
+            {
+                if (VerifOrdenado(vetor, n))
+                {
+                    mostra(vetor,n, -1, -1, i, j);
+                    swap(vetorEntrada, i, j);
+                    return 1;
+                }
+                else    
+                    memcpy (vetor, vetorEntrada, n*sizeof(int));
+            }
+            
+        }
+
+    return 0;
+}
+
+bool verificaUmaInversao(int* vetorEntrada, int n)
+{
+    int i = 0, init = 0, end=n-1;
+
+    int *vetor = (int*)malloc(sizeof(int)*n);
+    memcpy (vetor, vetorEntrada, n * sizeof(int));
+
+    for (; i < n-1; i++)
+       if (vetor[i] > vetor[i+1]){
+            init = i;          
+            break;
+       }
+
+    mostra(vetor,n, i, i, -1, -1);
+    for (; i < n-1; i++)
+       if (vetor[i] < vetor[i+1] ) {
+            end = i;          
+            break;
+       }
+    mostra(vetor,n, i, i, -1, -1);
+
+    printf("-------- %i, %i\n", init, end );
+
+    int mem = 0;
+    for (i = 0; i <= (end-init)/2; i++) {
+        mostra(vetor,n, -1, -1, init+i, end-i); 
+        mem = vetor[end-i];
+        vetor[end-i] = vetor[init+i];
+        vetor[init+i] = mem;
+    }
+
+    int foi = VerifOrdenado(vetor, n);
+    if (foi)
+        memcpy (vetorEntrada, vetor, n*sizeof(int));
+
+    return foi;
+}
+
 int main(int argc, char* argv[])
 {
     int *vetor = NULL;
@@ -78,24 +154,72 @@ int main(int argc, char* argv[])
     }
 
     if (size <= 1){
-        mostra(vetor,size, -1, -1);
+        mostra(vetor,size, -1, -1, -1, -1);
         return 0;
     }
 
-    int i=1;
+    // verifica se ordena com uma troca
+    printf("------------------\n"
+            "Tenta com uma troca\n"
+            "------------------\n");
+    if (verificaUmaTroca(vetor, size))
+    {
+        printf("\n~ ordenado em 1 troca\n");
+        mostra(vetor,size, -1, -1, -1, -1);
+        exit(1);
+    }
+    else    
+        printf("\n~ NAO ordenado em 1 troca\n\n");
+
+    // verifica se ordena com uma inversao
+    printf("------------------\n"
+            "Tenta com uma inversao\n"
+            "------------------\n");
+    if (verificaUmaInversao(vetor, size))
+    {
+        printf("\n~ ordenado em 1 inversao\n");
+        mostra(vetor,size, -1, -1, -1, -1);
+        exit(1);
+    }
+    else    
+        printf("\n~ NAO ordenado em 1 inversao\n\n");
+
+    printf("------------------\n"
+            "Tenta com varias trocas\n"
+            "------------------\n");
+    int i=1,
+        count = 0,
+        cache = -1;
+
     while(i<size){
         if (i > 0)
-            mostra(vetor,size, i-1, -1);
+            mostra(vetor,size, i-1, i, -1, -1);
+            
 
-        if (i > 0 && swap(vetor,i) ){
+        if (i > 0 && swap(vetor, i-1, i) ){
+            
+            if (cache == -1)
+                cache = i;
+
             i--;
-            mostra(vetor,size, -1, i);
+            count++;
+            
+            mostra(vetor,size, -1, -1, i, i+1);
+
         } else {
-            i++;
+            if (cache >= 0){      
+                //printf(" -: (%i)\n", cache );      
+                i=cache;
+                cache=-1;
+            }
+            else    
+                i++;
         }
     }
 
-    printf("\n~ ordenado-> ");
-    mostra(vetor,size, -1, -1);
+    
+
+    printf("\n~ ordenado em %i trocas -> ", count);
+    mostra(vetor,size, -1, -1, -1, -1);
     return 0;
 }
