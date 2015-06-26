@@ -1,0 +1,9 @@
+c:\users\telesl\documents\visual studio 2013\Projects\HtmlToPdf\HtmlToPdf\bin\Debug\HtmlToPdf.exe.config
+c:\users\telesl\documents\visual studio 2013\Projects\HtmlToPdf\HtmlToPdf\bin\Debug\HtmlToPdf.exe
+c:\users\telesl\documents\visual studio 2013\Projects\HtmlToPdf\HtmlToPdf\bin\Debug\HtmlToPdf.pdb
+c:\users\telesl\documents\visual studio 2013\Projects\HtmlToPdf\HtmlToPdf\bin\Debug\itextsharp.dll
+c:\users\telesl\documents\visual studio 2013\Projects\HtmlToPdf\HtmlToPdf\bin\Debug\itextsharp.xmlworker.dll
+c:\users\telesl\documents\visual studio 2013\Projects\HtmlToPdf\HtmlToPdf\bin\Debug\itextsharp.xml
+c:\users\telesl\documents\visual studio 2013\Projects\HtmlToPdf\HtmlToPdf\obj\Debug\HtmlToPdf.csprojResolveAssemblyReference.cache
+c:\users\telesl\documents\visual studio 2013\Projects\HtmlToPdf\HtmlToPdf\obj\Debug\HtmlToPdf.exe
+c:\users\telesl\documents\visual studio 2013\Projects\HtmlToPdf\HtmlToPdf\obj\Debug\HtmlToPdf.pdb
