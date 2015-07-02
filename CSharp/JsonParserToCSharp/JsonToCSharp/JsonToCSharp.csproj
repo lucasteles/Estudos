@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B642B6AA-D85E-42C4-9245-0D5A96E8711E}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JsonToCSharp</RootNamespace>
+    <AssemblyName>JsonToCSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.30506.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.30506.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Content Include="Global.asax" />
+    <Content Include="Parser\css\bootstrap.min.css" />
+    <Content Include="Parser\css\foundation.min.css" />
+    <Content Include="Parser\css\normalize.css" />
+    <Content Include="Parser\css\site.css" />
+    <Content Include="Parser\foundation\css\foundation.css" />
+    <Content Include="Parser\foundation\css\foundation.min.css" />
+    <Content Include="Parser\foundation\css\normalize.css" />
+    <Content Include="Parser\foundation\humans.txt" />
+    <Content Include="Parser\foundation\index.html" />
+    <Content Include="Parser\foundation\js\foundation.min.js" />
+    <Content Include="Parser\foundation\js\foundation\foundation.abide.js" />
+    <Content Include="Parser\foundation\js\foundation\foundation.accordion.js" />
+    <Content Include="Parser\foundation\js\foundation\foundation.alert.js" />
+    <Content Include="Parser\foundation\js\foundation\foundation.clearing.js" />
+    <Content Include="Parser\foundation\js\foundation\foundation.dropdown.js" />
+    <Content Include="Parser\foundation\js\foundation\foundation.equalizer.js" />
+    <Content Include="Parser\foundation\js\foundation\foundation.interchange.js" />
+    <Content Include="Parser\foundation\js\foundation\foundation.joyride.js" />
+    <Content Include="Parser\foundation\js\foundation\foundation.js" />
+    <Content Include="Parser\foundation\js\foundation\foundation.magellan.js" />
+    <Content Include="Parser\foundation\js\foundation\foundation.offcanvas.js" />
+    <Content Include="Parser\foundation\js\foundation\foundation.orbit.js" />
+    <Content Include="Parser\foundation\js\foundation\foundation.reveal.js" />
+    <Content Include="Parser\foundation\js\foundation\foundation.slider.js" />
+    <Content Include="Parser\foundation\js\foundation\foundation.tab.js" />
+    <Content Include="Parser\foundation\js\foundation\foundation.tooltip.js" />
+    <Content Include="Parser\foundation\js\foundation\foundation.topbar.js" />
+    <Content Include="Parser\foundation\js\vendor\fastclick.js" />
+    <Content Include="Parser\foundation\js\vendor\jquery.cookie.js" />
+    <Content Include="Parser\foundation\js\vendor\jquery.js" />
+    <Content Include="Parser\foundation\js\vendor\modernizr.js" />
+    <Content Include="Parser\foundation\js\vendor\placeholder.js" />
+    <Content Include="Parser\foundation\robots.txt" />
+    <Content Include="Parser\img\fb.png" />
+    <Content Include="Parser\img\git.png" />
+    <Content Include="Parser\img\in.png" />
+    <Content Include="Parser\index.html" />
+    <Content Include="Parser\js\foundation.min.js" />
+    <Content Include="Parser\js\foundation\foundation.abide.js" />
+    <Content Include="Parser\js\foundation\foundation.accordion.js" />
+    <Content Include="Parser\js\foundation\foundation.alert.js" />
+    <Content Include="Parser\js\foundation\foundation.clearing.js" />
+    <Content Include="Parser\js\foundation\foundation.dropdown.js" />
+    <Content Include="Parser\js\foundation\foundation.equalizer.js" />
+    <Content Include="Parser\js\foundation\foundation.interchange.js" />
+    <Content Include="Parser\js\foundation\foundation.joyride.js" />
+    <Content Include="Parser\js\foundation\foundation.js" />
+    <Content Include="Parser\js\foundation\foundation.magellan.js" />
+    <Content Include="Parser\js\foundation\foundation.offcanvas.js" />
+    <Content Include="Parser\js\foundation\foundation.orbit.js" />
+    <Content Include="Parser\js\foundation\foundation.reveal.js" />
+    <Content Include="Parser\js\foundation\foundation.slider.js" />
+    <Content Include="Parser\js\foundation\foundation.tab.js" />
+    <Content Include="Parser\js\foundation\foundation.tooltip.js" />
+    <Content Include="Parser\js\foundation\foundation.topbar.js" />
+    <Content Include="Parser\js\highlight.pack.js" />
+    <Content Include="Parser\js\site.js" />
+    <Content Include="Parser\js\styles\agate.css" />
+    <Content Include="Parser\js\styles\androidstudio.css" />
+    <Content Include="Parser\js\styles\arta.css" />
+    <Content Include="Parser\js\styles\ascetic.css" />
+    <Content Include="Parser\js\styles\atelier-cave.dark.css" />
+    <Content Include="Parser\js\styles\atelier-cave.light.css" />
+    <Content Include="Parser\js\styles\atelier-dune.dark.css" />
+    <Content Include="Parser\js\styles\atelier-dune.light.css" />
+    <Content Include="Parser\js\styles\atelier-estuary.dark.css" />
+    <Content Include="Parser\js\styles\atelier-estuary.light.css" />
+    <Content Include="Parser\js\styles\atelier-forest.dark.css" />
+    <Content Include="Parser\js\styles\atelier-forest.light.css" />
+    <Content Include="Parser\js\styles\atelier-heath.dark.css" />
+    <Content Include="Parser\js\styles\atelier-heath.light.css" />
+    <Content Include="Parser\js\styles\atelier-lakeside.dark.css" />
+    <Content Include="Parser\js\styles\atelier-lakeside.light.css" />
+    <Content Include="Parser\js\styles\atelier-plateau.dark.css" />
+    <Content Include="Parser\js\styles\atelier-plateau.light.css" />
+    <Content Include="Parser\js\styles\atelier-savanna.dark.css" />
+    <Content Include="Parser\js\styles\atelier-savanna.light.css" />
+    <Content Include="Parser\js\styles\atelier-seaside.dark.css" />
+    <Content Include="Parser\js\styles\atelier-seaside.light.css" />
+    <Content Include="Parser\js\styles\atelier-sulphurpool.dark.css" />
+    <Content Include="Parser\js\styles\atelier-sulphurpool.light.css" />
+    <Content Include="Parser\js\styles\brown_paper.css" />
+    <Content Include="Parser\js\styles\brown_papersq.png" />
+    <Content Include="Parser\js\styles\codepen-embed.css" />
+    <Content Include="Parser\js\styles\color-brewer.css" />
+    <Content Include="Parser\js\styles\dark.css" />
+    <Content Include="Parser\js\styles\darkula.css" />
+    <Content Include="Parser\js\styles\default.css" />
+    <Content Include="Parser\js\styles\docco.css" />
+    <Content Include="Parser\js\styles\far.css" />
+    <Content Include="Parser\js\styles\foundation.css" />
+    <Content Include="Parser\js\styles\github-gist.css" />
+    <Content Include="Parser\js\styles\github.css" />
+    <Content Include="Parser\js\styles\googlecode.css" />
+    <Content Include="Parser\js\styles\hybrid.css" />
+    <Content Include="Parser\js\styles\idea.css" />
+    <Content Include="Parser\js\styles\ir_black.css" />
+    <Content Include="Parser\js\styles\kimbie.dark.css" />
+    <Content Include="Parser\js\styles\kimbie.light.css" />
+    <Content Include="Parser\js\styles\magula.css" />
+    <Content Include="Parser\js\styles\mono-blue.css" />
+    <Content Include="Parser\js\styles\monokai.css" />
+    <Content Include="Parser\js\styles\monokai_sublime.css" />
+    <Content Include="Parser\js\styles\obsidian.css" />
+    <Content Include="Parser\js\styles\paraiso.dark.css" />
+    <Content Include="Parser\js\styles\paraiso.light.css" />
+    <Content Include="Parser\js\styles\pojoaque.css" />
+    <Content Include="Parser\js\styles\pojoaque.jpg" />
+    <Content Include="Parser\js\styles\railscasts.css" />
+    <Content Include="Parser\js\styles\rainbow.css" />
+    <Content Include="Parser\js\styles\school_book.css" />
+    <Content Include="Parser\js\styles\school_book.png" />
+    <Content Include="Parser\js\styles\solarized_dark.css" />
+    <Content Include="Parser\js\styles\solarized_light.css" />
+    <Content Include="Parser\js\styles\sunburst.css" />
+    <Content Include="Parser\js\styles\tomorrow-night-blue.css" />
+    <Content Include="Parser\js\styles\tomorrow-night-bright.css" />
+    <Content Include="Parser\js\styles\tomorrow-night-eighties.css" />
+    <Content Include="Parser\js\styles\tomorrow-night.css" />
+    <Content Include="Parser\js\styles\tomorrow.css" />
+    <Content Include="Parser\js\styles\vs.css" />
+    <Content Include="Parser\js\styles\xcode.css" />
+    <Content Include="Parser\js\styles\zenburn.css" />
+    <Content Include="Parser\js\TweenMax.min.js" />
+    <Content Include="Parser\js\vendor\fastclick.js" />
+    <Content Include="Parser\js\vendor\jquery.cookie.js" />
+    <Content Include="Parser\js\vendor\jquery.js" />
+    <Content Include="Parser\js\vendor\modernizr.js" />
+    <Content Include="Parser\js\vendor\placeholder.js" />
+    <Content Include="Parser\js\ZeroClipboard.js" />
+    <Content Include="Parser\js\ZeroClipboard.swf" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JsonParser\JsonParser.csproj">
+      <Project>{a0924b5c-e600-4e6d-bbd4-d2ee5e34445d}</Project>
+      <Name>JsonParser</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Parser\assets\Ubuntu-R.ttf" />
+    <Content Include="Parser\foundation\img\.gitkeep" />
+    <Content Include="Parser\img\.gitkeep" />
+    <None Include="Properties\PublishProfiles\main.pubxml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54954</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54922/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

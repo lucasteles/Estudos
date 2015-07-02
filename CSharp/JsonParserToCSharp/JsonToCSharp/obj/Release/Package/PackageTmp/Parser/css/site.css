@@ -1,0 +1,89 @@
+ body {
+    width: 100%;
+    margin: auto;
+    background-color: #111;
+    color: white;
+    font-family: ubuntu, Sans-serif;
+    position: relative;
+}
+
+.topo
+{
+	margin-top:  -20px;
+	margin-bottom: 20px;
+	border-bottom: 1px double;
+	border-color: #999
+}
+.fonte{
+	 color: white!important;
+    font-family: ubuntu, Sans-serif;
+}
+
+@font-face {
+    font-family: ubuntu;
+    src: url("../assets/Ubuntu-R.ttf");
+}
+ a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+a img {
+	border: thin solid black padding: 3px;
+	margins: 3px;
+}
+
+.social{
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	width: 38px;
+	margin-left: 5px;
+}
+
+.email{
+	display: inline-block;
+	
+}
+
+.center{
+	text-align: center;
+}
+
+#txtJson
+{
+	height: 600px;
+
+}
+
+ code {
+ 	top: -20px;
+    position: relative;
+    min-height: 600px;
+}
+
+.loader{
+  position: absolute;
+  top:50px;
+  left: 35%;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 100px;
+  display: inline-block;
+  vertical-align: top;
+}
+svg path,
+svg rect{
+  fill: #FF6700;
+}

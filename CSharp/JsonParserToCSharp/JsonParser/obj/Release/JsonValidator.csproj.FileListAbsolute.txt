@@ -1,0 +1,5 @@
+C:\Git\JsonValidator\JsonValidator\JsonValidator\bin\Release\JsonValidator.exe.config
+C:\Git\JsonValidator\JsonValidator\JsonValidator\bin\Release\JsonValidator.exe
+C:\Git\JsonValidator\JsonValidator\JsonValidator\bin\Release\JsonValidator.pdb
+C:\Git\JsonValidator\JsonValidator\JsonValidator\obj\Release\JsonValidator.exe
+C:\Git\JsonValidator\JsonValidator\JsonValidator\obj\Release\JsonValidator.pdb

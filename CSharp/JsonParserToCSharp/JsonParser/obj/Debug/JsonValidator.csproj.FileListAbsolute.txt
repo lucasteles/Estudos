@@ -1,0 +1,7 @@
+C:\Git\JsonValidator\JsonValidator\JsonValidator\bin\Debug\JsonValidator.exe.config
+C:\Git\JsonValidator\JsonValidator\JsonValidator\bin\Debug\JsonValidator.exe
+C:\Git\JsonValidator\JsonValidator\JsonValidator\bin\Debug\JsonValidator.pdb
+C:\Git\JsonValidator\JsonValidator\JsonValidator\obj\Debug\JsonValidator.csprojResolveAssemblyReference.cache
+C:\Git\JsonValidator\JsonValidator\JsonValidator\obj\Debug\JsonValidator.exe
+C:\Git\JsonValidator\JsonValidator\JsonValidator\obj\Debug\JsonValidator.pdb
+C:\Git\JsonValidator\JsonValidator\JsonValidator\bin\Debug\JsonParser.exe.config

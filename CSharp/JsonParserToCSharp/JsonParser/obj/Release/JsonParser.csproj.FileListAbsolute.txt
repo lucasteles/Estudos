@@ -1,0 +1,10 @@
+C:\Git\JsonValidator\JsonParser\JsonParser\bin\Release\JsonParser.exe.config
+C:\Git\JsonValidator\JsonParser\JsonParser\bin\Release\JsonParser.exe
+C:\Git\JsonValidator\JsonParser\JsonParser\bin\Release\JsonParser.pdb
+C:\Git\JsonValidator\JsonParser\JsonParser\obj\Release\JsonParser.exe
+C:\Git\JsonValidator\JsonParser\JsonParser\obj\Release\JsonParser.pdb
+C:\Users\telesl\Documents\Visual Studio 2013\Projects\JsonParserToCSharp\JsonParser\bin\Release\JsonParser.dll.config
+C:\Users\telesl\Documents\Visual Studio 2013\Projects\JsonParserToCSharp\JsonParser\bin\Release\JsonParser.dll
+C:\Users\telesl\Documents\Visual Studio 2013\Projects\JsonParserToCSharp\JsonParser\bin\Release\JsonParser.pdb
+C:\Users\telesl\Documents\Visual Studio 2013\Projects\JsonParserToCSharp\JsonParser\obj\Release\JsonParser.dll
+C:\Users\telesl\Documents\Visual Studio 2013\Projects\JsonParserToCSharp\JsonParser\obj\Release\JsonParser.pdb

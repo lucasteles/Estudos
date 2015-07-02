@@ -1,0 +1,16 @@
+C:\Git\JsonValidator\JsonValidator\JsonValidator\bin\Debug\JsonParser.exe.config
+C:\Git\JsonValidator\JsonValidator\JsonValidator\bin\Debug\JsonParser.exe
+C:\Git\JsonValidator\JsonValidator\JsonValidator\bin\Debug\JsonParser.pdb
+C:\Git\JsonValidator\JsonValidator\JsonValidator\obj\Debug\JsonParser.exe
+C:\Git\JsonValidator\JsonValidator\JsonValidator\obj\Debug\JsonParser.pdb
+C:\Git\JsonValidator\JsonParser\JsonParser\bin\Debug\JsonParser.exe.config
+C:\Git\JsonValidator\JsonParser\JsonParser\obj\Debug\JsonParser.exe
+C:\Git\JsonValidator\JsonParser\JsonParser\obj\Debug\JsonParser.pdb
+C:\Git\JsonValidator\JsonParser\JsonParser\bin\Debug\JsonParser.exe
+C:\Git\JsonValidator\JsonParser\JsonParser\bin\Debug\JsonParser.pdb
+C:\Git\JsonValidator\JsonParser\JsonParser\obj\Debug\JsonParser.csprojResolveAssemblyReference.cache
+C:\Users\telesl\Documents\Visual Studio 2013\Projects\JsonParserToCSharp\JsonParser\bin\Debug\JsonParser.dll.config
+C:\Users\telesl\Documents\Visual Studio 2013\Projects\JsonParserToCSharp\JsonParser\bin\Debug\JsonParser.dll
+C:\Users\telesl\Documents\Visual Studio 2013\Projects\JsonParserToCSharp\JsonParser\bin\Debug\JsonParser.pdb
+C:\Users\telesl\Documents\Visual Studio 2013\Projects\JsonParserToCSharp\JsonParser\obj\Debug\JsonParser.dll
+C:\Users\telesl\Documents\Visual Studio 2013\Projects\JsonParserToCSharp\JsonParser\obj\Debug\JsonParser.pdb
