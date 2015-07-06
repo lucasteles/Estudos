@@ -10,17 +10,17 @@ namespace JsonParser
 {
     public class Automaton<T> where T : struct, IConvertible
     {
+       
 
-
-        private struct StateTransition<T>
+        private struct StateTransition<Ts>
         {
-            public T State;
+            public Ts State;
             public Expression<Func<char, bool>> Input;
             public object Push;
             public object Pop;
-
+           
         };
-
+                
         private Stack<Object> MainStack = new Stack<object>();
         private Dictionary<T, List<StateTransition<T>>> Transitions = new Dictionary<T, List<StateTransition<T>>>();
         private Dictionary<T, bool> HasEmptyTransitions = new Dictionary<T, bool>();
@@ -67,10 +67,10 @@ namespace JsonParser
                 Transitions.Add(state, new List<StateTransition<T>>());
                 TempWhen.Add(state);
             }
+           
 
-
-
-
+           
+           
             return this;
         }
 
@@ -122,7 +122,7 @@ namespace JsonParser
                 Transitions[state].Add(trasition);
                 HasEmptyTransitions[state] = true;
             }
-
+            
             return this;
         }
 
@@ -163,14 +163,14 @@ namespace JsonParser
                 return false;
 
             var stateTrans = Transitions[State];
-            var ret = false;
+             var ret = false;
 
 
             foreach (var t in stateTrans)
             {
 
                 var validStack = !(t.Pop == null);
-                var match = t.Input.Compile()(input);
+                var match = t.Input!=null && t.Input.Compile()(input);
 
                 var noStack = true;
                 if (t.Push != null && t.Pop != null)
@@ -225,11 +225,14 @@ namespace JsonParser
             if (!Transitions.ContainsKey(State))
                 return;
 
+
+            if (MainStack.Count > 0 && MainStack.Peek() == null)
+                return;
+
             var stateTrans = Transitions[State];
             var changed = false;
 
-            foreach (var t in stateTrans)
-            {
+            foreach (var t in stateTrans) {
                 var validStack = !(t.Pop == null);
                 var match = t.Input == null;
                 var noStack = true;
@@ -273,14 +276,12 @@ namespace JsonParser
         }
 
 
-        public object Peek() { return MainStack.Peek(); }
-        public object Pop()
-        {
+        public object Peek() { return MainStack.Count > 0 ? MainStack.Peek() : null; }
+        public object Pop() {           
             DoOnStackPop(EventArgs.Empty, this);
-            return MainStack.Pop();
+            return MainStack.Pop(); 
         }
-        public void Push(object item)
-        {
+        public void Push(object item) {
             MainStack.Push(item);
             DoOnStackPush(EventArgs.Empty, this);
         }

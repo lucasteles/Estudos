@@ -36,10 +36,13 @@ $(function(){
 		  	//ee = (data);
 		  },
 		  beforeSend: function(){
-		     $('.loader').fadeIn();
+		      $('.loader').fadeIn();
+		      $('#btnSend').attr('disabled', 'disabled');
 		   },
 		   complete: function(){
-		     $('.loader').fadeOut();
+		       $('.loader').fadeOut();
+		       $('#btnSend').removeAttr('disabled');
+
 		   }
 		  
 		});    	

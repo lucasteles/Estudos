@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace JsonParser
 {
-
+    
     public struct JsonTokens
     {
         public const char OpenList = '[';
@@ -44,16 +44,15 @@ namespace JsonParser
 
         }
 
-        public bool Analisys(out string message)
-        {
+        public bool Analisys(out string message) {
             var ret = true;
-
+            
             message = string.Empty;
             var loop = true;
-
-            while (Reader.PeekChar() != -1)
+            char c = '\0';
+            while (Reader.PeekChar() != -1 )
             {
-                var c = (char)Reader.ReadChar();
+                c = (char)Reader.ReadChar();
 
                 if (c == '\r')
                     continue;
@@ -72,39 +71,47 @@ namespace JsonParser
                     else
                         continue;
                 }
-
-                gen(c);
-                loop = Machine.Read(c);
-
-                if (!loop)
-                {
-                    message = ErrMsg(c);
-                    break;
-                }
+               
+               gen(c);
+               loop = Machine.Read(c);
+               
+               if (!loop)
+               {
+                   message = ErrMsg(c);
+                   break;
+               }
             }
 
-
+            
             if (!Machine.Valid())
             {
                 ret = false;
 
                 if (message.Equals(String.Empty))
                 {
-                    if ((JsonCollect)Machine.Peek() == JsonCollect.Array)
-                        message = String.Format("Expected end of array \"]\" of {0}:{1}", FlowControlNum.Peek()[0], FlowControlNum.Peek()[1]);
+                    if (Machine.StackLenght() == 0)
+                    {
+                        message = String.Format("Expected token after {0}", c);
+                    }
+                    else
+                    {
 
-                    if ((JsonCollect)Machine.Peek() == JsonCollect.Dictionary)
-                        message = String.Format("Expected end of dictionary \"}}\" of {0}:{1}", FlowControlNum.Peek()[0], FlowControlNum.Peek()[1]);
+                        if ((JsonCollect)Machine.Peek() == JsonCollect.Array)
+                            message = String.Format("Expected end of array \"]\" of {0}:{1}", FlowControlNum.Peek()[0], FlowControlNum.Peek()[1]);
+
+                        if ((JsonCollect)Machine.Peek() == JsonCollect.Dictionary)
+                            message = String.Format("Expected end of dictionary \"}}\" of {0}:{1}", FlowControlNum.Peek()[0], FlowControlNum.Peek()[1]);
+                    }
                 }
             }
 
-
+           
             return ret;
         }
-
+    
         private string ErrMsg(char c)
         {
-            return String.Format("unexpected token \"{0}\" at {1}:{2}", c.ToString(), Lines + 1, Cols);
+            return String.Format("unexpected token \"{0}\" at {1}:{2}", c.ToString(), Lines + 1, Cols );
         }
 
 
@@ -160,9 +167,9 @@ namespace JsonParser
 
             if (c == JsonTokens.ValueSeparator)
             {
-                if ((JsonCollect)Machine.Peek() == JsonCollect.Dictionary)
+                if (Machine.StackLenght() > 0 && (JsonCollect)Machine.Peek() == JsonCollect.Dictionary)
                     GeneratedCode.Append(" },\n" + tabs + "{");
-                else if ((JsonCollect)Machine.Peek() == JsonCollect.Array)
+                else if (Machine.StackLenght() > 0 && (JsonCollect)Machine.Peek() == JsonCollect.Array)
                     GeneratedCode.Append(",\n" + tabs);
 
                 return;
@@ -170,6 +177,8 @@ namespace JsonParser
             if (c == JsonTokens.CloseDict)
             {
                 tabControl--;
+                GeneratedCode.Append("}\n");
+                GeneratedCode.Append(tabs.Substring(1));
                 GeneratedCode.Append("}");
                 return;
             }
@@ -182,7 +191,7 @@ namespace JsonParser
         }
 
 
-
+   
         private void DefineMachine()
         {
 
@@ -199,7 +208,7 @@ namespace JsonParser
              .When(States.SK1)
                 .On(JsonTokens.StringDelimiter, States.SK2)
                 .On(JsonTokens.StringEscape, States.SK3)
-                .On(e => true, States.SK1)
+                .On(e=>true, States.SK1)
              .When(States.SK2)
                 .On(JsonTokens.DictKeySeparator, States.VAL)
              .When(States.SK3)
@@ -248,32 +257,32 @@ namespace JsonParser
                 .On(digits, States.N2)
               .When(States.N2)
                 .On('.', States.N6)
-                .On(c => "eE".Contains(c), States.N5)
+                .On(c=>"eE".Contains(c), States.N5)
                 .On(JsonTokens.ValueSeparator, States.V)
                 .On(JsonTokens.CloseDict, States.AD, JsonCollect.Dictionary, null)
                 .On(JsonTokens.CloseList, States.AD, JsonCollect.Array, null)
-                .On(digits, States.N2)
-              .When(States.N3)
+                .On(digits,  States.N2)
+              .When(States.N3)  
                 .On(digits, States.N2)
                 .On(JsonTokens.ValueSeparator, States.V)
                 .On(JsonTokens.CloseDict, States.AD, JsonCollect.Dictionary, null)
                 .On(JsonTokens.CloseList, States.AD, JsonCollect.Array, null)
-              .When(States.N4)
+              .When(States.N4) 
                 .On('.', States.N6)
-                .On(c => "eE".Contains(c), States.N5)
+                .On(c=>"eE".Contains(c), States.N5)
                 .On(JsonTokens.ValueSeparator, States.V)
                 .On(JsonTokens.CloseDict, States.AD, JsonCollect.Dictionary, null)
                 .On(JsonTokens.CloseList, States.AD, JsonCollect.Array, null)
-                .On(digits, States.N2)
-              .When(States.N5)
-                 .On(digits, States.N8)
-                 .On(c => "-+".Contains(c), States.N7)
-              .When(States.N6)
-                 .On(digits, States.N3)
-              .When(States.N7)
-                 .On(digits, States.N8)
-              .When(States.N8)
-                 .On(digits, States.N8)
+                .On(digits,  States.N2)
+              .When(States.N5) 
+                 .On(digits,  States.N8)
+                 .On(c=>"-+".Contains(c), States.N7)
+              .When(States.N6) 
+                 .On(digits,  States.N3)
+              .When(States.N7) 
+                 .On(digits,  States.N8)
+              .When(States.N8) 
+                 .On(digits,  States.N8)
                  .On(JsonTokens.ValueSeparator, States.V)
                  .On(JsonTokens.CloseDict, States.AD, JsonCollect.Dictionary, null)
                  .On(JsonTokens.CloseList, States.AD, JsonCollect.Array, null)
@@ -301,9 +310,9 @@ namespace JsonParser
                   .On('u', States.TRUE3)
                .When(States.TRUE3)
                   .On('e', States.TRUE4);
+               
 
-
-            Machine.OnStackPush += (e, o) => FlowControlNum.Push(new int[] { Lines + 1, Cols });
+            Machine.OnStackPush += (e, o) => FlowControlNum.Push(new int[]{ Lines+1, Cols  });
             Machine.OnStackPop += (e, o) => FlowControlNum.Pop();
         }
     }

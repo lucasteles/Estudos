@@ -268,16 +268,16 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\JsonParser\JsonParser.csproj">
-      <Project>{a0924b5c-e600-4e6d-bbd4-d2ee5e34445d}</Project>
-      <Name>JsonParser</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Parser\assets\Ubuntu-R.ttf" />
     <Content Include="Parser\foundation\img\.gitkeep" />
     <Content Include="Parser\img\.gitkeep" />
     <None Include="Properties\PublishProfiles\main.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JsonParser\JsonParser.csproj">
+      <Project>{a0924b5c-e600-4e6d-bbd4-d2ee5e34445d}</Project>
+      <Name>JsonParser</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

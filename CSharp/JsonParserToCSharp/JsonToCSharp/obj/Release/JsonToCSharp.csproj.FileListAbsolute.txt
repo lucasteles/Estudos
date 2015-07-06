@@ -1,34 +1,34 @@
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\JsonToCSharp.dll.config
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\JsonToCSharp.dll
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\JsonToCSharp.pdb
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\JsonParser.dll
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\Newtonsoft.Json.dll
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\System.Net.Http.dll
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\System.Net.Http.Formatting.dll
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\System.Net.Http.WebRequest.dll
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\System.Web.Helpers.dll
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\System.Web.Http.dll
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\System.Web.Http.WebHost.dll
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\System.Web.Mvc.dll
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\System.Web.Razor.dll
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\System.Web.WebPages.Deployment.dll
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\System.Web.WebPages.dll
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\System.Web.WebPages.Razor.dll
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\JsonParser.pdb
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\Newtonsoft.Json.xml
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\System.Net.Http.xml
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\System.Net.Http.Formatting.xml
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\System.Net.Http.WebRequest.xml
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\System.Web.Helpers.xml
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\System.Web.Http.xml
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\System.Web.Http.WebHost.xml
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\System.Web.Mvc.xml
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\System.Web.Razor.xml
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\System.Web.WebPages.xml
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\System.Web.WebPages.Deployment.xml
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\bin\System.Web.WebPages.Razor.xml
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\obj\Release\JsonToCSharp.csprojResolveAssemblyReference.cache
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\obj\Release\JsonToCSharp.dll
-C:\Users\telesl\documents\visual studio 2013\Projects\JsonParserToCSharp\JsonToCSharp\obj\Release\JsonToCSharp.pdb
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\JsonToCSharp.dll.config
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\JsonToCSharp.dll
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\JsonToCSharp.pdb
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\JsonParser.exe
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\Microsoft.Web.Infrastructure.dll
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\Newtonsoft.Json.dll
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\System.Net.Http.dll
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\System.Net.Http.Formatting.dll
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\System.Net.Http.WebRequest.dll
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\System.Web.Helpers.dll
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\System.Web.Http.dll
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\System.Web.Http.WebHost.dll
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\System.Web.Mvc.dll
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\System.Web.Razor.dll
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\System.Web.WebPages.Deployment.dll
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\System.Web.WebPages.dll
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\System.Web.WebPages.Razor.dll
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\JsonParser.pdb
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\Newtonsoft.Json.xml
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\System.Net.Http.xml
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\System.Net.Http.Formatting.xml
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\System.Net.Http.WebRequest.xml
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\System.Web.Helpers.xml
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\System.Web.Http.xml
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\System.Web.Http.WebHost.xml
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\System.Web.Mvc.xml
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\System.Web.Razor.xml
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\System.Web.WebPages.xml
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\System.Web.WebPages.Deployment.xml
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\bin\System.Web.WebPages.Razor.xml
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\obj\Release\JsonToCSharp.csprojResolveAssemblyReference.cache
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\obj\Release\JsonToCSharp.dll
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonToCSharp\obj\Release\JsonToCSharp.pdb
