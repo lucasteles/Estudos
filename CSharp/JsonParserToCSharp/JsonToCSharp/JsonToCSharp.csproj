@@ -271,6 +271,9 @@
     <Content Include="Parser\assets\Ubuntu-R.ttf" />
     <Content Include="Parser\foundation\img\.gitkeep" />
     <Content Include="Parser\img\.gitkeep" />
+    <None Include="Properties\PublishProfiles\azure.pubxml" />
+    <None Include="Properties\PublishProfiles\jsonparser - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\jsonparser - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\main.pubxml" />
   </ItemGroup>
   <ItemGroup>

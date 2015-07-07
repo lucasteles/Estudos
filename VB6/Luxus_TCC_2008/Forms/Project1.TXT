@@ -1,3 +1,0 @@
-The cab file for your application has been built as 'Z:\Calculadora\Package\Project1.CAB'.
-
-There is also a batch file in the support directory (Z:\Calculadora\Package\Support\Project1.BAT) that will allow you to recreate the cab file in case you make changes to some of the files.

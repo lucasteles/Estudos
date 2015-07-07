@@ -1,1 +1,0 @@
-CS="DRIVER=SQL SERVER;SERVER=(local)\sqlexpress;UID=sa;PWD=spypreto;DATABASE=AtomTeste";

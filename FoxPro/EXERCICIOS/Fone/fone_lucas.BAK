@@ -1,7 +1,0 @@
-
-
-DO menu mnuFone
-DO FORM exerc7
-READ EVENTS
-
-ON SHUTDOWN QUIT

@@ -1,1 +1,0 @@
-MODIFY FORM c:\lixo\frank\sv_frank.scxMODIFY FORM c:\lixo\frank\cl_frank.scxDO FORM c:\lixo\frank\cl_frank.scxMODIFY FORM c:\lixo\frank\cl_frank.scxQUIT
