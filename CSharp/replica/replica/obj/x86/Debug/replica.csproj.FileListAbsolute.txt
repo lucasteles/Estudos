@@ -1,0 +1,4 @@
+C:\Git\Fundations\CSharp\replica\replica\bin\Debug\replica.exe
+C:\Git\Fundations\CSharp\replica\replica\bin\Debug\replica.pdb
+C:\Git\Fundations\CSharp\replica\replica\obj\x86\Debug\replica.exe
+C:\Git\Fundations\CSharp\replica\replica\obj\x86\Debug\replica.pdb
