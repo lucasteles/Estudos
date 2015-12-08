@@ -59,7 +59,12 @@ namespace EntityTeste.Models
                     .WithRequired(e => e.cliente)
                     .HasForeignKey(e => e.IdPedido);
              */
-                        
+
+                      
+                   
+                   
+
+
          }
 
          

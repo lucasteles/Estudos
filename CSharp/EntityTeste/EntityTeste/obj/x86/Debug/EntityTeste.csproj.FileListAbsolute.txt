@@ -32,3 +32,6 @@ C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\bin\Debug\ru\FluentValidation.r
 C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\bin\Debug\sv\FluentValidation.resources.dll
 C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\bin\Debug\tr\FluentValidation.resources.dll
 C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\bin\Debug\EntityTeste.XML
+C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\bin\Debug\Dapper.dll
+C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\bin\Debug\Dapper.pdb
+C:\Git\Fundations\CSharp\EntityTeste\EntityTeste\bin\Debug\Dapper.xml

@@ -11,8 +11,7 @@ using SimpleInjector.Extensions;
 
 using System.Windows.Forms;
 using System.Reflection;
-
-
+using Dapper;
 
 namespace EntityTeste
 {
@@ -31,12 +30,13 @@ namespace EntityTeste
          
          //cliente  
             
+            using (var repo2 = new Repository<Pedido>())
             using (var repo = new Repository<Cliente>())
             {
 
             //escreve queries no console
-            // repo.Database.Log = Console.Write; 
-            
+             repo.Database.Log = Console.Write;
+
                 /* insert
             var novo = new Cliente()
             {
@@ -48,16 +48,18 @@ namespace EntityTeste
 
            repo.Entry(novo).State = EntityState.Added;
             repo.SaveChanges();
-                 */
+                 
                
-
-           var all = repo.dbQuery.Include(e=>e.pedidos).ToList();
-
-            foreach (var item in all)
+                  */
+                //  var all = repo.dbQuery.Include(e=>e.pedidos).ToList();
+                var all = repo.Database.Connection.Query<Cliente>("SELECT * FROM TB_CLIENTE");
+                var xxx = repo.Database.Connection.Query("SELECT * FROM TB_PEDIDO");
+                foreach (var item in all)
             {
                 Console.Write(item.Name+"\n");
             }
-                
+
+         
 
                 //update
                 /*
@@ -78,7 +80,7 @@ namespace EntityTeste
             
             //pedido
 
-
+            /*
            
             using (var contexto = new Repository<Pedido>())
             {
@@ -96,7 +98,7 @@ namespace EntityTeste
 
             }
 
-
+            */
            
 
 
@@ -109,7 +111,7 @@ namespace EntityTeste
             //Application.Run(container.GetInstance<teste2>());
            // Application.Run(container.GetInstance<Digitar1>());
 
-           Application.Run( (baseForm) Program.container.GetInstance(Type.GetType("EntityTeste.Digitar1")) );
+          // Application.Run( (baseForm) Program.container.GetInstance(Type.GetType("EntityTeste.Digitar1")) );
 
 
             Console.ReadKey();

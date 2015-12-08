@@ -32,6 +32,7 @@ namespace EntityTeste
         }
 
 
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             T model = new T();
