@@ -1,0 +1,16 @@
+**/*.swp
+**/*.log
+**/*.aux
+**/*.lot
+**/*.toc
+**/*.idx
+**/*.lof
+**/*.bak
+**/*.brf
+**/*.lof
+**/*.out.ps
+**/*.synctex.gz
+**/*.idx
+**/*.bbl
+**/*.blg
+**/*.dvi

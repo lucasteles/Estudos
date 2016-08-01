@@ -8,3 +8,9 @@ C:\Git\JsonParser\JsonParser\JsonParser\bin\Release\JsonParser.pdb
 C:\Git\JsonParser\JsonParser\JsonParser\bin\Release\JsonParser.exe.config
 C:\Git\JsonParser\JsonParser\JsonParser\bin\Release\JsonParser.exe
 C:\Git\JsonParser\JsonParser\JsonParser\obj\Release\JsonParser.exe
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonParser\bin\Release\JsonParser.exe.config
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonParser\bin\Release\JsonParser.exe
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonParser\bin\Release\JsonParser.pdb
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonParser\obj\Release\JsonParser.csprojResolveAssemblyReference.cache
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonParser\obj\Release\JsonParser.exe
+C:\git\Fundations\CSharp\JsonParserToCSharp\JsonParser\obj\Release\JsonParser.pdb

@@ -1,0 +1,9 @@
+
+\newcommand{\myPutImg}[4]{
+    \begin{figure}[H]
+            \includegraphics[width=\linewidth,keepaspectratio=true,scale=#2]{img/#1}
+        \captionof{figure}{#3}
+        \label{fig:#4}
+    \end{figure}
+}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
