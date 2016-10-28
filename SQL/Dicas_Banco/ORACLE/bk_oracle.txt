@@ -1,0 +1,11 @@
+Como efetuar backup no oracle
+
+Segue script que deve ser executado no cmd.exe do windows (prompt de comando DOS)
+
+Backup (Exportar dados)
+
+exp system/senha file=caminho\arquivo.dmp log=caminho\arquivo.log full=y direct=y
+
+Restore (Importar dados)
+
+imp system/senha file=caminho log=caminho fromuser=usuário_origem touser=usuário_destino commit=y

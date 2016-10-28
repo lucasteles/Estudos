@@ -1,0 +1,9 @@
+-- 1) FAZ O BACKUP DO RESTANTE DO LOG
+BACKUP LOG CURSOSQL TO DISK='C:\Program Files\Microsoft SQL Server\MSSQL10_50.MSSQLSERVER\MSSQL\backup\TAIL_LOG.BAK' with no_truncate, norecovery
+
+-- 2) FAZ O RESTORE DO ÚLTIMO BACKUP QUE VOCÊ TEM
+RESTORE DATABASE CURSOSQL FROM DISK='C:\Program Files\Microsoft SQL Server\MSSQL10_50.MSSQLSERVER\MSSQL\backup\CURSOSQL.bak' WITH noRECOVERY
+
+-- 3) RESTAURA O LOG E REFAZ TUDO O QUE HAVIA SIDO FEITO DEPOIS DO BACKUP
+-- OBS: O PARAMETRO "StopAt" da a opção de restaurar até uma determinada data e horário (MUITO ÚTIL) quando se faz cagadas e não é obrigatório 
+RESTORE LOG CURSOSQL FROM DISK='C:\Program Files\Microsoft SQL Server\MSSQL10_50.MSSQLSERVER\MSSQL\backup\TAIL_LOG.BAK' WITH FILE=1, RECOVERY

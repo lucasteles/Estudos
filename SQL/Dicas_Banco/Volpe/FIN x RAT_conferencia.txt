@@ -1,0 +1,18 @@
+select ver.* from
+(
+select
+	fin.pk_id,
+	max(fin.dh_inclusao) as dt_inc,
+	max(fin.dt_vencimento) as dt_venc,
+	max(fin.ds_referencia) as ds_refer,
+	count(1) as qt_itens,
+	max(fin.vl_liquido) as vl_titulo,
+	sum(rat.vl_rateado) as vl_rateio
+from fi_movfin fin
+left join fi_movrat rat on 
+	rat.fk_origem=fin.pk_id and rat.tg_origem='F'
+group by fin.pk_id
+) ver
+where ver.dt_venc>=TO_DATE('01/01/2007','DD/MM/YYYY')
+	and	ver.vl_rateio<>ver.vl_titulo
+order by ver.dt_venc

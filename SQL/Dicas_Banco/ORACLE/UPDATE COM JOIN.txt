@@ -1,0 +1,10 @@
+UPDATE TCLUCARTEIRA CART SET -- tabela a ser atualizada
+    FK_TIPOATIVO = NVL(
+
+(SELECT       -- subquery só pode retornar um campo
+    ATI.FK_TIPOATIVO
+FROM
+    TCLUATIVO ATI
+WHERE
+    ATI.PK_ID = CART.FK_ATIVO -- clausula do join (deve ser sempre a primeira)
+),99)

@@ -1,0 +1,56 @@
+#############
+## ORACLE
+#############
+
+---------------------------
+* Tabela
+---------------------------
+SELECT
+	TABLE_NAME TABELA,
+FROM
+	USER_TABLES
+ORDER BY
+	TABLE_NAME
+
+---------------------------
+* Campos, tipo e tamanho
+---------------------------
+SELECT 
+	TB.TABLE_NAME Tabela,
+	COL.COLUMN_NAME Campo,
+	DATA_TYPE TIPO,
+	CASE WHEN DATA_TYPE = 'NUMBER' THEN '('|| LTRIM(TO_CHAR(coalesce(DATA_PRECISION,0),'999')) || ',' || LTRIM(TO_CHAR(coalesce(DATA_SCALE,0),'999')) || ')' ELSE '('|| LTRIM(TO_CHAR(coalesce(DATA_LENGTH,0),'9999')) || ')' END Tamanho,
+	CASE WHEN col.NULLABLE = 'Y' THEN 'NULL' ELSE 'NOT NULL' END AS NAONULL
+FROM
+	USER_TABLES TB
+LEFT JOIN
+	ALL_TAB_COLUMNS COL ON COL.TABLE_NAME=TB.TABLE_NAME
+ORDER BY
+	TB.TABLE_NAME
+
+---------------------------
+* Sequencia
+---------------------------
+SELECT
+	SEQUENCE_NAME AS SEQUENCIA,
+FROM USER_SEQUENCES
+	ORDER BY SEQUENCE_NAME
+
+---------------------------
+* Índices
+---------------------------
+SELECT
+	INDEX_NAME INDEXES,
+	TABLE_NAME TABELA,
+	COLUMN_NAME CAMPO
+FROM
+	USER_IND_COLUMNS
+---------------------------
+* Chave primária
+---------------------------
+SELECT
+	CONSTRAINT_NAME CHAVE,
+	TABLE_NAME TABELA,
+	COLUMN_NAME CAMPO,
+FROM
+	USER_CONS_COLUMNS
