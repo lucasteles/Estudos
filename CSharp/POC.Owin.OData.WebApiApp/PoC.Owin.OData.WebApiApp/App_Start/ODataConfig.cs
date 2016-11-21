@@ -33,9 +33,7 @@ namespace PoC.Owin.OData.WebApiApp
                 .Returns<double>()
                 
                 ;
-
-
-
+            
 
 
             config.MapODataServiceRoute(

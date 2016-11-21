@@ -16,6 +16,12 @@ namespace PoC.Owin.OData.WebApiApp.Controllers
 {
     public class PeopleController : ODataController, IODataModel<Person>
     {
+
+        public PeopleController(ILixo lixo)
+         {
+
+        }
+
         [EnableQuery]
         public IQueryable<Person> Get()
         {
