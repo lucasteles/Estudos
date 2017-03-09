@@ -12,6 +12,7 @@
         <Image x:Name="image1" HorizontalAlignment="Left" Height="151" Margin="124,10,0,0" VerticalAlignment="Top" Width="78"  gif:ImageBehavior.RepeatBehavior="0x"
           gif:ImageBehavior.AnimatedSource ="img/panda.gif"  />
         <Image x:Name="image" HorizontalAlignment="Left" Height="146" VerticalAlignment="Top" Width="342" Stretch="UniformToFill" Source="img/drag.png" Cursor="Hand" MouseDown="image_MouseDown"/>
+        <Label x:Name="label" Content="   " HorizontalAlignment="Left" Margin="92,113,0,0" VerticalAlignment="Top" Width="161"/>
 
     </Grid>
 </Window>

@@ -39,7 +39,10 @@ namespace TinyPNGApp
 
         async Task TinyPNG (params string[] files)
         {
+            try
+            {
 
+           
             BringToFront(image1);
             
           
@@ -50,6 +53,7 @@ namespace TinyPNGApp
                 if (!Directory.Exists(path))
                     Directory.CreateDirectory(path);
 
+                label.Content = Path.GetFileName(item);
                 var source = Tinify.FromFile(item);
                 await source.ToFile(Path.Combine(path, Path.GetFileName(item)));
 
@@ -62,8 +66,25 @@ namespace TinyPNGApp
             {
                 Process.Start(item);   
             }
-
+            label.Content = string.Empty;
             BringToFront(image);
+
+
+            }
+            catch (System.Exception e)
+            {
+                var errors = new List<string>();
+                var err = e;
+                while(err!=null)
+                {
+                    errors.Add(err.Message);
+                    err = e.InnerException;
+                }
+                errors.Reverse();
+                MessageBox.Show(string.Join("\n", errors));
+
+
+            }
 
         }
 
