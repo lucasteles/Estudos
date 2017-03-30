@@ -1,0 +1,29 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilebutton_5 */
+#Tickets_mobilebutton_5 {
+
+}
+.ui-btn.Tickets_mobilebutton_5 {
+
+}
+/* mobilecontainer */
+.ui-content.Tickets_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* lstTickets */
+.ui-page .Tickets_lstTickets {
+	margin: 4px 0px 0px 0px;
+}
+/* mobilelistitem_3 */
+/* mobilelistitembutton_4 */
+.Tickets_mobilelistitembutton_4 {
+
+}
+/* mobilefooter */
+.Tickets_mobilefooter {
+	min-height:38px;
+}

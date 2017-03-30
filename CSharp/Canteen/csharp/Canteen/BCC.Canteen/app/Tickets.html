@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Tickets
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="jquery.qrcode.js"></script>
+<script type="text/javascript" src="qrcode.js"></script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+                else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g))
+                {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/q/q.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/EventEmitter.js/EventEmitter.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/tv4/tv4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/localforage/dist/localforage.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/crypto-js-md5/crypto-js-md5.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/moment/moment.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/underscore-query/underscore-query.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/login.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="Tickets" id="Tickets" class="type-interior"
+        data-theme="f">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="f" name="mobileheader" id="Tickets_mobileheader" class="Tickets_mobileheader">
+                <h1 dsid="mobileheader">
+                    Tickets
+                </h1>
+                <!-- mobilebutton_5 --><!--
+                --><a data-role="button" name="mobilebutton_5" dsid="mobilebutton_5" class="Tickets_mobilebutton_5 ui-btn-left"
+                id="Tickets_mobilebutton_5" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-inline='true' data-mini='true' data-theme="f"
+                tabindex="2">
+                Back
+                </a>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Tickets_mobilecontainer" name="mobilecontainer" class="Tickets_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="f">
+                <link href="Tickets.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="Tickets.js">
+                </script>
+                <!-- lstTickets -->
+                <ul data-role="listview" id="Tickets_lstTickets" class="Tickets_lstTickets" name="lstTickets"
+                dsid="lstTickets" data-inset="true" data-theme="f" data-divider-theme="b" data-count-theme="b"
+                style="">
+                   
+                </ul>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="Tickets_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="Tickets_mobilefooter" data-theme="f">
+            </div>
+        </div>
+    </body>
+
+</html>

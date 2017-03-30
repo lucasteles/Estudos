@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Products
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+                else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g))
+                {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/q/q.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/EventEmitter.js/EventEmitter.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/tv4/tv4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/localforage/dist/localforage.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/crypto-js-md5/crypto-js-md5.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/moment/moment.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/underscore-query/underscore-query.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/login.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="Products" id="Products" class="type-interior"
+        data-theme="f">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back"
+            data-theme="f" name="mobileheader" id="Products_mobileheader" class="Products_mobileheader">
+                <h1 dsid="mobileheader">
+                    Canteen
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Products_mobilecontainer" name="mobilecontainer" class="Products_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="f">
+                <link href="Products.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="Products.js">
+                </script>
+                <!-- lblStore -->
+                <div name="lblStore" id="Products_lblStore" dsid="lblStore" data-role="appery_label"
+                class="Products_lblStore">
+                    StoreName
+                </div>
+                <!-- lstProd -->
+                <ul data-role="listview" id="Products_lstProd" class="Products_lstProd" name="lstProd"
+                dsid="lstProd" data-inset="true" data-theme="f" data-divider-theme="b" data-count-theme="b"
+                style="" data-split-icon="carat-r">
+               
+                </ul>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="Products_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="Products_mobilefooter" data-theme="f">
+			<div id='notif' style="border:dotted 1px gray;display:none; background-color:light-gray; color:red; padding:5px"></div>
+              <div name="lblTotal" id="Products_lblTotal" dsid="lblTotal" data-role="appery_label" style="padding:5px" 
+                class="Products_lblTotal">
+                    <span style="display:inline-block; margin-top:10px;">0 itens - R$ 0,00</span>
+                    <span><button  id="btnComprar" style="float:right;">Comprar</button></span>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </body>
+
+</html>

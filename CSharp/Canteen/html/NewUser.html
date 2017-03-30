@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            NewUser
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/q/q.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/EventEmitter.js/EventEmitter.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/tv4/tv4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/localforage/dist/localforage.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/crypto-js-md5/crypto-js-md5.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/moment/moment.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/login.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="NewUser" id="NewUser" class="type-interior"
+        data-theme="f">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back"
+            data-theme="f" name="mobileheader" id="NewUser_mobileheader" class="NewUser_mobileheader">
+                <h1 dsid="mobileheader">
+                    Canteen
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="NewUser_mobilecontainer" name="mobilecontainer" class="NewUser_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="f">
+                <link href="NewUser.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="NewUser.js">
+                </script>
+                <!-- mobilelabel_4 -->
+                <div name="mobilelabel_4" id="NewUser_mobilelabel_4" dsid="mobilelabel_4" data-role="appery_label"
+                class="NewUser_mobilelabel_4">
+                    Login
+                </div>
+                <!-- txtLogin -->
+                <div data-role="fieldcontain" class="NewUser_txtLogin ">
+                    <input type="text" name="txtLogin" dsid="txtLogin" value="" placeholder="" id="NewUser_txtLogin"
+                    tabindex="2" multiple data-theme="f" class="NewUser_txtLogin" />
+                </div>
+                <!-- mobilelabel_6 -->
+                <div name="mobilelabel_6" id="NewUser_mobilelabel_6" dsid="mobilelabel_6" data-role="appery_label"
+                class="NewUser_mobilelabel_6">
+                    Password
+                </div>
+                <!-- txtPass -->
+                <div data-role="fieldcontain" class="NewUser_txtPass ">
+                    <input type="password" name="txtPass" dsid="txtPass" value="" placeholder="" id="NewUser_txtPass"
+                    tabindex="3" multiple data-theme="f" class="NewUser_txtPass" />
+                </div>
+                <!-- mobilelabel_7 -->
+                <div name="mobilelabel_7" id="NewUser_mobilelabel_7" dsid="mobilelabel_7" data-role="appery_label"
+                class="NewUser_mobilelabel_7">
+                    Confirm Password
+                </div>
+                <!-- txtConfirm -->
+                <div data-role="fieldcontain" class="NewUser_txtConfirm ">
+                    <input type="text" name="txtConfirm" dsid="txtConfirm" value="" placeholder="" id="NewUser_txtConfirm"
+                    tabindex="4" multiple data-theme="f" class="NewUser_txtConfirm" />
+                </div>
+                <!-- mobilelabel_10 -->
+                <div name="mobilelabel_10" id="NewUser_mobilelabel_10" dsid="mobilelabel_10" data-role="appery_label"
+                class="NewUser_mobilelabel_10">
+                    Email
+                </div>
+                <!-- mobiletextinput_9 -->
+                <div data-role="fieldcontain" class="NewUser_mobiletextinput_9 ">
+                    <input type="email" name="mobiletextinput_9" dsid="mobiletextinput_9" value="" placeholder=""
+                    id="NewUser_mobiletextinput_9" tabindex="5" multiple data-theme="f" class="NewUser_mobiletextinput_9"
+                    />
+                </div>
+                <!-- btnNext --><!--
+                --><a data-role="button" name="btnNext" dsid="btnNext" class="NewUser_btnNext" id="NewUser_btnNext"
+                data-corners="true" data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false"
+                data-mini="false" data-theme="f" tabindex="6">
+                Next
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="NewUser_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="NewUser_mobilefooter" data-theme="f">
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            startScreen
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/q/q.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/EventEmitter.js/EventEmitter.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/tv4/tv4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/localforage/dist/localforage.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/crypto-js-md5/crypto-js-md5.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/moment/moment.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/login.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="startScreen" id="startScreen"
+        class="type-interior" data-theme="f">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="f" name="mobileheader" id="startScreen_mobileheader" class="startScreen_mobileheader">
+                <h1 dsid="mobileheader">
+                    Canteen
+                </h1>
+   				<!-- btnContact --><!--
+                --><a data-role="button" name="btnContact" dsid="btnContact" class="startScreen_btnContact ui-btn-right"
+                id="startScreen_btnContact" data-corners="true" data-icon="user" data-iconpos="left"
+                x-apple-data-detectors="false" data-inline='true' data-mini='true' data-theme="f"
+                tabindex="7">
+                Contact
+                </a>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="startScreen_mobilecontainer" name="mobilecontainer"
+            class="startScreen_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="f">
+                <link href="startScreen.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="startScreen.js">
+                </script>
+                <!-- mobilegrid_5 -->
+                <div class="startScreen_mobilegrid_5_wrapper" data-wrapper-for="mobilegrid_5">
+                    <table id="startScreen_mobilegrid_5" class="startScreen_mobilegrid_5" dsid="mobilegrid_5"
+                    name="mobilegrid_5" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="startScreen_mobilegrid_5_row_0">
+                            <!-- mobilegridcell_6 -->
+                            <td id="startScreen_mobilegridcell_6" name="mobilegridcell_6" class="startScreen_mobilegridcell_6"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_7 -->
+                            <td id="startScreen_mobilegridcell_7" name="mobilegridcell_7" class="startScreen_mobilegridcell_7"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_4 -->
+                                    <img class="startScreen_mobileimage_4" src="files/views/assets/image/small-7199-8525982.png"
+                                    id="startScreen_mobileimage_4" dsid="mobileimage_4" name="mobileimage_4" />
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_10 -->
+                            <td id="startScreen_mobilegridcell_10" name="mobilegridcell_10" class="startScreen_mobilegridcell_10"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- html_30 -->
+                <div data-role="appery_html" name="html_30" dsid="html_30" id="startScreen_html_30"
+                class="startScreen_html_30">
+                </div>
+                <!-- txtLogin -->
+                <div data-role="fieldcontain" class="startScreen_txtLogin ">
+                    <input type="text" name="txtLogin" dsid="txtLogin" value="" placeholder="Login"
+                    id="startScreen_txtLogin" tabindex="2" multiple data-theme="f" class="startScreen_txtLogin"
+                    />
+                </div>
+                <!-- txtPass -->
+                <div data-role="fieldcontain" class="startScreen_txtPass ">
+                    <input type="password" name="txtPass" dsid="txtPass" value="" placeholder="Password"
+                    id="startScreen_txtPass" tabindex="3" multiple data-theme="f" class="startScreen_txtPass"
+                    />
+                </div>
+                <!-- btnLogin --><!--
+                --><a data-role="button" name="btnLogin" dsid="btnLogin" class="startScreen_btnLogin"
+                id="startScreen_btnLogin" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="f" tabindex="4">
+                Login
+                </a><!--
+                --><!-- btnSign --><!--
+                --><a data-role="button" name="btnSign" dsid="btnSign" class="startScreen_btnSign"
+                id="startScreen_btnSign" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="f" tabindex="5">
+                Sign In
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="startScreen_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="startScreen_mobilefooter" data-theme="f">
+            </div>
+        </div>
+    </body>
+
+</html>

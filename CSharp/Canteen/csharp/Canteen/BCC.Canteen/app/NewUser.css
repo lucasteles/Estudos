@@ -1,0 +1,64 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.NewUser_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* mobilelabel_4 */
+.NewUser_mobilelabel_4 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* txtLogin */
+.NewUser_txtLogin {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilelabel_6 */
+.NewUser_mobilelabel_6 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* txtPass */
+.NewUser_txtPass {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilelabel_7 */
+.NewUser_mobilelabel_7 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* txtConfirm */
+.NewUser_txtConfirm {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilelabel_10 */
+.NewUser_mobilelabel_10 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobiletextinput_9 */
+.NewUser_mobiletextinput_9 {
+	margin: 4px 0px 4px 0px;
+}
+/* btnNext */
+#NewUser_btnNext {
+
+}
+.ui-btn.NewUser_btnNext {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter */
+.NewUser_mobilefooter {
+	min-height:38px;
+}

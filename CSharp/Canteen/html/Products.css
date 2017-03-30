@@ -1,0 +1,45 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.Products_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* lblStore */
+.Products_lblStore {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* lstProd */
+.ui-page .Products_lstProd {
+	margin: 4px 0px 0px 0px;
+}
+/* mobilelistitem_3 */
+/* mobilelistitembutton_4 */
+.Products_mobilelistitembutton_4 {
+
+}
+/* mobilefooter */
+.Products_mobilefooter {
+	min-height:38px;
+}
+
+.qty {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+}
+input.qtyplus { 
+	width:30px; 
+	height:30px;
+}
+input.qtyminus { 
+	width:30px; 
+	height:30px;
+	
+}
+

@@ -1,0 +1,39 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.Contact_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* txtName */
+.Contact_txtName {
+	margin: 4px 0px 4px 0px;
+}
+/* txtEmail */
+.Contact_txtEmail {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilelabel_5 */
+.Contact_mobilelabel_5 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* txtText */
+.Contact_txtText {
+	margin: 4px 0px 4px 0px;
+}
+/* btnSend */
+#Contact_btnSend {
+
+}
+.ui-btn.Contact_btnSend {
+	margin: 9px 5px 4px 5px;
+}
+/* mobilefooter */
+.Contact_mobilefooter {
+	min-height:38px;
+}

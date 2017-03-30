@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Contact
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/q/q.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/EventEmitter.js/EventEmitter.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/tv4/tv4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/localforage/dist/localforage.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/crypto-js-md5/crypto-js-md5.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/moment/moment.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/login.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+
+		
+
+        <div data-role="page" style="min-height:480px;" dsid="Contact" id="Contact" class="type-interior"
+        data-theme="f">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back"
+            data-theme="f" name="mobileheader" id="Contact_mobileheader" class="Contact_mobileheader">
+                <h1 dsid="mobileheader">
+                    Contact
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Contact_mobilecontainer" name="mobilecontainer" class="Contact_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="f">
+                <link href="Contact.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="Contact.js">
+                </script>
+
+                <div id='notif' style="border:dotted 1px gray;display:none; background-color:light-gray; color:gray; padding:5px"></div>
+
+                <!-- txtName -->
+                <div data-role="fieldcontain" class="Contact_txtName ">
+                    <input type="text" name="txtName" dsid="txtName" value="" placeholder="Name" id="Contact_txtName"
+                    tabindex="1" multiple data-theme="f" data-mini="false" class="Contact_txtName" />
+                </div>
+                <!-- txtEmail -->
+                <div data-role="fieldcontain" class="Contact_txtEmail ">
+                    <input type="text" name="txtEmail" dsid="txtEmail" value="" placeholder="E-Mail"
+                    id="Contact_txtEmail" tabindex="2" multiple data-theme="f" class="Contact_txtEmail"
+                    />
+                </div>
+                <!-- mobilelabel_5 -->
+                <div name="mobilelabel_5" id="Contact_mobilelabel_5" dsid="mobilelabel_5" data-role="appery_label"
+                class="Contact_mobilelabel_5">
+                    Text
+                </div>
+                <!-- txtText -->
+                <div data-role="fieldcontain" class="Contact_txtText ">
+                    <textarea name="txtText" id="Contact_txtText" 
+                     tabindex="3" dsid="txtText" data-theme="f" placeholder="Your Message" style="height: 150px!important;">
+</textarea>
+                </div>
+                <!-- btnSend --><!--
+                --><a data-role="button" name="btnSend" dsid="btnSend" class="Contact_btnSend" id="Contact_btnSend"
+                data-corners="true" data-icon="check" data-iconpos="left" x-apple-data-detectors="false"
+                data-mini="false" data-theme="f" tabindex="4">
+                Send
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="Contact_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="Contact_mobilefooter" data-theme="f">
+            </div>
+        </div>
+    </body>
+
+</html>

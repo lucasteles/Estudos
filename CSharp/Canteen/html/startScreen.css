@@ -1,0 +1,97 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.startScreen_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* mobilegrid_5 */
+.startScreen_mobilegrid_5 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.startScreen_mobilegrid_5_wrapper {
+
+}
+.startScreen_mobilegrid_5 > tr > td {
+	vertical-align: top;
+}
+.startScreen_mobilegrid_5_row_0, .startScreen_mobilegrid_5_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_6 */
+.startScreen_mobilegridcell_6 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.startScreen_mobilegridcell_6 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegridcell_7 */
+.startScreen_mobilegridcell_7 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.startScreen_mobilegridcell_7 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobileimage_4 */
+.startScreen_mobileimage_4 {
+	margin: 4px 0px 4px 0px;
+	width: 100px; height: 116px;
+	display: block;
+}
+/* mobilegridcell_10 */
+.startScreen_mobilegridcell_10 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.startScreen_mobilegridcell_10 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* html_30 */
+.startScreen_html_30 {
+	margin: 8px 5px 8px 5px;
+	font-weight: normal;
+	width: 250px; height: 30px;
+}
+div.startScreen_html_30 {
+	overflow: auto;
+}
+/* txtLogin */
+.startScreen_txtLogin {
+	margin: 4px 0px 4px 0px;
+}
+/* txtPass */
+.startScreen_txtPass {
+	margin: 4px 0px 4px 0px;
+}
+/* btnLogin */
+#startScreen_btnLogin {
+
+}
+.ui-btn.startScreen_btnLogin {
+	margin: 4px 5px 4px 5px;
+}
+/* btnSign */
+#startScreen_btnSign {
+
+}
+.ui-btn.startScreen_btnSign {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter */
+.startScreen_mobilefooter {
+	min-height:38px;
+}
