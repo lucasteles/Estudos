@@ -1,0 +1,3 @@
+FILE DELETED
+
+Snooper.rar->Snooper\JS\jquery-1.7.1.js has been removed since it was found to match the FILE FILTER= ExchangeLabs File Filter List 1: <in>*.js file filter.

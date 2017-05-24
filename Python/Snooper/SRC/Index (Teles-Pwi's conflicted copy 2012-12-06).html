@@ -1,0 +1,148 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title> Welcome to Snooper! </title>
+		<meta charset="UTF-8" />
+		<meta name="keywords" content="Web Crawler, Web Crawler Algoritmo, HTML5, CSS, Javascript" />
+		<meta name="viewport" content="width=dekstop-width, initial-scale=1.0">
+
+<!--========================================= Javascript ======================================================== -->
+	    <script src="JS/jquery-1.7.1.js"></script>  
+	    <script src="JS/javaScript.js"></script>
+	    <script src="JS/bootstrap.js"></script>
+	    <script src="../JS/our.js"></script>
+	    <script type="text/javascript" src="JS/yoxview/yoxview-init.js"></script>
+
+		    <script> 
+			// nova animação do javaScript (new)
+				$(document).ready(function(){
+					$("#go").click(function(){
+						$("#snoopLogo").fadeOut();   
+    					$("#logo").animate({
+						    height:'40px'
+    					}).delay(4000);   
+    					$("#snoopLogo").fadeIn();
+    					$("#snoopLogo").animate({
+    						left:'-270px',
+						    top:'-50px',
+						    height:'100px',
+						    width:'300px'
+						});
+						
+
+  					});
+				});
+
+				
+
+				</script> 
+
+<!--=========================================== Style =========================================================== -->
+
+		<link href="IMAGES/favicon.ico" rel="shortcut icon">
+		<link href="CSS/style.css" rel="stylesheet" >
+		<link href="CSS/bootstrap.css" rel="stylesheet">
+		<link href="CSS/bootstrap.min.css" rel="stylesheet">
+		<link href="CSS/animate-custom.css" rel="stylesheet">
+
+    	<style>
+
+      		body {
+        		padding-top: 20px; /* 60px to make the container go all the way to the bottom of the topbar */
+
+      		}
+
+
+    	</style>
+	</head>
+
+	<body>
+
+<!--============================================ Nav ============================================================ -->
+		
+		<script src="JS/menu.js"></script>
+
+<!--============================================ Logo =========================================================== -->    
+		
+		<!-- o logo agora está dentro do container(new) -->
+		<div class="container" id="logo" style="height: 300px;">
+			<img src="IMAGES/Rato.png" alt="" width="750" heigth="250" id="snoopLogo" />
+		</div>	
+
+		
+		
+
+<!--======================================== Search Field ======================================================= -->		
+		<div class="container">	
+				<div class="input-append" id="searchField">
+					<form method="POST" onsubmit="enviarDados(exibicao_dos_dados, true); return false; " >
+						<label id="register1">Where will you snoop?</label>
+		  				<input class="input-xxlarge" id="appendedInputButton" size="20" type="text" placeholder="http://" name="txtSite" value="">
+		  				<button id="go" class="btn btn-inverse"  type="submit" >Go!</button>
+		  			</form>
+				</div>	
+
+			
+				<div id="radioButtons" style="min-height:50px;" >	
+
+					<label class="radio inline">
+						<input type="radio" name="optionsRadios" id="optionsRadios1" value="img" checked>
+						 Image
+					</label>
+					<label class="radio inline">
+						<input type="radio" name="optionsRadios" id="optionsRadios2" value="lnk">
+					 	Links
+					</label>
+					<label class="radio inline">
+						<input type="radio" name="optionsRadios" id="optionsRadios3" value="files">
+					 	Files
+					</label> 	
+				</div>		
+		
+				<div id="subbody" align="center">
+					<div id="exibicao_dos_dados" class="thumbnails">
+								<div class="container" style="top:auto;">
+				<center>
+				   <iframe src="http://www.facebook.com/plugins/like.php?href=http://snooper.sytes.net"
+					scrolling="no" frameborder="0"
+					style="border:none;"></iframe>
+				</center>
+        </div>	
+					</div>
+
+					<div id="bottom" style="width: 900px;">
+						<div id="Loader" style="width: 900px;">
+		    				<hr />
+							<center><img src="../IMAGES/loader.gif" alt="loading..." title="Loader" /></center>
+						</div>
+					
+						<div id="More" style="width: 900px;">
+							<hr />
+							<center>
+									<button id="btnMore" class="btn btn-inverse" onclick="enviarDados(exibicao_dos_dados, false);" style="width:900px;float: left;">More Results...</button>
+
+									<div style="padding-top:50px;" >
+										<center>
+										   <iframe src="http://www.facebook.com/plugins/like.php?href=http://snooper.sytes.net"
+											scrolling="no" frameborder="0"
+											style="border:none;"></iframe>
+										</center>
+       								 </div>	
+								</form>
+							</center>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+	</body>
+</html>			
+
+
+
+
+
