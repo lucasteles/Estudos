@@ -1,0 +1,82 @@
+
+
+************************************************
+
+
+https://stackoverflow.com/questions/22737970/secret-key-ssl-socket-connections-in-java/22738568#22738568
+
+
+
+*********************************************
+
+
+
+SSL socket connections are well supported in Java and are likely a good choice for you. The one thing to understand in advance is that SSL provides both encryption and server authentication; you can't easily get just the encryption. For reference, the encryption protects against network eavesdropping, while the server authentication protects against "man in the middle" attacks, where the attacker acts as a proxy between the client and the server.
+
+Since authentication is an integral part of SSL, the server will need to provide an SSL certificate, and the client will need to be able to authenticate the certificate. The server will need a "key store" file where its certificate is stored. The client will need a "trust store" file where it stores the certificates it trusts, one of which must either be the server's certificate, or a certificate from which a "chain of trust" can be traced to the server's certificate.
+
+Note that you do not have to know anything about the ins and outs of SSL in order to use Java SSL sockets. I do think it is interesting to read through information on how SSL works, for example in the Wikipedia article on TLS, but the complicated multistep handshake and the setup of the actual connection encryption is all handled under the covers by the SSLServerSocket and SSLSocket classes.
+
+The code
+
+All of the above is just background information to explain some of the following code. The code assumes some familiarity with regular, unencrypted sockets. On the server, you will need code like this:
+
+/**
+ * Returns an SSLServerSocket that uses the specified key store file 
+ * with the specified password, and listens on the specified port.
+ */
+ServerSocket getSSLServerSocket(
+    File keyStoreFile, 
+    char[] keyStoreFilePassword,
+    int port
+) throws GeneralSecurityException, IOException {
+    SSLContext sslContext 
+        = SSLConnections.getSSLContext(keyStoreFile, keyStoreFilePassword);
+    SSLServerSocketFactory sslServerSocketFactory 
+        = sslContext.getServerSocketFactory();
+    SSLServerSocket sslServerSocket
+        = (SSLServerSocket) sslServerSocketFactory.createServerSocket(port);
+    return sslServerSocket;
+}
+The SSLServerSocket can then be used exactly like you would use any other ServerSocket; the authentication, encryption and decryption will be completely transparent to the calling code. In fact, the cognate function in my own code declares a return type of just plain ServerSocket, so the calling code can't get confused.
+
+Note: if you want to use the JRE's default cacerts file as your key store file, you can skip the line creating the SSLContext, and use ServerSocketFactory.getDefault() to get the ServerSocketFactory. You will still have to install the server's public/private key pair into the key store file, in this case the cacerts file.
+
+On the client, you will need code like this:
+
+SSLSocket getSSLSocket(
+    File trustStoreFile,
+    char[] trustStoreFilePassword,
+    InetAddress serverAddress,
+    port serverPort
+) throws GeneralSecurityException, IOException {
+    SSLContext sslContext 
+        = SSLConnections.getSSLContext(trustStoreFile, trustStoreFilePassword);
+    SSLSocket sslSocket 
+        = (SSLSocket) sslContext.getSocketFactory().createSocket
+            (serverAddress, serverPort);
+    sslSocket.startHandshake();
+    return sslSocket;
+}
+As in the case of the SSLServerSocket in the server code, the returned SSLSocket here is used just like a regular Socket; I/O into and out of the SSLSocket is done with unencrypted data, and all the cryptographic stuff is done inside.
+
+As with the server code, if you want to use the default JRE cacerts file as your trust store, you can skip creation of the SSLContext and use SSLSocketFactory.getDefault() instead of sslContext.getSocketFactory(). In this case, you will only need to install the server's certificate if the server's certificate was self signed or not otherwise issued by one of the major certificating authorities. In addition, to ensure you aren't trusting a certificate that is legitimately issued within a certificate chain you trust, but to an entirely different domain than you are trying to get to, you should add the following (untested) code just after the line where you create the SSLSocket:
+
+    sslSocket.getSSLParameters().setEndpointIdentificationAlgorithm("HTTPS");
+This would also apply if you are using your own trust store file, but trusting all certificates issued by one or more certificating authorities in that file, or trusting a number of certificates for different servers in that file.
+
+Certificates, key stores, and trust stores
+
+Now for the hard, or at least, slightly harder part: generating and installing the certificates. I recommend using the Java keytool, preferably version 1.7 or above, to do this work.
+
+If you are creating a self signed certificate, first generate the server's keypair from the command line with a command like the following: keytool -genkey -alias server -keyalg rsa -dname "cn=server, ou=unit, o=org, l=City, s=ST, c=US" -validity 365242 -keystore server_key_store_file -ext san=ip:192.168.1.129 -v. Substitute your own names and values. In particular, this command creates a key pair that expires in 365242 days - 1000 years - for a server that will be at IP address 192.168.1.129. If the clients will be finding the server through the domain name system, use something like san=dns:server.example.com instead of san=ip:192.168.1.129. For more information on keytool options, use man keytool.
+
+You will be prompted for the key store's password - or to set the key store's password, if this is a new key store file - and to set the password for the new key pair.
+
+Now, export the server's certificate using keytool -export -alias server -file server.cer -keystore server_key_store_file -rfc -v. This creates a server.cer file containing the certificate with the server's public key.
+
+Finally, move the server.cer file to the client machine and install the certificate into the client's trust store, using something like, keytool -import -alias server -file server.cer -keystore client_trust_store_file -v. You will be prompted for the password to the trust store file; the prompt will say "Enter keystore password", since the Java keytool works with both key store files and trust store files. Note that if you are using the default JRE cacerts file, the initial password is changeit, I believe.
+
+If you are using a certificate purchased from a generally recognized certificating authority, and you're using the default JRE cacerts file on the client, you only have to install the certificate in the server's key store file; you don't have to mess with the client's files. Server installation instructions should be provided by the certificating authority, or again you can check man keytool for instructions.
+
+There's a tremendous amount of mystique surrounding sockets and, especially, SSL sockets, but they're actually quite easy to use. In many cases, ten lines of code will avoid the need for complex and fragile messaging or message queueing infrastructure. Good for you for considering this option.
