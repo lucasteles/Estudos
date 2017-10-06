@@ -1,0 +1,4 @@
+﻿Web Crawlers e ferramentas de visualizações - Snooper
+
+
+O objetivo do projeto é criar um web crawler, a partir de um conjunto de tecnologias estabelecidas, e aplicar as ferramentas de visualização. 

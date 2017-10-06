@@ -1,0 +1,120 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ANOTHERBGIM_PRIVATE_H	.\WinBGIm e Exemplos\graficos_simples\linhas\AnotherBGIM_private.h	5;"	d
+ANOTHERBGIM_PRIVATE_H	.\WinBGIm e Exemplos\graficos_simples\putpixel\AnotherBGIM_private.h	5;"	d
+ANOTHERBGIM_PRIVATE_H	.\WinBGIm e Exemplos\linhas\AnotherBGIM_private.h	5;"	d
+ANOTHERBGIM_PRIVATE_H	.\WinBGIm e Exemplos\linhas_e_mouse\AnotherBGIM_private.h	5;"	d
+BGIEXEMPLO2_PRIVATE_H	.\WinBGIm e Exemplos\graficos_simples\mouse\BGIExemplo2_private.h	5;"	d
+COMPANY_NAME	.\WinBGIm e Exemplos\graficos_simples\linhas\AnotherBGIM_private.h	13;"	d
+COMPANY_NAME	.\WinBGIm e Exemplos\graficos_simples\mouse\BGIExemplo2_private.h	13;"	d
+COMPANY_NAME	.\WinBGIm e Exemplos\graficos_simples\mouse\mouse_private.h	13;"	d
+COMPANY_NAME	.\WinBGIm e Exemplos\graficos_simples\putpixel\AnotherBGIM_private.h	13;"	d
+COMPANY_NAME	.\WinBGIm e Exemplos\linhas\AnotherBGIM_private.h	13;"	d
+COMPANY_NAME	.\WinBGIm e Exemplos\linhas_e_mouse\AnotherBGIM_private.h	13;"	d
+FILE_DESCRIPTION	.\WinBGIm e Exemplos\graficos_simples\linhas\AnotherBGIM_private.h	15;"	d
+FILE_DESCRIPTION	.\WinBGIm e Exemplos\graficos_simples\mouse\BGIExemplo2_private.h	15;"	d
+FILE_DESCRIPTION	.\WinBGIm e Exemplos\graficos_simples\mouse\mouse_private.h	15;"	d
+FILE_DESCRIPTION	.\WinBGIm e Exemplos\graficos_simples\putpixel\AnotherBGIM_private.h	15;"	d
+FILE_DESCRIPTION	.\WinBGIm e Exemplos\linhas\AnotherBGIM_private.h	15;"	d
+FILE_DESCRIPTION	.\WinBGIm e Exemplos\linhas_e_mouse\AnotherBGIM_private.h	15;"	d
+FILE_VERSION	.\WinBGIm e Exemplos\graficos_simples\linhas\AnotherBGIM_private.h	14;"	d
+FILE_VERSION	.\WinBGIm e Exemplos\graficos_simples\mouse\BGIExemplo2_private.h	14;"	d
+FILE_VERSION	.\WinBGIm e Exemplos\graficos_simples\mouse\mouse_private.h	14;"	d
+FILE_VERSION	.\WinBGIm e Exemplos\graficos_simples\putpixel\AnotherBGIM_private.h	14;"	d
+FILE_VERSION	.\WinBGIm e Exemplos\linhas\AnotherBGIM_private.h	14;"	d
+FILE_VERSION	.\WinBGIm e Exemplos\linhas_e_mouse\AnotherBGIM_private.h	14;"	d
+INTERNAL_NAME	.\WinBGIm e Exemplos\graficos_simples\linhas\AnotherBGIM_private.h	16;"	d
+INTERNAL_NAME	.\WinBGIm e Exemplos\graficos_simples\mouse\BGIExemplo2_private.h	16;"	d
+INTERNAL_NAME	.\WinBGIm e Exemplos\graficos_simples\mouse\mouse_private.h	16;"	d
+INTERNAL_NAME	.\WinBGIm e Exemplos\graficos_simples\putpixel\AnotherBGIM_private.h	16;"	d
+INTERNAL_NAME	.\WinBGIm e Exemplos\linhas\AnotherBGIM_private.h	16;"	d
+INTERNAL_NAME	.\WinBGIm e Exemplos\linhas_e_mouse\AnotherBGIM_private.h	16;"	d
+LEGAL_COPYRIGHT	.\WinBGIm e Exemplos\graficos_simples\linhas\AnotherBGIM_private.h	17;"	d
+LEGAL_COPYRIGHT	.\WinBGIm e Exemplos\graficos_simples\mouse\BGIExemplo2_private.h	17;"	d
+LEGAL_COPYRIGHT	.\WinBGIm e Exemplos\graficos_simples\mouse\mouse_private.h	17;"	d
+LEGAL_COPYRIGHT	.\WinBGIm e Exemplos\graficos_simples\putpixel\AnotherBGIM_private.h	17;"	d
+LEGAL_COPYRIGHT	.\WinBGIm e Exemplos\linhas\AnotherBGIM_private.h	17;"	d
+LEGAL_COPYRIGHT	.\WinBGIm e Exemplos\linhas_e_mouse\AnotherBGIM_private.h	17;"	d
+LEGAL_TRADEMARKS	.\WinBGIm e Exemplos\graficos_simples\linhas\AnotherBGIM_private.h	18;"	d
+LEGAL_TRADEMARKS	.\WinBGIm e Exemplos\graficos_simples\mouse\BGIExemplo2_private.h	18;"	d
+LEGAL_TRADEMARKS	.\WinBGIm e Exemplos\graficos_simples\mouse\mouse_private.h	18;"	d
+LEGAL_TRADEMARKS	.\WinBGIm e Exemplos\graficos_simples\putpixel\AnotherBGIM_private.h	18;"	d
+LEGAL_TRADEMARKS	.\WinBGIm e Exemplos\linhas\AnotherBGIM_private.h	18;"	d
+LEGAL_TRADEMARKS	.\WinBGIm e Exemplos\linhas_e_mouse\AnotherBGIM_private.h	18;"	d
+MOUSE_PRIVATE_H	.\WinBGIm e Exemplos\graficos_simples\mouse\mouse_private.h	5;"	d
+ORIGINAL_FILENAME	.\WinBGIm e Exemplos\graficos_simples\linhas\AnotherBGIM_private.h	19;"	d
+ORIGINAL_FILENAME	.\WinBGIm e Exemplos\graficos_simples\mouse\BGIExemplo2_private.h	19;"	d
+ORIGINAL_FILENAME	.\WinBGIm e Exemplos\graficos_simples\mouse\mouse_private.h	19;"	d
+ORIGINAL_FILENAME	.\WinBGIm e Exemplos\graficos_simples\putpixel\AnotherBGIM_private.h	19;"	d
+ORIGINAL_FILENAME	.\WinBGIm e Exemplos\linhas\AnotherBGIM_private.h	19;"	d
+ORIGINAL_FILENAME	.\WinBGIm e Exemplos\linhas_e_mouse\AnotherBGIM_private.h	19;"	d
+PRODUCT_NAME	.\WinBGIm e Exemplos\graficos_simples\linhas\AnotherBGIM_private.h	20;"	d
+PRODUCT_NAME	.\WinBGIm e Exemplos\graficos_simples\mouse\BGIExemplo2_private.h	20;"	d
+PRODUCT_NAME	.\WinBGIm e Exemplos\graficos_simples\mouse\mouse_private.h	20;"	d
+PRODUCT_NAME	.\WinBGIm e Exemplos\graficos_simples\putpixel\AnotherBGIM_private.h	20;"	d
+PRODUCT_NAME	.\WinBGIm e Exemplos\linhas\AnotherBGIM_private.h	20;"	d
+PRODUCT_NAME	.\WinBGIm e Exemplos\linhas_e_mouse\AnotherBGIM_private.h	20;"	d
+PRODUCT_VERSION	.\WinBGIm e Exemplos\graficos_simples\linhas\AnotherBGIM_private.h	21;"	d
+PRODUCT_VERSION	.\WinBGIm e Exemplos\graficos_simples\mouse\BGIExemplo2_private.h	21;"	d
+PRODUCT_VERSION	.\WinBGIm e Exemplos\graficos_simples\mouse\mouse_private.h	21;"	d
+PRODUCT_VERSION	.\WinBGIm e Exemplos\graficos_simples\putpixel\AnotherBGIM_private.h	21;"	d
+PRODUCT_VERSION	.\WinBGIm e Exemplos\linhas\AnotherBGIM_private.h	21;"	d
+PRODUCT_VERSION	.\WinBGIm e Exemplos\linhas_e_mouse\AnotherBGIM_private.h	21;"	d
+SchuxMann	.\DEV c++ TESTES\dll\mydll.cpp	/^extern "C" __declspec(dllexport) char SchuxMann(char teste){$/;"	f
+VER_BUILD	.\WinBGIm e Exemplos\graficos_simples\linhas\AnotherBGIM_private.h	12;"	d
+VER_BUILD	.\WinBGIm e Exemplos\graficos_simples\mouse\BGIExemplo2_private.h	12;"	d
+VER_BUILD	.\WinBGIm e Exemplos\graficos_simples\mouse\mouse_private.h	12;"	d
+VER_BUILD	.\WinBGIm e Exemplos\graficos_simples\putpixel\AnotherBGIM_private.h	12;"	d
+VER_BUILD	.\WinBGIm e Exemplos\linhas\AnotherBGIM_private.h	12;"	d
+VER_BUILD	.\WinBGIm e Exemplos\linhas_e_mouse\AnotherBGIM_private.h	12;"	d
+VER_MAJOR	.\WinBGIm e Exemplos\graficos_simples\linhas\AnotherBGIM_private.h	9;"	d
+VER_MAJOR	.\WinBGIm e Exemplos\graficos_simples\mouse\BGIExemplo2_private.h	9;"	d
+VER_MAJOR	.\WinBGIm e Exemplos\graficos_simples\mouse\mouse_private.h	9;"	d
+VER_MAJOR	.\WinBGIm e Exemplos\graficos_simples\putpixel\AnotherBGIM_private.h	9;"	d
+VER_MAJOR	.\WinBGIm e Exemplos\linhas\AnotherBGIM_private.h	9;"	d
+VER_MAJOR	.\WinBGIm e Exemplos\linhas_e_mouse\AnotherBGIM_private.h	9;"	d
+VER_MINOR	.\WinBGIm e Exemplos\graficos_simples\linhas\AnotherBGIM_private.h	10;"	d
+VER_MINOR	.\WinBGIm e Exemplos\graficos_simples\mouse\BGIExemplo2_private.h	10;"	d
+VER_MINOR	.\WinBGIm e Exemplos\graficos_simples\mouse\mouse_private.h	10;"	d
+VER_MINOR	.\WinBGIm e Exemplos\graficos_simples\putpixel\AnotherBGIM_private.h	10;"	d
+VER_MINOR	.\WinBGIm e Exemplos\linhas\AnotherBGIM_private.h	10;"	d
+VER_MINOR	.\WinBGIm e Exemplos\linhas_e_mouse\AnotherBGIM_private.h	10;"	d
+VER_RELEASE	.\WinBGIm e Exemplos\graficos_simples\linhas\AnotherBGIM_private.h	11;"	d
+VER_RELEASE	.\WinBGIm e Exemplos\graficos_simples\mouse\BGIExemplo2_private.h	11;"	d
+VER_RELEASE	.\WinBGIm e Exemplos\graficos_simples\mouse\mouse_private.h	11;"	d
+VER_RELEASE	.\WinBGIm e Exemplos\graficos_simples\putpixel\AnotherBGIM_private.h	11;"	d
+VER_RELEASE	.\WinBGIm e Exemplos\linhas\AnotherBGIM_private.h	11;"	d
+VER_RELEASE	.\WinBGIm e Exemplos\linhas_e_mouse\AnotherBGIM_private.h	11;"	d
+VER_STRING	.\WinBGIm e Exemplos\graficos_simples\linhas\AnotherBGIM_private.h	8;"	d
+VER_STRING	.\WinBGIm e Exemplos\graficos_simples\mouse\BGIExemplo2_private.h	8;"	d
+VER_STRING	.\WinBGIm e Exemplos\graficos_simples\mouse\mouse_private.h	8;"	d
+VER_STRING	.\WinBGIm e Exemplos\graficos_simples\putpixel\AnotherBGIM_private.h	8;"	d
+VER_STRING	.\WinBGIm e Exemplos\linhas\AnotherBGIM_private.h	8;"	d
+VER_STRING	.\WinBGIm e Exemplos\linhas_e_mouse\AnotherBGIM_private.h	8;"	d
+_MYDLL_H_	.\DEV c++ TESTES\dll\mydll.h	2;"	d
+main	.\IMC\imc.cpp	/^main() {$/;"	f
+main	.\IMC\noname00.cpp	/^main() {$/;"	f
+main	.\Porcentagem\porc.cpp	/^main () {$/;"	f
+main	.\Urna\urna.cpp	/^main() {$/;"	f
+main	.\WinBGIm e Exemplos\graficos_simples\linhas\linhas.c	/^int main( )$/;"	f
+main	.\WinBGIm e Exemplos\graficos_simples\mouse\mouse.c	/^int main() {$/;"	f
+main	.\WinBGIm e Exemplos\graficos_simples\putpixel\putpixel.c	/^int main( )$/;"	f
+main	.\WinBGIm e Exemplos\linhas\linhas.c	/^int main( )$/;"	f
+main	.\WinBGIm e Exemplos\linhas_e_mouse\linhas_e_mouse.c	/^int main( )$/;"	f
+main	.\ex_01.cpp	/^main(){$/;"	f
+main	.\ex_02.cpp	/^main(){$/;"	f
+main	.\ex_03.cpp	/^main(){$/;"	f
+main	.\ex_04.cpp	/^main(){$/;"	f
+main	.\ex_05ext.cpp	/^main(){$/;"	f
+main	.\ex_06.cpp	/^main(){$/;"	f
+main	.\ex_08.cpp	/^	main (){$/;"	f
+main	.\ex_09.cpp	/^	main (){$/;"	f
+main	.\exe_07.cpp	/^	main (){$/;"	f
+main	.\exe_10.cpp	/^main(){$/;"	f
+main	.\prova_01.cpp	/^main(){$/;"	f
+teste	.\ex_02.cpp	/^void teste()$/;"	f
+teste2	.\ex_02.cpp	/^void teste2()$/;"	f
