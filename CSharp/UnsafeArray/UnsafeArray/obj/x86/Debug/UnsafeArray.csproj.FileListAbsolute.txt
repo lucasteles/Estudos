@@ -3,3 +3,9 @@ C:\Git\Fundations\CSharp\UnsafeArray\UnsafeArray\bin\Debug\UnsafeArray.pdb
 C:\Git\Fundations\CSharp\UnsafeArray\UnsafeArray\obj\x86\Debug\UnsafeArray.exe
 C:\Git\Fundations\CSharp\UnsafeArray\UnsafeArray\obj\x86\Debug\UnsafeArray.pdb
 C:\Git\Fundations\CSharp\UnsafeArray\UnsafeArray\obj\x86\Debug\UnsafeArray.csprojResolveAssemblyReference.cache
+D:\Git\Estudos\CSharp\UnsafeArray\UnsafeArray\bin\Debug\UnsafeArray.exe
+D:\Git\Estudos\CSharp\UnsafeArray\UnsafeArray\bin\Debug\UnsafeArray.pdb
+D:\Git\Estudos\CSharp\UnsafeArray\UnsafeArray\obj\x86\Debug\UnsafeArray.csprojResolveAssemblyReference.cache
+D:\Git\Estudos\CSharp\UnsafeArray\UnsafeArray\obj\x86\Debug\UnsafeArray.csproj.CoreCompileInputs.cache
+D:\Git\Estudos\CSharp\UnsafeArray\UnsafeArray\obj\x86\Debug\UnsafeArray.exe
+D:\Git\Estudos\CSharp\UnsafeArray\UnsafeArray\obj\x86\Debug\UnsafeArray.pdb

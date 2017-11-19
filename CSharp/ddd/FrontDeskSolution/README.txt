@@ -1,1 +1,0 @@
-This would take care of non-appointment related scheduling of staff, rooms, and other clinic resources.

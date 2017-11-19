@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Runtime.InteropServices;
 
 namespace UnsafeArray
 {
@@ -10,32 +6,58 @@ namespace UnsafeArray
     {
         static unsafe void Main(string[] args)
         {
-            var ee = MakeArray(5,2);
+            var w = 2;
+            var h = 2;
 
-            ee[0][0] = 10;
-            ee[1][0] = 20;
+            int* a1 = stackalloc int[w * h];
+            int** array = stackalloc int*[w];
+            int row;
 
-            Console.WriteLine(ee[0][0]);
-            Console.WriteLine(ee[1][0]);
+            for (row = 0; row < h; row++)
+            {
+                int* pointer = a1 + (row * w);
+                array[row] = pointer;
+            }
 
-            Console.Read();
+            array[0][0] = 10;
+            array[1][0] = 20;
+
+            var value1 = array[0][0];
+            var value2 = array[1][0];
+
+            Console.WriteLine(value1);
+            Console.WriteLine(value2);
+
+            var numero = 42;
+            var numeroP = &numero;
+            //var numeroPt = new IntPtr(numeroP);
+
+            while (Console.ReadKey().Key != ConsoleKey.Escape)
+            {
+                Console.WriteLine($"numero: {*numeroP} na posicao {((int)numeroP):X}");
+            }
+
+            Console.ReadKey();
         }
 
 
-        static unsafe int** MakeArray(int w, int h)
+        static unsafe int** MakeArray(int h, int w)
         {
-          int *a1;
-          int** array;
-          int row;
+            int* a1 = stackalloc int[w * h];
+            int** array = stackalloc int*[w];
+            int row;
 
-          a1 =(int*) Marshal.AllocHGlobal(w * h * sizeof(int));
-          array = (int**)Marshal.AllocHGlobal((w * sizeof(int*)));
+            //a1 =(int*) Marshal.AllocHGlobal(w * h * sizeof(int));
+            //array = (int**)Marshal.AllocHGlobal((w * sizeof(int*)));
 
-          for (row = 0; row < w; row++)
-              array[row] = a1 + row * h;
+            for (row = 0; row < h; row++)
+            {
+                int* pointer = a1 + (row * w);
+                array[row] = pointer;
+            }
 
-          return array;
-            
+            return array;
+
         }
     }
 }
