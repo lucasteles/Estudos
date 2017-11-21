@@ -1,63 +1,83 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 
 namespace UnsafeArray
 {
     class Program
     {
-        static unsafe void Main(string[] args)
+        static unsafe void Main()
         {
-            var w = 2;
-            var h = 2;
+            int w = 2, h = 2;
 
-            int* a1 = stackalloc int[w * h];
-            int** array = stackalloc int*[w];
-            int row;
+            // Should pass a callback, because stack is clear after method returns
+            Console.WriteLine("Test Stack");
+            MakeBidimensionalArrayStack(h, w, arrayStack => TestArray((int**)arrayStack));
 
-            for (row = 0; row < h; row++)
-            {
-                int* pointer = a1 + (row * w);
-                array[row] = pointer;
-            }
-
-            array[0][0] = 10;
-            array[1][0] = 20;
-
-            var value1 = array[0][0];
-            var value2 = array[1][0];
-
-            Console.WriteLine(value1);
-            Console.WriteLine(value2);
-
-            var numero = 42;
-            var numeroP = &numero;
-            //var numeroPt = new IntPtr(numeroP);
-
-            while (Console.ReadKey().Key != ConsoleKey.Escape)
-            {
-                Console.WriteLine($"numero: {*numeroP} na posicao {((int)numeroP):X}");
-            }
+            // the method returns a function to free the allocated memory
+            Console.WriteLine("Test Heap");
+            var arrayHeap = MakeBidimensionalArrayHeap(h, w, out Action free);
+            TestArray(arrayHeap);
+            free();
 
             Console.ReadKey();
         }
 
 
-        static unsafe int** MakeArray(int h, int w)
+        static unsafe void MakeBidimensionalArrayStack(int height, int width, Action<IntPtr> callback)
         {
-            int* a1 = stackalloc int[w * h];
-            int** array = stackalloc int*[w];
-            int row;
 
-            //a1 =(int*) Marshal.AllocHGlobal(w * h * sizeof(int));
-            //array = (int**)Marshal.AllocHGlobal((w * sizeof(int*)));
+            // calocando na stack
+            int* a1 = stackalloc int[width * height];
+            int** array = stackalloc int*[width];
 
-            for (row = 0; row < h; row++)
+            for (var row = 0; row < height; row++)
             {
-                int* pointer = a1 + (row * w);
+                int* pointer = a1 + (row * width);
                 array[row] = pointer;
             }
 
-            return array;
-
+            callback((IntPtr)array);
         }
+
+        static unsafe int** MakeBidimensionalArrayHeap(int height, int width, out Action free)
+        {
+            // calocando no heap
+            int* a1 = (int*)Marshal.AllocHGlobal(width * height * sizeof(int));
+            int** array = (int**)Marshal.AllocHGlobal(width * sizeof(int*));
+
+            for (var row = 0; row < height; row++)
+            {
+                int* pointer = a1 + (row * width);
+                array[row] = pointer;
+            }
+
+            free = () =>
+            {
+                Marshal.FreeHGlobal((IntPtr)a1);
+                Marshal.FreeHGlobal((IntPtr)array);
+            };
+
+            return array;
+        }
+
+        static unsafe void TestArray(int** array)
+        {
+
+            array[0][0] = 10;
+            array[0][1] = 11;
+            array[1][0] = 20;
+            array[1][1] = 21;
+
+            var value1 = array[0][0];
+            var value2 = array[0][1];
+            var value3 = array[1][0];
+            var value4 = array[1][1];
+
+            Console.WriteLine(value1);
+            Console.WriteLine(value2);
+            Console.WriteLine(value3);
+            Console.WriteLine(value4);
+        }
+
     }
 }
