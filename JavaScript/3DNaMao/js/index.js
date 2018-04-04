@@ -7,6 +7,8 @@ var CanV = -30;
 var Scale = 1;
 desenho =  new teles3d(c,WIDTH, HEIGHT);
 desenho.AlterCam(CanH,CanV,Scale,Scale);
+var mouse_x = 0;
+var mouse_y = 0;
 
 var angle = 0;
 var angle2 = 0;
@@ -80,4 +82,44 @@ document.onkeydown = function (e) {
    
     desenho.AlterCam(CanH,CanV,Scale,Scale);
 
+}
+
+
+c.onmousedown = function(e){
+  mouse_x = e.x;
+  mouse_y = e.y;
+  console.log(mouse_x,mouse_y);
+}
+
+c.onmousemove=function(e){
+  if(e.which == 1 ){
+    CanH -= (e.x - (mouse_x))/5;
+    CanV -= (e.y - (mouse_y))/5;
+  }
+  desenho.AlterCam(CanH,CanV,Scale,Scale);
+};
+
+window.onresize= function(){
+           canvas = c;
+            if (canvas.width  < window.innerWidth)
+                canvas.width  = window.innerWidth;
+
+            if (canvas.height < window.innerHeight)
+                canvas.height = window.innerHeight;
+  
+         desenho =  new teles3d(c,canvas.width, canvas.height);
+         desenho.AlterCam(CanH,CanV,Scale,Scale);
+  
+};
+
+c.onmousewheel = function(e){
+  
+  
+  Scale+= e.wheelDelta/120;
+  if (Scale>0)
+    desenho.AlterCam(CanH,CanV,Scale,Scale);
+  else
+    Scale = 1;
+  
+  
 }
