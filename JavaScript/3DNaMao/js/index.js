@@ -16,16 +16,19 @@ var angle2 = 0;
 
 function draw()
 {
+
   desenho.clear();
   
   // desenha o plano
   desenho.AlterColor("white");
   desenho.Plan(100,20);
-  
+
+
+
   //desenha cubo
   desenho.AlterColor("red");  
   desenho.AlterVisao(-100, 0); //define o centro de rotação 
-  desenho.Cube3D(angle, -100, 20, 0, 40, 40, 40);
+  desenho.Cube3D(0, -100, 20, 0, 40, 40, 40);
   
    //desenha bola
   desenho.AlterColor("blue");  
@@ -34,7 +37,7 @@ function draw()
  
    desenho.AlterColor("green");  
   desenho.AlterVisao(0, 0); 
-  desenho.SquareX3D(angle2, -30, 20, 0, 20,30);
+  desenho.SquareX3D(0, -30, 20, 0, 20,30);
   
    desenho.AlterColor("yellow");  
   desenho.AlterVisao(0, 100); 
