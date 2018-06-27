@@ -1,0 +1,226 @@
+var _user$project$Profile$subscriptions = function (model) {
+	return _elm_lang$core$Platform_Sub$none;
+};
+var _user$project$Profile$profileView = function (user) {
+	var displayName = A2(
+		_elm_lang$core$Basics_ops['++'],
+		user.name,
+		A2(
+			_elm_lang$core$Basics_ops['++'],
+			' (@',
+			A2(_elm_lang$core$Basics_ops['++'], user.screenName, ')')));
+	return A2(
+		_elm_lang$html$Html$div,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$class('profile'),
+			_1: {ctor: '[]'}
+		},
+		{
+			ctor: '::',
+			_0: A2(
+				_elm_lang$html$Html$img,
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html_Attributes$src(user.profileImageUrl),
+					_1: {ctor: '[]'}
+				},
+				{ctor: '[]'}),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_elm_lang$html$Html$div,
+					{ctor: '[]'},
+					{
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$h3,
+							{ctor: '[]'},
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html$text(displayName),
+								_1: {ctor: '[]'}
+							}),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$div,
+								{ctor: '[]'},
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html$text(user.company),
+									_1: {ctor: '[]'}
+								}),
+							_1: {ctor: '[]'}
+						}
+					}),
+				_1: {ctor: '[]'}
+			}
+		});
+};
+var _user$project$Profile$User = F4(
+	function (a, b, c, d) {
+		return {screenName: a, name: b, company: c, profileImageUrl: d};
+	});
+var _user$project$Profile$userDecoder = A3(
+	_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
+	'avatar_url',
+	_elm_lang$core$Json_Decode$string,
+	A3(
+		_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
+		'company',
+		_elm_lang$core$Json_Decode$string,
+		A3(
+			_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
+			'name',
+			_elm_lang$core$Json_Decode$string,
+			A3(
+				_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
+				'login',
+				_elm_lang$core$Json_Decode$string,
+				_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$decode(_user$project$Profile$User)))));
+var _user$project$Profile$Model = F2(
+	function (a, b) {
+		return {screenName: a, profile: b};
+	});
+var _user$project$Profile$initialModel = A2(_user$project$Profile$Model, '', _elm_lang$core$Maybe$Nothing);
+var _user$project$Profile$init = {ctor: '_Tuple2', _0: _user$project$Profile$initialModel, _1: _elm_lang$core$Platform_Cmd$none};
+var _user$project$Profile$LoadUser = function (a) {
+	return {ctor: 'LoadUser', _0: a};
+};
+var _user$project$Profile$fetchUser = function (screenName) {
+	var url = A2(_elm_lang$core$Basics_ops['++'], 'https://api.github.com/users/', screenName);
+	var request = A2(_elm_lang$http$Http$get, url, _user$project$Profile$userDecoder);
+	return A2(_elm_lang$http$Http$send, _user$project$Profile$LoadUser, request);
+};
+var _user$project$Profile$update = F2(
+	function (msg, model) {
+		var _p0 = msg;
+		switch (_p0.ctor) {
+			case 'UpdateScreenName':
+				return {
+					ctor: '_Tuple2',
+					_0: _elm_lang$core$Native_Utils.update(
+						model,
+						{screenName: _p0._0}),
+					_1: _elm_lang$core$Platform_Cmd$none
+				};
+			case 'FetchUser':
+				return {
+					ctor: '_Tuple2',
+					_0: model,
+					_1: _user$project$Profile$fetchUser(model.screenName)
+				};
+			default:
+				var _p1 = _p0._0;
+				if (_p1.ctor === 'Ok') {
+					return {
+						ctor: '_Tuple2',
+						_0: _elm_lang$core$Native_Utils.update(
+							model,
+							{
+								profile: _elm_lang$core$Maybe$Just(_p1._0)
+							}),
+						_1: _elm_lang$core$Platform_Cmd$none
+					};
+				} else {
+					return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
+				}
+		}
+	});
+var _user$project$Profile$FetchUser = {ctor: 'FetchUser'};
+var _user$project$Profile$UpdateScreenName = function (a) {
+	return {ctor: 'UpdateScreenName', _0: a};
+};
+var _user$project$Profile$loadProfileView = function (model) {
+	return A2(
+		_elm_lang$html$Html$div,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$class('load-profile'),
+			_1: {ctor: '[]'}
+		},
+		{
+			ctor: '::',
+			_0: A2(
+				_elm_lang$html$Html$h4,
+				{ctor: '[]'},
+				{
+					ctor: '::',
+					_0: _elm_lang$html$Html$text('Load Profile'),
+					_1: {ctor: '[]'}
+				}),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_elm_lang$html$Html$label,
+					{ctor: '[]'},
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html$text('Screen Name'),
+						_1: {ctor: '[]'}
+					}),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_elm_lang$html$Html$input,
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$type_('text'),
+							_1: {
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$value(model.screenName),
+								_1: {
+									ctor: '::',
+									_0: _elm_lang$html$Html_Events$onInput(_user$project$Profile$UpdateScreenName),
+									_1: {ctor: '[]'}
+								}
+							}
+						},
+						{ctor: '[]'}),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$button,
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$disabled(
+									_elm_lang$core$Native_Utils.eq(model.screenName, '')),
+								_1: {
+									ctor: '::',
+									_0: _elm_lang$html$Html_Events$onClick(_user$project$Profile$FetchUser),
+									_1: {ctor: '[]'}
+								}
+							},
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html$text('Load'),
+								_1: {ctor: '[]'}
+							}),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$p,
+								{ctor: '[]'},
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html$text(model.screenName),
+									_1: {ctor: '[]'}
+								}),
+							_1: {ctor: '[]'}
+						}
+					}
+				}
+			}
+		});
+};
+var _user$project$Profile$view = function (model) {
+	var _p2 = model.profile;
+	if (_p2.ctor === 'Just') {
+		return _user$project$Profile$profileView(_p2._0);
+	} else {
+		return _user$project$Profile$loadProfileView(model);
+	}
+};
+var _user$project$Profile$main = _elm_lang$html$Html$program(
+	{init: _user$project$Profile$init, view: _user$project$Profile$view, update: _user$project$Profile$update, subscriptions: _user$project$Profile$subscriptions})();

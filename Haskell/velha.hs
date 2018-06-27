@@ -50,6 +50,10 @@ podeJogar (Jogada onde) tab = case tab !! (onde-1) of
                                  Quadro (Just _)  _-> False
                                  Quadro (Nothing) _ -> True
 
+venceu :: [Maybe Jogador] -> Bool
+venceu ( Just Bola : Just Bola : Just Bola : _) = True 
+venceu _ = False
+
 main = do
     putStrLn "Bem vindo ao jogo da velha"
     jogar (Cruz, criarTabuleiro)

@@ -1,0 +1,116 @@
+module Profile exposing (..)
+
+import Html exposing (..)
+import Html.Events exposing (onClick, onInput)
+import Html.Attributes exposing (class, src, type_, value, disabled)
+import Http
+import Json.Decode exposing (string, Decoder) 
+import Json.Decode.Pipeline exposing (required, decode) 
+       
+type Msg
+    = UpdateScreenName String
+    | FetchUser
+    | LoadUser (Result Http.Error User)
+
+type alias User = 
+    { screenName : String
+    , name : String
+    , company : String
+    , profileImageUrl : String
+    }
+
+type alias Model = 
+    { screenName : String,
+      profile : Maybe User
+    }
+
+initialModel : Model
+initialModel = 
+    Model "" Nothing
+
+init : (Model, Cmd Msg)
+init = 
+    (initialModel, Cmd.none)
+
+profileView : User -> Html Msg
+profileView user =
+    let
+        displayName = 
+            user.name ++ " (@" ++ user.screenName ++ ")"
+    in
+        div [class "profile"]
+            [ img [src user.profileImageUrl] []
+            , div []
+                [ h3 [] [text displayName]
+                , div [] [text user.company]
+                ]
+            ]
+
+loadProfileView : Model -> Html Msg
+loadProfileView model = 
+    div [class "load-profile"]
+        [ h4 [] [text "Load Profile"]
+        , label [] [text "Screen Name"]
+        , input 
+            [ type_ "text"
+            , value model.screenName
+            , onInput UpdateScreenName
+            ] []
+        , button 
+            [ disabled (model.screenName == "")
+            , onClick FetchUser
+            ] [text "Load"]
+        , p [] [text model.screenName]
+        ]
+
+view : Model -> Html Msg
+view model =
+    case model.profile of
+        Just user ->
+            profileView user
+        Nothing ->
+            loadProfileView model
+
+userDecoder : Decoder User
+userDecoder = 
+    decode User
+    |> required "login" string
+    |> required "name" string
+    |> required "company" string
+    |> required "avatar_url" string
+
+fetchUser : String -> Cmd Msg
+fetchUser screenName =
+    let 
+        url = "https://api.github.com/users/" ++ screenName
+        request = Http.get url userDecoder
+    in
+        Http.send LoadUser request
+
+update : Msg -> Model -> (Model, Cmd Msg)
+update msg model =
+    case msg of
+        UpdateScreenName screenName -> 
+             ({model | screenName = screenName}, Cmd.none)
+        FetchUser -> 
+            ( model, fetchUser model.screenName )
+        LoadUser result ->
+            case result of
+                Ok user -> 
+                    ({model | profile = Just user}, Cmd.none)
+                Err err ->
+                    (model, Cmd.none)
+
+
+subscriptions : Model -> Sub Msg
+subscriptions model =
+    Sub.none
+
+main : Program Never Model Msg
+main = 
+    Html.program
+    { init = init
+    , view = view
+    , update = update
+    , subscriptions = subscriptions
+    }
