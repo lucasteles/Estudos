@@ -45,7 +45,7 @@ realizarJogada (Jogada onde) = do
     let nTab = marcar tab (Jogada onde) jogador
     let proximo = proximoJogador jogador
     return (proximo, nTab)
-
+    
 podeJogar :: Jogada -> Tabuleiro -> Bool
 podeJogar (Jogada onde) tab = case tab !! (onde-1) of
                                  Quadro (Just _)  _-> False
