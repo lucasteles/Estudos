@@ -1,3 +1,4 @@
+module Velha where
 
 import Data.List
 import Data.List.Split
@@ -54,7 +55,7 @@ venceu :: [Maybe Jogador] -> Bool
 venceu ( Just Bola : Just Bola : Just Bola : _) = True 
 venceu _ = False
 
-main = do
+jogoDaVelha = do
     putStrLn "Bem vindo ao jogo da velha"
     jogar (Cruz, criarTabuleiro)
 
