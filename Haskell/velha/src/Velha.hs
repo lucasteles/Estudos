@@ -1,7 +1,7 @@
 module Velha where
 
-import Data.List
 import Data.List.Split
+import Data.List
 import Control.Monad.State
 
 type Posicao = Int 
@@ -10,9 +10,9 @@ data Jogador = Bola | Cruz
 data Quadro = Quadro (Maybe Jogador) Posicao
 type Tabuleiro = [Quadro]
 
-data Jogada = Jogada Posicao deriving Show
+newtype Jogada = Jogada Posicao deriving Show
 
-type EstadoDoJogo = State (Jogador, Tabuleiro) (Jogador, Tabuleiro) 
+type EstadoDoJogo = State (Jogador, Tabuleiro) (Jogador, Tabuleiro)
 
 instance Show Jogador where
     show Bola = "O"
@@ -21,11 +21,12 @@ instance Show Jogador where
 instance Show Quadro where
     show (Quadro Nothing a) = show (a+1)
     show (Quadro (Just j) _) = show j
-
+ 
 exibirTabuleiro :: Tabuleiro -> String
-exibirTabuleiro = concat 
-                    . intersperse "\n" 
-                    . map (unwords . intersperse "|" . map show) . chunksOf 3
+exibirTabuleiro = intercalate "\n"
+                             . map (unwords . intersperse "|" . map show) 
+                             . chunksOf 3
+
 
 replaceNth n newVal (x:xs)
      | n == 0 = newVal:xs
@@ -49,7 +50,7 @@ realizarJogada (Jogada onde) = do
 podeJogar :: Jogada -> Tabuleiro -> Bool
 podeJogar (Jogada onde) tab = case tab !! (onde-1) of
                                  Quadro (Just _)  _-> False
-                                 Quadro (Nothing) _ -> True
+                                 Quadro Nothing _ -> True
 
 venceu :: [Maybe Jogador] -> Bool
 venceu ( Just Bola : Just Bola : Just Bola : _) = True 
@@ -62,7 +63,7 @@ jogoDaVelha = do
 jogar state@(jogador, tab) = do
     putStrLn $ exibirTabuleiro  tab
     putStrLn $ "Vez do " ++ show jogador ++ ":"
-    ondeStr <- getLine 
+    ondeStr <- getLine
 
     let onde = Jogada $ read ondeStr
     let jogadaValida = podeJogar onde tab
