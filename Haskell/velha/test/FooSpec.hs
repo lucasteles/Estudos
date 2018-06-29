@@ -2,6 +2,7 @@ module FooSpec where
 
 import Test.Hspec
 
+spec :: Spec
 spec = do
   describe "Prelude.read" $ do
     it "can parse integers" $ do
