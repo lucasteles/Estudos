@@ -7,12 +7,10 @@ import Html.Attributes exposing (class, src, type_, value, disabled)
 import Json.Decode exposing (string, Decoder)
 import Json.Decode.Pipeline exposing (required, decode)
 
-
 type Msg
     = UpdateScreenName String
     | FetchUser
     | LoadUser (Result Http.Error User)
-
 
 type alias User =
     { screenName : String

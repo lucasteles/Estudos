@@ -23,10 +23,7 @@ type alias User =
 
 
 type alias Model =
-    { screenName : String
-    , profile : Maybe User
-    }
-
+    { screenName : String, profile : Maybe User }
 
 initialModel : Model
 initialModel =

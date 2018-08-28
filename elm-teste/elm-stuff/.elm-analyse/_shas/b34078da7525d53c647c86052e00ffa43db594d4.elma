@@ -2,7 +2,7 @@ module Profile exposing (..)
 
 import Html exposing (..)
 import Html.Events exposing (onClick, onInput)
-import Http
+import Html.Error
 import Html.Attributes exposing (class, src, type_, value, disabled)
 import Json.Decode exposing (string, Decoder)
 import Json.Decode.Pipeline exposing (required, decode)

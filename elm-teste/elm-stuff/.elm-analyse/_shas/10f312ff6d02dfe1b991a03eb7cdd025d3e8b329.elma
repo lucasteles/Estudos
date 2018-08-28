@@ -21,12 +21,7 @@ type alias User =
     , profileImageUrl : String
     }
 
-
-type alias Model =
-    { screenName : String
-    , profile : Maybe User
-    }
-
+type alias Model = { screenName : String , profile : Maybe User } 
 
 initialModel : Model
 initialModel =

@@ -15,11 +15,7 @@ type Msg
 
 
 type alias User =
-    { screenName : String
-    , name : String
-    , company : String
-    , profileImageUrl : String
-    }
+    { screenName : String , name : String , company : String , profileImageUrl : String }
 
 
 type alias Model =
